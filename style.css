@@ -4,8 +4,8 @@
     text-decoration: none;
 }
 
-/* navbar awal laptop */
 
+/* navbar awal laptop */
 nav {
     position: fixed;
     height:50px ;
@@ -43,15 +43,23 @@ nav .nav-ul {
     font-family: 'Oleo Script', cursive;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 30%;
-    padding-left: 20px;
+    height: 80%;
+    padding: 10px;
+    margin: 5px;
     box-sizing: border-box;
+    text-shadow: 4px 2px 2px rgb(147, 51, 51);
 }
 
 .teks-logo a {
     font-size: 2.5vw;
     color: white;
     margin-left: 5px;
+}
+
+.teks-logo img {
+    width: 50px;
 }
 
 .nav-teks {
@@ -68,5 +76,378 @@ nav .nav-ul {
     align-items: center;
     justify-content: space-evenly;
 }
-/* navbar awal laptop akhir */
+
+/* toogle-bar awal laptop */
+.toogle-bar {
+    display: none;
+}
+
+.x-toogle {
+    display: none;
+}
+
+.toogle-ul {
+    display: none;
+}
+/* toogle bar awal laptop */
+
+/* navbar akhir laptop  */
+
+
+
+
+
+
+
+
+
+
+
+/* @media query atau breakpoint untuk screen layar tablet */
+ @media (min-width: 768px) and (max-width: 1024px) {
+
+ /* navbar awal TABLET */
+nav {
+    position: fixed;
+    height:50px ;
+    width:100%;
+    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
+    border-bottom: 2px solid rgb(121, 0, 0);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
+    display: flex;
+}
+
+nav .nav-ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teks-logo:hover a::after {
+    content: "✅";
+    font-size: 1.5vw;
+}
+
+.teks-logo {
+    font-family: 'Oleo Script', cursive;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.teks-logo a {
+    font-size: 3.5vw;
+    color: white;
+    margin-left: 5px;
+}
+
+.nav-teks span:hover a::before {
+    display: none;
+}
+
+.logo-medsos span:hover a::before {
+    display:none;
+}
+.nav-teks {
+    display:none;
+}
+
+.logo-medsos {
+    display:none;
+}
+
+/* toogle-bar awal Tablet */
+.toogle-bar {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#check-toogle {
+    opacity: 0;
+}
+
+#check-toogle:checked~.x-toogle {
+    display: flex;
+    font-size: 4vw;
+    z-index: 100;
+    transform: translateX(15vw);
+    border:3px solid whitesmoke;
+    text-shadow: 1px 1px 1px white;
+}
+
+    #check-toogle:checked~.button-toogle{
+    display: none;
+}
+
+.button-toogle {
+    font-size: 4vw;
+}
+
+#check-toogle:checked~.toogle-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.nav-teks-toogle {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content:space-evenly ;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3.5vw;
+    font-family: 'Secular One', sans-serif;
+}
+
+.nav-teks-toogle span:hover {
+    background-color: rgba(25, 8, 218, 0.411);
+}
+
+.logo-medsos-toogle {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.h3-logo-medsos-toogle {
+    text-align: center;
+    font-family:'Permanent Marker', cursive;
+    font-size: 5vw;
+    text-shadow: 3px 3px 6px rgb(255, 0, 0);
+    color: rgb(255, 243, 243);
+}
+
+.h3-logo-medsos-toogle::after {
+    content: "🔔";
+    text-shadow: none;
+}
+
+.icon-toogle {
+    background-color: white;
+    margin: 10px;
+}
+
+.icon-toogle a {
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+    color: blue;
+    font-family: 'Secular One', sans-serif;
+}
+/* toogle bar akhir Tablet */
+
+/* navbar akhir TABLET  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media query atau breakpoint untuk screen layar handphone */
+     @media (min-width: 320px) and (max-width: 767px) {
+         /* navbar awal TABLET */
+nav {
+    position: fixed;
+    height:50px ;
+    width:100%;
+    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
+    border-bottom: 2px solid rgb(121, 0, 0);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
+    display: flex;
+}
+
+nav .nav-ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teks-logo:hover a::after {
+    content: "✅";
+    font-size: 5.5vw;
+}
+
+.teks-logo {
+    font-family: 'Oleo Script', cursive;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.teks-logo a {
+    font-size: 6vw;
+    color: white;
+    margin-left: 5px;
+}
+
+.nav-teks span:hover a::before {
+    display: none;
+}
+
+.logo-medsos span:hover a::before {
+    display:none;
+}
+.nav-teks {
+    display:none;
+}
+
+.logo-medsos {
+    display:none;
+}
+
+/* toogle-bar awal Tablet */
+.toogle-bar {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#check-toogle {
+    opacity: 0;
+}
+
+#check-toogle:checked~.x-toogle {
+    display: flex;
+    font-size: 5vw;
+    z-index: 100;
+    transform: translateX(4vw);
+    border:3px solid whitesmoke;
+    text-shadow: 1px 1px 1px white;
+}
+
+    #check-toogle:checked~.button-toogle{
+    display: none;
+}
+
+.button-toogle {
+    font-size: 7vw;
+}
+
+#check-toogle:checked~.toogle-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    width: 65vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.nav-teks-toogle {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content:space-evenly ;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5vw;
+    font-family: 'Secular One', sans-serif;
+}
+
+.nav-teks-toogle span:hover {
+    background-color: rgba(25, 8, 218, 0.411);
+}
+
+.logo-medsos-toogle {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.h3-logo-medsos-toogle {
+    text-align: center;
+    font-family:'Permanent Marker', cursive;
+    font-size: 5vw;
+    text-shadow: 3px 3px 6px rgb(255, 0, 0);
+    color: rgb(255, 243, 243);
+}
+
+.h3-logo-medsos-toogle::after {
+    content: "🔔";
+    text-shadow: none;
+}
+
+.icon-toogle {
+    background-color: white;
+    margin: 10px;
+}
+
+.icon-toogle a {
+    display: flex;
+    align-items: center;
+    font-size: 5vw;
+    color: blue;
+    font-family: 'Secular One', sans-serif;
+}
+/* toogle bar akhir Tablet */
+        }
+
 
