@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* navbar awal laptop */
+
+nav {
+    position: fixed;
+    height:50px ;
+    width:100%;
+    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
+    border-bottom: 2px solid rgb(121, 0, 0);
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
+    display: flex;
+}
+
+nav .nav-ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teks-logo:hover a::after {
+    content: "✅";
+    font-size: 1.5vw;
+}
+
+.nav-teks span:hover a::before {
+    content: "👉";
+}
+
+.logo-medsos span:hover a::before {
+    content: "👉";
+    font-size: 2vw;
+}
+
+.teks-logo {
+    font-family: 'Oleo Script', cursive;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.teks-logo a {
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 5px;
+}
+
+.nav-teks {
+    display: flex;
+    justify-content: space-around;
+    font-family:'Permanent Marker', cursive;
+    width:45%;
+    font-size: 1.5vw;
+}
+
+.logo-medsos {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* navbar awal laptop akhir */
+
