@@ -192,8 +192,11 @@ nav .nav-ul {
 }
 
 .button-toogle {
-    font-size: 35px;
-    border: 5px double white;
+      display: flex;
+    font-size:20px;
+    border: 10px double white;
+    box-shadow: 3px 3px 5px black;
+    align-items: center;
     box-sizing: border-box;
 }
 
@@ -390,11 +393,10 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:30px;
-    border: 5px double white;
+    font-size:20px;
+    border: 10px double white;
     box-shadow: 3px 3px 5px black;
     align-items: center;
-    height: 50px;
     box-sizing: border-box;
     margin-left: -25px;
 }
