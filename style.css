@@ -106,7 +106,7 @@ nav .nav-ul {
 /* @media query atau breakpoint untuk screen layar tablet */
  @media (min-width: 768px) and (max-width: 1024px) {
 
- /* navbar awal TABLET */
+ /* navbar awal utama TABLET */
 nav {
     position: fixed;
     height:50px ;
@@ -160,8 +160,9 @@ nav .nav-ul {
 .logo-medsos {
     display:none;
 }
+/* navbar utama akhir tablet */
 
-/* toogle-bar awal Tablet */
+/* toogle-bar awal Tablet dan checkbox */
 .toogle-bar {
     display: flex;
     width: 30%;
@@ -187,7 +188,7 @@ nav .nav-ul {
     text-shadow: 1px 1px 1px white;
 }
 
-    #check-toogle:checked~.button-toogle{
+#check-toogle:checked~.button-toogle{
     display: none;
 }
 
@@ -215,8 +216,9 @@ nav .nav-ul {
     right: 0;
     overflow: auto;
 }
+/* toogle-bar akhir Tablet dan checkbox */
 
-/* nav teks toogle tablet / home / about/ contact */
+/* nav teks toogle awal tablet / home / about/ contact */
 .nav-teks-toogle {
     display: flex;
     width: 100%;
@@ -228,11 +230,16 @@ nav .nav-ul {
     font-family: 'Secular One', sans-serif;
 }
 
+.nav-teks-toogle span a {
+    color: white;
+}
+
 .nav-teks-toogle span:hover {
     background-color: rgba(25, 8, 218, 0.411);
 }
+/* nav teks toogle akhir tablet / home / about/ contact */
 
-/* nav teks toogle tablet / youtube / instagram/ facebook */
+/* nav teks toogle tablet awal / youtube / instagram/ facebook */
 .logo-medsos-toogle {
     display: flex;
     width: 100%;
@@ -266,6 +273,7 @@ nav .nav-ul {
     color: blue;
     font-family: 'Secular One', sans-serif;
 }
+/* nav teks toogle tablet akhir / youtube / instagram/ facebook */
 /* toogle bar akhir Tablet */
 
 /* navbar akhir TABLET  */
@@ -309,7 +317,7 @@ nav .nav-ul {
 
 /* @media query atau breakpoint untuk screen layar handphone */
      @media (min-width: 320px) and (max-width: 767px) {
-         /* navbar awal handphone */
+         /* navbar utama awal handphone */
 nav {
     position: fixed;
     height:50px ;
@@ -364,6 +372,7 @@ nav .nav-ul {
 .logo-medsos {
     display:none;
 }
+  /* navbar utama akhir handphone */
 
 /* toogle-bar awal handphone */
 .toogle-bar {
@@ -420,6 +429,7 @@ nav .nav-ul {
     overflow: auto;
 }
 
+/* nav teks toogle awal handphone / home / about/ contact */
 .nav-teks-toogle {
     display: flex;
     width: 100%;
@@ -431,10 +441,16 @@ nav .nav-ul {
     font-family: 'Secular One', sans-serif;
 }
 
+.nav-teks-toogle span a {
+    color: white;
+}
+
 .nav-teks-toogle span:hover {
     background-color: rgba(25, 8, 218, 0.411);
 }
+/* nav teks toogle akhir handphone / home / about/ contact */ 
 
+/* nav teks toogle handphone awal / youtube / instagram/ facebook */
 .logo-medsos-toogle {
     display: flex;
     width: 100%;
@@ -468,7 +484,9 @@ nav .nav-ul {
     color: blue;
     font-family: 'Secular One', sans-serif;
 }
-/* toogle bar akhir handphone */
-        }
+/* nav teks toogle handphone akhir / youtube / instagram/ facebook */
+/* toogle-bar akhir akhir handphone */
+}
+/* nav toogle-bar utama handphone */
 
 
