@@ -178,9 +178,11 @@ nav .nav-ul {
 
 #check-toogle:checked~.x-toogle {
     display: flex;
-    font-size: 4vw;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 100;
-    transform: translateX(15vw);
     border:3px solid whitesmoke;
     text-shadow: 1px 1px 1px white;
 }
@@ -190,9 +192,9 @@ nav .nav-ul {
 }
 
 .button-toogle {
-    font-size: 40px;
-    background-color: aliceblue;
-    
+    font-size: 35px;
+    border: 5px double white;
+    box-sizing: border-box;
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -204,7 +206,7 @@ nav .nav-ul {
     width: 50vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    top: 0;
+    bottom: 0;
     right: 0;
     overflow: auto;
 }
@@ -229,7 +231,7 @@ nav .nav-ul {
     width: 100%;
     height: 40%;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .h3-logo-medsos-toogle {
@@ -388,10 +390,11 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:40px;
-    background-color: rgb(255, 255, 255);
+    font-size:30px;
+    border: 5px double white;
+    box-shadow: 3px 3px 5px black;
     align-items: center;
-    height: 55px;
+    height: 50px;
     box-sizing: border-box;
     margin-left: -25px;
 }
@@ -399,7 +402,7 @@ nav .nav-ul {
 #check-toogle:checked~.toogle-ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     position: fixed;
     width: 70vw;
