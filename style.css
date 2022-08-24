@@ -4,7 +4,6 @@
     text-decoration: none;
 }
 
-
 /* navbar awal laptop */
 nav {
     position: fixed;
@@ -68,6 +67,11 @@ nav .nav-ul {
     font-family:'Permanent Marker', cursive;
     width:45%;
     font-size: 1.5vw;
+}
+
+.nav-teks a {
+    color: black;
+    text-shadow:1px 1px 2px white, 1px 1px 1px rgb(255, 0, 0);
 }
 
 .logo-medsos {
