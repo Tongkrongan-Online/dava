@@ -236,7 +236,7 @@ nav .nav-ul {
     width: 100%;
     height: 40%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .h3-logo-medsos-toogle {
@@ -407,7 +407,7 @@ nav .nav-ul {
 #check-toogle:checked~.toogle-ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
     position: fixed;
     width: 70vw;
