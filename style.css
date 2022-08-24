@@ -216,6 +216,7 @@ nav .nav-ul {
     overflow: auto;
 }
 
+/* nav teks toogle tablet / home / about/ contact */
 .nav-teks-toogle {
     display: flex;
     width: 100%;
@@ -231,12 +232,13 @@ nav .nav-ul {
     background-color: rgba(25, 8, 218, 0.411);
 }
 
+/* nav teks toogle tablet / youtube / instagram/ facebook */
 .logo-medsos-toogle {
     display: flex;
     width: 100%;
-    height: 40%;
+    height: 25%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .h3-logo-medsos-toogle {
