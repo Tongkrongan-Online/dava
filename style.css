@@ -11,7 +11,6 @@ nav {
     width:100%;
     background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
     border-bottom: 2px solid rgb(121, 0, 0);
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
     display: flex;
 }
 
@@ -71,7 +70,8 @@ nav .nav-ul {
 
 .nav-teks a {
     color: black;
-    text-shadow:1px 1px 2px white, 1px 1px 1px rgb(255, 0, 0);
+    text-shadow:1px 1px 2px white, 1px 1px 1px rgb(251, 255, 0);
+    font-weight: bold;
 }
 
 .logo-medsos {
@@ -94,8 +94,144 @@ nav .nav-ul {
     display: none;
 }
 /* toogle bar awal laptop */
-
 /* navbar akhir laptop  */
+
+/*✅ ul-sub-bab utama awal laptop📃 */
+.ul-sub-bab {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    width: 100vw;
+    height: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: -1;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.li-sub-bab {
+    width: calc(100% - 255px);
+    height: 50px;
+    display: flex;
+    background-color: black;
+}
+/* ul-sub-bab-utama akhir laptop 📃*/
+
+/* ol-content-sub laptop ⏩*/
+.ol-sub-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    list-style-type: none;
+}
+
+.ol-sub-content li a {
+    display: flex;
+    width: max-content;
+    margin-right:20px;
+    color:white;
+}
+
+.ol-sub-content li a:hover {
+    background-color: blue;
+}
+/* ol-content-sub laptop ⏩ */
+
+/* LI TOOGLE SUB-CONTENT 📌 */
+.toogle-sub-bab {
+    display: flex;
+    width: 255px;
+    height: 46px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* SEARCH SUB-AWAL LAPTOP 🔍*/
+.label-search-sub {
+    transform: translate(-30px,1px);
+}
+
+#search-sub {
+    height: 70%;
+    width: 172px;
+    font-size: 1rem;
+    margin-left: 1px;
+}
+
+#search-sub:focus~.label-search-sub{
+    z-index: -1;
+}
+
+#search-sub:focus{
+    box-shadow: 0px 0px 6px 3px skyblue;
+}
+/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+
+/* toogle-sub-bab awal 🔼🔽 laptop*/
+.close-sub {
+    display: none;
+}
+
+#sub-checkbox {
+    position: absolute;
+    top:-1000px;
+}
+
+#sub-checkbox:checked~.open-sub {
+    display: none;
+}
+
+#sub-checkbox:checked~.close-sub {
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+#sub-checkbox:checked~.ol-toogle-sub-content {
+    display: flex;
+    opacity: 1;
+    transition: 1s all ease;
+    transform: translate(0);
+    z-index: auto;
+}
+
+.ol-toogle-sub-content {
+    opacity: 1;
+    transition: 1s all ease;
+    z-index: -10;
+    transform: translateY(-50vh);
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 50vh;
+    width: calc(100vw - 255px);
+    overflow: auto; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.ol-toogle-sub-content li {
+    width:  calc(30vmin);
+}
+
+.ol-toogle-sub-content li a:hover {
+    background-color: blue;
+}
+
+.ol-toogle-sub-content a {
+    color: white;
+}
+/* toogle-sub-bab awal 🔼🔽 laptop */
+/*✅ ul-sub-bab utama akhir laptop  */
+
 
 
 
@@ -117,7 +253,6 @@ nav {
     width:100%;
     background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
     border-bottom: 2px solid rgb(121, 0, 0);
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
     display: flex;
 }
 
@@ -187,7 +322,7 @@ nav .nav-ul {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 10;
     border:3px solid whitesmoke;
     text-shadow: 1px 1px 1px white;
 }
@@ -328,7 +463,6 @@ nav {
     width:100%;
     background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
     border-bottom: 2px solid rgb(121, 0, 0);
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.402);
     display: flex;
 }
 
@@ -396,7 +530,7 @@ nav .nav-ul {
 #check-toogle:checked~.x-toogle {
     display: flex;
     font-size: 30px;
-    z-index: 100;
+    z-index: 10;
     position: relative;
     top: 3px;
     right: 0%;
