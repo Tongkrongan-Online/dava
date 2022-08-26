@@ -572,13 +572,13 @@ nav .nav-ul {
 .button-toogle {
     display: flex;
     font-size:25px;
-    border: 5px double white;
+    border: 6px double white;
     box-shadow: 2px 2px 4px black;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
     box-sizing: border-box;
-    padding-bottom: 3px;
-    margin-top: 6px;
+    padding: 1.5px;
+    margin: 6px 10px 0 0;
 }
 
 #check-toogle:checked~.toogle-ul {
