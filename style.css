@@ -6,10 +6,10 @@
 
 /* navbar awal laptop */
 nav {
-    position: fixed;
-    height:50px ;
-    width:100%;
-    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
+    position : fixed;
+    height: 50px ;
+    width : 100%;
+    background-image : linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
     border-bottom: 2px solid rgb(121, 0, 0);
     display: flex;
 }
@@ -645,7 +645,6 @@ nav .nav-ul {
 
 
 /* toogle-sub-bab awal 🔼🔽 handphone*/
-
 /* li toogle sub-bab awal handphone */
 .toogle-sub-bab {
     display: flex;
@@ -684,27 +683,28 @@ nav .nav-ul {
     opacity: 1;
     transition: 1s all ease;
     z-index: -10;
-    transform: translateY(calc(-100vh + -10px + -100px));
+    transform: translateY(-100vh);
     display: flex;
     position: fixed;
     top: 100px;
-    padding-top: 10px;
     left: 0;
-    height: 100vh;
+    overflow: auto;
+    height: calc(100vh - 100px);
     width: calc(100vw);
-    overflow: auto; 
     flex-direction: row;
     flex-wrap: wrap;
     background-color: black;
     list-style-type:none;
     justify-content: center;
     align-content: space-around;
+    overflow: auto;
 }
 
 .ol-toogle-sub-content li {
     display: flex;
     width: 200px;
     justify-content: center;
+    overflow: auto;
 }
 
 .ol-toogle-sub-content li a:hover {
@@ -713,6 +713,7 @@ nav .nav-ul {
 
 .ol-toogle-sub-content a {
     color: white;
+    overflow: auto;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
@@ -746,7 +747,6 @@ margin-left:80px;
     box-shadow: 0px 0px 6px 3px skyblue;
 }
 /* SEARCH SUB-AKHIR handphone 🔍 */
-
      }
 
 
