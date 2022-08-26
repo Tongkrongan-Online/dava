@@ -434,6 +434,14 @@ nav .nav-ul {
     font-size: 1.3rem;
  }
 
+/* search sub-bab-content tablet 🔎 */
+#search-sub {
+    background-color: white;
+    border: 1px solid black;
+}
+/* search sub-bab-content tablet🔎 */
+
+
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 
@@ -564,13 +572,13 @@ nav .nav-ul {
 .button-toogle {
     display: flex;
     font-size:25px;
-    border: 4px double white;
-    box-shadow: 2px 2px 4px black,inset 0px 0px 0 10px blue;
+    border: 5px double white;
+    box-shadow: 2px 2px 4px black;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
     box-sizing: border-box;
-    margin-top: 10px;
-    height: 100%;
+    padding-bottom: 3px;
+    margin-top: 6px;
 }
 
 #check-toogle:checked~.toogle-ul {
