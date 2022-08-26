@@ -476,9 +476,9 @@ nav {
     position: fixed;
     height:50px ;
     width:100%;
-    background-color: blue;
-    background-image: none;
-    border-bottom: none;
+    background-color: none;
+    background-image: linear-gradient(blue 70%,skyblue 20%,silver 10%,);
+    border-bottom: 2px solid white;
     display: flex;
 }
 
@@ -566,7 +566,8 @@ nav .nav-ul {
     background-color: black;
     align-items: center;
     box-sizing: border-box;
-    margin: 5px 15px 0 0 ;
+    margin-top: 10px;
+    height: 100%;
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -665,6 +666,7 @@ nav .nav-ul {
     width: 172px;
     font-size: 1rem;
     margin-left: 1px;
+    background-color: white;
 }
 
 
