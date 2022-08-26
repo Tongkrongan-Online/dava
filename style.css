@@ -676,7 +676,7 @@ nav .nav-ul {
     opacity: 1;
     transition: 1s all ease;
     transform: translate(0);
-    z-index: auto;
+    z-index: - 1;
 }
 
 .ol-toogle-sub-content {
@@ -686,25 +686,22 @@ nav .nav-ul {
     transform: translateY(-100vh);
     display: flex;
     position: fixed;
-    top: 100px;
-    left: 0;
     overflow: auto;
+    left: 0;
     height: calc(100vh - 100px);
     width: calc(100vw);
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color: black;
     list-style-type:none;
     justify-content: center;
     align-content: space-around;
-    overflow: auto;
 }
 
 .ol-toogle-sub-content li {
     display: flex;
     width: 200px;
     justify-content: center;
-    overflow: auto;
 }
 
 .ol-toogle-sub-content li a:hover {
@@ -713,7 +710,6 @@ nav .nav-ul {
 
 .ol-toogle-sub-content a {
     color: white;
-    overflow: auto;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
