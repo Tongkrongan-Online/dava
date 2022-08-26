@@ -113,7 +113,9 @@ nav .nav-ul {
     width: calc(100% - 255px);
     height: 50px;
     display: flex;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid blue;
+    box-sizing: border-box;
 }
 /* ul-sub-bab-utama akhir laptop 📃*/
 
@@ -131,7 +133,7 @@ nav .nav-ul {
     display: flex;
     width: max-content;
     margin-right:20px;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 .ol-sub-content li a:hover {
@@ -143,10 +145,12 @@ nav .nav-ul {
 .toogle-sub-bab {
     display: flex;
     width: 255px;
-    height: 46px;
+    height: 50px;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid blue;
+    box-sizing: border-box;
     font-size: 1.3rem;
 }
 
@@ -339,7 +343,7 @@ nav .nav-ul {
     font-size:20px;
     border: 8px double white;
     box-shadow: 3px 3px 5px black;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     align-items: center;
     box-sizing: border-box;
     margin: 5px 15px 0 0 ;
@@ -425,8 +429,8 @@ nav .nav-ul {
     width: 255px;
     height: 50px;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color:blue;
+    color: rgb(255, 255, 255);
     font-size: 1.3rem;
  }
 
@@ -478,7 +482,6 @@ nav {
     width:100%;
     background-color: none;
     background-image: linear-gradient(blue 70%,skyblue 20%,silver 10%,);
-    border-bottom: 2px solid white;
     display: flex;
 }
 
@@ -563,7 +566,7 @@ nav .nav-ul {
     font-size:25px;
     border: 4px double white;
     box-shadow: 2px 2px 4px black,inset 0px 0px 0 10px blue;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     align-items: center;
     box-sizing: border-box;
     margin-top: 10px;
@@ -651,11 +654,12 @@ nav .nav-ul {
     width: 255px;
     height: 50px;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-bottom: 2.5px solid blue;
     font-size: 1.3rem;
 }
-
 /* SEARCH SUB-AWAL handphone 🔍*/
 .label-search-sub {
     transform: translate(-30px,1px);
@@ -667,6 +671,7 @@ nav .nav-ul {
     font-size: 1rem;
     margin-left: 1px;
     background-color: white;
+    border: 1px solid black;
 }
 
 
@@ -694,9 +699,12 @@ nav .nav-ul {
     position: absolute;
     z-index: 10;
     width: calc(100vw - 200px);
+    height: 50px;
     left: 0%;
     justify-content: flex-end;
-    background-color: black;
+    border-bottom: 2.5px solid blue;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 #sub-checkbox:checked~.ol-toogle-sub-content {
