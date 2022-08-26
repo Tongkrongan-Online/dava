@@ -733,10 +733,13 @@ margin-left:80px;
     margin-left: 1px;
     position: relative;
     z-index: 10;
+    background-color: white;
+    border: 2px solid blue;
 }
 
 #search-sub:focus~.label-search-sub{
     z-index: -1;
+
 }
 
 #search-sub:focus{
