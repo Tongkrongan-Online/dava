@@ -684,13 +684,13 @@ nav .nav-ul {
     opacity: 1;
     transition: 1s all ease;
     z-index: -10;
-    transform: translateY(-50vh);
+    transform: translateY(calc(-100vh + -10px + -100px));
     display: flex;
     position: fixed;
     top: 100px;
     padding-top: 10px;
     left: 0;
-    height: 30vh;
+    height: 100vh;
     width: calc(100vw);
     overflow: auto; 
     flex-direction: row;
