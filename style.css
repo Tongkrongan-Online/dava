@@ -643,9 +643,8 @@ nav .nav-ul {
 /* nav toogle-bar utama handphone */
 
 
-
-/* toogle-sub-bab awal 🔼🔽 handphone*/
-/* li toogle sub-bab awal handphone */
+/* sub- content-navigasi📌 */
+/* LI TOOGLE SUB-CONTENT handphone 📌 */
 .toogle-sub-bab {
     display: flex;
     width: 255px;
@@ -655,47 +654,80 @@ nav .nav-ul {
     color: white;
     font-size: 1.3rem;
 }
-/* li-toogle sub-bab  akhir handphone*/
+
+/* SEARCH SUB-AWAL handphone 🔍*/
+.label-search-sub {
+    transform: translate(-30px,1px);
+}
+
+#search-sub {
+    height: 70%;
+    width: 172px;
+    font-size: 1rem;
+    margin-left: 1px;
+}
+
+
+#sub-checkbox:checked~#search-sub {
+    display: none;
+}
+
+#search-sub:focus~.label-search-sub{
+    z-index: -1;
+}
+
+#search-sub:focus{
+    box-shadow: 0px 0px 6px 3px skyblue;
+}
+/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+
+/* toogle-sub-bab awal 🔼🔽 handphone*/
+
+#sub-checkbox:checked~.open-sub {
+    display: none;
+}
 
 #sub-checkbox:checked~.close-sub {
     display: flex;
-    position: fixed;
-    justify-content: end;
-    align-items: center;
-    padding-right: 15px;
-    box-sizing: border-box;
-    z-index: 11;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    width: calc(100vw - 255px + 80px);
-    height: 45px;
+    position: absolute;
+    z-index: 10;
+    width: calc(100vw - 200px);
+    left: 0%;
+    justify-content: flex-end;
+    background-color: black;
 }
 
 #sub-checkbox:checked~.ol-toogle-sub-content {
-    display: flex;
-    opacity: 1;
-    transition: 1s all ease;
-    transform: translate(0);
-    z-index: - 1;
+    opacity: none;
+    transition:none;
+    transform: none;
+    z-index: auto;
+    display: grid;
+    width: 100vw;
+    height: 60vh;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit,180px);
+    top: 100px;
 }
 
 .ol-toogle-sub-content {
-    opacity: 1;
-    transition: 1s all ease;
+    opacity:none;
+    transition:none;
     z-index: -10;
-    transform: translateY(-100vh);
-    display: flex;
+    transform: none;
+    display: none;
     position: fixed;
-    overflow: auto;
+    top: 50px;
     left: 0;
-    height: calc(100vh - 100px);
-    width: calc(100vw);
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: none;
+    width: none;
+    overflow: auto; 
+    flex-direction: none;
+    flex-wrap: none;
     background-color: black;
     list-style-type:none;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: none;
+    align-content: none;
 }
 
 .ol-toogle-sub-content li {
@@ -712,37 +744,7 @@ nav .nav-ul {
     color: white;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
-
-/* SEARCH SUB-AWAL 🔍 handphone*/
-.label-search-sub {
-    transform: translate(-30px,1px);
-    z-index: 10;
-}
-
-#sub-checkbox:checked~#search-sub {
-margin-left:80px;
-}
-
-#search-sub {
-    height: 70%;
-    width: 172px;
-    font-size: 1rem;
-    margin-left: 1px;
-    position: relative;
-    z-index: 10;
-    background-color: white;
-    border: 2px solid blue;
-}
-
-#search-sub:focus~.label-search-sub{
-    z-index: -1;
-
-}
-
-#search-sub:focus{
-    box-shadow: 0px 0px 6px 3px skyblue;
-}
-/* SEARCH SUB-AKHIR handphone 🔍 */
+/*✅ ul-sub-bab utama akhir handphone  */
      }
 
 
