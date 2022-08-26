@@ -476,8 +476,9 @@ nav {
     position: fixed;
     height:50px ;
     width:100%;
-    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
-    border-bottom: 2px solid rgb(121, 0, 0);
+    background-color: blue;
+    background-image: none;
+    border-bottom: none;
     display: flex;
 }
 
@@ -559,9 +560,9 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:20px;
-    border: 8px double white;
-    box-shadow: 3px 3px 5px black;
+    font-size:25px;
+    border: 4px double white;
+    box-shadow: 2px 2px 4px black,inset 0px 0px 0 10px blue;
     background-color: black;
     align-items: center;
     box-sizing: border-box;
@@ -661,6 +662,9 @@ nav .nav-ul {
     display: flex;
     position: fixed;
     justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+    box-sizing: border-box;
     z-index: 11;
     left: 0;
     background-color: rgb(0, 0, 0);
@@ -712,7 +716,7 @@ nav .nav-ul {
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
-/* SEARCH SUB-AWAL LAPTOP 🔍 handphone*/
+/* SEARCH SUB-AWAL 🔍 handphone*/
 .label-search-sub {
     transform: translate(-30px,1px);
     z-index: 10;
@@ -738,7 +742,7 @@ margin-left:80px;
 #search-sub:focus{
     box-shadow: 0px 0px 6px 3px skyblue;
 }
-/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+/* SEARCH SUB-AKHIR handphone 🔍 */
 
      }
 
