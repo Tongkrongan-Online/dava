@@ -578,7 +578,7 @@ nav .nav-ul {
     align-items: center;
     box-sizing: border-box;
     padding: 1.5px;
-    margin: 6px 15px 0 0;
+    margin: 6px 20px 0 0;
 }
 
 #check-toogle:checked~.toogle-ul {
