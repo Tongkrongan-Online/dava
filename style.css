@@ -278,7 +278,7 @@ nav {
     height:50px ;
     width:100%;
     background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
-    border-bottom: 2px solid rgb(121, 0, 0);
+    border-bottom: none;
     display: flex;
 }
 
@@ -458,9 +458,71 @@ nav .nav-ul {
     background-color: white;
     border: 1px solid black;
 }
+
+#sub-checkbox:checked~.ol-toogle-sub-content {
+    opacity: none;
+    transition:none;
+    transform: none;
+    z-index: auto;
+    display: grid;
+    width: calc(100vw - 255px);
+    height: 60vh;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit,180px);
+    top: 50px;
+    box-shadow: 0 0 5px 1px;
+    box-shadow: 0 0 5px 2px black;
+}
+
+.ol-toogle-sub-content {
+    opacity:none;
+    transition:none;
+    z-index: -10;
+    transform: none;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: none;
+    width: none;
+    overflow: auto; 
+    flex-direction: none;
+    flex-wrap: none;
+    background-color: rgb(255, 255, 255);
+    list-style-type:none;
+    justify-content: none;
+    align-content: none;
+}
+
+
+.ol-toogle-sub-content li {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+
+.ol-toogle-sub-content li a:hover {
+    background-color: blue;
+}
+
+.ol-toogle-sub-content a {
+    color: rgb(0, 0, 0);
+}
 /* search sub-bab-content tablet🔎 */
 
 
+/* content utama tablet awal 🤩 */
+.content {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    height: 10000px;
+    margin: 120px 0;
+    z-index: -100;
+    border: none;
+    box-shadow: 0px 0px 10px 1px black;
+}
+/* content utama tablet akhir 🤩 */
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 
@@ -736,11 +798,12 @@ nav .nav-ul {
     display: flex;
     position: absolute;
     z-index: 10;
-    width: calc(100vw - 200px);
+    width: calc(100vw );
     height: 50px;
     left: 0%;
-    justify-content: flex-end;
-    border-bottom: 2.5px solid silver;
+    justify-content: center;
+    border-bottom: 2.5px solid blue;
+    box-shadow: 0px 0px 5px 1px black;
     align-items: center;
     background-color: rgb(255, 255, 255);
 }
@@ -756,6 +819,7 @@ nav .nav-ul {
     overflow: auto;
     grid-template-columns: repeat(auto-fit,180px);
     top: 100px;
+    box-shadow: 0 0 5px 1px;
 }
 
 .ol-toogle-sub-content {
@@ -792,6 +856,20 @@ nav .nav-ul {
     color: rgb(0, 0, 0);
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
+
+/* content utama tablet awal 🤩 */
+.content {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    height: 10000px;
+    margin: 120px 0;
+    z-index: -100;
+    border: none;
+    box-shadow: 0px 0px 10px 1px black;
+}
+/* content utama tablet akhir 🤩 */
+
 /*✅ ul-sub-bab utama akhir handphone  */
      }
 
