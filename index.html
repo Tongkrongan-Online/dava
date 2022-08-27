@@ -23,6 +23,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
     <!-- google font akhir -->
+    <!-- link slide image -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- link slide image -->
 </head>
 
 <body>
@@ -36,13 +41,13 @@
             </li>
             <li class="nav-teks">
                 <span>
-                    <a href="#">Home 🏠</a>
+                    <a href="https://dava-rho.vercel.app/">Home</a>
                 </span>
                 <span>
-                    <a href="#">Contact 📞</a>
+                    <a href="#">Contact</a>
                 </span>
                 <span>
-                    <a href="#">About 📌</a>
+                    <a href="#">About</a>
                 </span>
             </li>
             <li class="logo-medsos">
@@ -89,7 +94,7 @@
                             </a>
                         </span>
                         <span>
-                            <a href="#">Home 🏠</a>
+                            <a href="https://dava-rho.vercel.app/">Home 🏠</a>
                         </span>
                         <span>
                             <a href="#">Contact 📞</a>
@@ -179,6 +184,102 @@
         </ul>
     </section>
 
+    <section class="content">
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Our Script -->
+    <script>
+        $(document).ready(function () {
+            console.log('MUHAMMAD DAVA FAHREZA');
+        });
+
+        $(document).ready(function () {
+            $('.image-slide').slick({
+                autoplay: true,
+                autoplaySpeed: 10000,
+                dots: true,
+                fade: true,
+            });
+        });
+    </script>
+
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var
+                    period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i],
+                        JSON.parse(toRotate), period);
+                }
+            } // INJECT CSS var css=document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
 </body>
 
 </html>

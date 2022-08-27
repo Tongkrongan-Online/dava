@@ -4,11 +4,16 @@
     text-decoration: none;
 }
 
+body {
+    background-color: rgb(248, 243, 243);
+}
 /* navbar awal laptop */
 nav {
     position : fixed;
     height: 50px ;
     width : 100%;
+    top: 0;
+    left: 0;
     background-image : linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
     display: flex;
 }
@@ -136,7 +141,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content li a:hover {
-    background-color: blue;
+    background-color: skyblue;
 }
 /* ol-content-sub laptop ⏩ */
 
@@ -160,7 +165,7 @@ nav .nav-ul {
 
 #search-sub {
     height: 70%;
-    width: 172px;
+    width: 152px;
     font-size: 1rem;
     margin-left: 1px;
 }
@@ -237,6 +242,21 @@ nav .nav-ul {
 }
 /* toogle-sub-bab awal 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
+
+
+/* content utama laptop awal 🤩 */
+.content {
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    height: 10000px;
+    margin: 120px 17.5%;
+    z-index: -100;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+/* content utama laptop akhir 🤩 */
 
 
 
@@ -664,8 +684,19 @@ nav .nav-ul {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     box-sizing: border-box;
-    border-bottom: 2.5px solid blue;
+    border-bottom: 2.5px solid grey;
+    box-shadow: 0px 0px 5px 1px black;
     font-size: 1.3rem;
+}
+
+.li-sub-bab {
+    width: calc(100% - 255px);
+    height: 50px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid grey;
+    box-shadow: 0px 0px 5px 1px black;
+    box-sizing: border-box;
 }
 /* SEARCH SUB-AWAL handphone 🔍*/
 .label-search-sub {
@@ -709,7 +740,7 @@ nav .nav-ul {
     height: 50px;
     left: 0%;
     justify-content: flex-end;
-    border-bottom: 2.5px solid blue;
+    border-bottom: 2.5px solid silver;
     align-items: center;
     background-color: rgb(255, 255, 255);
 }
@@ -741,7 +772,7 @@ nav .nav-ul {
     overflow: auto; 
     flex-direction: none;
     flex-wrap: none;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     list-style-type:none;
     justify-content: none;
     align-content: none;
@@ -758,7 +789,7 @@ nav .nav-ul {
 }
 
 .ol-toogle-sub-content a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 /*✅ ul-sub-bab utama akhir handphone  */
