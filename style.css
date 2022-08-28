@@ -6,6 +6,8 @@
 
 body {
     background-color: rgb(248, 243, 243);
+    width: 100vw;
+    overflow-x: hidden;
 }
 /* navbar awal laptop */
 nav {
@@ -221,10 +223,11 @@ nav .nav-ul {
     overflow: auto; 
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     list-style-type:none;
     justify-content: center;
     align-content: space-around;
+    box-shadow: 0 0 5px 2px black;
 }
 
 .ol-toogle-sub-content li {
@@ -238,7 +241,7 @@ nav .nav-ul {
 }
 
 .ol-toogle-sub-content a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 /* toogle-sub-bab awal 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
@@ -246,16 +249,26 @@ nav .nav-ul {
 
 /* content utama laptop awal 🤩 */
 .content {
-    width: 65%;
-    background-color: white;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     height: 10000px;
-    margin: 120px 17.5%;
+    margin: 110px 15%;
     z-index: -100;
     border: 1px solid silver;
+    box-sizing: border-box;
     box-shadow: 0px 0px 10px 1px black;
+    overflow: hidden;
 }
 
+.judul-h1-content {
+    font-family: 'Secular One', sans-serif;
+    padding-left:10px;
+    font-size: 2em;
+    background-color: blue;
+    color: white;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+}
 /* content utama laptop akhir 🤩 */
 
 
@@ -510,6 +523,7 @@ nav .nav-ul {
 }
 /* search sub-bab-content tablet🔎 */
 
+/* toogle sub-bab akhir tablet 🔽🔼 */
 
 /* content utama tablet awal 🤩 */
 .content {
@@ -517,14 +531,14 @@ nav .nav-ul {
     background-color: white;
     position: absolute;
     height: 10000px;
-    margin: 120px 0;
+    margin: 10px 0;
+    padding-top: 100px;
     z-index: -100;
     border: none;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: none;
 }
 /* content utama tablet akhir 🤩 */
 }
-/* toogle sub-bab akhir tablet 🔽🔼 */
 
 
 
@@ -857,18 +871,19 @@ nav .nav-ul {
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
-/* content utama tablet awal 🤩 */
+/* content utama handphone awal 🤩 */
 .content {
     width: 100%;
     background-color: white;
     position: absolute;
     height: 10000px;
-    margin: 120px 0;
+    margin: 10px 0;
+    padding-top: 100px;
     z-index: -100;
     border: none;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: none;
 }
-/* content utama tablet akhir 🤩 */
+/* content utama handphone akhir 🤩 */
 
 /*✅ ul-sub-bab utama akhir handphone  */
      }
