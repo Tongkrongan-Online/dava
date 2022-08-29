@@ -324,13 +324,14 @@ nav .nav-ul {
     font-family: 'Oleo Script', cursive;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 70%;
     padding-left: 20px;
     box-sizing: border-box;
 }
 
 .teks-logo a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: white;
     margin-left: 5px;
 }
@@ -384,10 +385,11 @@ nav .nav-ul {
 .button-toogle {
      display: flex;
     font-size:20px;
-    border: 8px double white;
-    box-shadow: 3px 3px 5px black;
+    border: 10px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px blue;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
+    height: 50px;
     box-sizing: border-box;
     margin: 5px 15px 0 0 ;
 }
@@ -614,8 +616,7 @@ nav {
     position: fixed;
     height:50px ;
     width:100%;
-    background-color: none;
-    background-image: linear-gradient(blue 70%,skyblue 20%,silver 10%,);
+    background-image: linear-gradient(blue, skyblue);
     display: flex;
 }
 
@@ -637,14 +638,15 @@ nav .nav-ul {
 .teks-logo {
     font-family: 'Oleo Script', cursive;
     display: flex;
-    align-items: center;
-    width: 85%;
+    align-items: space-around;
+    justify-content: flex-start;
+    width: 80%;
     padding-left:1px;
     box-sizing: border-box;
 }
 
 .teks-logo a {
-    font-size: 5.5vw;
+    font-size: calc(1em + 2vw);
     color: white;
     margin-left: 5px;
 }
@@ -696,12 +698,13 @@ nav .nav-ul {
 }
 
 .button-toogle {
-    display: flex;
-    font-size:25px;
-    border: 6px double white;
-    box-shadow: 2px 2px 4px black;
+     display: flex;
+    font-size:20px;
+    border: 10px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px blue;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
+    height: 50px;
     box-sizing: border-box;
     padding: 1.5px;
     margin: 6px 25px 0 0; 
@@ -785,10 +788,11 @@ nav .nav-ul {
 /* LI TOOGLE SUB-CONTENT handphone 📌 */
 .toogle-sub-bab {
     display: flex;
-    width: 255px;
+    width: 80px;
     height: 50px;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: blue;
+    border-top: .10000px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     box-sizing: border-box;
     border-bottom: 2.5px solid grey;
@@ -797,30 +801,40 @@ nav .nav-ul {
 }
 
 .li-sub-bab {
-    width: calc(100% - 255px);
+    width: calc(100% - 80px);
     height: 50px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    border-bottom: 2.5px solid grey;
+    border-bottom: 2.5px solid rgb(0, 30, 255);
     box-shadow: 0px 0px 5px 1px black;
     box-sizing: border-box;
 }
 /* SEARCH SUB-AWAL handphone 🔍*/
+#sub-checkbox:checked~.label-search-sub {
+    display: inherit;
+    z-index: 101;
+}
+
+#sub-checkbox:checked~#search-sub {
+    display: inherit;
+    z-index: 100;
+    position: absolute;
+    right: 10px;
+}
+
 .label-search-sub {
-    transform: translate(-30px,1px);
+    transform: translate(30px,0px);
+    display: none;
+    font-size: 1.3em;
 }
 
 #search-sub {
-    height: 70%;
-    width: 172px;
+    height: 40px;
+    width: 180px;
     font-size: 1rem;
     margin-left: 1px;
     background-color: white;
     border: 1px solid black;
-}
-
-
-#sub-checkbox:checked~#search-sub {
     display: none;
 }
 
@@ -831,7 +845,7 @@ nav .nav-ul {
 #search-sub:focus{
     box-shadow: 0px 0px 6px 3px skyblue;
 }
-/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+/* SEARCH SUB-AKHIR handphone 🔍 */
 
 /* toogle-sub-bab awal 🔼🔽 handphone*/
 
@@ -842,12 +856,12 @@ nav .nav-ul {
 #sub-checkbox:checked~.close-sub {
     display: flex;
     position: absolute;
+    left: 0;
     z-index: 10;
-    width: calc(100vw );
+    width: calc(100vw);
     height: 50px;
     left: 0%;
-    justify-content: center;
-    border-bottom: 2.5px solid blue;
+    justify-content: flex-start;
     box-shadow: 0px 0px 5px 1px black;
     align-items: center;
     background-color: rgb(255, 255, 255);
