@@ -40,8 +40,6 @@
         display: inline-flex;
         width: 100%;
         position: absolute;
-        top: 0;
-        transform: translateY(calc(3vw));
     }
 
     .image-slide .image-header img {
@@ -53,7 +51,7 @@
     .slick-next {
         width: 50px;
         height: 50px;
-        z-index: 1;
+        z-index: 100;
     }
 
     .slick-prev {
@@ -113,6 +111,7 @@
         width: 85%;
         height: 30vw;
         margin: 0 7.5%;
+        background-color: rgba(0, 0, 0, 0);
         justify-content: center;
         align-items: center;
         font-family: 'Paytone One', sans-serif;
@@ -129,7 +128,6 @@
             width: 100%;
             position: absolute;
             top: 0;
-            transform: translateY(calc(100px + 3vw + 1vh));
         }
 
         .image-slide .image-header img {
@@ -140,11 +138,12 @@
         /* move dotted nav position */
         .text-image-header {
             position: absolute;
+            top: 0;
             z-index: 100;
             display: flex;
-            width: 90%;
+            width: 80%;
             height: 40vw;
-            margin: 0 5%;
+            margin: 0 10%;
             justify-content: center;
             align-items: center;
             font-family: 'Paytone One', sans-serif;
@@ -163,20 +162,20 @@
             display: inline-flex;
             width: 100%;
             position: absolute;
-            transform: translateY(calc(100px + 3vw + 1vh));
         }
 
         .image-slide .image-header img {
             width: 100vw;
-            height: 50vw;
+            height: 40vh;
         }
 
         .text-image-header {
             position: absolute;
+            top: 0;
             z-index: 100;
             display: flex;
             width: 70vw;
-            height: 50vw;
+            height: 40vh;
             margin: 0 15%;
             justify-content: center;
             align-items: center;
@@ -184,7 +183,7 @@
             color: rgb(27, 0, 181);
             text-shadow: 1px 1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255);
             text-align: center;
-            font-size: 4vw;
+            font-size: 4.5vw;
         }
     }
 
@@ -346,13 +345,13 @@
         </ul>
     </section>
 
-    <section class="content">
-        <h1 class="judul-h1-content">
-            Website Tongkrongan Online
-        </h1>
+    <h1 class="judul-h1-content">
+        Website Tongkrongan Online
+    </h1>
 
+    <section class="content">
         <h2 class="typewrite text-white text-image-header" data-period="5000"
-            data-type='[ "Selamat Datang di Website saya Tongkrongan-Online 😊","Terima Kasih Sudah Mengunjungi Website Saya yang sederhana 😟","Jaga Kesehatan Kamu Ya 💪!!! supaya lain kali bisa mampir lagi ke website ini😇","Salam dari saya Muhammad Dava Fahreza atau Tongkrongan-online 🙏 senang berjumpa dengan kamu 🥰","Semoga hari kamu menyenangkan 🥳 dan jangan lupa bagikan website ini dengan teman-teman kamu 🤩" ]'>
+            data-type='[ "Selamat Datang di Website saya Tongkrongan-Online 😊","Terima Kasih Sudah Mengunjungi Website Saya yang sederhana 😟","Jaga Kesehatan Kamu Ya 💪!!! supaya lain kali bisa berkunjung lagi ke website ini😇","Salam dari saya Muhammad Dava Fahreza atau Tongkrongan-online 🙏 senang berjumpa dengan kamu 🥰","Semoga hari kamu menyenangkan 🥳 dan jangan lupa bagikan website ini dengan teman-teman kamu 🤩" ]'>
             <span class="wrap"></span>
         </h2>
         <div class="image-slide">

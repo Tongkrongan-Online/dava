@@ -57,7 +57,7 @@ nav .nav-ul {
 }
 
 .teks-logo a {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     color: white;
     margin-left: 5px;
 }
@@ -228,6 +228,8 @@ nav .nav-ul {
     justify-content: center;
     align-content: space-around;
     box-shadow: 0 0 5px 2px black;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 
 .ol-toogle-sub-content li {
@@ -252,20 +254,29 @@ nav .nav-ul {
     width: 70%;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    height: 10000px;
-    margin: 110px 15%;
+    height: 30vw;
+    margin: 0 15%;
     z-index: -100;
     border: 1px solid silver;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px 1px black;
     overflow: hidden;
-}
+} 
 
 .judul-h1-content {
+    width: 70%;
+    position: relative;
+    margin: 105px 15% 0;
+    box-sizing: border-box;
+    z-index: -99;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px black;
     font-family: 'Secular One', sans-serif;
     padding-left:10px;
     font-size: calc(1.5vw + 1.5vh);
     background-color: blue;
+    opacity: 1;
     color: white;
     text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
 }
@@ -319,7 +330,7 @@ nav .nav-ul {
 }
 
 .teks-logo a {
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
     margin-left: 5px;
 }
@@ -485,6 +496,8 @@ nav .nav-ul {
     top: 50px;
     box-shadow: 0 0 5px 1px;
     box-shadow: 0 0 5px 2px black;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
 }
 
 .ol-toogle-sub-content {
@@ -526,13 +539,31 @@ nav .nav-ul {
 /* toogle sub-bab akhir tablet 🔽🔼 */
 
 /* content utama tablet awal 🤩 */
+.judul-h1-content {
+    width: 100%;
+    position: relative;
+    margin: 105px 0 0;
+    box-sizing: border-box;
+    z-index: -99;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px black;
+    font-family: 'Secular One', sans-serif;
+    padding-left:10px;
+    font-size: calc(1.5vw + 1.5vh);
+    background-color: blue;
+    opacity: 1;
+    color: white;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+}
+
 .content {
     width: 100%;
     background-color: white;
     position: absolute;
     height: 10000px;
-    margin: 10px 0;
-    padding-top: 100px;
+    margin: 0 0;
+    padding-top: 94px;
     z-index: -100;
     border: none;
     box-shadow: none;
@@ -613,7 +644,7 @@ nav .nav-ul {
 }
 
 .teks-logo a {
-    font-size: 7vw;
+    font-size: 5.5vw;
     color: white;
     margin-left: 5px;
 }
@@ -834,6 +865,7 @@ nav .nav-ul {
     grid-template-columns: repeat(auto-fit,180px);
     top: 100px;
     box-shadow: 0 0 5px 1px;
+    border-bottom: 2px solid blue;
 }
 
 .ol-toogle-sub-content {
@@ -872,13 +904,31 @@ nav .nav-ul {
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
 /* content utama handphone awal 🤩 */
+.judul-h1-content {
+    width: 100%;
+    position: relative;
+    margin: 105px 0 0;
+    box-sizing: border-box;
+    z-index: -99;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px black;
+    font-family: 'Secular One', sans-serif;
+    padding-left:10px;
+    font-size: calc(1.5vw + 1.5vh);
+    background-color: blue;
+    opacity: 1;
+    color: white;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+}
+
 .content {
     width: 100%;
     background-color: white;
     position: absolute;
     height: 10000px;
-    margin: 10px 0;
-    padding-top: 100px;
+    margin: 0 0;
+    padding-top: 0;
     z-index: -100;
     border: none;
     box-shadow: none;
