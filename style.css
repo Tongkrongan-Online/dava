@@ -387,15 +387,16 @@ nav .nav-ul {
 }
 
 .button-toogle {
-     display: flex;
-    font-size:20px;
-    border: 10px solid rgb(52, 0, 0);
-    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px rgb(200, 218, 0);
-    background-color: rgba(0, 0, 0, 0);
+       display: flex;
+    font-size:18px;
+    border: 5px double silver;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0),inset 0 0 5px 3px rgb(255, 0, 0);
+    background-color: rgb(166, 255, 0);
     align-items: center;
     height: 40px;
     box-sizing: border-box;
     margin: 5px 15px 0 0 ;
+    padding: 1.5px;
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -703,9 +704,9 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:20px;
-    border: 10px double rgb(55, 255, 0);
-    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px rgb(255, 0, 0);
+    font-size:18px;
+    border: 5px double silver;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0),inset 0 0 5px 3px rgb(255, 0, 0);
     background-color: rgb(166, 255, 0);
     align-items: center;
     height: 40px;
