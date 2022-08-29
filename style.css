@@ -191,6 +191,10 @@ nav .nav-ul {
     top:-1000px;
 }
 
+.open-sub {
+    color: white;
+}
+
 #sub-checkbox:checked~.open-sub {
     display: none;
 }
@@ -385,11 +389,11 @@ nav .nav-ul {
 .button-toogle {
      display: flex;
     font-size:20px;
-    border: 10px solid rgb(0, 0, 0);
-    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px blue;
+    border: 10px solid rgb(52, 0, 0);
+    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px rgb(200, 218, 0);
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    height: 50px;
+    height: 40px;
     box-sizing: border-box;
     margin: 5px 15px 0 0 ;
 }
@@ -698,13 +702,13 @@ nav .nav-ul {
 }
 
 .button-toogle {
-     display: flex;
+    display: flex;
     font-size:20px;
-    border: 10px solid rgb(0, 0, 0);
-    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px blue;
-    background-color: rgba(0, 0, 0, 0);
+    border: 10px double rgb(55, 255, 0);
+    box-shadow: 3px 3px 5px black,inset 0 0 5px 3px rgb(255, 0, 0);
+    background-color: rgb(166, 255, 0);
     align-items: center;
-    height: 50px;
+    height: 40px;
     box-sizing: border-box;
     padding: 1.5px;
     margin: 6px 25px 0 0; 
@@ -868,14 +872,11 @@ nav .nav-ul {
 }
 
 #sub-checkbox:checked~.ol-toogle-sub-content {
-    opacity: none;
-    transition:none;
-    transform: none;
     z-index: auto;
     display: grid;
     width: 100vw;
-    height: 60vh;
     overflow: auto;
+    height: fit-content;
     grid-template-columns: repeat(auto-fit,180px);
     top: 100px;
     box-shadow: 0 0 5px 1px;
@@ -883,10 +884,7 @@ nav .nav-ul {
 }
 
 .ol-toogle-sub-content {
-    opacity:none;
-    transition:none;
     z-index: -10;
-    transform: none;
     display: none;
     position: fixed;
     top: 50px;
@@ -904,7 +902,6 @@ nav .nav-ul {
 
 .ol-toogle-sub-content li {
     display: flex;
-    width: 200px;
     justify-content: center;
 }
 
