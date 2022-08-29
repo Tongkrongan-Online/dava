@@ -40,7 +40,7 @@
         display: inline-flex;
         width: 100%;
         position: absolute;
-        top: 47px;
+        top: 3.5vw;
     }
 
     .image-slide .image-header img {
@@ -111,7 +111,6 @@
         display: flex;
         width: 85%;
         height: 30vw;
-        top: 50;
         margin: 0 7.5%;
         justify-content: center;
         align-items: center;
@@ -119,16 +118,16 @@
         color: rgb(27, 0, 181);
         text-shadow: 1px 1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255);
         text-align: center;
-        font-size: 2em;
+        font-size: 3vw;
     }
 
-    /* breakpoint tablet dan handphone image-slid */
-    @media (min-width: 320px) and (max-width: 1024px) {
+    /* breakpoint tablet image-slid */
+    @media (min-width: 768px) and (max-width: 1024px) {
         .image-slide {
             display: inline-flex;
             width: 100%;
             position: absolute;
-            top: 147px;
+            top: calc(118px + 1.5vw);
         }
 
         .image-slide .image-header img {
@@ -136,70 +135,13 @@
             height: 40vw;
         }
 
-        .slick-prev,
-        .slick-next {
-            width: 50px;
-            height: 50px;
-            z-index: 1;
-        }
-
-        .slick-prev {
-            left: 5px;
-        }
-
-        .slick-next {
-            right: 5px;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            font-size: 40px;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
         /* move dotted nav position */
-        .slick-dots {
-            bottom: 15px;
-        }
-
-        .slick-dots li button:before {
-            font-size: 12px;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            opacity: 1;
-        }
-
-        .slick-dots li.slick-active button:before {
-            color: #000dff;
-            background-color: blue;
-            content: "👁‍🗨";
-            border-radius: 50%;
-        }
-
-        .slider:not(:hover) .slick-arrow,
-        .slider:not(:hover) .slick-dots {
-            opacity: 0;
-        }
-
-        .slick-arrow,
-        .slick-dots {
-            transition: opacity 0.5s ease-out;
-        }
-
-        .image-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
         .text-image-header {
             position: absolute;
             z-index: 100;
             display: flex;
             width: 90%;
-            height: 30vw;
-            top: 50;
+            height: 40vw;
             margin: 0 5%;
             justify-content: center;
             align-items: center;
@@ -207,11 +149,44 @@
             color: rgb(27, 0, 181);
             text-shadow: 1px 1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255);
             text-align: center;
-            font-size: 2em;
+            font-size: 6vw;
         }
     }
 
-    /* breakpoint tablet image-slid */
+    /* breakpoint tablet image-slide */
+
+    /* breakpoint handphone image-slid */
+    @media (min-width: 320px) and (max-width: 767px) {
+        .image-slide {
+            display: inline-flex;
+            width: 100%;
+            position: absolute;
+            top: calc(118px + 1.5vw);
+        }
+
+        .image-slide .image-header img {
+            width: 100vw;
+            height: 50vw;
+        }
+
+        .text-image-header {
+            position: absolute;
+            z-index: 100;
+            display: flex;
+            width: 70vw;
+            height: 50vw;
+            margin: 0 15%;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Paytone One', sans-serif;
+            color: rgb(27, 0, 181);
+            text-shadow: 1px 1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255);
+            text-align: center;
+            font-size: 5vw;
+        }
+    }
+
+    /* breakpoint handphone image-slide */
 </style>
 
 

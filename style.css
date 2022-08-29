@@ -264,7 +264,7 @@ nav .nav-ul {
 .judul-h1-content {
     font-family: 'Secular One', sans-serif;
     padding-left:10px;
-    font-size: 2em;
+    font-size: calc(1.5vw + 1.5vh);
     background-color: blue;
     color: white;
     text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
