@@ -462,7 +462,7 @@ nav .nav-ul {
 .ol-sub-content-toogle {
     width:calc(100vw - 255px);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
@@ -481,7 +481,6 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li a {
     color: black;
-    width: fit-content;
     font-size: 1.2rem;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
