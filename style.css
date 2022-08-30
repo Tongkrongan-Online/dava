@@ -329,7 +329,7 @@ nav .nav-ul {
 
 #check-toogle:checked~.x-toogle {
     display: flex;
-    font-size: 40px;
+    font-size: 25px;
     position: fixed;
     top: 0;
     right: 0;
@@ -343,16 +343,15 @@ nav .nav-ul {
 }
 
 .button-toogle {
-       display: flex;
+    display: flex;
     font-size:18px;
-    border: 5px double silver;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    border: 8px double silver;
     background-color: rgb(255, 255, 255);
     align-items: center;
     height: 40px;
     box-sizing: border-box;
-    margin: 5px 15px 0 0 ;
-    padding: 1.5px;
+    padding: 1.5px 2px;
+    margin: 10px 0px 0 0; 
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -594,11 +593,11 @@ nav .nav-ul {
 
 #check-toogle:checked~.x-toogle {
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     z-index: 10;
-    position: relative;
-    top: 3px;
-    right: 0%;
+    position: fixed;
+    top: 0px;
+    right: 0;
     border:3px solid whitesmoke;
     text-shadow: 1px 1px 1px white;
 }
@@ -616,7 +615,7 @@ nav .nav-ul {
     height: 40px;
     box-sizing: border-box;
     padding: 1.5px 2px;
-    margin: 6px 25px 0 0; 
+    margin: 10px 25px 0 0; 
 }
 
 #check-toogle:checked~.toogle-ul {
