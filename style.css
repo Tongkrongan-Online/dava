@@ -464,7 +464,7 @@ nav .nav-ul {
     height: fit-content;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
 }
@@ -472,6 +472,7 @@ nav .nav-ul {
 .ol-sub-content-toogle li {
     width: max-content;
     height: fit-content;
+    margin-right: 100px;
 }
 
 .ol-sub-content-toogle li:hover {
