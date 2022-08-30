@@ -446,7 +446,7 @@ nav .nav-ul {
  }
 
  #sub-checkbox:checked~.toogle-content-sub-bab {
-    display: flex;
+    display: grid;
     height: 30vh;
     width:calc(100vw - 255px);
     top: 50px;
@@ -454,6 +454,7 @@ nav .nav-ul {
     position: fixed;
     z-index: 100;
     overflow: auto;
+    grid-template-columns: repeat(auto-fit,max-content);
     border-right: 3px solid blue;
     border-bottom: 3px solid blue;
     background-color: white;
@@ -480,7 +481,6 @@ nav .nav-ul {
 .ol-sub-content-toogle li a {
     color: black;
     font-size: 1.2rem;
-    margin-right: 20px;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
