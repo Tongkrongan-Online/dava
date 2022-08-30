@@ -464,9 +464,9 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle {
-    width:calc(100vw);
+    width:calc(100vw - 255px);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
