@@ -471,7 +471,6 @@ nav .nav-ul {
 .ol-sub-content-toogle li {
     width:max-content;
     height: fit-content;
-    padding-right: 200px;
 }
 
 .ol-sub-content-toogle li:hover {
@@ -481,7 +480,7 @@ nav .nav-ul {
 .ol-sub-content-toogle li a {
     color: black;
     font-size: 1.2rem;
-    width: max-content;
+    margin-right: 20px;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
