@@ -469,10 +469,9 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    width:fit-content;
+    width:max-content;
     height: fit-content;
     margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .ol-sub-content-toogle li:hover {
