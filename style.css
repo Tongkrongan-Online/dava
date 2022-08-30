@@ -442,7 +442,7 @@ nav .nav-ul {
     align-items: center;
     background-color:blue;
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
  }
 
  #sub-checkbox:checked~.toogle-content-sub-bab {
@@ -471,7 +471,7 @@ nav .nav-ul {
 .ol-sub-content-toogle li {
     width:max-content;
     height: fit-content;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .ol-sub-content-toogle li:hover {
@@ -480,7 +480,7 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li a {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
