@@ -448,32 +448,18 @@ nav .nav-ul {
     display: none;
 }
 
-#sub-checkbox:checked~.close-sub {
-    display: flex;
-    position: absolute;
-    left: 0;
-    z-index: 10;
-    width: calc(100vw);
-    height: 50px;
-    left: 0%;
-    justify-content: flex-start;
-    box-shadow: 0px 0px 5px 1px black;
-    align-items: center;
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-
  #sub-checkbox:checked~.toogle-content-sub-bab {
     display: flex;
     height: 30vh;
-    width:calc(100vw);
-    top: 100px;
+    width:calc(100vw - 255px);
+    top: 50px;
     left: 0;
     position: fixed;
     z-index: 100;
     overflow: auto;
-    border-right: 0 solid blue;
-    border-bottom: 1.5px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
     background-color: white;
 }
 
