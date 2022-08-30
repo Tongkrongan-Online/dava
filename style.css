@@ -462,6 +462,7 @@ nav .nav-ul {
 .ol-sub-content-toogle {
     display: flex;
     width: 100%;
+    overflow: auto;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
@@ -469,7 +470,8 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    width:120px;
+    display: inline-flex;
+    width: max-content;
     height: fit-content;
 }
 
