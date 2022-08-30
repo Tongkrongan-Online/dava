@@ -170,6 +170,7 @@ nav .nav-ul {
     width: 152px;
     font-size: 1rem;
     margin-left: 1px;
+    background-color: white;
 }
 
 #search-sub:focus~.label-search-sub{
@@ -249,42 +250,6 @@ nav .nav-ul {
 }
 /* toogle-sub-bab akhir 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
-
-
-/* content utama laptop awal 🤩 */
-.content {
-    width: 70%;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    height: 30vw;
-    margin: 0 15%;
-    z-index: -100;
-    border: 1px solid silver;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px 1px black;
-    overflow: hidden;
-} 
-
-.judul-h1-content {
-    width: 70%;
-    position: relative;
-    margin: 105px 15% 0;
-    box-sizing: border-box;
-    z-index: -99;
-    border: 1px solid silver;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px 1px black;
-    font-family: 'Secular One', sans-serif;
-    padding-left:10px;
-    font-size: calc(1.5vw + 1.5vh);
-    background-color: blue;
-    opacity: 1;
-    color: white;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
-}
-/* content utama laptop akhir 🤩 */
-
-
 
 
 
@@ -386,14 +351,13 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:19px;
-    border: 8px double silver;
+    font-size:18px;
+    border: 10px double silver;
     background-color: rgb(255, 255, 255);
     align-items: center;
-    height: 40px;
     box-sizing: border-box;
-    padding: 1.5px 2px;
-    margin: 10px 25px 0 0; 
+    padding:3px 3px;
+    margin: 6px 0 0 0; 
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -505,7 +469,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    width:max-content;
+    width:fit-content;
     height: fit-content;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -520,38 +484,6 @@ nav .nav-ul {
     font-size: 1.2rem;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
-
-/* content utama tablet awal 🤩 */
-.judul-h1-content {
-    width: 100%;
-    position: relative;
-    margin: 105px 0 0;
-    box-sizing: border-box;
-    z-index: -99;
-    border: 1px solid silver;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px 1px black;
-    font-family: 'Secular One', sans-serif;
-    padding-left:10px;
-    font-size: calc(1.5vw + 1.5vh);
-    background-color: blue;
-    opacity: 1;
-    color: white;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
-}
-
-.content {
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    height: 10000px;
-    margin: 0 0;
-    padding-top: 94px;
-    z-index: -100;
-    border: none;
-    box-shadow: none;
-}
-/* content utama tablet akhir 🤩 */
 }
 
 
@@ -896,39 +828,6 @@ nav .nav-ul {
     font-size: 1.1rem;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
-
-/* content utama handphone awal 🤩 */
-.judul-h1-content {
-    width: 100%;
-    position: relative;
-    margin: 105px 0 0;
-    box-sizing: border-box;
-    z-index: -99;
-    border: 1px solid silver;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px 1px black;
-    font-family: 'Secular One', sans-serif;
-    padding-left:10px;
-    font-size: calc(1.5vw + 1.5vh);
-    background-color: blue;
-    opacity: 1;
-    color: white;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
-}
-
-.content {
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    height: 10000px;
-    margin: 0 0;
-    padding-top: 0;
-    z-index: -100;
-    border: none;
-    box-shadow: none;
-}
-/* content utama handphone akhir 🤩 */
-
 /*✅ ul-sub-bab utama akhir handphone  */
      }
 
