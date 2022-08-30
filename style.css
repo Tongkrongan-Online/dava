@@ -461,12 +461,11 @@ nav .nav-ul {
 
 .ol-sub-content-toogle {
     width:calc(100vw - 255px);
-    display: grid;
-    grid-template-columns: repeat(auto-fit,150px);
-    /* flex-direction: row;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .ol-sub-content-toogle li {
@@ -480,7 +479,7 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li a {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
