@@ -447,7 +447,7 @@ nav .nav-ul {
  #sub-checkbox:checked~.toogle-content-sub-bab {
     display: flex;
     height: 30vh;
-    width:calc(100vw - 255px);
+    width:calc(100% - 255px);
     top: 50px;
     left: 0;
     position: fixed;
@@ -461,6 +461,7 @@ nav .nav-ul {
 
 .ol-sub-content-toogle {
     display: flex;
+    width: calc(100% - 255px);
     background-color: brown;
     flex-direction: row;
     flex-wrap: wrap;
