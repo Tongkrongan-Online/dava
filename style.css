@@ -444,23 +444,41 @@ nav .nav-ul {
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
  }
+ #sub-checkbox:checked~.open-sub {
+    display: none;
+}
+
+#sub-checkbox:checked~.close-sub {
+    display: flex;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: calc(100vw);
+    height: 50px;
+    left: 0%;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 5px 1px black;
+    align-items: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
  #sub-checkbox:checked~.toogle-content-sub-bab {
     display: flex;
     height: 30vh;
-    width:calc(100vw - 255px);
-    top: 50px;
+    width:calc(100vw);
+    top: 100px;
     left: 0;
     position: fixed;
     z-index: 100;
     overflow: auto;
-    border-right: 3px solid blue;
-    border-bottom: 3px solid blue;
+    border-right: 0 solid blue;
+    border-bottom: 1.5px solid blue;
     background-color: white;
 }
 
 .ol-sub-content-toogle {
-    width:100%;
-    height: fit-content;
+    width:calc(100vw);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -469,9 +487,10 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    width: max-content;
+    width:max-content;
     height: fit-content;
-    margin-right: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .ol-sub-content-toogle li:hover {
@@ -480,7 +499,7 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li a {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
