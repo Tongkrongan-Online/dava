@@ -252,6 +252,33 @@ nav .nav-ul {
 /* toogle-sub-bab akhir 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
 
+/* content utama website laptop awal 💻 */
+.content-utama {
+    width: 70%;
+    margin: auto;
+}
+
+.pembungkus-content {
+    z-index:-100;
+    position: absolute;
+    top: 105px;
+    width: 70%;
+    background-color: blue;
+    color: white;
+    font-family:'Secular One', sans-serif;
+    font-size: 1.1rem;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    padding-left: 10px;
+    border-radius: 10%;
+}
+/* content utama website laptop awal 💻 */
+
+
+
+
+
+
+
 
 
 
@@ -486,6 +513,27 @@ nav .nav-ul {
     font-size: 1.3rem;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
+
+/* content utama website tablet awal 🦍*/
+.content-utama {
+    width: 100%;
+    margin: 0;
+}
+
+.pembungkus-content {
+    z-index:-100;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-family:'Secular One', sans-serif;
+    font-size: 1rem;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    padding-left: 10px;
+    border-radius: 0%;
+}
+/* content utama website tablet awal 🦍 */
 }
 
 
@@ -832,6 +880,29 @@ nav .nav-ul {
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 /*✅ ul-sub-bab utama akhir handphone  */
+
+/* content utama website tablet awal 🦍*/
+.content-utama {
+    width: 100%;
+    margin: 0;
+}
+
+.pembungkus-content {
+    z-index:-100;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-family:'Secular One', sans-serif;
+    font-size: .8rem;
+    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    padding-left: 10px;
+    border-radius: 0%;
+}
+/* content utama website tablet awal 🦍 */
+
+
      }
 
 
