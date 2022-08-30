@@ -234,6 +234,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
+    display: flex;
     width:max-content;
     height: fit-content;
     margin-right: 20px;
@@ -462,6 +463,7 @@ nav .nav-ul {
 .ol-sub-content-toogle {
     display: flex;
     width: 100%;
+    height: max-content;
     overflow: auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -470,7 +472,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    display: inline-flex;
+    display: flex;
     width: max-content;
     height: fit-content;
 }
@@ -813,6 +815,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
+    display: flex;
     width:max-content;
     height: fit-content;
     margin-right: 10px;
