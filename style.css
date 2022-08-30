@@ -205,50 +205,6 @@ nav .nav-ul {
     z-index: 10;
 }
 
-#sub-checkbox:checked~.ol-toogle-sub-content {
-    display: flex;
-    opacity: 1;
-    transition: 1s all ease;
-    transform: translate(0);
-    z-index: auto;
-}
-
-.ol-toogle-sub-content {
-    opacity: 1;
-    transition: 1s all ease;
-    z-index: -10;
-    transform: translateY(-50vh);
-    display: flex;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    height: 30vh;
-    width: calc(100vw - 255px);
-    overflow: auto; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    list-style-type:none;
-    justify-content: center;
-    align-content: space-around;
-    box-shadow: 0 0 5px 2px black;
-    border-right: 2px solid blue;
-    border-bottom: 2px solid blue;
-}
-
-.ol-toogle-sub-content li {
-    display: flex;
-    width: 200px;
-    justify-content: center;
-}
-
-.ol-toogle-sub-content li a:hover {
-    background-color: blue;
-}
-
-.ol-toogle-sub-content a {
-    color: rgb(0, 0, 0);
-}
 /* toogle-sub-bab awal 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
 
@@ -390,8 +346,8 @@ nav .nav-ul {
        display: flex;
     font-size:18px;
     border: 5px double silver;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0),inset 0 0 5px 3px rgb(255, 0, 0);
-    background-color: rgb(166, 255, 0);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     align-items: center;
     height: 40px;
     box-sizing: border-box;
@@ -490,57 +446,6 @@ nav .nav-ul {
     border: 1px solid black;
 }
 
-#sub-checkbox:checked~.ol-toogle-sub-content {
-    opacity: none;
-    transition:none;
-    transform: none;
-    z-index: auto;
-    display: grid;
-    width: calc(100vw - 255px);
-    height: 60vh;
-    overflow: auto;
-    grid-template-columns: repeat(auto-fit,180px);
-    top: 50px;
-    box-shadow: 0 0 5px 1px;
-    box-shadow: 0 0 5px 2px black;
-    border-bottom: 2px solid blue;
-    border-right: 2px solid blue;
-}
-
-.ol-toogle-sub-content {
-    opacity:none;
-    transition:none;
-    z-index: -10;
-    transform: none;
-    display: none;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    height: none;
-    width: none;
-    overflow: auto; 
-    flex-direction: none;
-    flex-wrap: none;
-    background-color: rgb(255, 255, 255);
-    list-style-type:none;
-    justify-content: none;
-    align-content: none;
-}
-
-
-.ol-toogle-sub-content li {
-    display: flex;
-    width: 200px;
-    justify-content: center;
-}
-
-.ol-toogle-sub-content li a:hover {
-    background-color: blue;
-}
-
-.ol-toogle-sub-content a {
-    color: rgb(0, 0, 0);
-}
 /* search sub-bab-content tablet🔎 */
 
 /* toogle sub-bab akhir tablet 🔽🔼 */
@@ -706,8 +611,8 @@ nav .nav-ul {
     display: flex;
     font-size:18px;
     border: 5px double silver;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0),inset 0 0 5px 3px rgb(255, 0, 0);
-    background-color: rgb(166, 255, 0);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     align-items: center;
     height: 40px;
     box-sizing: border-box;
@@ -870,48 +775,6 @@ nav .nav-ul {
     box-shadow: 0px 0px 5px 1px black;
     align-items: center;
     background-color: rgb(255, 255, 255);
-}
-
-#sub-checkbox:checked~.ol-toogle-sub-content {
-    z-index: auto;
-    display: grid;
-    width: 100vw;
-    overflow: auto;
-    height: fit-content;
-    grid-template-columns: repeat(auto-fit,180px);
-    top: 100px;
-    box-shadow: 0 0 5px 1px;
-    border-bottom: 2px solid blue;
-}
-
-.ol-toogle-sub-content {
-    z-index: -10;
-    display: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    height: none;
-    width: none;
-    overflow: auto; 
-    flex-direction: none;
-    flex-wrap: none;
-    background-color: rgb(255, 255, 255);
-    list-style-type:none;
-    justify-content: none;
-    align-content: none;
-}
-
-.ol-toogle-sub-content li {
-    display: flex;
-    justify-content: center;
-}
-
-.ol-toogle-sub-content li a:hover {
-    background-color: blue;
-}
-
-.ol-toogle-sub-content a {
-    color: rgb(0, 0, 0);
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
