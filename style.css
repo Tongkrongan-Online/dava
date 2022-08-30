@@ -444,7 +444,6 @@ nav .nav-ul {
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
  }
-
  #sub-checkbox:checked~.toogle-content-sub-bab {
     display: flex;
     height: 30vh;
