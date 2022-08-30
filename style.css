@@ -256,10 +256,6 @@ nav .nav-ul {
 
 
 
-
-
-
-
 /* @media query atau breakpoint untuk screen layar tablet */
  @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -461,20 +457,20 @@ nav .nav-ul {
     border-bottom: 2px solid blue;
     box-sizing: border-box;
     background-color: white;
+    flex-direction: row;
+    font-size: 1.3rem;
 }
 
 .ol-sub-content-toogle {
     width:calc(100vw - 255px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
 }
 
 .ol-sub-content-toogle li {
-    display: flex;
-    flex-direction: column;
     width:max-content;
     height: fit-content;
     margin-right: 10px;
