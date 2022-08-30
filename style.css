@@ -442,7 +442,7 @@ nav .nav-ul {
     align-items: center;
     background-color:blue;
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
  }
 
  #sub-checkbox:checked~.toogle-content-sub-bab {
@@ -469,7 +469,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
-    width:fit-content;
+    width:cover;
     height: fit-content;
     margin-right: 20px;
     margin-bottom: 20px;
