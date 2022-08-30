@@ -329,12 +329,12 @@ nav .nav-ul {
 
 #check-toogle:checked~.x-toogle {
     display: flex;
-    font-size: 25px;
+    font-size: 35px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 10;
-    border:3px solid whitesmoke;
+    border:2px solid whitesmoke;
     text-shadow: 1px 1px 1px white;
 }
 
@@ -598,7 +598,7 @@ nav .nav-ul {
     position: fixed;
     top: 0px;
     right: 0;
-    border:3px solid whitesmoke;
+    border:1px solid whitesmoke;
     text-shadow: 1px 1px 1px white;
 }
 
