@@ -462,7 +462,7 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle {
-    width:calc(100vw - 255px);
+    width:calc(100vw);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
