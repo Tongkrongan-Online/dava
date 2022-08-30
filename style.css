@@ -480,7 +480,8 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li a {
     color: black;
-    font-size: 3rem;
+    font-size: 1.2rem;
+    width: max-content;
 }
 /* toogle sub-bab akhir tablet 🔽🔼 */
 }
