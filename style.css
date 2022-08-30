@@ -473,6 +473,8 @@ nav .nav-ul {
 }
 
 .ol-sub-content-toogle li {
+    display: flex;
+    flex-direction: row;
     width:max-content;
     height: fit-content;
     margin-right: 10px;
