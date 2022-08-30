@@ -474,7 +474,7 @@ nav .nav-ul {
 
 .ol-sub-content-toogle li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width:max-content;
     height: fit-content;
     margin-right: 10px;
