@@ -205,7 +205,49 @@ nav .nav-ul {
     z-index: 10;
 }
 
-/* toogle-sub-bab awal 🔼🔽 laptop */
+.toogle-content-sub-bab {
+    display: none;
+}
+
+#sub-checkbox:checked~.toogle-content-sub-bab {
+    display: flex;
+    height: 30vh;
+    width:calc(100vw - 255px);
+    top: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+    border-right: 3px solid blue;
+    border-bottom: 3px solid blue;
+    background-color: white;
+}
+
+.ol-sub-content-toogle {
+    width:calc(100vw - 255px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.ol-sub-content-toogle li {
+    width:max-content;
+    height: fit-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.ol-sub-content-toogle li:hover {
+    background-color: skyblue;
+}
+
+.ol-sub-content-toogle li a {
+    color: black;
+    font-size: 1.3rem;
+}
+/* toogle-sub-bab akhir 🔼🔽 laptop */
 /*✅ ul-sub-bab utama akhir laptop  */
 
 
@@ -344,14 +386,14 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:18px;
+    font-size:19px;
     border: 8px double silver;
     background-color: rgb(255, 255, 255);
     align-items: center;
     height: 40px;
     box-sizing: border-box;
     padding: 1.5px 2px;
-    margin: 10px 0px 0 0; 
+    margin: 10px 25px 0 0; 
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -439,14 +481,44 @@ nav .nav-ul {
     font-size: 1.3rem;
  }
 
-/* search sub-bab-content tablet 🔎 */
-#search-sub {
+ #sub-checkbox:checked~.toogle-content-sub-bab {
+    display: flex;
+    height: 30vh;
+    width:calc(100vw - 255px);
+    top: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+    border-right: 3px solid blue;
+    border-bottom: 3px solid blue;
     background-color: white;
-    border: 1px solid black;
 }
 
-/* search sub-bab-content tablet🔎 */
+.ol-sub-content-toogle {
+    width:calc(100vw - 255px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
 
+.ol-sub-content-toogle li {
+    width:max-content;
+    height: fit-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.ol-sub-content-toogle li:hover {
+    background-color: skyblue;
+}
+
+.ol-sub-content-toogle li a {
+    color: black;
+    font-size: 1.2rem;
+}
 /* toogle sub-bab akhir tablet 🔽🔼 */
 
 /* content utama tablet awal 🤩 */
@@ -756,6 +828,15 @@ nav .nav-ul {
 /* SEARCH SUB-AKHIR handphone 🔍 */
 
 /* toogle-sub-bab awal 🔼🔽 handphone*/
+.toogle-sub-bab {
+    display: flex;
+    width: 255px;
+    height: 50px;
+    align-items: center;
+    background-color:blue;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+ }
 
 #sub-checkbox:checked~.open-sub {
     display: none;
@@ -772,7 +853,47 @@ nav .nav-ul {
     justify-content: flex-start;
     box-shadow: 0px 0px 5px 1px black;
     align-items: center;
+    color: black;
     background-color: rgb(255, 255, 255);
+}
+
+ #sub-checkbox:checked~.toogle-content-sub-bab {
+    display: flex;
+    height: 30vh;
+    width:calc(100vw);
+    top: 100px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+    border-right: 0 solid blue;
+    border-bottom: 1.5px solid blue;
+    background-color: white;
+}
+
+.ol-sub-content-toogle {
+    width:calc(100vw);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.ol-sub-content-toogle li {
+    width:max-content;
+    height: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ol-sub-content-toogle li:hover {
+    background-color: skyblue;
+}
+
+.ol-sub-content-toogle li a {
+    color: black;
+    font-size: 1.1rem;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 
