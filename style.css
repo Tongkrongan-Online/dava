@@ -928,8 +928,8 @@ nav .nav-ul {
     position: absolute;
     z-index: -100;
     display: grid;
-    grid-template-areas: 'judul'
-                         'image-slide';
+    grid-template-areas: 'image-slide'
+                        'judul';
     grid-template-rows: repeat(auto-fit,fit-content);
     background-color: white;
     box-shadow: 4px 4px 15px black;
@@ -939,12 +939,12 @@ nav .nav-ul {
     top: 105px;
     width: 100%;
     box-sizing: border-box;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     color: white;
     font-family:'Secular One', sans-serif;
     font-size: 1rem;
     text-align: center;
-    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
+    text-shadow: 1.6px 1.6px 0 rgb(47, 0, 255),-1.6px -1.6px 0 rgb(72, 0, 255),3px 3px 0 black;
     padding-left: 10px;
     grid-area: judul;
     font-style: italic;
