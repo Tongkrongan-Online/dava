@@ -944,7 +944,7 @@ nav .nav-ul {
     font-family:'Secular One', sans-serif;
     font-size: 1rem;
     text-align: center;
-    text-shadow:1px 1px 1px black,2px 2px 0px blue;
+    text-shadow:2px 2px 0px blue;
     padding-left: 10px;
     grid-area: judul;
     font-style: italic;
