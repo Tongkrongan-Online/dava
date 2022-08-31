@@ -949,7 +949,7 @@ nav .nav-ul {
     grid-area: judul;
     font-style: italic;
     box-sizing: border-box;
-    border-bottom: 1px solid black ;
+    box-shadow: 5px 5px 15px black;
 }
 
 .isi-content {
