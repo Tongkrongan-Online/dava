@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(248, 243, 243);
+    background-color: rgb(235, 235, 235);
     width: 100vw;
     overflow-x: hidden;
 }
@@ -254,24 +254,45 @@ nav .nav-ul {
 
 /* content utama website laptop awal 💻 */
 .content-utama {
-    width: 70%;
-    margin: auto;
+    width: 70vw;
+    margin: 105px 15% 0;
+    position: absolute;
+    z-index: -100;
+    display: grid;
+    grid-template-areas: 'judul'
+                         'image-slide';
+    grid-template-rows: repeat(auto-fit,fit-content);
+    background-color: white;
+    box-shadow: 4px 4px 15px black;
 }
 
-.pembungkus-content {
-    z-index:-100;
-    position: absolute;
+.pembungkus-judul {
     top: 105px;
-    width: 70%;
+    width: 70vw;
+    box-sizing: border-box;
     background-color: blue;
     color: white;
     font-family:'Secular One', sans-serif;
     font-size: 1.1rem;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
     padding-left: 10px;
-    border-radius: 10%;
+    grid-area: judul;
+    font-style: italic;
+    box-sizing: border-box;
+    border-bottom: 1px solid black ;
 }
+
 /* content utama website laptop awal 💻 */
+
+/* isi kontent-utama laptop awal*/
+.isi-content {
+    width: 100%;
+    display: grid;
+    background-color: green; 
+    height: 1000px;   
+}
+/* isi kontent-utama laptop akhir*/
+
 
 
 
@@ -516,24 +537,42 @@ nav .nav-ul {
 
 /* content utama website tablet awal 🦍*/
 .content-utama {
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    margin: 100px 0% 0;
+    position: absolute;
+    z-index: -100;
+    display: grid;
+    grid-template-areas: 'judul'
+                         'image-slide';
+    grid-template-rows: repeat(auto-fit,fit-content);
+    background-color: white;
+    box-shadow: 4px 4px 15px black;
 }
 
-.pembungkus-content {
-    z-index:-100;
-    position: absolute;
-    top: 100px;
+.pembungkus-judul {
+    top: 105px;
     width: 100%;
+    box-sizing: border-box;
     background-color: blue;
     color: white;
     font-family:'Secular One', sans-serif;
-    font-size: 1rem;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    font-size: 1.1rem;
+    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
     padding-left: 10px;
-    border-radius: 0%;
+    grid-area: judul;
+    font-style: italic;
+    box-sizing: border-box;
+    border-bottom: 1px solid black ;
+}
+
+.isi-content {
+    width: 100%;
+    display: grid;
+    background-color: green; 
+    height: 1000px;   
 }
 /* content utama website tablet awal 🦍 */
+
 }
 
 
@@ -881,28 +920,45 @@ nav .nav-ul {
 /* toogle-sub-bab awal 🔼🔽 handphone */
 /*✅ ul-sub-bab utama akhir handphone  */
 
-/* content utama website tablet awal 🦍*/
+
+/* content utama website handphone awal 👨‍🦱*/
 .content-utama {
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    margin: 100px 0% 0;
+    position: absolute;
+    z-index: -100;
+    display: grid;
+    grid-template-areas: 'judul'
+                         'image-slide';
+    grid-template-rows: repeat(auto-fit,fit-content);
+    background-color: white;
+    box-shadow: 4px 4px 15px black;
 }
 
-.pembungkus-content {
-    z-index:-100;
-    position: absolute;
-    top: 100px;
+.pembungkus-judul {
+    top: 105px;
     width: 100%;
+    box-sizing: border-box;
     background-color: blue;
     color: white;
     font-family:'Secular One', sans-serif;
-    font-size: .8rem;
-    text-shadow: 1.5px 1.5px 0 black,-1.5px -1.5px 0 black;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
     padding-left: 10px;
-    border-radius: 0%;
+    grid-area: judul;
+    font-style: italic;
+    box-sizing: border-box;
+    border-bottom: 1px solid black ;
 }
-/* content utama website tablet awal 🦍 */
 
-
+.isi-content {
+    width: 100%;
+    display: grid;
+    background-color: green; 
+    height: 1000px;   
+}
+/* content utama website handphone awal 👩‍🦱 */
      }
 
 
