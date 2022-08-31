@@ -940,11 +940,11 @@ nav .nav-ul {
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    color: white;
+    color: blue;
     font-family:'Secular One', sans-serif;
     font-size: 1rem;
     text-align: center;
-    text-shadow: 1.6px 1.6px 0 rgb(47, 0, 255),-1.6px -1.6px 0 rgb(72, 0, 255),3px 3px 0 black;
+    text-shadow:3px 3px 0 black;
     padding-left: 10px;
     grid-area: judul;
     font-style: italic;
