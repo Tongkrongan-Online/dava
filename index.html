@@ -30,6 +30,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=IBM+Plex+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- google font akhir -->
 
     <!-- animated teks -->
@@ -289,10 +296,40 @@
             </li>
             <li class="nav-teks">
                 <span>
-                    <a href="https://dava-rho.vercel.app/">Home</a>
+                    <a href="https://dava-rho.vercel.app/">Home </a>
                 </span>
-                <span>
-                    <a href="#">Contact</a>
+                <span class="contact-pembungkus">
+                    <span>
+                        <label for="contact">
+                            <a>
+                                Contact
+                            </a>
+                        </label>
+                    </span>
+                    <input type="checkbox" id="contact">
+                    <label for="contact" class="isi-contact">
+                        <span>
+                            you can contact me on the bellow :
+                        </span>
+                        <span>
+                            <a href="https://dava-rho.vercel.app/">
+                                <label for="email">Email</label>
+                                muhammaddavafahreza05@gmail.com
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y=">
+                                <label for="email">Instagram</label>
+                                @muhammaddavafahreza
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://wa.me/qr/K52YEUWQ7VJYF1">
+                                <label for="email">Whatsaap</label>
+                                082246859943
+                            </a>
+                        </span>
+                    </label>
                 </span>
                 <span>
                     <a href="#">About</a>
@@ -321,36 +358,75 @@
 
             <li class="toogle-bar">
                 <input type="checkbox" id="check-toogle">
-                <label for="check-toogle" class="button-toogle">🔲</label>
+                <label for="check-toogle" class="button-toogle"><span class="material-symbols-outlined button-image">
+                        menu
+                    </span></label>
                 <label for="check-toogle" class="x-toogle">❌</label>
 
                 <ul class="toogle-ul">
                     <li class="nav-teks-toogle">
-                        <span>
+                        <span class="judul-toogle">
                             <a href="#">
                                 <!-- span kosong -->
                             </a>
                         </span>
+                        <span class="judul-toogle">
+                            <a href="#">
+                                <!-- span kosong -->
+                            </a>
+                        </span class="judul-toogle">
                         <span>
                             <a href="#">
                                 <!-- span kosong -->
                             </a>
-                        </span>
-                        <span>
-                            <a href="#">
-                                <!-- span kosong -->
-                            </a>
-                        </span>
-                        <span>
+                        </span class="judul-toogle">
+                        <span class="judul-toogle">
                             <a href="https://dava-rho.vercel.app/">Home 🏠</a>
+                        </span class="judul-toogle">
+                        <span class="contact-pembungkus-toogle">
+                            <span>
+                                <label for="contact-toogle">
+                                    <a>
+                                        Contact
+                                    </a>
+                                </label>
+                            </span>
+                            <input type="checkbox" id="contact-toogle">
+                            <label for="contact-toogle" class="isi-contact">
+                                <span class="judul-contact-toogle">
+                                    you can contact me on the bellow :
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <label for="email">Email :</label>
+                                        <br>
+                                        muhammaddavafahreza05@gmail.com
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y=">
+                                        <label for="email">Instagram :</label>
+                                        <br>
+                                        @muhammaddavafahreza
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://wa.me/qr/K52YEUWQ7VJYF1">
+                                        <label for="email">Whatsaap :</label>
+                                        <br>
+                                        082246859943
+                                    </a>
+                                </span>
+                                <label for="contact-toogle" class="close-contact">close</label>
+                            </label>
                         </span>
-                        <span>
-                            <a href="#">Contact 📞</a>
                         </span>
-                        <span>
-                            <a href="#">About 📌</a>
+                        <span class="judul-toogle">
+                            <a href="">about</a>
                         </span>
                     </li>
+
+
                     <li class="logo-medsos-toogle">
                         <h3 class="h3-logo-medsos-toogle">
                             social media
