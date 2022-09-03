@@ -321,8 +321,8 @@ nav .nav-ul {
 
 /* content utama website laptop awal 💻 */
 .content-utama {
-    width: 70vw;
-    margin: 105px 15% 0;
+    width: 100vw;
+    margin: 105px 0 0;
     position: absolute;
     z-index: -100;
     display: grid;
@@ -335,7 +335,7 @@ nav .nav-ul {
 
 .pembungkus-judul {
     top: 105px;
-    width: 70vw;
+    width: 100vw;
     box-sizing: border-box;
     background-color: blue;
     color: white;

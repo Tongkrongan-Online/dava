@@ -49,11 +49,11 @@
 <style>
     .image-slide {
         display: inline-flex;
-        width: 70vw;
+        width: 100vw;
     }
 
     .image-slide .slide-gambar-text img {
-        width: 70vw;
+        width: 100vw;
         height: 400px;
     }
 
@@ -62,6 +62,7 @@
         width: 50px;
         height: 50px;
         z-index: 1;
+        transform: scale(1.5);
     }
 
     .slick-prev {
@@ -164,6 +165,14 @@
         .image-slide {
             display: inline-flex;
             width: 100vw;
+        }
+
+        .slick-prev,
+        .slick-next {
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            transform: scale(1);
         }
 
         .image-slide .slide-gambar-text img {
@@ -486,7 +495,7 @@
                 <label for="sub-checkbox" class="open-sub">🔽open</label>
                 <label for="sub-checkbox" class="close-sub">🔼close</label>
                 <input type="search" id="search-sub" placeholder="search"
-                    onclick="alert('tombol pencarian sementara belum berfungsi ya,saya belum punya data base!,untuk mengelola data masuk dan keluar,terimaksih🙏')"
+                    onclick="alert('lagi stress ya,kasihan mana masih muda lagi❗')"
                     onchange="alert('mau cari apa sih🤦‍♂️,kan udah dibilang gak bisa loh,apa kalian mau bantuin saya buat database nya gitu?')">
                 <label for="search-sub" class="label-search-sub">🔎</label>
                 <div class="toogle-content-sub-bab">
