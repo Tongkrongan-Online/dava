@@ -809,9 +809,9 @@ nav .nav-ul {
 .button-toogle {
     display: flex;
     font-size:15px;
-    border: 5px solid silver;
+    border: 3px solid silver;
     height: 40px ;
-    width: 100px;
+    width: 150px;
     justify-content: center;
     background-color: rgb(255, 255, 255);
     align-items: center;
