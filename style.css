@@ -808,13 +808,16 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:18px;
-    border: 10px double silver;
+    font-size:15px;
+    border: 5px solid silver;
+    height: 40px ;
+    width: 100px;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     align-items: center;
     box-sizing: border-box;
-    padding:3px 3px;
-    margin: 10px 25px 0 0; 
+    /* padding:3px 3px; */
+    margin: 5px 25px 0 0; 
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -1036,7 +1039,7 @@ nav .nav-ul {
     display: flex;
     position: fixed;
     left:0px;
-    top: 50px;
+    top: 100px;
     width: 100vw;
     overflow: auto;
     transform: translate(0,0);
@@ -1053,7 +1056,7 @@ nav .nav-ul {
 }
 
 .nav-teks-toogle .close-contact {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: red;
     width: 100%;
     height: max-content;
