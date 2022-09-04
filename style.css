@@ -464,13 +464,14 @@ nav .nav-ul {
 
 .button-toogle {
     display: flex;
-    font-size:18px;
-    border: 10px double silver;
+    width: 50px;
+    height: 48px;
+    border: 5px solid black;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    padding:3px 3px;
-    margin: 6px 0 0 0; 
+    transform: translate(0,4px);
 }
 
 #check-toogle:checked~.toogle-ul {
@@ -749,7 +750,7 @@ nav .nav-ul {
     display: flex;
     align-items: space-around;
     justify-content: flex-start;
-    width: 80%;
+    width: calc(100vw - 60px);
     padding-left:1px;
     box-sizing: border-box;
 }
@@ -779,7 +780,7 @@ nav .nav-ul {
 /* toogle-bar awal handphone */
 .toogle-bar {
     display: flex;
-    width: 15%;
+    width: 60px;
     height: 100%;
     box-sizing: border-box;
     padding-bottom: 8px;
@@ -806,18 +807,19 @@ nav .nav-ul {
     display: none;
 }
 
-.button-toogle {
+.toogle-bar .button-toogle {
     display: flex;
-    font-size:15px;
+    /* font-size:15px; */
     border: 3px solid silver;
     height: 40px ;
-    width: 150px;
+    width: 45px;
     justify-content: center;
     background-color: rgb(255, 255, 255);
     align-items: center;
     box-sizing: border-box;
+    transform: translateX(-7.5px) translateY(4px);
     /* padding:3px 3px; */
-    margin: 5px 25px 0 0; 
+    /* margin: 5px 15px 0 0;  */
 }
 
 #check-toogle:checked~.toogle-ul {
