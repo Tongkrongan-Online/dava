@@ -197,8 +197,8 @@
             justify-content: center;
             align-items: center;
             color: white;
-            text-shadow: 1px 1px 0 blue, -1px -1px 0 blue;
-            font-size: .9rem;
+            text-shadow: 1px 1px 6px black;
+            font-size: .8rem;
         }
 
         .slide-gambar-text .text-1 {
@@ -248,37 +248,32 @@
             width: 50px;
             height: 50px;
             z-index: 1;
-            display: none;
+            transform: translate(0, 120px);
         }
 
         .slick-prev {
             left: 5px;
-            display: none;
         }
 
         .slick-next {
             right: 5px;
-            display: none;
         }
 
         .slick-prev:before,
         .slick-next:before {
             font-size: 40px;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: none;
         }
 
         /* move dotted nav position */
         .slick-dots {
-            bottom: 15px;
-            display: none;
+            bottom: -30px;
         }
 
         .slick-dots li button:before {
-            font-size: 12px;
+            font-size: 8px;
             color: #fff;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: none;
             opacity: 1;
         }
 
@@ -288,7 +283,6 @@
             border: 1px solid blue;
             border-radius: 50%;
             background-color: blue;
-            display: none;
         }
     }
 </style>

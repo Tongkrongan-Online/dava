@@ -466,7 +466,7 @@ nav .nav-ul {
     display: flex;
     width: 50px;
     height: 48px;
-    border: 5px solid black;
+    border: 4px solid grey;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
@@ -648,6 +648,7 @@ nav .nav-ul {
     width: 100vw;
     margin: 100px 0% 0;
     position: absolute;
+    top: 0;
     z-index: -100;
     display: grid;
     grid-template-areas: 'judul'
@@ -1083,7 +1084,6 @@ nav .nav-ul {
 }
 
 .pembungkus-judul {
-    top: 105px;
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
@@ -1092,8 +1092,10 @@ nav .nav-ul {
     font-size: 1rem;
     text-align: center;
     text-shadow:1px 1px 1px black,-1px -1px 1px black;
-    border: 1px solid blue;
+    border-bottom: 4px double blue;
     padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 60px;
     grid-area: judul;
     font-style: italic;
     font-weight: bold;
