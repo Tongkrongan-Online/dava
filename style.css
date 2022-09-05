@@ -1076,8 +1076,8 @@ nav .nav-ul {
     position: absolute;
     z-index: -100;
     display: grid;
-    grid-template-areas: 'image-slide'
-                        'judul';
+    grid-template-areas: 'judul'
+                        'image-slide';
     grid-template-rows: repeat(auto-fit,fit-content);
     background-color: white;
     box-shadow: 4px 4px 15px black;
@@ -1086,16 +1086,14 @@ nav .nav-ul {
 .pembungkus-judul {
     width: 100%;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 86, 246);
+    background-color: blue;
+    color: white;
     font-family:'Secular One', sans-serif;
     font-size: 1rem;
     text-align: center;
-    text-shadow:1px 1px 1px black,-1px -1px 1px black;
-    border-bottom: 4px double blue;
+    text-shadow:1px 1px 0px black,-1px -1px 0px black,2px 2px 0 rgba(135, 207, 235, 0.705);
+    border-bottom:0;
     padding-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 60px;
     grid-area: judul;
     font-style: italic;
     font-weight: bold;
@@ -1104,6 +1102,7 @@ nav .nav-ul {
 
 .isi-content {
     width: 100%;
+    margin-top: 50px;
     display: grid;
     background-color: green; 
     height: 1000px;   
