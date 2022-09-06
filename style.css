@@ -466,7 +466,7 @@ nav .nav-ul {
     display: flex;
     width: 50px;
     height: 48px;
-    border: 4px solid grey;
+    border: 4px solid silver    ;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
@@ -727,7 +727,7 @@ nav {
     position: fixed;
     height:50px ;
     width:100%;
-    background-image: linear-gradient(blue, skyblue);
+    background-image: linear-gradient(to top,blue 0%, skyblue 0%,silver 100%);
     display: flex;
 }
 
