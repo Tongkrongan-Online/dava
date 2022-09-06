@@ -727,7 +727,7 @@ nav {
     position: fixed;
     height:50px ;
     width:100%;
-    background-image: linear-gradient(to top,blue 0%, skyblue 0%,silver 100%);
+    background-image: linear-gradient(to bottom,skyblue,blue);
     display: flex;
 }
 
