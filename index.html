@@ -47,6 +47,11 @@
 
 </head>
 <style>
+    .ganti-image {
+        display: inline-flex;
+        width: 1000vw;
+    }
+
     .image-slide {
         display: inline-flex;
         width: 100vw;
@@ -57,109 +62,82 @@
         height: 400px;
     }
 
-    .slick-prev,
-    .slick-next {
-        width: 50px;
-        height: 50px;
-        z-index: 1;
-        transform: scale(1.5);
-    }
-
-    .slick-prev {
-        left: 5px;
-    }
-
-    .slick-next {
-        right: 5px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        font-size: 40px;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    /* move dotted nav position */
-    .slick-dots {
-        bottom: 15px;
-    }
-
-    .slick-dots li button:before {
-        font-size: 12px;
-        color: #fff;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        opacity: 1;
-    }
-
-    .slick-dots li.slick-active button:before {
-        content: "👁‍🗨";
-        color: #000dff;
-        border: 1px solid blue;
-        border-radius: 50%;
-        background-color: blue;
-    }
-
-    .slider:not(:hover) .slick-arrow,
-    .slider:not(:hover) .slick-dots {
-        opacity: 0;
-    }
-
-    .slick-arrow,
-    .slick-dots {
-        transition: opacity 0.5s ease-out;
-    }
-
     .slide-gambar-text {
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         /* text-shadow: 1.5px 1.5px 0 blue, -1.5px -1.5px 0 blue; */
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-
-    .slide-gambar-text .text-1 {
-        position: absolute;
-        z-index: 100;
-        display: flex;
-        width: 80%;
-        height: 200px;
-        top: 0;
-        left: 10%;
-        text-align: center;
-        justify-content: center;
-        align-items: flex-end;
-        font-family: 'IBM Plex Serif', serif;
-    }
-
-    .slide-gambar-text .text-2 {
-        position: absolute;
-        z-index: 100;
-        display: flex;
-        width: 80%;
-        height: 200px;
-        bottom: 0;
-        left: 10%;
-        justify-content: center;
-        align-items: flex-start;
-        font-family: 'IBM Plex Serif', serif;
-        text-align: center;
-    }
 
     .slide-gambar-text .text-full-image {
         position: absolute;
         z-index: 100;
         display: flex;
-        width: 80%;
-        height: 400px;
-        bottom: 0;
-        left: 10%;
-        justify-content: center;
-        align-items: center;
+        width: 650px;
+        top: 100px;
+        left: 50px;
         font-family: 'IBM Plex Serif', serif;
-        text-align: center;
+        text-align: left;
     }
+
+    .h1-about-judul {
+        position: absolute;
+        color: white;
+        text-shadow: 3px 3px 0 black, 3px 3px 0 black, 3.5px 3.5px 0 white, 3.5px 3.5px 0 white;
+        font-family: 'Oleo Script', cursive;
+        font-size: 2rem;
+        left: 50px;
+        top: 50px;
+        text-transform: capitalize;
+        font-weight: bold;
+        z-index: 1000;
+    }
+
+    .h1-about-judul span {
+        color: skyblue;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    /* .promosi-slide sosial media awla laptop */
+
+    .promosi-slide {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        background-color: rgb(255, 255, 255);
+        width: 280px;
+        font-size: .95rem;
+        border-radius: 5%;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .promosi-slide h1,
+    p {
+        padding: 5px;
+    }
+
+    .promosi-slide a input {
+        width: 100%;
+        background-color: red;
+        margin: 15px 0 0 0;
+        color: white;
+        border: none;
+        font-family: 'Oleo Script', cursive;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .promosi-slide .gambar-tengah {
+        /* position: relative;
+        left: 10%; */
+        margin: auto;
+    }
+
+    /* .promosi-slide sosial media akhir laptop */
 
     @media (min-width: 768px) and (max-width: 1024px) {
         .image-slide {
@@ -167,18 +145,49 @@
             width: 100vw;
         }
 
-        .slick-prev,
-        .slick-next {
-            width: 50px;
-            height: 50px;
-            z-index: 1;
-            transform: scale(1);
-        }
-
         .image-slide .slide-gambar-text img {
             width: 100vw;
             height: 400px;
         }
+
+        /* .promosi-slide sosial media awla tablet */
+
+        .promosi-slide {
+            position: relative;
+            /* right: 50px; */
+            top: 0px;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100vw;
+            font-size: .95rem;
+            border-radius: 0%;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .promosi-slide h1,
+        p {
+            padding: 5px;
+        }
+
+        .promosi-slide a input {
+            width: 100%;
+            background-color: red;
+            margin: 15px 0 0 0;
+            color: white;
+            border: none;
+            font-family: 'Oleo Script', cursive;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .promosi-slide .gambar-tengah {
+            /* position: relative;
+         left: 10%; */
+            margin: auto;
+        }
+
+        /* .promosi-slide sosial media akhir tablet */
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
@@ -189,7 +198,7 @@
 
         .image-slide .slide-gambar-text img {
             width: 100vw;
-            height: 250px;
+            height: 400px;
         }
 
         .slide-gambar-text {
@@ -201,32 +210,51 @@
             font-size: .8rem;
         }
 
-        .slide-gambar-text .text-1 {
-            position: absolute;
-            z-index: 100;
-            display: flex;
-            width: 100%;
-            height: 125px;
-            top: 0;
-            left: 0%;
-            text-align: center;
-            justify-content: center;
-            align-items: flex-start;
-            font-family: 'IBM Plex Serif', serif;
+        /* .promosi-slide sosial media awla tablet */
+
+        .promosi-slide {
+            position: relative;
+            /* right: 50px; */
+            top: 0px;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            width: 100vw;
+            font-size: .95rem;
+            border-radius: 0%;
+            overflow: hidden;
+            box-shadow: none;
         }
 
-        .slide-gambar-text .text-2 {
-            position: absolute;
-            z-index: 100;
-            display: flex;
+        .promosi-slide h1,
+        p {
+            padding: 5px;
+        }
+
+        .promosi-slide a input {
             width: 100%;
-            height: 125px;
-            bottom: 0;
-            left: 0%;
-            justify-content: center;
-            align-items: flex-end;
-            font-family: 'IBM Plex Serif', serif;
+            background-color: red;
+            margin: 15px 0 0 0;
+            color: white;
+            border: none;
+            font-family: 'Oleo Script', cursive;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .promosi-slide .gambar-tengah {
+            /* position: relative;
+         left: 10%; */
+            margin: auto;
+        }
+
+        .h1-about-judul {
+            font-size: 1.6rem;
+            left: 0px;
+            top: 0px;
+            padding: 10px;
+            text-transform: capitalize;
             text-align: center;
+            height: 200px;
         }
 
         .slide-gambar-text .text-full-image {
@@ -234,62 +262,37 @@
             z-index: 100;
             display: flex;
             width: 100%;
-            height: 250px;
-            bottom: 0;
-            left: 0%;
-            justify-content: center;
-            align-items: center;
+            top: 50px;
+            left: 0px;
+            padding-left: 10px;
+            box-sizing: border-box;
             font-family: 'IBM Plex Serif', serif;
+            text-align: left;
+            font-size: 1.6rem;
+        }
+
+        /* .promosi-slide sosial media akhir tablet */
+    }
+
+    @media (min-width: 0px) and (max-width: 489px) {
+        .slide-gambar-text .text-full-image {
+            top: 90px;
+            left: 0px;
             text-align: center;
+            font-size: 1.1rem;
+            padding: 0;
         }
 
-        .slick-prev,
-        .slick-next {
-            width: 50px;
-            height: 50px;
-            z-index: 1;
-            transform: translate(0, 122.5px);
+        .h1-about-judul {
+            font-size: 1.4rem;
+            left: 0px;
+            top: 0px;
+            padding: 10px;
+            text-transform: capitalize;
+            text-align: center;
+            height: 200px;
         }
 
-        .slick-prev {
-            left: 5px;
-        }
-
-        .slick-next {
-            right: 5px;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            font-size: 40px;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        /* move dotted nav position */
-        .slick-dots {
-            bottom: -40px;
-            background-color: blue;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slick-dots li button:before {
-            font-size: 8px;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            opacity: 1;
-        }
-
-        .slick-dots li.slick-active button:before {
-            content: "👁‍🗨";
-            font-size: 1rem;
-            color: red;
-            border: 0px double white;
-            border-radius: 50%;
-            background-color: none;
-        }
     }
 </style>
 
@@ -341,7 +344,7 @@
                     </label>
                 </span>
                 <span>
-                    <a href="#">About</a>
+                    <a href="#https://about-me-pied.vercel.app/">about</a>
                 </span>
             </li>
             <li class="logo-medsos">
@@ -431,7 +434,7 @@
                         </span>
                         </span>
                         <span class="judul-toogle">
-                            <a href="">about</a>
+                            <a href="https://about-me-pied.vercel.app/">about</a>
                         </span>
                     </li>
 
@@ -522,64 +525,84 @@
     </section>
 
     <section class="content-utama">
-        <div class="pembungkus-judul">
-            <div class="judul-content">
-                <h1 class="h1-judul-content">
-                    WELCOME TO WEBSITE <span>TONGKRONGAN-ONLINE</span>
-                </h1>
-            </div>
-        </div>
-
         <div class="image-slide">
             <div class="slide-gambar-text">
-                <h2 class="typewrite text-white text-1" data-period="900"
-                    data-type='[ "Selamat Datang, di website saya! 🥳."]'>
+                <h1 class="h1-about-judul">
+                    selamat datang di website <span>tongkrongan online</span>
+                </h1>
+                <h2 class="typewrite text-white text-full-image" data-period="10000"
+                    data-type='[ "Hai,selamat datang di website Tongkrongan Online,apa yang membuat anda berkunjung ke website saya yang sederhana ini apa karena gabut,iseng,tidak sengaja atau juga penasaran,terlepas apapun alasan nya,saya senang memiliki pengunjung seperti anda,Terimakasih sudah mengunjungi website ini sehat selalu jangan lupa kembali saya akan terus update website ini,jangan sampai ketinggalan ya!!!"]'>
                     <span class="wrap"></span>
                 </h2>
-                <img src="https://source.unsplash.com/750x750/?nature" alt="image-slide-header">
-                <h2 class="typewrite text-white text-2" data-period="900" data-type='[ "Senang berjumpa dengan-mu 😇"]'>
-                    <span class="wrap"></span>
-                </h2>
-            </div>
-            <div class="slide-gambar-text">
-                <h2 class="typewrite text-white text-full-image" data-period="4000"
-                    data-type='[ "Terima-kasih sudah mengunjungi website ini"]'>
-                    <span class="wrap"></span>
-                </h2>
-                <img src="https://source.unsplash.com/750x750/?mountain" alt=" image-slide-header">
-            </div>
-            <div class="slide-gambar-text">
-                <h2 class="typewrite text-white text-full-image" data-period="4000"
-                    data-type='[ "semoga hari-hari mu menyenanngkan"]'>
-                    <span class="wrap"></span>
-                </h2>
-                <img src="https://source.unsplash.com/750x750/?outer space" alt=" image-slide-header">
-            </div>
-            <div class="slide-gambar-text">
-                <h2 class="typewrite text-white text-full-image" data-period="4000"
-                    data-type='[ "senang mempunyai pengunjung seperti kamu"]'>
-                    <span class="wrap"></span>
-                </h2>
-                <img src="https://source.unsplash.com/750x750/?Sunrise" alt=" image-slide-header">
-            </div>
-            <div class="slide-gambar-text">
-                <h2 class="typewrite text-white text-1" data-period="2000"
-                    data-type='[ "salam  dari saya,Muhammad Dava Fahreza 🙏"]'>
-                    <span class="wrap"></span>
-                </h2>
-                <img src="https://source.unsplash.com/750x750/?darkcloud" alt=" image-slide-header">
-                <h2 class="typewrite text-white text-2" data-period="2000"
-                    data-type='[ "semoga sehat selalu ya,Terima Kasih 😊"]'>
-                    <span class="wrap"></span>
-                </h2>
+                <div class="ganti-image">
+                    <div><img src="https://source.unsplash.com/750x750/?dark nature" alt=" image-slide-header"></div>
+                    <div><img src="https://source.unsplash.com/750x750/?dark cloud" alt=" image-slide-header"></div>
+                    <div><img src="https://source.unsplash.com/750x750/?dark sky" alt=" image-slide-header"></div>
+                    <div><img src="https://source.unsplash.com/750x750/?dark sea" alt=" image-slide-header"></div>
+                    <div><img src="https://source.unsplash.com/750x750/?night" alt=" image-slide-header"></div>
+                    <div><img src="https://source.unsplash.com/750x750/?dark tree" alt=" image-slide-header"></div>
+                </div>
             </div>
         </div>
 
-        <div class="isi-content">
+        <div class="promosi-slide">
+            <div class="slide-youtube">
+                <img src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"
+                    width="250" height="211px" alt="youtube logo png images" class="gambar-tengah" />
+                <h1>Tongkrongan Online</h1>
+                <p>Subcribe dan berlangganan sekarang untuk melihat video yang saya upload</p>
+                <a href="https://youtube.com/channel/UCNncSeKtVODKeIVOUmlH6nw"><input type="button"
+                        value="subscribe"></a>
+            </div>
+            <div class="promosi-instagram">
+                <img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="211"
+                    alt="instagram logo png images" class="gambar-tengah" />
+                <h1>@muhammaddavafahreza</h1>
+                <p>Follow Instagram saya untuk melihat postingan terbaru saya</p>
+                <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y="><input type="button"
+                        value="follow" style="background-color:rgb(214, 0, 103);"></a>
+            </div>
+            <div class="promosi-facebook">
+                <img src="https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-19.png"
+                    width="211" alt="instagram logo png images" class="gambar-tengah" />
+                <h1>muhammad dava fahreza</h1>
+                <p>ikuti facebook saya untuk melihat postingan terbaru saya </p>
+                <a href="https://m.facebook.com/profile.php?id=100018219300463"><input type="button" value="follow"
+                        style="background-color:blue;"></a>
+            </div>
+            <div class="promosi-tiktok">
+                <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-tiktok-logo-app-trend-1.png"
+                    width="161" alt="instagram logo png images" class="gambar-tengah" />
+                <h1>TongkronganOnline</h1>
+                <p>ikuti tiktok saya untuk melihat video pendek yang saya upload</p>
+                <a href="http://tiktok.com/@tongkronganonline"> <input type="button" value="follow"
+                        style="background-color:black;"></a>
+            </div>
+            <div class="promosi-snackvideo">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.HKySW4sUfMUMzJZDpfW1aAHaHa&pid=Api&P=0" width="211"
+                    alt="instagram logo png images" class="gambar-tengah" />
+                <h1>TongkronganOnline</h1>
+                <p>ikuti snack video saya untuk melihat video pendek yang saya upload</p>
+                <a href="https://sck.io/u/HUp7Pdq5"> <input type="button" value="follow"
+                        style="background-color:rgb(255, 247, 0);"></a>
+            </div>
+        </div>
+
+        <div class="container-parent">
             <div class="container-grid-1">
+                <ul>
+                    <li><a href="#">go to the top</a></li>
+                    <li><a href="#">go to the midle</a></li>
+                    <li><a href="#">go to the bottom</a></li>
+                    <li><a href="#">go to contact</a></li>
+                </ul>
+            </div>
+            <div class="container-grid-2">
 
             </div>
-            <div class="container-grid-2"></div>
+            <div class="container-grid-3">
+
+            </div>
         </div>
     </section>
 
@@ -599,15 +622,29 @@
         });
 
         $(document).ready(function () {
-            $('.image-slide').slick({
+            $('.promosi-slide').slick({
                 autoplay: true,
-                autoplaySpeed: 9000,
+                autoplaySpeed: 3000,
+                dots: true,
+                fade: true,
+            });
+        });
+
+        $(document).ready(function () {
+            console.log('MUHAMMAD DAVA FAHREZA');
+        });
+
+        $(document).ready(function () {
+            $('.ganti-image').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
                 dots: true,
                 fade: true,
             });
         });
     </script>
 
+    <!-- Our Script -->
     <script>
         var TxtType = function (el, toRotate, period) {
             this.toRotate = toRotate;

@@ -279,7 +279,7 @@ nav .nav-ul {
 
 #sub-checkbox:checked~.toogle-content-sub-bab {
     display: flex;
-    height: 30vh;
+    height: max-content;
     width:calc(100vw - 255px);
     top: 50px;
     left: 0;
@@ -332,31 +332,37 @@ nav .nav-ul {
     background-color: white;
     box-shadow: 4px 4px 15px black;
 }
-
-.pembungkus-judul {
-    top: 105px;
-    width: 100vw;
-    box-sizing: border-box;
-    background-color: blue;
-    color: white;
-    font-family:'Secular One', sans-serif;
-    font-size: 1.1rem;
-    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
-    padding-left: 10px;
-    grid-area: judul;
-    font-style: italic;
-    box-sizing: border-box;
-    border-bottom: 1px solid black ;
-}
-
 /* content utama website laptop awal 💻 */
 
+
 /* isi kontent-utama laptop awal*/
-.isi-content {
+.container-parent {
     width: 100%;
     display: grid;
-    background-color: green; 
-    height: 1000px;   
+    grid-template-areas: "grid-1 grid-2 grid-3";
+    grid-template-columns: 200px calc(100% - 200px - 30%) 30%;
+    margin: auto;
+    background-color: rgb(219, 219, 219); 
+    height: 1000px;
+    /* transform: translate(0px,-30px); */
+    box-shadow: 0px 0px 10px 5px black;   
+}
+
+.container-grid-1 {
+    background-color: red;
+    padding: 0 10px;
+    box-sizing: border-box;
+    grid-area: grid-1;
+}
+
+.container-grid-2 {
+    background-color: black;
+    grid-area: grid-2;
+}
+
+.container-grid-3 {
+    background-color: green;
+    grid-area: grid-3;
 }
 /* isi kontent-utama laptop akhir*/
 
@@ -658,30 +664,13 @@ nav .nav-ul {
     box-shadow: 4px 4px 15px black;
 }
 
-.pembungkus-judul {
-    top: 105px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: blue;
-    color: white;
-    font-family:'Secular One', sans-serif;
-    font-size: 1.1rem;
-    text-shadow: 1.6px 1.6px 0 black,-1.6px -1.6px 0 black;
-    padding-left: 10px;
-    grid-area: judul;
-    font-style: italic;
-    box-sizing: border-box;
-    border-bottom: 1px solid black ;
-}
-
-.isi-content {
+.container-parents {
     width: 100%;
     display: grid;
     background-color: green; 
     height: 1000px;   
 }
 /* content utama website tablet awal 🦍 */
-
 }
 
 
@@ -1067,6 +1056,11 @@ nav .nav-ul {
     text-align: center;
     margin-top: 5px;
 }
+
+.h1-about-judul {
+    position: absolute;
+
+}
 /* contact toogle handphone akhir ☎📞📱 */
 
 /* content utama website handphone awal 👨‍🦱*/
@@ -1083,29 +1077,12 @@ nav .nav-ul {
     box-shadow: 4px 4px 15px black;
 }
 
-.pembungkus-judul {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: blue;
-    color: white;
-    font-family:'Secular One', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    text-shadow:1px 1px 0px black,-1px -1px 0px black,2px 2px 0 rgba(135, 207, 235, 0.705);
-    border-bottom:0;
-    padding-left: 10px;
-    grid-area: judul;
-    font-style: italic;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.isi-content {
+.container-parent {
     width: 100%;
     margin-top: 50px;
     display: grid;
     background-color: green; 
-    height: 1000px;   
+    height: 100px;   
 }
 /* content utama website handphone awal 👩‍🦱 */
      }
