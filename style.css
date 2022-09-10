@@ -16,7 +16,7 @@ nav {
     width : 100%;
     top: 0;
     left: 0;
-    background-image : linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
+    background-color:darkblue;
     display: flex;
 }
 
@@ -137,7 +137,7 @@ nav .nav-ul {
     position: absolute;
     transform: translateY(0px) translateX(-100px);
     background-color: white;
-    border:1 solid blue;
+    border:1 solid darkblue;
     box-shadow: 3px 3px 10px black;
     color: black;
     font-family: 'Barlow Condensed', sans-serif;
@@ -187,7 +187,7 @@ nav .nav-ul {
     height: 50px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    border-bottom: 2.5px solid blue;
+    border-bottom: 2.5px solid darkblue;
     box-sizing: border-box;
 }
 /* ul-sub-bab-utama akhir laptop 📃*/
@@ -220,9 +220,9 @@ nav .nav-ul {
     width: 255px;
     height: 50px;
     align-items: center;
-    background-color: blue;
+    background-color: darkblue;
     color: rgb(255, 255, 255);
-    border-bottom: 2.5px solid blue;
+    border-bottom: 2.5px solid darkblue;
     box-sizing: border-box;
     font-size: 1.3rem;
 }
@@ -286,8 +286,8 @@ nav .nav-ul {
     position: fixed;
     z-index: 100;
     overflow: auto;
-    border-right: 3px solid blue;
-    border-bottom: 3px solid blue;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
     background-color: white;
 }
 
@@ -382,43 +382,13 @@ nav .nav-ul {
  @media (min-width: 768px) and (max-width: 1024px) {
 
  /* navbar awal utama TABLET */
-nav {
-    position: fixed;
-    height:50px ;
-    width:100%;
-    background-image: linear-gradient(to left,silver, skyblue,rgb(17, 110, 239),darkblue);
-    border-bottom: none;
-    display: flex;
-}
-
-nav .nav-ul {
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.teks-logo:hover a::after {
-    content: "✅";
-    font-size: 1.5vw;
-}
-
 .teks-logo {
-    font-family: 'Oleo Script', cursive;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     width: 70%;
     padding-left: 20px;
-    box-sizing: border-box;
 }
 
 .teks-logo a {
     font-size: 3.5vw;
-    color: white;
-    margin-left: 5px;
 }
 
 .nav-teks span:hover a::before {
@@ -594,82 +564,55 @@ nav .nav-ul {
 /* navbar akhir TABLET  */
 
 /* toogle sub-bab awal tablet 🔽🔼 */
-.toogle-sub-bab {
-    display: flex;
-    width: 255px;
-    height: 50px;
-    align-items: center;
-    background-color:blue;
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
- }
- #sub-checkbox:checked~.open-sub {
-    display: none;
-}
-
  #sub-checkbox:checked~.toogle-content-sub-bab {
-    display: flex;
     height: fit-content;
-    width:calc(100% - 255px);
-    top: 50px;
-    left: 0;
-    position: fixed;
-    z-index: 100;
-    overflow: auto;
-    border-right: 2px solid blue;
-    border-bottom: 2px solid blue;
-    box-sizing: border-box;
-    background-color: white;
 }
 
 .ol-sub-content-toogle {
-    display: flex;
     width: 100%;
     height: max-content;
     overflow: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: center;
 }
 
-.ol-sub-content-toogle li {
-    display: flex;
-    width: max-content;
-    height: fit-content;
-}
-
-.ol-sub-content-toogle li:hover {
-    background-color: skyblue;
-}
-
-.ol-sub-content-toogle li a {
-    color: black;
-    font-size: 1.3rem;
-}
 /* toogle sub-bab akhir tablet 🔽🔼 */
 
 /* content utama website tablet awal 🦍*/
 .content-utama {
-    width: 100vw;
-    margin: 100px 0% 0;
-    position: absolute;
     top: 0;
-    z-index: -100;
-    display: grid;
     grid-template-areas: 'judul'
                          'image-slide';
-    grid-template-rows: repeat(auto-fit,fit-content);
-    background-color: white;
-    box-shadow: 4px 4px 15px black;
 }
 
-.container-parents {
+/* isi kontent-utama laptop awal*/
+.container-parent {
     width: 100%;
     display: grid;
-    background-color: green; 
-    height: 1000px;   
+    grid-template-areas: "grid-1 grid-2 grid-3";
+    grid-template-columns: 200px calc(100% - 200px - 30%) 30%;
+    margin: auto;
+    background-color: rgb(219, 219, 219); 
+    height: 1000px;
+    /* transform: translate(0px,-30px); */
+    box-shadow: 0px 0px 10px 5px black;   
 }
+
+.container-grid-1 {
+    background-color: red;
+    padding: 0 10px;
+    box-sizing: border-box;
+    grid-area: grid-1;
+}
+
+.container-grid-2 {
+    background-color: black;
+    grid-area: grid-2;
+}
+
+.container-grid-3 {
+    background-color: green;
+    grid-area: grid-3;
+}
+
 /* content utama website tablet awal 🦍 */
 }
 
@@ -712,43 +655,20 @@ nav .nav-ul {
 /* @media query atau breakpoint untuk screen layar handphone */
      @media (min-width: 320px) and (max-width: 767px) {
          /* navbar utama awal handphone */
-nav {
-    position: fixed;
-    height:50px ;
-    width:100%;
-    background-image: linear-gradient(to bottom,skyblue 5%,blue 99%);
-    display: flex;
-}
-
-nav .nav-ul {
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .teks-logo:hover a::after {
-    content: "✅";
-    font-size: 5.5vw;
     display: none;
 }
 
 .teks-logo {
-    font-family: 'Oleo Script', cursive;
-    display: flex;
     align-items: space-around;
     justify-content: flex-start;
     width: calc(100vw - 60px);
     padding-left:1px;
-    box-sizing: border-box;
 }
 
 .teks-logo a {
     font-size: calc(1em + 2vw);
-    color: white;
-    margin-left: 5px;
 }
 
 .nav-teks span:hover a::before {
@@ -889,17 +809,7 @@ nav .nav-ul {
 /* sub- content-navigasi📌 */
 /* LI TOOGLE SUB-CONTENT handphone 📌 */
 .toogle-sub-bab {
-    display: flex;
     width: 80px;
-    height: 50px;
-    align-items: center;
-    background-color: blue;
-    border-top: .10000px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    border-bottom: 2.5px solid grey;
-    box-shadow: 0px 0px 5px 1px black;
-    font-size: 1.3rem;
 }
 
 .li-sub-bab {
@@ -907,7 +817,7 @@ nav .nav-ul {
     height: 50px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    border-bottom: 2.5px solid rgb(0, 30, 255);
+    border-bottom: 2.5px solid darkblue;
     box-shadow: 0px 0px 5px 1px black;
     box-sizing: border-box;
 }
@@ -950,15 +860,6 @@ nav .nav-ul {
 /* SEARCH SUB-AKHIR handphone 🔍 */
 
 /* toogle-sub-bab awal 🔼🔽 handphone*/
-.toogle-sub-bab {
-    display: flex;
-    width: 255px;
-    height: 50px;
-    align-items: center;
-    background-color:blue;
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
- }
 
 #sub-checkbox:checked~.open-sub {
     display: none;
@@ -980,43 +881,22 @@ nav .nav-ul {
 }
 
  #sub-checkbox:checked~.toogle-content-sub-bab {
-    display: flex;
-    height: 30vh;
     width:calc(100vw);
     top: 100px;
     left: 0;
     position: fixed;
-    z-index: 100;
-    overflow: auto;
     border-right: 0 solid blue;
-    border-bottom: 1.5px solid blue;
+    border-bottom: 1.5px solid darkblue;
     background-color: white;
 }
 
 .ol-sub-content-toogle {
     width:calc(100vw);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: center;
 }
 
 .ol-sub-content-toogle li {
-    display: flex;
-    width:max-content;
-    height: fit-content;
     margin-right: 10px;
     margin-bottom: 10px;
-}
-
-.ol-sub-content-toogle li:hover {
-    background-color: skyblue;
-}
-
-.ol-sub-content-toogle li a {
-    color: black;
-    font-size: 1.1rem;
 }
 /* toogle-sub-bab awal 🔼🔽 handphone */
 /*✅ ul-sub-bab utama akhir handphone  */
@@ -1066,15 +946,8 @@ nav .nav-ul {
 /* content utama website handphone awal 👨‍🦱*/
 .content-utama {
     width: 100vw;
-    margin: 100px 0% 0;
-    position: absolute;
-    z-index: -100;
-    display: grid;
     grid-template-areas: 'judul'
                         'image-slide';
-    grid-template-rows: repeat(auto-fit,fit-content);
-    background-color: white;
-    box-shadow: 4px 4px 15px black;
 }
 
 .container-parent {
@@ -1083,6 +956,23 @@ nav .nav-ul {
     display: grid;
     background-color: green; 
     height: 100px;   
+}
+
+.container-grid-1 {
+    background-color: red;
+    padding: 0 10px;
+    box-sizing: border-box;
+    grid-area: grid-1;
+}
+
+.container-grid-2 {
+    background-color: black;
+    grid-area: grid-2;
+}
+
+.container-grid-3 {
+    background-color: green;
+    grid-area: grid-3;
 }
 /* content utama website handphone awal 👩‍🦱 */
      }
