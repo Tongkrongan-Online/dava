@@ -429,9 +429,9 @@ nav .nav-ul {
 .toogle-menu-ul {
     opacity: 0;
     transform:translate(50vw,0vh) ;
-    position: absolute;
+    position: fixed;
     transition: all 1s ease;
-    width:50vw ;
+    width: 50vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -679,7 +679,7 @@ nav .nav-ul {
 
 #check-toogle:checked~.toogle-menu-ul {
     opacity: 1;
-    transform:translate(0,0vh) ;
+    transform:translate(0,0) ;
 }
 
 .toogle-menu-ul {
