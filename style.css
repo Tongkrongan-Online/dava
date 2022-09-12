@@ -689,7 +689,7 @@ nav .nav-ul {
     position: fixed;
     transition: all 1s ease;
     width:70vw ;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
