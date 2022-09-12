@@ -692,8 +692,8 @@ nav .nav-ul {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    bottom: 0;
+    justify-content: space-between;
+    top: 0;
     right: 0;
     align-items: center;
     font-family:'Permanent Marker', cursive;
