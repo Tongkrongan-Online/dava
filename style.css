@@ -692,7 +692,7 @@ nav .nav-ul {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     bottom: 0;
     right: 0;
     align-items: center;
