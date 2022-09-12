@@ -217,8 +217,6 @@ nav .nav-ul {
     align-items: center;
     list-style-type: none;
     background-color: white;
-    border-right: 3px solid darkblue;
-    border-bottom: 3px solid darkblue;
     transition: all 1s 1s ease-in-out;
 }
 
@@ -233,14 +231,33 @@ nav .nav-ul {
     background-color: skyblue;
 }
 
-#sub-checkbox:checked~.ol-sub-content {
+.parent-ol-sub-content {
+    overflow: hidden;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content {
+    height: 30vh;
+    overflow-Y: auto;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+    background-color: white;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content {
     display: flex;
+    width: calc(100vw - 255px);
     height: fit-content;
     font-size: 1.2rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content li { 
+ margin-bottom: 20px;
+ transition: all 1s ease-in-out;
 }
 /* ol-content-sub laptop ⏩ */
 
@@ -686,7 +703,7 @@ nav .nav-ul {
 .nav-teks-toogle {
     width: 100%;
     height: 200px;
-    padding-top: 40px;
+    margin-top: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -835,8 +852,7 @@ nav .nav-ul {
     align-items: center;
     list-style-type: none;
     background-color: white;
-    border-right: 3px solid darkblue;
-    border-bottom: 2px solid darkblue;
+    border: 0;
     transform: translate(0,0);
     transition: transform 1s ease-in-out,font-size 1s 2s ease-in-out,width 1s 1s ease-in-out;
 }
@@ -852,10 +868,28 @@ nav .nav-ul {
     background-color: skyblue;
 }
 
-#sub-checkbox:checked~.ol-sub-content {
-    display: flex;
+.parent-ol-sub-content {
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    height: 40px;
+    box-sizing: border-box;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue ;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content {
+    height: 40vh;
+    width: 100vw;
+    border:0 ;
     transform: translate(0,40px);
-    position: fixed;
+    position: absolute;
+    background-color:rgba(255, 0, 0, 0);
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content {
+    display: flex;
+    transform: translate(0,-0px);
+    position: absolute;
     width: 100vw;
     height: fit-content;
     font-size: 1.2rem;
@@ -863,6 +897,8 @@ nav .nav-ul {
     align-items: center;
     justify-content: center;
     background-color: white;
+    border-right: 3px solid darkblue;
+    border-bottom: 2px solid darkblue;
 }
 /* ol-content-sub hanphone ⏩ */
 
