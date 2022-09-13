@@ -652,6 +652,8 @@ nav .nav-ul {
      @media (min-width: 320px) and (max-width: 767px) {
 
 /* nav awal handphone 😍*/
+
+
 /* branding handphone 😍awal */
 .teks-logo {
     width: max-content;
@@ -779,6 +781,8 @@ nav .nav-ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow-y: scroll;
+    padding-top: 50px;
     align-items: center;
 }
 
