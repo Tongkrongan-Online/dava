@@ -968,7 +968,7 @@ nav .nav-ul {
     color: rgb(255, 255, 255);
     position: absolute;
     right: 0;
-    transform: translate(-5px,5px);
+    transform: translate(-5px,15px);
     z-index: 99;
     font-size: 1.3rem;
 } 
