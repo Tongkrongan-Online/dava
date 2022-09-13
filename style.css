@@ -18,6 +18,7 @@ body {
 /* nav awal laptop 💻 */
 nav .nav-ul {
     background-color: darkblue;
+    position: fixed;
     width: 100vw;
     height: 40px;
     display: flex;
@@ -477,9 +478,13 @@ nav .nav-ul {
     width: 422px;
     left: -150px;
 }
-#contact-navbar:checked~.link-contact,
-.contact-nav:hover .link-contact {
+
+#contact-navbar:checked~.link-contact {
     display: flex;
+}
+
+.contact-nav:hover .link-contact {
+    display: none;
 }
 
 .link-contact {
@@ -505,14 +510,14 @@ nav .nav-ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .nav-medsos-toogle span {
     display: flex;
     background-color: white;
     margin: 10px 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     align-items: center;
 }
@@ -529,7 +534,7 @@ nav .nav-ul {
     content: "@muhammaddavafahreza";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 3vw;
 }
 
 .nav-medsos-toogle span .facebook::after {
@@ -537,7 +542,7 @@ nav .nav-ul {
     content: "Mhd Dava Fahreza";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 3vw;
 }
 
 .nav-medsos-toogle span .youtube::after {
@@ -545,7 +550,7 @@ nav .nav-ul {
     content: "Tongkrongan Online";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 3vw;
 }
 
 .nav-medsos-toogle span:hover  {
@@ -686,7 +691,7 @@ nav .nav-ul {
 .toogle-menu-ul {
     opacity: 0;
     transform:translate(70vw,0vh);
-    position: absolute;
+    position: fixed;
     transition: all 1s ease;
     width:70vw ;
     height:100%;
@@ -733,9 +738,12 @@ nav .nav-ul {
     width: 100vw;
     left: -25vw;
 }
-#contact-navbar:checked~.link-contact,
-.contact-nav:hover .link-contact {
+#contact-navbar:checked~.link-contact {
     display: flex;
+}
+
+.contact-nav:hover .link-contact {
+    display: none;
 }
 
 .link-contact {
@@ -752,7 +760,7 @@ nav .nav-ul {
     color: black;
     font-size: 1.4rem;
 }
-/* ISI CONATACT AWAL MUNCULL DI LAPTOP */
+/* ISI CONATACT AWAL MUNCULL DI laptop */
 
 /* gambar youtube ig dan fb handphone 😍*/
 .nav-medsos-toogle {
@@ -761,14 +769,14 @@ nav .nav-ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .nav-medsos-toogle span {
     display: flex;
     background-color: white;
     margin: 10px 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     align-items: center;
 }
@@ -785,7 +793,7 @@ nav .nav-ul {
     content: "@muhammaddavafahreza";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 4vw;
 }
 
 .nav-medsos-toogle span .facebook::after {
@@ -793,7 +801,7 @@ nav .nav-ul {
     content: "Mhd Dava Fahreza";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 4vw;
 }
 
 .nav-medsos-toogle span .youtube::after {
@@ -801,7 +809,7 @@ nav .nav-ul {
     content: "Tongkrongan Online";
     color: black;
     margin-left: 2px;
-    font-size: 1.3rem;
+    font-size: 4vw;
 }
 
 .nav-medsos-toogle span:hover  {
