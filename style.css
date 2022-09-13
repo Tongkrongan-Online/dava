@@ -782,7 +782,7 @@ nav .nav-ul {
     flex-direction: column;
     justify-content: space-around;
     overflow-y: scroll;
-    padding-top: 50px;
+    padding-top: 60px;
     align-items: center;
 }
 
