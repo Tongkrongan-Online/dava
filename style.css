@@ -446,6 +446,7 @@ nav .nav-ul {
 .nav-teks-toogle {
     width: 100%;
     height: 200px;
+    margin: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -688,7 +689,7 @@ nav .nav-ul {
     position: absolute;
     transition: all 1s ease;
     width:70vw ;
-    height:100vh;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -700,6 +701,7 @@ nav .nav-ul {
 }
 
 .nav-teks-toogle {
+    margin-top: 100px;
     width: 100%;
     height: 200px;
     flex-direction: column;
