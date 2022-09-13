@@ -775,14 +775,13 @@ nav .nav-ul {
 /* ISI CONATACT AWAL MUNCULL DI laptop */
 
 /* gambar youtube ig dan fb handphone 😍*/
+
 .nav-medsos-toogle {
     width: 100%;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow-y: scroll;
-    padding-top: 60px;
     align-items: center;
 }
 
@@ -969,7 +968,7 @@ nav .nav-ul {
     color: rgb(255, 255, 255);
     position: absolute;
     right: 0;
-    transform: translate(-5px,0);
+    transform: translate(-5px,5px);
     z-index: 99;
     font-size: 1.3rem;
 } 
