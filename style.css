@@ -728,15 +728,18 @@ nav .nav-ul {
     opacity: 0;
 }
 
-#contact-navbar:checked~.button-contact::after {
+#contact-navbar:checked~.link-contact .button-contact-2::after {
     content: "close";
+    color: white;
+    height: fit-content;
     position: absolute;
+    bottom: 0;
+    z-index: 100;
     display: flex;
     background-color: red;
     justify-content: center;
-    top: 205px;
-    width: 100vw;
-    left: -25vw;
+    transform: translate(-1.5vw,6vw);
+    width: 100%;
 }
 #contact-navbar:checked~.link-contact {
     display: flex;
@@ -752,13 +755,20 @@ nav .nav-ul {
     left: -25vw;
     transform: translate(-0px,0px);
     padding: 10px;
-    width: 100vw;
+    width: 90vw;
     flex-direction: column;
     display: none;
     background-color: white;
     font-family: 'Secular One', sans-serif;
     color: black;
-    font-size: 1.4rem;
+    font-size: 5vw;
+}
+
+#contact-navbar:checked~.link-contact span::before, 
+.link-contact span:hover::before{
+    content: "👉";
+    position: absolute;
+    transform: translate(-8vw,0);
 }
 /* ISI CONATACT AWAL MUNCULL DI laptop */
 
