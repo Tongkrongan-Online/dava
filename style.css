@@ -332,7 +332,7 @@ nav .nav-ul {
 /* content utama website laptop awal 💻 */
 .content-utama {
     width: 100vw;
-    margin: 105px 0 0;
+    margin: 80px 0 0;
     position: absolute;
     z-index: -100;
     display: grid;
