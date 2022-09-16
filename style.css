@@ -574,6 +574,7 @@ nav .nav-ul {
 /* content utama website tablet awal 🦍*/
 .content-utama {
     top: 0;
+    width: 100vw;
     margin: 95px 0 0;
     grid-template-areas: 'judul'
                          'image-slide';
