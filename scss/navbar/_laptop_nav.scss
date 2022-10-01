@@ -1,0 +1,451 @@
+/* nav awal laptop 💻 */
+nav .nav-ul {
+    background-color: darkblue;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* branding laptop awal */
+.teks-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width:260px;
+    height: 100%;
+    font-size: 1.4rem;
+    font-family: 'Oleo Script', cursive;
+    order: 1;
+}
+
+.teks-logo img {
+     width: 40px;
+     margin-right: 5px;
+}
+
+.teks-logo a:hover {
+    background-color: rgba(255, 255, 255, 0.304);
+}
+
+.teks-logo:hover::after {
+    content: "👈";
+    position: absolute;
+    transform: translateX(225px);
+}
+/* branding laptop akhir */
+
+/* home about contact laptop awal */
+.nav-toogle {
+    display: flex;
+    width: calc(100% - 270px - 200px);
+    order: 4;
+}
+
+.label-toogle,#check-toogle {
+    display: none;
+} 
+
+#check-toogle {
+    opacity: 0;
+}
+
+.toogle-menu-ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-family:'Permanent Marker', cursive;
+}
+
+.nav-teks-toogle {
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: transparent;
+    padding-right: 30px;
+}
+
+.nav-teks-toogle span {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-teks-toogle span:hover a::before{
+    content: "👉";
+    position: absolute;
+    transform: translate(-25px, 0);
+}
+
+.nav-teks-toogle span:hover  {
+    background-color: rgba(255, 255, 255, 0.252);
+    padding-right: 5px;
+}
+/* home about contact awal laptop */
+
+/* isi contact muncul di laptop awal */
+#contact-navbar {
+    position: fixed;
+    opacity: 0;
+}
+
+#contact-navbar:checked~.link-contact,
+.contact-nav:hover .link-contact {
+    display: flex;
+}
+
+.link-contact {
+    position: fixed;
+    top: 40px;
+    transform: translate(-150px,0);
+    padding: 10px;
+    width: max-content;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    font-family: 'Secular One', sans-serif;
+    color: black;
+    font-size: 1.7rem;
+}
+
+.nav-teks-toogle span:hover .a-link-contact::before {
+    content: "";
+}
+
+#contact-navbar:checked~.link-contact span::before, 
+.link-contact span:hover::before{
+    content: "👉";
+    position: absolute;
+    transform: translate(-35px,0);
+}
+
+.link-contact span:hover {
+    background-color: skyblue;
+}
+
+.link-contact span div {
+    color:blue; 
+    display:inline-block;
+}
+/* ISI CONATACT AWAL MUNCULL DI LAPTOP */
+
+/* gambar youtube ig dan fb laptop */
+.nav-medsos-toogle {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-medsos-toogle span {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span:hover  {
+    background-color: rgba(255, 255, 255, 0.372);
+}
+
+.nav-medsos-toogle span:hover ::before {
+    content: "👉";
+    position: absolute;    
+    transform: translate(-30px, 0);
+}
+/* gambar youtube ig dan fb awal laptop */
+
+// ➡⏩👍 bagian setting view hp dan tablet
+.seting-view-dark {
+    order: 4;
+}
+.label-check-nav-view {
+    display: none;
+}
+
+#hp-view {
+    position: fixed;
+    top: -40px;
+}
+
+// ➡⏩👍 bagian setting view hp dan tablet
+
+// dark mode dan chategory📌
+.change-mode {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0px;
+    width: calc(240px);
+    order: 2;
+}
+
+
+.form-radio {
+    position: absolute;
+    transform: translateY(70px) translateX(-25px);
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    background-color: darkblue;
+    display: none;
+    height: 100px;
+    text-transform: capitalize;
+    padding: 10px 5px 10px 10px;
+
+    label {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    label::before {
+        content: "⚙";
+        margin-right: 7px;
+    } 
+
+    label:hover::before {
+        color: rgb(255, 0, 0);
+    }
+}
+
+.dark-mode {
+    h5 {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    &:hover .form-radio {
+    display: flex;
+    } 
+
+    &:hover .symbol-button {
+        animation: symbol-putar 7s ease-in-out infinite;
+        color: red;
+    }
+
+    @keyframes symbol-putar {
+        from {
+        transform: rotate(0deg);
+        }
+
+        to {
+        transform: rotate(360deg);
+        }
+    }
+}
+
+.hide-subs {
+    h5 {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    &:hover .hide-button {
+        animation: hide-subs 2s ease-in-out;
+        color: red;
+    }
+
+    @keyframes hide-subs {
+        from {
+            transform: rotateX(0deg);
+        }
+
+        to {
+            transform: rotateX(360deg);
+        }
+    }
+}
+
+
+// checkbox hide-subs sembunyikan subs awal📌
+#hide-subs {
+    position: fixed;
+    top: -100px;
+    background-color: red;
+
+    &:checked~.sub-content-bab {
+    transform: translate(0,-60px);
+
+    }
+}
+
+.sub-content-bab {
+    transition: all 1s ease-in-out;
+     position: fixed;
+    z-index: -100;
+}
+// checkbox hide-subs sembunyikan subs akhir📌
+
+/* nav akhir laptop 💻 */
+
+
+
+/*✅ ul-sub-bab utama awal laptop📃 */
+.ul-sub-bab {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    width: 100vw;
+    height: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: -1;
+    font-family: 'IBM Plex Serif', serif;
+    border-bottom: 2.5px solid darkblue;
+}
+
+.li-sub-bab {
+    width: calc(100% - 255px);
+    height: 39.5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+/* ul-sub-bab-utama akhir laptop 📃*/
+
+/* ol-content-sub laptop ⏩*/
+.ol-sub-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+    color:rgb(0, 0, 0);
+    transition: all 1s 1s ease-in-out;
+}
+
+.ol-sub-content li a {
+    display: flex;
+    width: max-content;
+    margin-right:20px;
+}
+
+.ol-sub-content li a:hover {
+    background-color: skyblue;
+}
+
+.parent-ol-sub-content {
+    overflow: hidden;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content {
+    height: 200px;
+    overflow-Y: auto;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+    transition: all 1s ease;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content {
+    display: flex;
+    width: calc(100vw - 255px);
+    height: fit-content;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.parent-ol-sub-content .ol-sub-content li {
+    margin: 0;
+    transition: all 1s ease-in-out;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content li { 
+    margin-bottom: 20px;
+}
+/* ol-content-sub laptop ⏩ */
+
+/* LI TOOGLE SUB-CONTENT 📌 */
+.toogle-sub-bab {
+    display: flex;
+    width: 255px;
+    height: 40px;
+    align-items: center;
+    background-color: darkblue;
+    color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid darkblue;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+/* SEARCH SUB-AWAL LAPTOP 🔍*/
+.label-search-sub {
+    transform: translate(65px,1px);
+}
+
+
+#search-sub {
+    height: 70%;
+    width: 152px;
+    font-size: 1rem;
+    margin-left: 1px;
+    position: relative;
+    transform: translate(95px,0);
+    background-color: white;
+}
+
+#search-sub:focus~.label-search-sub{
+    z-index: -1;
+}
+
+#search-sub:focus{
+    box-shadow: 0px 0px 6px 3px skyblue;
+}
+/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+
+/* toogle-sub-bab awal 🔼🔽 laptop*/
+.tombol-sub-content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    transform: translate(-170px,0);
+    z-index: 99;
+    font-size: 1.3rem;
+} 
+
+.close-sub {
+    display: none;
+}
+
+#sub-checkbox {
+    position: absolute;
+    top:-1000px;
+}
+
+#sub-checkbox:checked~.open-sub {
+    display: none;
+}
+
+#sub-checkbox:checked~.close-sub {
+    display: flex;
+    z-index: 10;
+}
+/*✅ ul-sub-bab utama akhir laptop  */

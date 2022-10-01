@@ -1,0 +1,40 @@
+/* content utama website tablet awal 🦍*/
+.content-utama {
+    top: 0;
+    width: 100vw;
+    margin: 95px 0 0;
+    grid-template-areas: 'judul'
+                         'image-slide';
+}
+
+/* isi kontent-utama laptop awal*/
+.container-parent {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "grid-1 grid-2 grid-3";
+    grid-template-columns: 200px calc(100% - 200px - 30%) 30%;
+    margin: auto;
+    background-color: rgb(219, 219, 219); 
+    height: 1000px;
+    /* transform: translate(0px,-30px); */
+    box-shadow: 0px 0px 10px 5px black;   
+}
+
+.container-grid-1 {
+    background-color: red;
+    padding: 0 10px;
+    box-sizing: border-box;
+    grid-area: grid-1;
+}
+
+.container-grid-2 {
+    background-color: black;
+    grid-area: grid-2;
+}
+
+.container-grid-3 {
+    background-color: green;
+    grid-area: grid-3;
+}
+
+/* content utama website tablet awal 🦍 */

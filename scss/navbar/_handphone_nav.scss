@@ -1,0 +1,385 @@
+/* @media query atau breakpoint untuk screen layar handphone */
+     @media (min-width: 320px) and (max-width: 767px) {
+/* nav awal handphone 😍*/
+
+/* branding handphone 😍awal */
+.teks-logo {
+    width: 255px;
+    order: 1;
+}
+/* branding handphone 😍akhir */
+
+/* home about contact handphone 😍awal */
+.nav-toogle {
+    width: 25px;
+    order: 4;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+/* toogle button untuk handphone 😍awal */
+#check-toogle:checked~.button-toogle {
+    display: none;
+}
+
+#check-toogle,.button-toogle{
+    display: flex;
+    position: relative;
+    border: 2px solid silver;
+    box-sizing: border-box;
+} 
+
+#check-toogle:checked~.x-toogle {
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+
+#check-toogle:checked~.toogle-menu-ul {
+    opacity: 1;
+    transform:translate(0,0) ;
+}
+
+.toogle-menu-ul {
+    opacity: 0;
+    transform:translate(70vw,0vh);
+    position: fixed;
+    transition: all 1s ease;
+    width:70vw ;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    align-items: center;
+    font-family:'Permanent Marker', cursive;
+    background-color: black;
+}
+
+.nav-teks-toogle {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-teks-toogle span {
+    display: flex;
+    height: max-content;
+    align-items: center;
+}
+/* home about contact awal handphone 😍*/
+
+/* isi contact muncul di handphone 😍awal */
+#contact-navbar {
+    position: fixed;
+    opacity: 0;
+}
+
+#contact-navbar:checked~.link-contact .button-contact-2::after {
+    content: "close";
+    color: white;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    transform: translate(-1.5vw,6vw);
+    width: 100%;
+}
+#contact-navbar:checked~.link-contact {
+    display: flex;
+}
+
+.contact-nav:hover .link-contact {
+    display: none;
+}
+
+.link-contact {
+    position: absolute;
+    top: 90px;
+    left: -25vw;
+    transform: translate(-0px,0px);
+    padding: 10px;
+    width: 90vw;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    font-family: 'Secular One', sans-serif;
+    color: black;
+    font-size: 5vw;
+}
+
+#contact-navbar:checked~.link-contact span::before, 
+.link-contact span:hover::before{
+    content: "👉";
+    position: absolute;
+    transform: translate(-8vw,0);
+}
+/* ISI CONATACT AWAL MUNCULL DI laptop */
+
+/* gambar youtube ig dan fb handphone 😍*/
+
+.nav-medsos-toogle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-medsos-toogle span {
+    display: flex;
+    background-color: white;
+    margin: 10px 0;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span .instagram::after {
+    font-family: 'Secular One', sans-serif;
+    content: "@muhammaddavafahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+}
+
+.nav-medsos-toogle span .facebook::after {
+    font-family: 'Secular One', sans-serif;
+    content: "Mhd Dava Fahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+}
+
+.nav-medsos-toogle span .youtube::after {
+    font-family: 'Secular One', sans-serif;
+    content: "Tongkrongan Online";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+}
+
+.nav-medsos-toogle span:hover  {
+    background-color: rgba(255, 255, 255, 0.372);
+}
+
+.nav-medsos-toogle span:hover ::before {
+    content: "👉";
+    position: absolute;    
+    transform: translate(-30px, 0);
+}
+/* gambar youtube ig dan fb awal handphone 😍*/
+
+/* nav akhir handphone 😍 */
+
+
+
+/* sub- content-navigasi📌 */
+.ul-sub-bab {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    width: 100vw;
+    height: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: -1;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.li-sub-bab {
+    width: calc(100% - 85px);
+    height: 39.5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid darkblue;
+    box-sizing: border-box;
+}
+/* LI TOOGLE SUB-CONTENT handphone 📌 */
+/* ol-content-sub handphone ⏩*/
+.ol-sub-content {
+    width: calc(100vw - 85px);
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+    border: 0;
+    transform: translate(0,0);
+    transition: transform 1s ease-in-out,font-size 1s 2s ease-in-out,width 1s 1s ease-in-out;
+}
+
+.ol-sub-content li a {
+    display: flex;
+    width: max-content;
+    margin-right:20px;
+    color:rgb(0, 0, 0);
+}
+
+.ol-sub-content li a:hover {
+    background-color: skyblue;
+}
+
+.parent-ol-sub-content {
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    height: 40px;
+    box-sizing: border-box;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue ;
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content {
+    height: 40vh;
+    width: 100vw;
+    border:0 ;
+    transform: translate(0,40px);
+    position: absolute;
+    background-color:rgba(255, 0, 0, 0);
+}
+
+#sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content {
+    display: flex;
+    transform: translate(0,-0px);
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-right: 3px solid darkblue;
+    border-bottom: 2px solid darkblue;
+}
+/* ol-content-sub hanphone ⏩ */
+
+/* LI TOOGLE SUB-CONTENT 📌 */
+.toogle-sub-bab {
+    display: flex;
+    width: 85px;
+    height: 40px;
+    align-items: center;
+    background-color: darkblue;
+    color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid darkblue;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+/* SEARCH SUB-AWAL handphone 🔍*/
+.label-search-sub {
+    transform: translate(-35px,0px);
+    z-index: 1;
+}
+
+#search-sub {
+    height: 70%;
+    width: 152px;
+    font-size: 1rem;
+    margin-left: 1px;
+    position: absolute;
+    transform: translate(-90px,0);
+    z-index: 1;
+    background-color: white;
+    right: 0;
+}
+
+#search-sub:focus~.label-search-sub{
+    z-index: -1;
+}
+
+#search-sub:focus{
+    box-shadow: 0px 0px 6px 3px skyblue;
+}
+/* SEARCH SUB-AKHIR handphone 🔍 */
+
+/* toogle-sub-bab awal 🔼🔽 handphone*/
+.tombol-sub-content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    transform: translate(-5px,5px);
+    z-index: 99;
+    font-size: 1.3rem;
+} 
+
+.close-sub {
+    display: none;
+}
+
+#sub-checkbox {
+    position: absolute;
+    top:-1000px;
+}
+
+#sub-checkbox:checked~.open-sub {
+    display: none;
+}
+
+#sub-checkbox:checked~.close-sub {
+    display: flex;
+    z-index: 10;
+}
+/*✅ ul-sub-bab utama akhir handphone  */
+
+// hide subs dan hide dark mode setings➡➡⏩🟡
+.label-check-nav-view {
+    display: inherit;
+    margin-right:10px;
+}
+
+.seting-view-dark {
+    display: flex;
+    width: calc(100% - 255px - 25px);
+    justify-content: flex-end;
+    order: 3;
+}
+
+#hp-view:checked~.change-mode {
+    display: flex;
+}
+
+.change-mode {
+    display: none;
+    position: fixed;
+    // justify-content: start;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: max-content;
+    background-color: darkblue;
+    right: 0px;
+    top: 40px;
+    color: white;
+    padding: 10px;
+
+    .hide-subs {
+        margin-bottom: 15px;
+    }
+}
+
+.form-radio {
+        transform: translateY(-5px) translateX(-170px);
+        width: max-content;
+}
+
+}

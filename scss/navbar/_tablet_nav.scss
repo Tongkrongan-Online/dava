@@ -1,0 +1,204 @@
+/* @media query atau breakpoint untuk screen layar tablet */
+ @media (min-width: 768px) and (max-width: 1024px) {
+/* nav awal tablet 💴 */
+/* branding tablet awal */
+.teks-logo {
+    width: 260px;
+    order: 1;
+}
+/* branding tablet akhir */
+
+/* home about contact tablet awal */
+.nav-toogle {
+    width: 25px;
+    justify-content: flex-end;
+    padding-right: 10px;
+    order: 5;
+}
+
+/* toogle button untuk tablet awal */
+#check-toogle:checked~.button-toogle {
+    display: none;
+}
+
+#check-toogle,.button-toogle{
+    display: flex;
+    position: relative;
+    border: 2px solid silver;
+    box-sizing: border-box;
+} 
+
+#check-toogle:checked~.x-toogle {
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+
+#check-toogle:checked~.toogle-menu-ul {
+    opacity: 1;
+    transform:translate(0,0vh) ;
+}
+
+.toogle-menu-ul {
+    opacity: 0;
+    transform:translate(50vw,0vh) ;
+    position: fixed;
+    transition: all 1s ease;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    font-family:'Permanent Marker', cursive;
+    background-color: black;
+}
+
+.nav-teks-toogle {
+    width: 100%;
+    height: 200px;
+    margin: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-teks-toogle span {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+/* home about contact awal tablet */
+
+/* isi contact muncul di tablet awal */
+#contact-navbar {
+    position: fixed;
+    opacity: 0;
+}
+
+
+#contact-navbar:checked~.button-contact::after {
+    content: "close";
+    position: absolute;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    top: 205px;
+    width: 422px;
+    left: -150px;
+}
+
+#contact-navbar:checked~.link-contact {
+    display: flex;
+}
+
+.contact-nav:hover .link-contact {
+    display: none;
+}
+
+.link-contact {
+    position: absolute;
+    top: 90px;
+    left: -150px;
+    transform: translate(-0px,0px);
+    padding: 10px;
+    width: max-content;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    font-family: 'Secular One', sans-serif;
+    color: black;
+    font-size: 1.4rem;
+}
+/* ISI CONATACT AWAL MUNCULL DI tablet */
+
+/* gambar youtube ig dan fb tablet */
+.nav-medsos-toogle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-medsos-toogle span {
+    display: flex;
+    background-color: white;
+    margin: 10px 0;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-medsos-toogle span .instagram::after {
+    font-family: 'Secular One', sans-serif;
+    content: "@muhammaddavafahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+}
+
+.nav-medsos-toogle span .facebook::after {
+    font-family: 'Secular One', sans-serif;
+    content: "Mhd Dava Fahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+}
+
+.nav-medsos-toogle span .youtube::after {
+    font-family: 'Secular One', sans-serif;
+    content: "Tongkrongan Online";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+}
+
+.nav-medsos-toogle span:hover  {
+    background-color: rgba(255, 255, 255, 0.372);
+}
+
+.nav-medsos-toogle span:hover ::before {
+    content: "👉";
+    position: absolute;    
+    transform: translate(-30px, 0);
+}
+/* gambar youtube ig dan fb awal tablet */
+
+
+// change mode tampilan⏩👍👍🟡🟡
+.change-mode {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0px;
+    width: calc(100% - 260px - 25px);
+    order: 2;
+    box-sizing: border-box;
+    margin-right:15px ;
+
+    .hide-subs {
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
+.form-radio {
+        transform: translateY(80px) translateX(5px);
+        width: max-content;
+}
+
+ }

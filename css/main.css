@@ -1,0 +1,1229 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* nav awal laptop 💻 */
+nav .nav-ul {
+  background-color: darkblue;
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  color: white;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* branding laptop awal */
+.teks-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 260px;
+  height: 100%;
+  font-size: 1.4rem;
+  font-family: "Oleo Script", cursive;
+  order: 1;
+}
+
+.teks-logo img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.teks-logo a:hover {
+  background-color: rgba(255, 255, 255, 0.304);
+}
+
+.teks-logo:hover::after {
+  content: "👈";
+  position: absolute;
+  transform: translateX(225px);
+}
+
+/* branding laptop akhir */
+/* home about contact laptop awal */
+.nav-toogle {
+  display: flex;
+  width: calc(100% - 270px - 200px);
+  order: 4;
+}
+
+.label-toogle, #check-toogle {
+  display: none;
+}
+
+#check-toogle {
+  opacity: 0;
+}
+
+.toogle-menu-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.nav-teks-toogle {
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: transparent;
+  padding-right: 30px;
+}
+
+.nav-teks-toogle span {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-teks-toogle span:hover a::before {
+  content: "👉";
+  position: absolute;
+  transform: translate(-25px, 0);
+}
+
+.nav-teks-toogle span:hover {
+  background-color: rgba(255, 255, 255, 0.252);
+  padding-right: 5px;
+}
+
+/* home about contact awal laptop */
+/* isi contact muncul di laptop awal */
+#contact-navbar {
+  position: fixed;
+  opacity: 0;
+}
+
+#contact-navbar:checked ~ .link-contact,
+.contact-nav:hover .link-contact {
+  display: flex;
+}
+
+.link-contact {
+  position: fixed;
+  top: 40px;
+  transform: translate(-150px, 0);
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  flex-direction: column;
+  display: none;
+  background-color: white;
+  font-family: "Secular One", sans-serif;
+  color: black;
+  font-size: 1.7rem;
+}
+
+.nav-teks-toogle span:hover .a-link-contact::before {
+  content: "";
+}
+
+#contact-navbar:checked ~ .link-contact span::before,
+.link-contact span:hover::before {
+  content: "👉";
+  position: absolute;
+  transform: translate(-35px, 0);
+}
+
+.link-contact span:hover {
+  background-color: skyblue;
+}
+
+.link-contact span div {
+  color: blue;
+  display: inline-block;
+}
+
+/* ISI CONATACT AWAL MUNCULL DI LAPTOP */
+/* gambar youtube ig dan fb laptop */
+.nav-medsos-toogle {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-medsos-toogle span {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-medsos-toogle span a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-medsos-toogle span:hover {
+  background-color: rgba(255, 255, 255, 0.372);
+}
+
+.nav-medsos-toogle span:hover ::before {
+  content: "👉";
+  position: absolute;
+  transform: translate(-30px, 0);
+}
+
+/* gambar youtube ig dan fb awal laptop */
+.seting-view-dark {
+  order: 4;
+}
+
+.label-check-nav-view {
+  display: none;
+}
+
+#hp-view {
+  position: fixed;
+  top: -40px;
+}
+
+.change-mode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 0px;
+  width: 240px;
+  order: 2;
+}
+
+.form-radio {
+  position: absolute;
+  transform: translateY(70px) translateX(-25px);
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  background-color: darkblue;
+  display: none;
+  height: 100px;
+  text-transform: capitalize;
+  padding: 10px 5px 10px 10px;
+}
+.form-radio label {
+  display: flex;
+  align-items: center;
+}
+.form-radio label span {
+  margin-left: 5px;
+}
+.form-radio label::before {
+  content: "⚙";
+  margin-right: 7px;
+}
+.form-radio label:hover::before {
+  color: rgb(255, 0, 0);
+}
+
+.dark-mode h5 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.dark-mode:hover .form-radio {
+  display: flex;
+}
+.dark-mode:hover .symbol-button {
+  -webkit-animation: symbol-putar 7s ease-in-out infinite;
+          animation: symbol-putar 7s ease-in-out infinite;
+  color: red;
+}
+@-webkit-keyframes symbol-putar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes symbol-putar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-subs h5 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.hide-subs:hover .hide-button {
+  -webkit-animation: hide-subs 2s ease-in-out;
+          animation: hide-subs 2s ease-in-out;
+  color: red;
+}
+@-webkit-keyframes hide-subs {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes hide-subs {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+#hide-subs {
+  position: fixed;
+  top: -100px;
+  background-color: red;
+}
+#hide-subs:checked ~ .sub-content-bab {
+  transform: translate(0, -60px);
+}
+
+.sub-content-bab {
+  transition: all 1s ease-in-out;
+  position: fixed;
+  z-index: -100;
+}
+
+/* nav akhir laptop 💻 */
+/*✅ ul-sub-bab utama awal laptop📃 */
+.ul-sub-bab {
+  display: flex;
+  position: fixed;
+  top: 40px;
+  width: 100vw;
+  height: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: -1;
+  font-family: "IBM Plex Serif", serif;
+  border-bottom: 2.5px solid darkblue;
+}
+
+.li-sub-bab {
+  width: calc(100% - 255px);
+  height: 39.5px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+/* ul-sub-bab-utama akhir laptop 📃*/
+/* ol-content-sub laptop ⏩*/
+.ol-sub-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  list-style-type: none;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  transition: all 1s 1s ease-in-out;
+}
+
+.ol-sub-content li a {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 20px;
+}
+
+.ol-sub-content li a:hover {
+  background-color: skyblue;
+}
+
+.parent-ol-sub-content {
+  overflow: hidden;
+}
+
+#sub-checkbox:checked ~ .parent-ol-sub-content {
+  height: 200px;
+  overflow-Y: auto;
+  border-right: 3px solid darkblue;
+  border-bottom: 3px solid darkblue;
+  transition: all 1s ease;
+}
+
+#sub-checkbox:checked ~ .parent-ol-sub-content .ol-sub-content {
+  display: flex;
+  width: calc(100vw - 255px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.parent-ol-sub-content .ol-sub-content li {
+  margin: 0;
+  transition: all 1s ease-in-out;
+}
+
+#sub-checkbox:checked ~ .parent-ol-sub-content .ol-sub-content li {
+  margin-bottom: 20px;
+}
+
+/* ol-content-sub laptop ⏩ */
+/* LI TOOGLE SUB-CONTENT 📌 */
+.toogle-sub-bab {
+  display: flex;
+  width: 255px;
+  height: 40px;
+  align-items: center;
+  background-color: darkblue;
+  color: rgb(255, 255, 255);
+  border-bottom: 2.5px solid darkblue;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+}
+
+/* SEARCH SUB-AWAL LAPTOP 🔍*/
+.label-search-sub {
+  transform: translate(65px, 1px);
+}
+
+#search-sub {
+  height: 70%;
+  width: 152px;
+  font-size: 1rem;
+  margin-left: 1px;
+  position: relative;
+  transform: translate(95px, 0);
+  background-color: white;
+}
+
+#search-sub:focus ~ .label-search-sub {
+  z-index: -1;
+}
+
+#search-sub:focus {
+  box-shadow: 0px 0px 6px 3px skyblue;
+}
+
+/* SEARCH SUB-AKHIR LAPTOP 🔍 */
+/* toogle-sub-bab awal 🔼🔽 laptop*/
+.tombol-sub-content {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  transform: translate(-170px, 0);
+  z-index: 99;
+  font-size: 1.3rem;
+}
+
+.close-sub {
+  display: none;
+}
+
+#sub-checkbox {
+  position: absolute;
+  top: -1000px;
+}
+
+#sub-checkbox:checked ~ .open-sub {
+  display: none;
+}
+
+#sub-checkbox:checked ~ .close-sub {
+  display: flex;
+  z-index: 10;
+}
+
+/*✅ ul-sub-bab utama akhir laptop  */
+/* @media query atau breakpoint untuk screen layar tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* nav awal tablet 💴 */
+  /* branding tablet awal */
+  .teks-logo {
+    width: 260px;
+    order: 1;
+  }
+  /* branding tablet akhir */
+  /* home about contact tablet awal */
+  .nav-toogle {
+    width: 25px;
+    justify-content: flex-end;
+    padding-right: 10px;
+    order: 5;
+  }
+  /* toogle button untuk tablet awal */
+  #check-toogle:checked ~ .button-toogle {
+    display: none;
+  }
+  #check-toogle, .button-toogle {
+    display: flex;
+    position: relative;
+    border: 2px solid silver;
+    box-sizing: border-box;
+  }
+  #check-toogle:checked ~ .x-toogle {
+    display: flex;
+    position: relative;
+    z-index: 100;
+  }
+  #check-toogle:checked ~ .toogle-menu-ul {
+    opacity: 1;
+    transform: translate(0, 0vh);
+  }
+  .toogle-menu-ul {
+    opacity: 0;
+    transform: translate(50vw, 0vh);
+    position: fixed;
+    transition: all 1s ease;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    font-family: "Permanent Marker", cursive;
+    background-color: black;
+  }
+  .nav-teks-toogle {
+    width: 100%;
+    height: 200px;
+    margin: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .nav-teks-toogle span {
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+  }
+  /* home about contact awal tablet */
+  /* isi contact muncul di tablet awal */
+  #contact-navbar {
+    position: fixed;
+    opacity: 0;
+  }
+  #contact-navbar:checked ~ .button-contact::after {
+    content: "close";
+    position: absolute;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    top: 205px;
+    width: 422px;
+    left: -150px;
+  }
+  #contact-navbar:checked ~ .link-contact {
+    display: flex;
+  }
+  .contact-nav:hover .link-contact {
+    display: none;
+  }
+  .link-contact {
+    position: absolute;
+    top: 90px;
+    left: -150px;
+    transform: translate(0px, 0px);
+    padding: 10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    font-family: "Secular One", sans-serif;
+    color: black;
+    font-size: 1.4rem;
+  }
+  /* ISI CONATACT AWAL MUNCULL DI tablet */
+  /* gambar youtube ig dan fb tablet */
+  .nav-medsos-toogle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-medsos-toogle span {
+    display: flex;
+    background-color: white;
+    margin: 10px 0;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+  }
+  .nav-medsos-toogle span a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .nav-medsos-toogle span .instagram::after {
+    font-family: "Secular One", sans-serif;
+    content: "@muhammaddavafahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+  }
+  .nav-medsos-toogle span .facebook::after {
+    font-family: "Secular One", sans-serif;
+    content: "Mhd Dava Fahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+  }
+  .nav-medsos-toogle span .youtube::after {
+    font-family: "Secular One", sans-serif;
+    content: "Tongkrongan Online";
+    color: black;
+    margin-left: 2px;
+    font-size: 3vw;
+  }
+  .nav-medsos-toogle span:hover {
+    background-color: rgba(255, 255, 255, 0.372);
+  }
+  .nav-medsos-toogle span:hover ::before {
+    content: "👉";
+    position: absolute;
+    transform: translate(-30px, 0);
+  }
+  /* gambar youtube ig dan fb awal tablet */
+  .change-mode {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0px;
+    width: calc(100% - 260px - 25px);
+    order: 2;
+    box-sizing: border-box;
+    margin-right: 15px;
+  }
+  .change-mode .hide-subs {
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .form-radio {
+    transform: translateY(80px) translateX(5px);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+/* @media query atau breakpoint untuk screen layar handphone */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* nav awal handphone 😍*/
+  /* branding handphone 😍awal */
+  .teks-logo {
+    width: 255px;
+    order: 1;
+  }
+  /* branding handphone 😍akhir */
+  /* home about contact handphone 😍awal */
+  .nav-toogle {
+    width: 25px;
+    order: 4;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  /* toogle button untuk handphone 😍awal */
+  #check-toogle:checked ~ .button-toogle {
+    display: none;
+  }
+  #check-toogle, .button-toogle {
+    display: flex;
+    position: relative;
+    border: 2px solid silver;
+    box-sizing: border-box;
+  }
+  #check-toogle:checked ~ .x-toogle {
+    display: flex;
+    position: relative;
+    z-index: 100;
+  }
+  #check-toogle:checked ~ .toogle-menu-ul {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .toogle-menu-ul {
+    opacity: 0;
+    transform: translate(70vw, 0vh);
+    position: fixed;
+    transition: all 1s ease;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    align-items: center;
+    font-family: "Permanent Marker", cursive;
+    background-color: black;
+  }
+  .nav-teks-toogle {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .nav-teks-toogle span {
+    display: flex;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    align-items: center;
+  }
+  /* home about contact awal handphone 😍*/
+  /* isi contact muncul di handphone 😍awal */
+  #contact-navbar {
+    position: fixed;
+    opacity: 0;
+  }
+  #contact-navbar:checked ~ .link-contact .button-contact-2::after {
+    content: "close";
+    color: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    transform: translate(-1.5vw, 6vw);
+    width: 100%;
+  }
+  #contact-navbar:checked ~ .link-contact {
+    display: flex;
+  }
+  .contact-nav:hover .link-contact {
+    display: none;
+  }
+  .link-contact {
+    position: absolute;
+    top: 90px;
+    left: -25vw;
+    transform: translate(0px, 0px);
+    padding: 10px;
+    width: 90vw;
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    font-family: "Secular One", sans-serif;
+    color: black;
+    font-size: 5vw;
+  }
+  #contact-navbar:checked ~ .link-contact span::before,
+.link-contact span:hover::before {
+    content: "👉";
+    position: absolute;
+    transform: translate(-8vw, 0);
+  }
+  /* ISI CONATACT AWAL MUNCULL DI laptop */
+  /* gambar youtube ig dan fb handphone 😍*/
+  .nav-medsos-toogle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-medsos-toogle span {
+    display: flex;
+    background-color: white;
+    margin: 10px 0;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+  }
+  .nav-medsos-toogle span a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .nav-medsos-toogle span .instagram::after {
+    font-family: "Secular One", sans-serif;
+    content: "@muhammaddavafahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+  }
+  .nav-medsos-toogle span .facebook::after {
+    font-family: "Secular One", sans-serif;
+    content: "Mhd Dava Fahreza";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+  }
+  .nav-medsos-toogle span .youtube::after {
+    font-family: "Secular One", sans-serif;
+    content: "Tongkrongan Online";
+    color: black;
+    margin-left: 2px;
+    font-size: 4vw;
+  }
+  .nav-medsos-toogle span:hover {
+    background-color: rgba(255, 255, 255, 0.372);
+  }
+  .nav-medsos-toogle span:hover ::before {
+    content: "👉";
+    position: absolute;
+    transform: translate(-30px, 0);
+  }
+  /* gambar youtube ig dan fb awal handphone 😍*/
+  /* nav akhir handphone 😍 */
+  /* sub- content-navigasi📌 */
+  .ul-sub-bab {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    width: 100vw;
+    height: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: -1;
+    font-family: "IBM Plex Serif", serif;
+  }
+  .li-sub-bab {
+    width: calc(100% - 85px);
+    height: 39.5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid darkblue;
+    box-sizing: border-box;
+  }
+  /* LI TOOGLE SUB-CONTENT handphone 📌 */
+  /* ol-content-sub handphone ⏩*/
+  .ol-sub-content {
+    width: calc(100vw - 85px);
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+    border: 0;
+    transform: translate(0, 0);
+    transition: transform 1s ease-in-out, font-size 1s 2s ease-in-out, width 1s 1s ease-in-out;
+  }
+  .ol-sub-content li a {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+  }
+  .ol-sub-content li a:hover {
+    background-color: skyblue;
+  }
+  .parent-ol-sub-content {
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    height: 40px;
+    box-sizing: border-box;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+  }
+  #sub-checkbox:checked ~ .parent-ol-sub-content {
+    height: 40vh;
+    width: 100vw;
+    border: 0;
+    transform: translate(0, 40px);
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0);
+  }
+  #sub-checkbox:checked ~ .parent-ol-sub-content .ol-sub-content {
+    display: flex;
+    transform: translate(0, 0px);
+    position: absolute;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-right: 3px solid darkblue;
+    border-bottom: 2px solid darkblue;
+  }
+  /* ol-content-sub hanphone ⏩ */
+  /* LI TOOGLE SUB-CONTENT 📌 */
+  .toogle-sub-bab {
+    display: flex;
+    width: 85px;
+    height: 40px;
+    align-items: center;
+    background-color: darkblue;
+    color: rgb(255, 255, 255);
+    border-bottom: 2.5px solid darkblue;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+  }
+  /* SEARCH SUB-AWAL handphone 🔍*/
+  .label-search-sub {
+    transform: translate(-35px, 0px);
+    z-index: 1;
+  }
+  #search-sub {
+    height: 70%;
+    width: 152px;
+    font-size: 1rem;
+    margin-left: 1px;
+    position: absolute;
+    transform: translate(-90px, 0);
+    z-index: 1;
+    background-color: white;
+    right: 0;
+  }
+  #search-sub:focus ~ .label-search-sub {
+    z-index: -1;
+  }
+  #search-sub:focus {
+    box-shadow: 0px 0px 6px 3px skyblue;
+  }
+  /* SEARCH SUB-AKHIR handphone 🔍 */
+  /* toogle-sub-bab awal 🔼🔽 handphone*/
+  .tombol-sub-content {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    transform: translate(-5px, 5px);
+    z-index: 99;
+    font-size: 1.3rem;
+  }
+  .close-sub {
+    display: none;
+  }
+  #sub-checkbox {
+    position: absolute;
+    top: -1000px;
+  }
+  #sub-checkbox:checked ~ .open-sub {
+    display: none;
+  }
+  #sub-checkbox:checked ~ .close-sub {
+    display: flex;
+    z-index: 10;
+  }
+  /*✅ ul-sub-bab utama akhir handphone  */
+  .label-check-nav-view {
+    display: inherit;
+    margin-right: 10px;
+  }
+  .seting-view-dark {
+    display: flex;
+    width: calc(100% - 255px - 25px);
+    justify-content: flex-end;
+    order: 3;
+  }
+  #hp-view:checked ~ .change-mode {
+    display: flex;
+  }
+  .change-mode {
+    display: none;
+    position: fixed;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: darkblue;
+    right: 0px;
+    top: 40px;
+    color: white;
+    padding: 10px;
+  }
+  .change-mode .hide-subs {
+    margin-bottom: 15px;
+  }
+  .form-radio {
+    transform: translateY(-5px) translateX(-170px);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+/* content utama website laptop awal 💻 */
+.content-utama {
+  width: 100vw;
+  margin: -1px;
+  transform: translateY(-15px);
+  position: absolute;
+  height: 400px;
+  overflow: hidden;
+  background-color: green;
+  top: 0px;
+  z-index: -100;
+  display: grid;
+  grid-template-areas: "judul" "image-slide";
+  grid-template-rows: repeat(auto-fit, -webkit-fit-content);
+  grid-template-rows: repeat(auto-fit, fit-content);
+  box-shadow: 4px 4px 15px black;
+}
+
+/* content utama website laptop awal 💻 */
+/* content utama website handphone awal 👨‍🦱*/
+.content-utama {
+  width: 100vw;
+  grid-template-areas: "judul" "image-slide";
+}
+
+.container-parent {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  background-color: green;
+  height: 100px;
+}
+
+.container-grid-1 {
+  background-color: red;
+  padding: 0 10px;
+  box-sizing: border-box;
+  grid-area: grid-1;
+}
+
+.container-grid-2 {
+  background-color: black;
+  grid-area: grid-2;
+}
+
+.container-grid-3 {
+  background-color: green;
+  grid-area: grid-3;
+}
+
+/* content utama website handphone awal 👩‍🦱 */
+/* content utama website tablet awal 🦍*/
+.content-utama {
+  top: 0;
+  width: 100vw;
+  margin: 95px 0 0;
+  grid-template-areas: "judul" "image-slide";
+}
+
+/* isi kontent-utama laptop awal*/
+.container-parent {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "grid-1 grid-2 grid-3";
+  grid-template-columns: 200px calc(100% - 200px - 30%) 30%;
+  margin: auto;
+  background-color: rgb(219, 219, 219);
+  height: 1000px;
+  /* transform: translate(0px,-30px); */
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+.container-grid-1 {
+  background-color: red;
+  padding: 0 10px;
+  box-sizing: border-box;
+  grid-area: grid-1;
+}
+
+.container-grid-2 {
+  background-color: black;
+  grid-area: grid-2;
+}
+
+.container-grid-3 {
+  background-color: green;
+  grid-area: grid-3;
+}
+
+/* content utama website tablet awal 🦍 */
+#dark-mode, #light-mode, #normal-mode {
+  position: fixed;
+  top: -100px;
+}
+
+#dark-mode:checked ~ .dark-aktive {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#dark-mode:checked ~ * .dark-aktive {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * .dark-aktive {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * .dark-aktive {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * .dark-aktive {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#dark-mode:checked ~ .border-aktive {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * .border-aktive {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * .border-aktive {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * .border-aktive {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * .border-aktive {
+  border-color: black;
+}
+
+#light-mode:checked ~ .dark-aktive {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#light-mode:checked ~ * .dark-aktive {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#light-mode:checked ~ * *.dark-aktive {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * .dark-aktive {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * *.dark-aktive {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#light-mode:checked.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ * *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ * *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ * * *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * *.light-aktive {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#light-mode:checked ~ .border-aktive {
+  border-color: white;
+}
+
+#light-mode:checked ~ * .border-aktive {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * .border-aktive {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * .border-aktive {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * .border-aktive {
+  border-color: white;
+}/*# sourceMappingURL=main.css.map */

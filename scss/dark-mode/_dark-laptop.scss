@@ -1,0 +1,158 @@
+// pergantian dark-mode,ligth-mode,normal-mode 📌👿📌👿
+#dark-mode,#light-mode,#normal-mode {
+    position: fixed;
+    top: -100px;
+}
+
+// dark-mode black 📌
+#dark-mode:checked~.dark-aktive{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#dark-mode:checked~* .dark-aktive{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#dark-mode:checked~* * .dark-aktive{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#dark-mode:checked~* * * .dark-aktive{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+
+#dark-mode:checked~* * * * .dark-aktive{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#dark-mode:checked~.border-aktive{
+    border-color: black;
+}
+
+#dark-mode:checked~* .border-aktive{
+    border-color: black;
+}
+
+#dark-mode:checked~* * .border-aktive{
+    border-color: black;
+}
+
+#dark-mode:checked~* * * .border-aktive{
+    border-color: black;
+}
+
+#dark-mode:checked~* * * * .border-aktive{
+    border-color: black;
+}
+
+// dark-mode 🤣 📌
+
+// light-mode 😍e 📌
+#light-mode:checked~.dark-aktive{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+#light-mode:checked~* .dark-aktive{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+#light-mode:checked~* *.dark-aktive{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+#light-mode:checked~* * * .dark-aktive{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+#light-mode:checked~* * * *.dark-aktive{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+// light aktive 📌
+#light-mode:checked.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ * *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ * *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ * * *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ * * * *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#light-mode:checked~ * * * * *.light-aktive{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+
+#light-mode:checked~.border-aktive{
+    border-color: white;
+}
+
+#light-mode:checked~* .border-aktive{
+    border-color: white;
+}
+
+#light-mode:checked~* * .border-aktive{
+    border-color: white;
+}
+
+#light-mode:checked~* * * .border-aktive{
+    border-color: white;
+}
+
+#light-mode:checked~* * * * .border-aktive{
+    border-color: white;
+}
+
+
+// dark-mode white 📌
+// pergantian dark-mode,ligth-mode,normal-mode 📌👿👿

@@ -1,0 +1,32 @@
+/* content utama website handphone awal 👨‍🦱*/
+.content-utama {
+    width: 100vw;
+    grid-template-areas: 'judul'
+                        'image-slide';
+}
+
+.container-parent {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    background-color: green; 
+    height: 100px;   
+}
+
+.container-grid-1 {
+    background-color: red;
+    padding: 0 10px;
+    box-sizing: border-box;
+    grid-area: grid-1;
+}
+
+.container-grid-2 {
+    background-color: black;
+    grid-area: grid-2;
+}
+
+.container-grid-3 {
+    background-color: green;
+    grid-area: grid-3;
+}
+/* content utama website handphone awal 👩‍🦱 */

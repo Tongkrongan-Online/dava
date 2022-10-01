@@ -1,0 +1,11 @@
+@use 'reset/reset';
+
+@use 'navbar/laptop_nav';
+@use 'navbar/tablet_nav';
+@use 'navbar/handphone_nav';
+
+@use 'image-header/laptop_header';
+@use 'image-header/handphone_header';
+@use 'image-header/tablet_header';
+
+@use 'dark-mode/dark-laptop';
