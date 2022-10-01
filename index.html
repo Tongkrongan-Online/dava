@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Tongkrongan-Online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- google font awal -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -273,34 +273,17 @@
 
         /* .promosi-slide sosial media akhir handphone */
     }
-
-    /* 
-    @media (min-width: 0px) and (max-width: 489px) {
-        .slide-gambar-text .text-full-image {
-            top: 90px;
-            left: 0px;
-            text-align: center;
-            font-size: .7rem;
-            padding: 0;
-        }
-
-        .h1-about-judul {
-            font-size: 1.4rem;
-            left: 0px;
-            top: 0px;
-            padding: 10px;
-            text-transform: capitalize;
-            text-align: center;
-            height: 200px;
-        }
-
-    } */
 </style>
 
 
+
+
 <body>
+    <input type="radio" name="dark-mode" id="dark-mode">
+    <input type="radio" name="dark-mode" id="light-mode">
+    <input type="radio" name="dark-mode" id="normal-mode">
     <nav>
-        <ul class="nav-ul">
+        <ul class="nav-ul dark-aktive">
             <li class="teks-logo">
                 <img src="img/logo-saya.jpg" alt="Tongkrongan-Online">
                 <a href="https://youtube.com/channel/UCNncSeKtVODKeIVOUmlH6nw">
@@ -315,7 +298,7 @@
                     </span>
                 </label>
                 <label for="check-toogle" class="x-toogle label-toogle">❌</label>
-                <ul class="toogle-menu-ul">
+                <ul class="toogle-menu-ul dark-aktive">
                     <li class="nav-teks-toogle">
                         <span>
                             <a href="https://dava-rho.vercel.app/">Home</a>
@@ -326,7 +309,7 @@
                         <span class="contact-nav">
                             <input type="checkbox" id="contact-navbar">
                             <label for="contact-navbar" class="button-contact">contact</label>
-                            <div class="link-contact">
+                            <div class="link-contact dark-aktive">
                                 <label for="contact-navbar" class="button-contact-2"></label>
                                 <span>
                                     <a href="#" class="a-link-contact">
@@ -368,66 +351,106 @@
                     </li>
                 </ul>
             </li>
+            <li class="seting-view-dark">
+                <label for="hp-view" class="label-check-nav-view">
+                    <span class="material-symbols-outlined">
+                        settings_motion_mode
+                    </span>
+                </label>
+            </li>
+            <input type="checkbox" id="hp-view">
+
+            <li class="change-mode dark-aktive">
+                <div class="dark-mode">
+                    <h5>
+                        Choice Mode
+                        <span class="material-symbols-outlined symbol-button">
+                            change_circle
+                        </span>
+                        <div class="form-radio dark-aktive">
+                            <label for="dark-mode">Dark mode <span class="material-symbols-outlined">
+                                    dark_mode
+                                </span> </label>
+                            <label for="light-mode">Light mode <span class="material-symbols-outlined">
+                                    light_mode
+                                </span></label>
+                            <label for="normal-mode">Normal mode <span class="material-symbols-outlined">
+                                    format_color_reset
+                                </span></label>
+                        </div>
+                    </h5>
+                </div>
+                <label for="hide-subs" class="hide-subs">
+                    <h5>
+                        Category
+                        <span class="material-symbols-outlined hide-button">
+                            swap_vert
+                        </span>
+                    </h5>
+                </label>
+            </li>
+
         </ul> <!-- nav ul akhir -->
     </nav>
 
-    <section class="sub-content-bab">
-        <ul class="ul-sub-bab">
-            <li class="li-sub-bab">
+    <input type="checkbox" id="hide-subs">
+    <section class="sub-content-bab light-aktive border-aktive">
+        <ul class="ul-sub-bab light-aktive border-aktive">
+            <li class="li-sub-bab light-aktive border-aktive">
                 <input type="checkbox" id="sub-checkbox">
-                <label for="sub-checkbox" class="open-sub tombol-sub-content">🔽open</label>
-                <label for="sub-checkbox" class="close-sub tombol-sub-content">🔼close</label>
-                <div class="parent-ol-sub-content">
-                    <ol class="ol-sub-content">
-                        <li><a href="">chategory-1</a></li>
-                        <li><a href="">chategory-2</a></li>
-                        <li><a href="">chategory-3</a></li>
-                        <li><a href="">chategory-4</a></li>
-                        <li><a href="">chategory-5</a></li>
-                        <li><a href="">chategory-6</a></li>
-                        <li><a href="">chategory-7</a></li>
-                        <li><a href="">chategory-8</a></li>
-                        <li><a href="">chategory-9</a></li>
-                        <li><a href="">chategory-10</a></li>
-                        <li><a href="">chategory-11</a></li>
-                        <li><a href="">chategory-12</a></li>
-                        <li><a href="">chategory-13</a></li>
-                        <li><a href="">chategory-14</a></li>
-                        <li><a href="">chategory-15</a></li>
-                        <li><a href="">chategory-1</a></li>
-                        <li><a href="">chategory-2</a></li>
-                        <li><a href="">chategory-3</a></li>
-                        <li><a href="">chategory-4</a></li>
-                        <li><a href="">chategory-5</a></li>
-                        <li><a href="">chategory-6</a></li>
-                        <li><a href="">chategory-7</a></li>
-                        <li><a href="">chategory-8</a></li>
-                        <li><a href="">chategory-9</a></li>
-                        <li><a href="">chategory-10</a></li>
-                        <li><a href="">chategory-11</a></li>
-                        <li><a href="">chategory-12</a></li>
-                        <li><a href="">chategory-13</a></li>
-                        <li><a href="">chategory-14</a></li>
-                        <li><a href="">chategory-15</a></li>
-                        <li><a href="">chategory-1</a></li>
-                        <li><a href="">chategory-2</a></li>
-                        <li><a href="">chategory-3</a></li>
-                        <li><a href="">chategory-4</a></li>
-                        <li><a href="">chategory-5</a></li>
-                        <li><a href="">chategory-6</a></li>
-                        <li><a href="">chategory-7</a></li>
-                        <li><a href="">chategory-8</a></li>
-                        <li><a href="">chategory-9</a></li>
-                        <li><a href="">chategory-10</a></li>
-                        <li><a href="">chategory-11</a></li>
-                        <li><a href="">chategory-12</a></li>
-                        <li><a href="">chategory-13</a></li>
-                        <li><a href="">chategory-14</a></li>
-                        <li><a href="">chategory-15</a></li>
+                <label for="sub-checkbox" class="open-sub tombol-sub-content dark-aktive">🔽open</label>
+                <label for="sub-checkbox" class="close-sub tombol-sub-content dark-aktive">🔼close</label>
+                <div class="parent-ol-sub-content light-aktive border-aktive">
+                    <ol class="ol-sub-content light-aktive border-aktive">
+                        <li><a href="#">category-1</a></li>
+                        <li><a href="#">category-2</a></li>
+                        <li><a href="#">category-3</a></li>
+                        <li><a href="#">category-4</a></li>
+                        <li><a href="#">category-5</a></li>
+                        <li><a href="#">category-6</a></li>
+                        <li><a href="#">category-7</a></li>
+                        <li><a href="#">category-8</a></li>
+                        <li><a href="#">category-9</a></li>
+                        <li><a href="#">category-10</a></li>
+                        <li><a href="#">category-11</a></li>
+                        <li><a href="#">category-12</a></li>
+                        <li><a href="#">category-13</a></li>
+                        <li><a href="#">category-14</a></li>
+                        <li><a href="#">category-15</a></li>
+                        <li><a href="#">category-1</a></li>
+                        <li><a href="#">category-2</a></li>
+                        <li><a href="#">category-3</a></li>
+                        <li><a href="#">category-4</a></li>
+                        <li><a href="#">category-5</a></li>
+                        <li><a href="#">category-6</a></li>
+                        <li><a href="#">category-7</a></li>
+                        <li><a href="#">category-8</a></li>
+                        <li><a href="#">category-9</a></li>
+                        <li><a href="#">category-10</a></li>
+                        <li><a href="#">category-11</a></li>
+                        <li><a href="#">category-12</a></li>
+                        <li><a href="#">category-13</a></li>
+                        <li><a href="#">category-14</a></li>
+                        <li><a href="#">category-15</a></li>
+                        <li><a href="#">category-1</a></li>
+                        <li><a href="#">category-2</a></li>
+                        <li><a href="#">category-3</a></li>
+                        <li><a href="#">category-4</a></li>
+                        <li><a href="#">category-5</a></li>
+                        <li><a href="#">category-6</a></li>
+                        <li><a href="#">category-7</a></li>
+                        <li><a href="#">category-8</a></li>
+                        <li><a href="#">category-9</a></li>
+                        <li><a href="#">category-10</a></li>
+                        <li><a href="#">category-11</a></li>
+                        <li><a href="#">category-12</a></li>
+                        <li><a href="#">category-13</a></li>
+                        <li><a href="#">category-14</a></li>
+                        <li><a href="#">category-15</a></li>
                     </ol>
                 </div>
             </li>
-            <li class="toogle-sub-bab">
+            <li class="toogle-sub-bab dark-aktive border-aktive">
                 <input type="search" id="search-sub" placeholder="search"
                     onclick="alert('mohon maaf tombol search belum berfungsi ya🙏, saya belum bisa buat database nya untuk keluar masuk nya data,terimakasih')"
                     onchange="alert('mau cari apa sih🤦‍♂️,kan udah dibilang gak bisa loh,apa kalian mau bantuin saya buat database nya gitu?')">
@@ -436,7 +459,7 @@
         </ul>
     </section>
 
-    <section class="content-utama">
+    <!-- <section class="content-utama">
         <div class="image-slide">
             <div class="slide-gambar-text">
                 <h1 class="h1-about-judul">
@@ -499,23 +522,10 @@
             </div>
         </div>
 
-        <div class="container-parent">
-            <div class="container-grid-1">
-                <ul>
-                    <li><a href="#">go to the top</a></li>
-                    <li><a href="#">go to the midle</a></li>
-                    <li><a href="#">go to the bottom</a></li>
-                    <li><a href="#">go to contact</a></li>
-                </ul>
-            </div>
-            <div class="container-grid-2">
+        <div class="container-book">
 
-            </div>
-            <div class="container-grid-3">
-
-            </div>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -612,9 +622,9 @@
                         JSON.parse(toRotate), period);
                 }
             } // INJECT CSS var css=document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
+            // css.type = "text/css";
+            // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            // document.body.appendChild(css);
         };
     </script>
 </body>
