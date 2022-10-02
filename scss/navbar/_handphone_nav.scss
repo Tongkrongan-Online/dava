@@ -138,6 +138,7 @@
 .nav-medsos-toogle span {
     display: flex;
     background-color: white;
+    color: black;
     margin: 10px 0;
     width: 90%;
     height: 100%;
@@ -154,7 +155,6 @@
 .nav-medsos-toogle span .instagram::after {
     font-family: 'Secular One', sans-serif;
     content: "@muhammaddavafahreza";
-    color: black;
     margin-left: 2px;
     font-size: 4vw;
 }
@@ -162,7 +162,6 @@
 .nav-medsos-toogle span .facebook::after {
     font-family: 'Secular One', sans-serif;
     content: "Mhd Dava Fahreza";
-    color: black;
     margin-left: 2px;
     font-size: 4vw;
 }
@@ -170,7 +169,6 @@
 .nav-medsos-toogle span .youtube::after {
     font-family: 'Secular One', sans-serif;
     content: "Tongkrongan Online";
-    color: black;
     margin-left: 2px;
     font-size: 4vw;
 }
@@ -223,6 +221,7 @@
     align-items: center;
     list-style-type: none;
     background-color: white;
+    color: black;
     border: 0;
     transform: translate(0,0);
     transition: transform 1s ease-in-out,font-size 1s 2s ease-in-out,width 1s 1s ease-in-out;
@@ -232,7 +231,6 @@
     display: flex;
     width: max-content;
     margin-right:20px;
-    color:rgb(0, 0, 0);
 }
 
 .ol-sub-content li a:hover {
@@ -254,7 +252,7 @@
     border:0 ;
     transform: translate(0,40px);
     position: absolute;
-    background-color:rgba(255, 0, 0, 0);
+    background-color:rgba(0, 0, 0, 0);
 }
 
 #sub-checkbox:checked~.parent-ol-sub-content .ol-sub-content {
@@ -267,9 +265,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border-right: 3px solid darkblue;
-    border-bottom: 2px solid darkblue;
 }
 /* ol-content-sub hanphone ⏩ */
 
