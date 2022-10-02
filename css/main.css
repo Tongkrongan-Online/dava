@@ -209,6 +209,7 @@ nav .nav-ul {
 }
 
 .change-mode {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -216,6 +217,7 @@ nav .nav-ul {
   padding-left: 0px;
   width: 240px;
   order: 2;
+  z-index: -1;
 }
 
 .form-radio {

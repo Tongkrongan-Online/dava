@@ -192,6 +192,7 @@ nav .nav-ul {
 
 // dark mode dan chategory📌
 .change-mode {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -199,6 +200,7 @@ nav .nav-ul {
     padding-left: 0px;
     width: calc(240px);
     order: 2;
+    z-index: -1;
 }
 
 
