@@ -43,7 +43,9 @@ nav .nav-ul {
 }
 
 .teks-logo img {
-  width: 40px;
+  width: 30px;
+  border-radius: 25%;
+  background-position: center;
   margin-right: 5px;
 }
 
