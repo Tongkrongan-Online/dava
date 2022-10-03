@@ -223,7 +223,7 @@ nav .nav-ul {
 .form-radio {
   position: absolute;
   transform: translateY(70px) translateX(-25px);
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-evenly;
   color: white;
   background-color: darkblue;
