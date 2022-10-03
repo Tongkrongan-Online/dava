@@ -56,7 +56,7 @@ nav .nav-ul {
 .teks-logo:hover::after {
   content: "👈";
   position: absolute;
-  transform: translateX(225px);
+  transform: translateX(210px);
 }
 
 /* branding laptop akhir */
@@ -993,13 +993,13 @@ nav .nav-ul {
 .content-utama {
   width: 100vw;
   margin: -1px;
-  transform: translateY(-15px);
+  transform: translateY(80px);
   position: absolute;
   height: 400px;
   overflow: hidden;
   background-color: green;
   top: 0px;
-  z-index: -100;
+  z-index: -101;
   display: grid;
   grid-template-areas: "judul" "image-slide";
   grid-template-rows: repeat(auto-fit, -webkit-fit-content);
