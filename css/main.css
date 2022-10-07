@@ -1070,7 +1070,7 @@ nav .nav-ul {
   display: flex;
   width: calc(100% - 5px);
   position: absolute;
-  transform: translateX(-100vw);
+  transform: translateX(-200vw);
   overflow: hidden;
   height: 0;
   padding: 20px;
@@ -1117,7 +1117,7 @@ nav .nav-ul {
   display: flex;
   width: calc(100% - 5px);
   position: absolute;
-  transform: translateX(-100vw);
+  transform: translateX(-200vw);
   padding: 20px;
   color: white;
   text-transform: capitalize;
@@ -1142,7 +1142,7 @@ nav .nav-ul {
   align-items: center;
   width: 100%;
   position: absolute;
-  transform: translateX(-100vw);
+  transform: translateX(-200vw);
   justify-content: flex-start;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   display: flex;
