@@ -1,3 +1,22 @@
+.nutup-aib {
+    background-color: darkblue;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    z-index: -200;
+}
+
+.nutup-aib-2 {
+    background-color: white;
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: 580px;
+    z-index: -1000;
+}
+
+
 // pergantian dark-mode,ligth-mode,normal-mode 📌👿📌👿
 #dark-mode,#light-mode,#normal-mode {
     position: fixed;
@@ -5,6 +24,7 @@
 }
 
 // dark-mode black 📌
+
 #dark-mode:checked~.dark-aktive{
     background-color: black;
     color: white;

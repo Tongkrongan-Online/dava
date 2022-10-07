@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 body {
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -50,7 +50,7 @@ nav .nav-ul {
 }
 
 .teks-logo a:hover {
-  background-color: rgba(255, 255, 255, 0.304);
+  background-color: rgba(255, 116, 116, 0.692);
 }
 
 .teks-logo:hover::after {
@@ -107,7 +107,7 @@ nav .nav-ul {
 }
 
 .nav-teks-toogle span:hover {
-  background-color: rgba(255, 255, 255, 0.252);
+  background-color: rgba(255, 62, 62, 0.609);
   padding-right: 5px;
 }
 
@@ -151,7 +151,7 @@ nav .nav-ul {
 }
 
 .link-contact span:hover {
-  background-color: skyblue;
+  background-color: rgb(255, 116, 116);
 }
 
 .link-contact span div {
@@ -185,7 +185,7 @@ nav .nav-ul {
 }
 
 .nav-medsos-toogle span:hover {
-  background-color: rgba(255, 255, 255, 0.372);
+  background-color: rgba(255, 70, 70, 0.65);
 }
 
 .nav-medsos-toogle span:hover ::before {
@@ -989,90 +989,222 @@ nav .nav-ul {
     width: max-content;
   }
 }
-/* content utama website laptop awal 💻 */
 .content-utama {
-  width: 100vw;
-  margin: -1px;
-  transform: translateY(80px);
   position: absolute;
-  height: 400px;
-  overflow: hidden;
-  background-color: green;
-  top: 0px;
-  z-index: -101;
-  display: grid;
-  grid-template-areas: "judul" "image-slide";
-  grid-template-rows: repeat(auto-fit, -webkit-fit-content);
-  grid-template-rows: repeat(auto-fit, fit-content);
-  box-shadow: 4px 4px 15px black;
+  z-index: -150;
+  top: 80px;
+  width: 100%;
 }
 
-/* content utama website laptop awal 💻 */
-@media (min-width: 320px) and (max-width: 767px) {
-  /* content utama website handphone awal 👨‍🦱*/
-  .content-utama {
-    width: 100vw;
-    grid-template-areas: "judul" "image-slide";
-  }
-  .container-parent {
-    width: 100%;
-    margin-top: 50px;
-    display: grid;
-    background-color: green;
-    height: 100px;
-  }
-  .container-grid-1 {
-    background-color: red;
-    padding: 0 10px;
-    box-sizing: border-box;
-    grid-area: grid-1;
-  }
-  .container-grid-2 {
-    background-color: black;
-    grid-area: grid-2;
-  }
-  .container-grid-3 {
-    background-color: green;
-    grid-area: grid-3;
-  }
-  /* content utama website handphone awal 👩‍🦱 */
+.header-content {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://source.unsplash.com/1000x1000/?darknature);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  line-height: 250px;
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Secular One", sans-serif;
+  text-shadow: 1px 6px 0 black;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* content utama website tablet awal 🦍*/
-  .content-utama {
-    top: 0;
-    width: 100vw;
-    margin: 95px 0 0;
-    grid-template-areas: "judul" "image-slide";
-  }
-  /* isi kontent-utama laptop awal*/
-  .container-parent {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "grid-1 grid-2 grid-3";
-    grid-template-columns: 200px calc(100% - 200px - 30%) 30%;
-    margin: auto;
-    background-color: rgb(219, 219, 219);
-    height: 1000px;
-    /* transform: translate(0px,-30px); */
-    box-shadow: 0px 0px 10px 5px black;
-  }
-  .container-grid-1 {
-    background-color: red;
-    padding: 0 10px;
-    box-sizing: border-box;
-    grid-area: grid-1;
-  }
-  .container-grid-2 {
-    background-color: black;
-    grid-area: grid-2;
-  }
-  .container-grid-3 {
-    background-color: green;
-    grid-area: grid-3;
-  }
-  /* content utama website tablet awal 🦍 */
+
+.header-profile {
+  display: flex;
+  transform: translateY(-100px) translateX(5%);
+  background-color: darkblue;
+  width: 90%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 1px 1px 0 black;
+  letter-spacing: 5px;
+  box-sizing: border-box;
+  padding: 40px 0 0 0;
+  border: 1rem solid transparent;
+  border-radius: 5%;
+  border-right-color: darkblue;
+  border-left-color: darkblue;
+  overflow-x: hidden;
 }
+.header-profile .textdanimage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 1px 1px 0 black;
+}
+.header-profile .textdanimage img {
+  display: inline-block;
+  border-radius: 20%;
+  box-shadow: 0 0 5px 2px black;
+}
+.header-profile .textdanimage h3 {
+  display: flex;
+  text-align: center;
+}
+
+.radio-profile {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  color: black;
+  justify-content: space-evenly;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+.skill-saya {
+  display: none;
+  width: calc(100% - 5px);
+  padding: 20px;
+  background-color: darkblue;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+.skill-saya .skill-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skill-saya .skill-ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.skill-saya .skill-ul li img {
+  width: 80px;
+}
+.skill-saya .skill-ul .framework {
+  display: inline;
+}
+.skill-saya .skill-ul li::before {
+  content: "⇒";
+}
+.skill-saya .framwork-css {
+  margin-left: 20px;
+}
+.skill-saya .framwork-css li::before {
+  content: "↪";
+}
+
+#profile-radio-1:checked ~ .skill-saya {
+  display: flex;
+}
+
+.profile-ul {
+  display: none;
+  width: calc(100% - 5px);
+  padding: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  z-index: -1;
+}
+
+#profile-radio-2:checked ~ .profile-ul {
+  z-index: 1;
+  display: flex;
+}
+
+#profile-radio-1, #profile-radio-2, #profile-radio-3 {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.sosial-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  display: none;
+}
+.sosial-profile .sosial-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sosial-profile .sosial-radio li {
+  display: flex;
+}
+.sosial-profile .sosial-radio li:hover {
+  background-color: rgb(241, 102, 102);
+}
+.sosial-profile .sosial-radio li a {
+  display: flex;
+  align-items: center;
+}
+.sosial-profile .sosial-radio li img {
+  width: 80px;
+}
+
+#profile-radio-3:checked ~ .sosial-profile {
+  z-index: 1;
+  display: flex;
+}
+
+#profile-radio-1:checked ~ .radio-profile .label-profile-1 {
+  -webkit-text-decoration: 5px underline red;
+          text-decoration: 5px underline red;
+}
+
+#profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
+  content: "▶";
+  color: red;
+}
+
+#profile-radio-2:checked ~ .radio-profile .label-profile-2 {
+  -webkit-text-decoration: 5px underline red;
+          text-decoration: 5px underline red;
+}
+
+#profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
+  content: "▶";
+  color: red;
+}
+
+#profile-radio-3:checked ~ .radio-profile .label-profile-3 {
+  -webkit-text-decoration: 5px underline red;
+          text-decoration: 5px underline red;
+}
+
+#profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
+  content: "▶";
+  color: red;
+}
+
+.nutup-aib {
+  background-color: darkblue;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  z-index: -200;
+}
+
+.nutup-aib-2 {
+  background-color: white;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: 580px;
+  z-index: -1000;
+}
+
 #dark-mode, #light-mode, #normal-mode {
   position: fixed;
   top: -100px;

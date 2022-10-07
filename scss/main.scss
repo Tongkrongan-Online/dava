@@ -4,8 +4,9 @@
 @use 'navbar/tablet_nav';
 @use 'navbar/handphone_nav';
 
-@use 'image-header/laptop_header';
-@use 'image-header/handphone_header';
-@use 'image-header/tablet_header';
+@use 'image-header/image-laptop.scss';
+// @use 'image-header/image-handphone.scss';
+// @use 'image-header/image-tablet.scss';
 
 @use 'dark-mode/dark-laptop';
+

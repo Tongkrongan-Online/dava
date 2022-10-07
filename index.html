@@ -33,242 +33,13 @@
     <!-- teks animated -->
 
 </head>
-<style>
-    .ganti-image {
-        display: inline-flex;
-        width: 1000vw;
-    }
-
-    .image-slide {
-        display: inline-flex;
-        width: 100vw;
-    }
-
-    .image-slide .slide-gambar-text img {
-        width: 100vw;
-        height: 400px;
-    }
-
-    .slide-gambar-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        /* text-shadow: 1.5px 1.5px 0 blue, -1.5px -1.5px 0 blue; */
-        font-size: 1rem;
-    }
-
-
-    .slide-gambar-text .text-full-image {
-        position: absolute;
-        z-index: 100;
-        display: flex;
-        width: 650px;
-        top: 100px;
-        left: 50px;
-        font-family: 'IBM Plex Serif', serif;
-        text-align: left;
-    }
-
-    .h1-about-judul {
-        position: absolute;
-        color: white;
-        text-shadow: 3px 3px 0 black, 3px 3px 0 black, 3.5px 3.5px 0 white, 3.5px 3.5px 0 white;
-        font-family: 'Oleo Script', cursive;
-        font-size: 2rem;
-        left: 50px;
-        top: 50px;
-        text-transform: capitalize;
-        font-weight: bold;
-        z-index: 1000;
-    }
-
-    .h1-about-judul span {
-        color: skyblue;
-        font-family: 'Secular One', sans-serif;
-    }
-
-    /* .promosi-slide sosial media awla laptop */
-
-    .promosi-slide {
-        position: absolute;
-        right: 50px;
-        top: 20px;
-        background-color: rgb(255, 255, 255);
-        width: 280px;
-        font-size: .95rem;
-        border-radius: 5%;
-        overflow: hidden;
-        box-shadow: 5px 5px 5px black;
-    }
-
-    .promosi-slide h1,
-    p {
-        padding: 5px;
-    }
-
-    .promosi-slide a input {
-        width: 100%;
-        background-color: red;
-        margin: 15px 0 0 0;
-        color: white;
-        border: none;
-        font-family: 'Oleo Script', cursive;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-    }
-
-    .promosi-slide .gambar-tengah {
-        /* position: relative;
-        left: 10%; */
-        margin: auto;
-    }
-
-    /* .promosi-slide sosial media akhir laptop */
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-        .image-slide {
-            display: inline-flex;
-            width: 100vw;
-        }
-
-        .image-slide .slide-gambar-text img {
-            width: 100%;
-            height: 400px;
-        }
-
-        /* .promosi-slide sosial media awla tablet */
-
-        .promosi-slide {
-            position: absolute;
-            /* right: 50px; */
-            top: 400px;
-            left: 0;
-            background-color: rgb(255, 255, 255);
-            width: 100%;
-            font-size: .95rem;
-            border-radius: 0%;
-            overflow: hidden;
-            box-shadow: none;
-        }
-
-        .promosi-slide h1,
-        p {
-            padding: 5px;
-        }
-
-        .promosi-slide a input {
-            width: 100%;
-            background-color: red;
-            margin: 15px 0 0 0;
-            color: white;
-            border: none;
-            font-family: 'Oleo Script', cursive;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-        }
-
-        .promosi-slide .gambar-tengah {
-            /* position: relative;
-         left: 10%; */
-            margin: auto;
-        }
-
-        /* .promosi-slide sosial media akhir tablet */
-    }
-
-    @media (min-width: 320px) and (max-width: 767px) {
-        .image-slide {
-            display: inline-flex;
-            width: 100vw;
-        }
-
-        .image-slide .slide-gambar-text img {
-            width: 100vw;
-            height: 400px;
-        }
-
-        .slide-gambar-text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 1px 1px 6px black;
-            font-size: .8rem;
-        }
-
-        /* .promosi-slide sosial media awla handphone */
-
-        .promosi-slide {
-            position: relative;
-            /* right: 50px; */
-            top: 0px;
-            left: 0;
-            background-color: rgb(255, 255, 255);
-            width: 100vw;
-            font-size: .95rem;
-            border-radius: 0%;
-            overflow: hidden;
-            box-shadow: none;
-        }
-
-        .promosi-slide h1,
-        p {
-            padding: 5px;
-        }
-
-        .promosi-slide a input {
-            width: 100%;
-            background-color: red;
-            margin: 15px 0 0 0;
-            color: white;
-            border: none;
-            font-family: 'Oleo Script', cursive;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-        }
-
-        .promosi-slide .gambar-tengah {
-            /* position: relative;
-         left: 10%; */
-            margin: auto;
-        }
-
-        .h1-about-judul {
-            font-size: 4.5vw;
-            left: 0px;
-            top: 0px;
-            padding: 10px;
-            text-transform: capitalize;
-            text-align: center;
-            height: 200px;
-        }
-
-        .slide-gambar-text .text-full-image {
-            position: absolute;
-            z-index: 100;
-            display: flex;
-            width: 100%;
-            top: 50px;
-            left: 0px;
-            padding-left: 10px;
-            box-sizing: border-box;
-            font-family: 'IBM Plex Serif', serif;
-            text-align: left;
-            font-size: 3.5vw;
-        }
-
-        /* .promosi-slide sosial media akhir handphone */
-    }
-</style>
-
-
-
 
 <body>
     <input type="radio" name="dark-mode" id="dark-mode">
     <input type="radio" name="dark-mode" id="light-mode">
     <input type="radio" name="dark-mode" id="normal-mode">
+    <div class="dark-aktive nutup-aib"></div>
+    <div class="light-aktive nutup-aib-2"></div>
     <nav>
         <ul class="nav-ul dark-aktive">
             <li class="teks-logo">
@@ -304,7 +75,8 @@
                                     </a>
                                 </span>
                                 <span>
-                                    <a href="#" class="a-link-contact">
+                                    <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y="
+                                        class="a-link-contact">
                                         Instagram : <div>@muhammaddavafahreza</div>
                                     </a>
                                 </span>
@@ -447,173 +219,182 @@
     </section>
 
     <section class="content-utama">
-        <div class="image-slide">
-            <div class="slide-gambar-text">
-                <h1 class="h1-about-judul">
-                    selamat datang di website <span>tongkrongan online</span>
+        <div class="header-content">
+            <marquee behavior="alternate" direction="left" scrollamount="5">
+                <h1>
+                    selamat datang di website home tongkrongan online <br>
                 </h1>
-                <h2 class="typewrite text-white text-full-image" data-period="10000"
-                    data-type='[ "Hai,selamat datang di website Tongkrongan Online,apa yang membuat anda berkunjung ke website saya yang sederhana ini apa karena gabut,iseng,tidak sengaja atau juga penasaran,terlepas apapun alasan nya,saya senang memiliki pengunjung seperti anda,Terimakasih sudah mengunjungi website ini sehat selalu jangan lupa kembali saya akan terus update website ini,jangan sampai ketinggalan ya!!!"]'>
-                    <span class="wrap"></span>
-                </h2>
-                <div class="ganti-image">
-                    <div><img src="https://source.unsplash.com/750x750/?dark nature" alt="image-slide-header"></div>
-                    <div><img src="https://source.unsplash.com/750x750/?dark sky" alt="image-slide-header"></div>
-                    <div><img src="https://source.unsplash.com/750x750/?dark cloud" alt="image-slide-header"></div>
-                    <div><img src="https://source.unsplash.com/750x750/?dark sea" alt="image-slide-header"></div>
-                    <div><img src="https://source.unsplash.com/750x750/?night" alt="image-slide-header"></div>
-                </div>
+            </marquee>
+        </div>
+        <div class="header-profile dark-aktive">
+            <div class="textdanimage">
+                <img src="img/image-header.png" alt="profile-tongkrongan-online">
+                <h3>
+                    Tongkrongan Online
+                </h3>
+            </div>
+            <input type="radio" id="profile-radio-1" name="profile-radio">
+            <input type="radio" id="profile-radio-2" name="profile-radio">
+            <input type="radio" id="profile-radio-3" name="profile-radio">
+            <div class="radio-profile light-aktive">
+                <label for="profile-radio-1" class="label-profile-1">my Skills</label>
+                <label for="profile-radio-2" class="label-profile-2">profile</label>
+                <label for="profile-radio-3" class="label-profile-3">social media</label>
+            </div>
+            <div class="skill-saya dark-aktive">
+                <ul class="skill-ul">
+                    <li>
+                        <img src="https://img.icons8.com/color/2x/html-5.png" alt="html">
+                        HTML
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/fluency/2x/css3.png" alt="css">
+                        CSS
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/2x/sass.png" alt="csspreprocessor">
+                        SCSS/css preprocessor
+                    </li>
+                    <li class="framework">
+                        framework css
+                        <ul class="framwork-css">
+                            <li>
+                                <img src="https://img.icons8.com/color/2x/bootstrap.png" alt="boostrap">
+                                bostrap
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/color/2x/tailwind_css.png" alt="tailwind css">
+                                tailwind
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/2x/git.png" alt="git">
+                        git and github
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/2x/javascript--v2.png" alt="javascript">
+                        javascript
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/2x/webpack.png" alt="webpack">
+                        webpack
+                    </li>
+                    <li>coming soon</li>
+                </ul>
+            </div>
+            <div class="profile-ul dark-aktive">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>name</td>
+                            <td>:</td>
+                            <td>muhammad dava fahreza</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>display name</td>
+                            <td>:</td>
+                            <td>Tongkrongan Online</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>text editor</td>
+                            <td>:</td>
+                            <td>visual studio code</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>State of Residence </td>
+                            <td>:</td>
+                            <td>nanggroe aceh darussalam</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Interest & Hobbies</td>
+                            <td>:</td>
+                            <td>programer</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Marital Status</td>
+                            <td>:</td>
+                            <td>single</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>height</td>
+                            <td>:</td>
+                            <td>177 cm</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>weight</td>
+                            <td>:</td>
+                            <td>56 kg</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>ethnic group</td>
+                            <td>:</td>
+                            <td>aceh</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Blood Group</td>
+                            <td>:</td>
+                            <td>O</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sosial-profile dark-aktive">
+                <ul class="sosial-radio">
+                    <li>
+                        <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y=">
+                            <img src="https://img.icons8.com/bubbles/2x/instagram-new--v2.png" alt="instagram">
+                            @muhammaddavafahreza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/channel/UCNncSeKtVODKeIVOUmlH6nw">
+                            <img src="https://img.icons8.com/bubbles/2x/youtube-squared.png" alt="youtube">
+                            Tongkrongan Online
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://m.facebook.com/profile.php?id=100018219300463">
+                            <img src="https://img.icons8.com/bubbles/2x/facebook.png" alt="facebook">
+                            mhd dava fahreza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://tiktok.com/@tongkronganonline">
+                            <img src="https://img.icons8.com/bubbles/2x/tiktok.png" alt="tiktok">
+                            @tongkronganonline_
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/sprfktMn">
+                            <img src="https://img.icons8.com/bubbles/2x/discord-logo.png" alt="discord">
+                            Tongkrongan Online
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class="promosi-slide">
-            <div class="slide-youtube">
-                <img src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"
-                    width="250" height="211px" alt="youtube logo png images" class="gambar-tengah" />
-                <h1>Tongkrongan Online</h1>
-                <p>Subcribe dan berlangganan sekarang untuk melihat video yang saya upload</p>
-                <a href="https://youtube.com/channel/UCNncSeKtVODKeIVOUmlH6nw"><input type="button"
-                        value="subscribe"></a>
-            </div>
-            <div class="promosi-instagram">
-                <img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" width="211"
-                    alt="instagram logo png images" class="gambar-tengah" />
-                <h1>@muhammaddavafahreza</h1>
-                <p>Follow Instagram saya untuk melihat postingan terbaru saya</p>
-                <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y="><input type="button"
-                        value="follow" style="background-color:rgb(214, 0, 103);"></a>
-            </div>
-            <div class="promosi-facebook">
-                <img src="https://www.freepnglogos.com/uploads/facebook-icons/facebook-icon-transparent-background-19.png"
-                    width="211" alt="instagram logo png images" class="gambar-tengah" />
-                <h1>muhammad dava fahreza</h1>
-                <p>ikuti facebook saya untuk melihat postingan terbaru saya </p>
-                <a href="https://m.facebook.com/profile.php?id=100018219300463"><input type="button" value="follow"
-                        style="background-color:blue;"></a>
-            </div>
-            <div class="promosi-tiktok">
-                <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-tiktok-logo-app-trend-1.png"
-                    width="161" alt="instagram logo png images" class="gambar-tengah" />
-                <h1>TongkronganOnline</h1>
-                <p>ikuti tiktok saya untuk melihat video pendek yang saya upload</p>
-                <a href="http://tiktok.com/@tongkronganonline"> <input type="button" value="follow"
-                        style="background-color:black;"></a>
-            </div>
-            <div class="promosi-snackvideo">
-                <img src="https://tse4.mm.bing.net/th?id=OIP.HKySW4sUfMUMzJZDpfW1aAHaHa&pid=Api&P=0" width="211"
-                    alt="instagram logo png images" class="gambar-tengah" />
-                <h1>TongkronganOnline</h1>
-                <p>ikuti snack video saya untuk melihat video pendek yang saya upload</p>
-                <a href="https://sck.io/u/HUp7Pdq5"> <input type="button" value="follow"
-                        style="background-color:rgb(255, 247, 0);"></a>
-            </div>
-        </div>
-
-        <!-- <div class="container-book">
-
-        </div> -->
     </section>
 
-
-
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Slick JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-    </script>
-
-    <!-- Our Script -->
-    <script>
-        $(document).ready(function () {
-            console.log('MUHAMMAD DAVA FAHREZA');
-        });
-
-        $(document).ready(function () {
-            $('.promosi-slide').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true,
-                fade: true,
-            });
-        });
-
-        $(document).ready(function () {
-            console.log('MUHAMMAD DAVA FAHREZA');
-        });
-
-        $(document).ready(function () {
-            $('.ganti-image').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                dots: true,
-                fade: true,
-            });
-        });
-    </script>
-
-    <!-- Our Script -->
-    <script>
-        var TxtType = function (el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 10000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function () {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) {
-                delta /= 2;
-            }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function () {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var
-                    period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i],
-                        JSON.parse(toRotate), period);
-                }
-            } // INJECT CSS var css=document.createElement("style");
-            // css.type = "text/css";
-            // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            // document.body.appendChild(css);
-        };
-    </script>
 </body>
 
 </html>
