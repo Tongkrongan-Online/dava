@@ -32,9 +32,9 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .header-profile {
         display: flex;
-        transform: translateY(-100px) translateX(5%);
+        transform: translateY(-100px);
         background-color: darkblue;
-        width: 90%;
+        width: 100%;
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -51,6 +51,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         border-right-color: darkblue;
         border-left-color: darkblue;
         overflow-x: hidden;
+        box-shadow: 5px 5px 10px 0 black;
 
         .textdanimage {
         display: flex;
@@ -87,8 +88,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 
 .skill-saya {
-    display: none;
+    display: flex;
     width: calc(100% - 5px);
+    position: absolute;
+    transform: translateX(-100vw);
+    overflow: hidden;
+    height: 0;
     padding: 20px;
     background-color: darkblue;
     color: white;
@@ -126,12 +131,16 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 #profile-radio-1:checked~.skill-saya {
-    display: flex;
+    height: max-content;
+    position:static ;
+    transform: translateX(0);
 }
 
 .profile-ul {
-    display: none;
+    display: flex;
     width: calc(100% - 5px);
+    position: absolute;
+    transform: translateX(-100vw);
     padding: 20px;
     color: white;
     text-transform: capitalize;
@@ -141,7 +150,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 #profile-radio-2:checked~.profile-ul {
     z-index: 1;
-    display: flex;
+    position: static;
+    transform: translateX(0);
 }
 
 #profile-radio-1,#profile-radio-2,#profile-radio-3 {
@@ -154,9 +164,11 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     display: flex;
     align-items: center;
     width: 100%;
+    position: absolute;
+    transform: translateX(-100vw);
     justify-content: flex-start;
     font-family: $font-4;
-    display: none;
+    display: flex;
 
     .sosial-radio {
         display: flex;
@@ -183,14 +195,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 #profile-radio-3:checked~.sosial-profile {
     z-index: 1;
-    display: flex;
+    transform: translateX(0);
+    position: static;
 }
 
 
 
 @for $i from 1 to 4 {
     #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i} {
-        text-decoration: 5px underline red;
+        text-decoration: 3px underline red;
     }
 
     #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i}::before {

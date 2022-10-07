@@ -1015,9 +1015,9 @@ nav .nav-ul {
 
 .header-profile {
   display: flex;
-  transform: translateY(-100px) translateX(5%);
+  transform: translateY(-100px);
   background-color: darkblue;
-  width: 90%;
+  width: 100%;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -1034,6 +1034,7 @@ nav .nav-ul {
   border-right-color: darkblue;
   border-left-color: darkblue;
   overflow-x: hidden;
+  box-shadow: 5px 5px 10px 0 black;
 }
 .header-profile .textdanimage {
   display: flex;
@@ -1066,8 +1067,12 @@ nav .nav-ul {
 }
 
 .skill-saya {
-  display: none;
+  display: flex;
   width: calc(100% - 5px);
+  position: absolute;
+  transform: translateX(-100vw);
+  overflow: hidden;
+  height: 0;
   padding: 20px;
   background-color: darkblue;
   color: white;
@@ -1101,12 +1106,18 @@ nav .nav-ul {
 }
 
 #profile-radio-1:checked ~ .skill-saya {
-  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: static;
+  transform: translateX(0);
 }
 
 .profile-ul {
-  display: none;
+  display: flex;
   width: calc(100% - 5px);
+  position: absolute;
+  transform: translateX(-100vw);
   padding: 20px;
   color: white;
   text-transform: capitalize;
@@ -1116,7 +1127,8 @@ nav .nav-ul {
 
 #profile-radio-2:checked ~ .profile-ul {
   z-index: 1;
-  display: flex;
+  position: static;
+  transform: translateX(0);
 }
 
 #profile-radio-1, #profile-radio-2, #profile-radio-3 {
@@ -1129,9 +1141,11 @@ nav .nav-ul {
   display: flex;
   align-items: center;
   width: 100%;
+  position: absolute;
+  transform: translateX(-100vw);
   justify-content: flex-start;
   font-family: "Fira Sans Extra Condensed", sans-serif;
-  display: none;
+  display: flex;
 }
 .sosial-profile .sosial-radio {
   display: flex;
@@ -1154,12 +1168,13 @@ nav .nav-ul {
 
 #profile-radio-3:checked ~ .sosial-profile {
   z-index: 1;
-  display: flex;
+  transform: translateX(0);
+  position: static;
 }
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
-  -webkit-text-decoration: 5px underline red;
-          text-decoration: 5px underline red;
+  -webkit-text-decoration: 3px underline red;
+          text-decoration: 3px underline red;
 }
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
@@ -1168,8 +1183,8 @@ nav .nav-ul {
 }
 
 #profile-radio-2:checked ~ .radio-profile .label-profile-2 {
-  -webkit-text-decoration: 5px underline red;
-          text-decoration: 5px underline red;
+  -webkit-text-decoration: 3px underline red;
+          text-decoration: 3px underline red;
 }
 
 #profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
@@ -1178,8 +1193,8 @@ nav .nav-ul {
 }
 
 #profile-radio-3:checked ~ .radio-profile .label-profile-3 {
-  -webkit-text-decoration: 5px underline red;
-          text-decoration: 5px underline red;
+  -webkit-text-decoration: 3px underline red;
+          text-decoration: 3px underline red;
 }
 
 #profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
