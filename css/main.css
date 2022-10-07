@@ -1030,7 +1030,6 @@ nav .nav-ul {
   box-sizing: border-box;
   padding: 40px 0 0 0;
   border: 1rem solid transparent;
-  border-radius: 5%;
   border-right-color: darkblue;
   border-left-color: darkblue;
   overflow-x: hidden;
