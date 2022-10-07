@@ -87,17 +87,14 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 
 .skill-saya {
-    display: flex;
+    display: none;
     width: calc(100% - 5px);
-    position: absolute;
-    transform: translateX(-200vw);
-    overflow: hidden;
-    height: 0;
     padding: 20px;
     background-color: darkblue;
     color: white;
     text-transform: capitalize;
     font-family: $font-4;
+
 
     .skill-ul {
         display: flex;
@@ -130,27 +127,22 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 #profile-radio-1:checked~.skill-saya {
-    height: max-content;
-    position:relative ;
-    transform: translateX(0);
+    display: flex;
 }
 
 .profile-ul {
-    display: flex;
+    display: none;
     width: calc(100% - 5px);
-    position: absolute;
-    transform: translateX(-200vw);
     padding: 20px;
     color: white;
     text-transform: capitalize;
     font-family: $font-4;
     z-index: -1;
+
 }
 
 #profile-radio-2:checked~.profile-ul {
-    z-index: 1;
-    position: relative;
-    transform: translateX(0);
+    display: flex;
 }
 
 #profile-radio-1,#profile-radio-2,#profile-radio-3 {
@@ -160,14 +152,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 .sosial-profile {
-    display: flex;
+    display: none;
     align-items: center;
     width: 100%;
-    position: absolute;
-    transform: translateX(-200vw);
     justify-content: flex-start;
     font-family: $font-4;
-    display: flex;
+
 
     .sosial-radio {
         display: flex;
@@ -193,18 +183,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 #profile-radio-3:checked~.sosial-profile {
-    z-index: 1;
-    transform: translateX(0);
-    position: relative;
+    display: flex;
 }
 
 
 
 @for $i from 1 to 4 {
-    #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i} {
-        text-decoration: 3px underline red;
-    }
-
     #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i}::before {
         content: "▶";
         color: red;
