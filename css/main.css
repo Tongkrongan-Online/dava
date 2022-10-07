@@ -1109,7 +1109,7 @@ nav .nav-ul {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  position: static;
+  position: relative;
   transform: translateX(0);
 }
 
@@ -1127,7 +1127,7 @@ nav .nav-ul {
 
 #profile-radio-2:checked ~ .profile-ul {
   z-index: 1;
-  position: static;
+  position: relative;
   transform: translateX(0);
 }
 
@@ -1169,7 +1169,7 @@ nav .nav-ul {
 #profile-radio-3:checked ~ .sosial-profile {
   z-index: 1;
   transform: translateX(0);
-  position: static;
+  position: relative;
 }
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
