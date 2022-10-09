@@ -161,6 +161,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     font-family: $font-4;
     z-index: -1;
     overflow: auto;
+
     
     table {
         tr{
@@ -213,12 +214,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                 display: flex;
                 align-items: center;
                 font-family: $font-2;
-            }
-
-            li:nth-child(6) {
-                a {
-                flex-wrap: wrap;
-                }
             }
 
             img {
