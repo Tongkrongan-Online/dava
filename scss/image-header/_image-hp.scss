@@ -1,4 +1,4 @@
- @media (min-width: 320px) and (max-width: 767px) {
+ @media (max-width: 767px) {
      $font-1: 'Permanent Marker', cursive;
      $font-2: 'Secular One', sans-serif;
      $font-3: 'Oleo Script', cursive;
@@ -37,5 +37,98 @@
     }
 }
 
- 
+
+@for $i from 1 to 4 {
+    #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i}::before {
+        content: "▶";
+        color: rgb(255, 0, 0);
+    }
+
+     #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i} {
+        background-color: silver;
+        border: 2px double red;
+        border-right-color: transparent;
+        border-left-color:transparent ;
+        color: rgb(255, 0, 0);
+        // box-shadow: 0px 0px 10px 2.5px black;
+        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

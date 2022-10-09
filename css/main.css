@@ -470,7 +470,7 @@ nav .nav-ul {
 
 /*✅ ul-sub-bab utama akhir laptop  */
 /* @media query atau breakpoint untuk screen layar tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   /* nav awal tablet 💴 */
   /* branding tablet awal */
   .teks-logo {
@@ -650,7 +650,7 @@ nav .nav-ul {
   }
 }
 /* @media query atau breakpoint untuk screen layar handphone */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   /* nav awal handphone 😍*/
   /* branding handphone 😍awal */
   .teks-logo {
@@ -1028,7 +1028,6 @@ nav .nav-ul {
   text-shadow: 1px 1px 0 black;
   letter-spacing: 5px;
   box-sizing: border-box;
-  padding: 40px 0 0 0;
   border: 1rem solid transparent;
   border-right-color: darkblue;
   border-left-color: darkblue;
@@ -1037,6 +1036,7 @@ nav .nav-ul {
 }
 .header-profile .textdanimage {
   display: flex;
+  padding: 40px 0 0 0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -1127,8 +1127,18 @@ nav .nav-ul {
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
+  overflow: auto;
+}
+.profile-ul table {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .profile-ul table tbody * {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding-bottom: 15px;
 }
 
@@ -1212,7 +1222,7 @@ nav .nav-ul {
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .radio-profile {
     display: flex;
     width: 100%;
@@ -1232,6 +1242,42 @@ nav .nav-ul {
   }
   .profile-ul table tbody * {
     padding-bottom: 10px;
+  }
+  #profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+  }
+  #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
+    background-color: silver;
+    border: 2px double red;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    color: rgb(255, 0, 0);
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  #profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+  }
+  #profile-radio-2:checked ~ .radio-profile .label-profile-2 {
+    background-color: silver;
+    border: 2px double red;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    color: rgb(255, 0, 0);
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+  #profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+  }
+  #profile-radio-3:checked ~ .radio-profile .label-profile-3 {
+    background-color: silver;
+    border: 2px double red;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    color: rgb(255, 0, 0);
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   }
 }
 .nutup-aib {
