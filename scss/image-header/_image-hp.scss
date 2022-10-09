@@ -1,9 +1,20 @@
  @media (min-width: 320px) and (max-width: 767px) {
      $font-1: 'Permanent Marker', cursive;
-     ;
      $font-2: 'Secular One', sans-serif;
      $font-3: 'Oleo Script', cursive;
      $font-4: 'Fira Sans Extra Condensed', sans-serif;
+
+    .header-profile {
+        font-size: .8rem;
+
+        .textdanimage {
+            font-size: 1rem; 
+
+            img {
+                transform: scale(.7);
+            }
+        }
+    }
 
      .radio-profile {
          display: flex;
@@ -12,7 +23,7 @@
          background-color: white;
          color: black;
          justify-content: space-evenly;
-         padding: 0 10px;
+         padding: 0 10px;   
          margin-top: 30px;
 
          label {
@@ -20,4 +31,14 @@
              width: 100%;
          }
      }
+
+     .profile-ul {
+         table {
+        tbody * {
+            padding-bottom: 10px;
+        }
+    }
+     }
+
+     
  }

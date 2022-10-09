@@ -1024,7 +1024,7 @@ nav .nav-ul {
   flex-direction: column;
   color: white;
   font-size: 1.4rem;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Secular One", sans-serif;
   text-shadow: 1px 1px 0 black;
   letter-spacing: 5px;
   box-sizing: border-box;
@@ -1059,10 +1059,10 @@ nav .nav-ul {
   display: flex;
   width: 100%;
   background-color: white;
+  text-transform: capitalize;
   color: black;
   justify-content: space-evenly;
-  font-family: "Secular One", sans-serif;
-  font-weight: bold;
+  font-family: "Oleo Script", cursive;
   margin-top: 30px;
 }
 .radio-profile label {
@@ -1119,6 +1119,9 @@ nav .nav-ul {
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
 }
+.profile-ul table tbody * {
+  padding-bottom: 15px;
+}
 
 #profile-radio-2:checked ~ .profile-ul {
   display: flex;
@@ -1166,7 +1169,8 @@ nav .nav-ul {
 }
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
-  background-color: red;
+  background-color: grey;
+  color: white;
   box-shadow: 0px 0px 10px 2.5px;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
@@ -1177,7 +1181,8 @@ nav .nav-ul {
 }
 
 #profile-radio-2:checked ~ .radio-profile .label-profile-2 {
-  background-color: red;
+  background-color: grey;
+  color: white;
   box-shadow: 0px 0px 10px 2.5px;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
@@ -1188,12 +1193,22 @@ nav .nav-ul {
 }
 
 #profile-radio-3:checked ~ .radio-profile .label-profile-3 {
-  background-color: red;
+  background-color: grey;
+  color: white;
   box-shadow: 0px 0px 10px 2.5px;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .header-profile {
+    font-size: 0.8rem;
+  }
+  .header-profile .textdanimage {
+    font-size: 1rem;
+  }
+  .header-profile .textdanimage img {
+    transform: scale(0.7);
+  }
   .radio-profile {
     display: flex;
     width: 100%;
@@ -1207,6 +1222,9 @@ nav .nav-ul {
   .radio-profile label {
     padding: 0 0 0 20px;
     width: 100%;
+  }
+  .profile-ul table tbody * {
+    padding-bottom: 10px;
   }
 }
 .nutup-aib {
@@ -1316,6 +1334,7 @@ nav .nav-ul {
   background-color: black;
   color: white;
   border-color: white;
+  text-shadow: black;
 }
 
 #light-mode:checked ~ *.light-aktive {
