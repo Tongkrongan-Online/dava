@@ -1163,6 +1163,10 @@ nav .nav-ul {
 .sosial-profile .sosial-radio li a {
   display: flex;
   align-items: center;
+  font-family: "Secular One", sans-serif;
+}
+.sosial-profile .sosial-radio li li:nth-child(6) a {
+  flex-wrap: wrap;
 }
 .sosial-profile .sosial-radio li img {
   width: 80px;
@@ -1209,9 +1213,6 @@ nav .nav-ul {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .header-profile .textdanimage img {
-    transform: scale(0.7);
-  }
   .radio-profile {
     display: flex;
     width: 100%;
@@ -1225,6 +1226,9 @@ nav .nav-ul {
     padding: 0 0 0 20px;
     box-sizing: border-box;
     width: 100%;
+  }
+  .profile-ul table {
+    text-align: left;
   }
   .profile-ul table tbody * {
     padding-bottom: 10px;

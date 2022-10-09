@@ -4,13 +4,13 @@
      $font-3: 'Oleo Script', cursive;
      $font-4: 'Fira Sans Extra Condensed', sans-serif;
 
-    .header-profile {
-        .textdanimage {
-            img {
-                transform: scale(.7);
-            }
-        }
-    }
+    // .header-profile {
+    //     .textdanimage {
+    //         img {
+    //             transform: scale(.7);
+    //         }
+    //     }
+    // }
 
      .radio-profile {
          display: flex;
@@ -30,11 +30,12 @@
 
      .profile-ul {
          table {
+            text-align: left;
         tbody * {
             padding-bottom: 10px;
         }
     }
-     }
+}
 
-     
- }
+ 
+}

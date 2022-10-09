@@ -199,6 +199,13 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             a {
                 display: flex;
                 align-items: center;
+                font-family: $font-2;
+            }
+
+            li:nth-child(6) {
+                a {
+                flex-wrap: wrap;
+                }
             }
 
             img {
