@@ -1129,6 +1129,12 @@ nav .nav-ul {
   z-index: -1;
   overflow: auto;
 }
+.profile-ul table tr td:nth-child(1) {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 .profile-ul table tr td:nth-child(3) {
   display: flex;
   width: -webkit-max-content;

@@ -164,6 +164,11 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     
     table {
         tr{
+            td:nth-child(1) {
+                display: flex;
+                width: max-content;
+            }
+
             td:nth-child(3) {
                 display: flex;
                 width: max-content;
