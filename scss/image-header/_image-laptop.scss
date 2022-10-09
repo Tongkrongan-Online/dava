@@ -83,13 +83,27 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     color: black;
     justify-content: space-evenly;
     // padding: 0 10px;
-    font-family: $font-3;
+    font-family: $font-2;
     margin-top: 30px;
      
     label {
         display: flex;
         justify-content: center;
         width: 34%;
+    }
+
+    .label-profile-1 {
+        order: 2;
+    }
+
+    
+    .label-profile-2 {
+        order: 1;
+    }
+
+    
+    .label-profile-3 {
+        order: 3;
     }
 }
 
@@ -203,13 +217,14 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 @for $i from 1 to 4 {
     #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i}::before {
         content: "▶";
-        color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
     }
 
      #profile-radio-#{$i}:checked~ .radio-profile .label-profile-#{$i} {
-        background-color: grey;
-        color: white;
-        box-shadow: 0px 0px 10px 2.5px;
+        background-color: silver;
+        border: 2px double red;
+        color: rgb(255, 0, 0);
+        // box-shadow: 0px 0px 10px 2.5px black;
         transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
      }
 

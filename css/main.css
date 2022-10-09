@@ -50,7 +50,7 @@ nav .nav-ul {
 }
 
 .teks-logo a:hover {
-  background-color: rgba(255, 116, 116, 0.692);
+  background-color: silver;
 }
 
 .teks-logo:hover::after {
@@ -107,7 +107,7 @@ nav .nav-ul {
 }
 
 .nav-teks-toogle span:hover {
-  background-color: rgba(255, 62, 62, 0.609);
+  background-color: silver;
   padding-right: 5px;
 }
 
@@ -151,7 +151,7 @@ nav .nav-ul {
 }
 
 .link-contact span:hover {
-  background-color: rgb(255, 116, 116);
+  background-color: silver;
 }
 
 .link-contact span div {
@@ -185,7 +185,7 @@ nav .nav-ul {
 }
 
 .nav-medsos-toogle span:hover {
-  background-color: rgba(255, 70, 70, 0.65);
+  background-color: silver;
 }
 
 .nav-medsos-toogle span:hover ::before {
@@ -1062,13 +1062,22 @@ nav .nav-ul {
   text-transform: capitalize;
   color: black;
   justify-content: space-evenly;
-  font-family: "Oleo Script", cursive;
+  font-family: "Secular One", sans-serif;
   margin-top: 30px;
 }
 .radio-profile label {
   display: flex;
   justify-content: center;
   width: 34%;
+}
+.radio-profile .label-profile-1 {
+  order: 2;
+}
+.radio-profile .label-profile-2 {
+  order: 1;
+}
+.radio-profile .label-profile-3 {
+  order: 3;
 }
 
 .skill-saya {
@@ -1165,47 +1174,41 @@ nav .nav-ul {
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
   content: "▶";
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
 
 #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
-  background-color: grey;
-  color: white;
-  box-shadow: 0px 0px 10px 2.5px;
+  background-color: silver;
+  border: 2px double red;
+  color: rgb(255, 0, 0);
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 #profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
   content: "▶";
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
 
 #profile-radio-2:checked ~ .radio-profile .label-profile-2 {
-  background-color: grey;
-  color: white;
-  box-shadow: 0px 0px 10px 2.5px;
+  background-color: silver;
+  border: 2px double red;
+  color: rgb(255, 0, 0);
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 #profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
   content: "▶";
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
 
 #profile-radio-3:checked ~ .radio-profile .label-profile-3 {
-  background-color: grey;
-  color: white;
-  box-shadow: 0px 0px 10px 2.5px;
+  background-color: silver;
+  border: 2px double red;
+  color: rgb(255, 0, 0);
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .header-profile {
-    font-size: 0.8rem;
-  }
-  .header-profile .textdanimage {
-    font-size: 1rem;
-  }
   .header-profile .textdanimage img {
     transform: scale(0.7);
   }
@@ -1216,11 +1219,11 @@ nav .nav-ul {
     background-color: white;
     color: black;
     justify-content: space-evenly;
-    padding: 0 10px;
     margin-top: 30px;
   }
   .radio-profile label {
     padding: 0 0 0 20px;
+    box-sizing: border-box;
     width: 100%;
   }
   .profile-ul table tbody * {
