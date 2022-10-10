@@ -531,8 +531,8 @@ nav .nav-ul {
     opacity: 0;
     transform: translate(50vw, 0vh);
     position: fixed;
-    transition: all 1s ease;
-    width: 50vw;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -603,17 +603,20 @@ nav .nav-ul {
     width: 100%;
     height: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
+    margin-right: 30px;
+    padding: 0;
   }
   .nav-medsos-toogle span {
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
-    margin: 10px 0;
-    width: 90%;
+    margin: 10px auto;
+    width: 95%;
     height: 100%;
+    justify-content: center;
     align-items: center;
   }
   .nav-medsos-toogle span a {
@@ -711,7 +714,7 @@ nav .nav-ul {
     opacity: 0;
     transform: translate(70vw, 0vh);
     position: fixed;
-    transition: all 1s ease;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     width: 70vw;
     height: 100%;
     display: flex;
@@ -996,8 +999,11 @@ nav .nav-ul {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     background-color: darkblue;
-    right: 0px;
+    right: -15px;
     top: 40px;
     color: white;
     padding: 10px;
@@ -1006,7 +1012,7 @@ nav .nav-ul {
     margin-bottom: 15px;
   }
   .form-radio {
-    transform: translateY(-5px) translateX(-170px);
+    transform: translateY(-80px) translateX(-196.2px);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;

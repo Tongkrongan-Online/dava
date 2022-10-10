@@ -43,8 +43,8 @@
     opacity: 0;
     transform:translate(50vw,0vh) ;
     position: fixed;
-    transition: all 1s ease;
-    width: 50vw;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -120,18 +120,21 @@
     width: 100%;
     height: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
+    margin-right: 30px;
+    padding: 0;
 }
 
 .nav-medsos-toogle span {
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
-    margin: 10px 0;
-    width: 90%;
+    margin: 10px auto;
+    width: 95%;
     height: 100%;
+    justify-content: center;
     align-items: center;
 }
 
