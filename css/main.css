@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: inherit;
+}
+
 body {
   background-color: white;
   width: 100vw;
@@ -20,10 +24,12 @@ body {
 nav .nav-ul {
   background-color: darkblue;
   position: fixed;
+  left: 0px;
+  top: 0px;
   width: 100vw;
   height: 40px;
   display: flex;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +40,7 @@ nav .nav-ul {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  margin-left: -40px;
   box-sizing: border-box;
   width: 260px;
   height: 100%;
@@ -63,7 +70,7 @@ nav .nav-ul {
 /* home about contact laptop awal */
 .nav-toogle {
   display: flex;
-  width: calc(100% - 270px - 200px);
+  width: calc(100% - 260px - 260px);
   order: 4;
 }
 
@@ -126,7 +133,7 @@ nav .nav-ul {
 .link-contact {
   position: fixed;
   top: 40px;
-  transform: translate(-150px, 0);
+  transform: translate(-160px, 0);
   padding: 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -211,54 +218,34 @@ nav .nav-ul {
 .change-mode {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 0px;
-  width: 240px;
+  width: 280px;
   order: 2;
   z-index: -1;
 }
 
-.form-radio {
-  position: absolute;
-  transform: translateY(70px) translateX(-25px);
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
-  color: white;
-  background-color: darkblue;
-  display: none;
-  height: 100px;
-  text-transform: capitalize;
-  padding: 10px 5px 10px 10px;
-}
-.form-radio label {
+.dark-mode {
   display: flex;
-  align-items: center;
+  height: 100%;
 }
-.form-radio label span {
-  margin-left: 5px;
-}
-.form-radio label::before {
-  content: "⚙";
-  margin-right: 7px;
-}
-.form-radio label:hover::before {
-  color: rgb(255, 0, 0);
-}
-
 .dark-mode h5 {
   display: flex;
   height: 100%;
   align-items: center;
 }
-.dark-mode:hover .form-radio {
-  display: flex;
+.dark-mode:hover h5 {
+  background-color: silver;
 }
 .dark-mode:hover .symbol-button {
   -webkit-animation: symbol-putar 7s ease-in-out infinite;
           animation: symbol-putar 7s ease-in-out infinite;
   color: red;
+}
+.dark-mode:hover .form-radio {
+  display: flex;
 }
 @-webkit-keyframes symbol-putar {
   from {
@@ -277,6 +264,39 @@ nav .nav-ul {
   }
 }
 
+.form-radio {
+  position: absolute;
+  transform: translateY(20px) translateX(-25px);
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  color: white;
+  background-color: darkblue;
+  display: none;
+  height: 150px;
+  z-index: -1;
+  text-transform: capitalize;
+  padding: 10px 5px 10px 10px;
+}
+.form-radio label {
+  display: flex;
+  align-items: center;
+}
+.form-radio label span {
+  margin-left: 5px;
+}
+.form-radio label::before {
+  content: "◉";
+  margin-right: 7px;
+}
+.form-radio label:hover::before {
+  color: red;
+  transform: scale(1.5);
+}
+
+.hide-subs {
+  display: flex;
+  height: 100%;
+}
 .hide-subs h5 {
   display: flex;
   height: 100%;
@@ -310,13 +330,14 @@ nav .nav-ul {
   background-color: red;
 }
 #hide-subs:checked ~ .sub-content-bab {
-  transform: translate(0, -60px);
+  transform: translateY(-400px);
 }
 
 .sub-content-bab {
-  transition: all 1s ease-in-out;
-  position: fixed;
+  transition: transform 1s ease-in-out;
   z-index: -100;
+  width: 100%;
+  position: fixed;
 }
 
 /* nav akhir laptop 💻 */
@@ -325,10 +346,11 @@ nav .nav-ul {
   display: flex;
   position: fixed;
   top: 40px;
-  width: 100vw;
+  background-color: red;
+  width: 100%;
   height: 40px;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin: 0;
+  padding: 0;
   z-index: -1;
   font-family: "IBM Plex Serif", serif;
   border-bottom: 2.5px solid darkblue;
@@ -349,7 +371,8 @@ nav .nav-ul {
   height: 100%;
   display: flex;
   overflow: auto;
-  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   background-color: white;
   color: rgb(0, 0, 0);
@@ -382,7 +405,7 @@ nav .nav-ul {
 
 #sub-checkbox:checked ~ .parent-ol-sub-content .ol-sub-content {
   display: flex;
-  width: calc(100vw - 255px);
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
