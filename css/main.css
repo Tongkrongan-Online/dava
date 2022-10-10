@@ -666,7 +666,7 @@ nav .nav-ul {
     box-sizing: border-box;
   }
   .form-radio {
-    transform: translateY(80px) translateX(5px);
+    transform: translateY(40px) translateX(15px);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
