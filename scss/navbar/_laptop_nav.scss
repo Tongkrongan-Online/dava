@@ -19,7 +19,7 @@ nav .nav-ul {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    margin-left: -40px;
+    margin-left: 0px;
     box-sizing: border-box;
     width:260px;
     height: 100%;
@@ -49,7 +49,7 @@ nav .nav-ul {
 /* home about contact laptop awal */
 .nav-toogle {
     display: flex;
-    width: calc(100% - 260px - 260px);
+    width: calc(100% - 240px - 260px);
     order: 4;
 }
 
@@ -202,7 +202,8 @@ nav .nav-ul {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    width: 280px;
+    width: 240px;
+    font-weight: bold;
     order: 2;
     z-index: -1;
 }
@@ -422,7 +423,8 @@ nav .nav-ul {
 
 /* SEARCH SUB-AWAL LAPTOP 🔍*/
 .label-search-sub {
-    transform: translate(65px,1px);
+    transform: translate(70px,1px) rotateY(180deg);
+    color: black;
 }
 
 
@@ -448,6 +450,9 @@ nav .nav-ul {
 /* toogle-sub-bab awal 🔼🔽 laptop*/
 .tombol-sub-content{
     color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 40px;
     position: absolute;
     right: 0;
     transform: translate(-170px,0);

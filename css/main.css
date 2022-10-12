@@ -20,6 +20,139 @@ body {
   overflow-x: hidden;
 }
 
+/*css reset komplek*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*css reset*/
 /* nav awal laptop 💻 */
 nav .nav-ul {
   background-color: darkblue;
@@ -40,7 +173,7 @@ nav .nav-ul {
   display: flex;
   align-items: center;
   padding-left: 20px;
-  margin-left: -40px;
+  margin-left: 0px;
   box-sizing: border-box;
   width: 260px;
   height: 100%;
@@ -70,7 +203,7 @@ nav .nav-ul {
 /* home about contact laptop awal */
 .nav-toogle {
   display: flex;
-  width: calc(100% - 260px - 260px);
+  width: calc(100% - 240px - 260px);
   order: 4;
 }
 
@@ -222,7 +355,8 @@ nav .nav-ul {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  width: 280px;
+  width: 240px;
+  font-weight: bold;
   order: 2;
   z-index: -1;
 }
@@ -441,7 +575,8 @@ nav .nav-ul {
 
 /* SEARCH SUB-AWAL LAPTOP 🔍*/
 .label-search-sub {
-  transform: translate(65px, 1px);
+  transform: translate(70px, 1px) rotateY(180deg);
+  color: black;
 }
 
 #search-sub {
@@ -466,6 +601,9 @@ nav .nav-ul {
 /* toogle-sub-bab awal 🔼🔽 laptop*/
 .tombol-sub-content {
   color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  height: 40px;
   position: absolute;
   right: 0;
   transform: translate(-170px, 0);
@@ -1046,21 +1184,17 @@ nav .nav-ul {
   display: flex;
   transform: translateY(-100px);
   background-color: darkblue;
+  padding: 20px;
   width: 100%;
   position: absolute;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
   font-size: 1.4rem;
   font-family: "Secular One", sans-serif;
   text-shadow: 1px 1px 0 black;
-  letter-spacing: 5px;
   box-sizing: border-box;
-  border: 1rem solid transparent;
-  border-right-color: darkblue;
-  border-left-color: darkblue;
-  overflow-x: hidden;
   box-shadow: 5px 5px 10px 0 black;
 }
 .header-profile .textdanimage {
@@ -1077,17 +1211,23 @@ nav .nav-ul {
 .header-profile .textdanimage img {
   display: inline-block;
   border-radius: 20%;
+  margin-bottom: 20px;
   box-shadow: 0 0 5px 2px black;
 }
 .header-profile .textdanimage h3 {
   display: flex;
+  letter-spacing: 5px;
   text-align: center;
 }
 
 .radio-profile {
   display: flex;
+  align-items: center;
   width: 100%;
+  height: 100px;
   background-color: white;
+  position: relative;
+  flex-direction: column;
   text-transform: capitalize;
   color: black;
   justify-content: space-evenly;
@@ -1097,7 +1237,7 @@ nav .nav-ul {
 .radio-profile label {
   display: flex;
   justify-content: center;
-  width: 34%;
+  width: 100%;
 }
 .radio-profile .label-profile-1 {
   order: 2;
@@ -1111,10 +1251,10 @@ nav .nav-ul {
 
 .skill-saya {
   display: none;
-  width: calc(100% - 5px);
-  padding: 20px;
-  background-color: darkblue;
-  color: white;
+  width: 100%;
+  padding: 20px 0;
+  color: black;
+  background-color: white;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
@@ -1122,6 +1262,8 @@ nav .nav-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 0 20px;
 }
 .skill-saya .skill-ul li {
   display: flex;
@@ -1150,13 +1292,17 @@ nav .nav-ul {
 
 .profile-ul {
   display: none;
+  background-color: white;
   width: calc(100% - 5px);
   padding: 20px;
-  color: white;
+  color: black;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
   overflow: auto;
+}
+.profile-ul table tr td {
+  padding-left: 20px;
 }
 .profile-ul table tr td:nth-child(1) {
   display: flex;
@@ -1193,6 +1339,9 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio {
   display: flex;
+  padding-left: 20px;
+  background-color: white;
+  color: black;
   flex-direction: column;
   justify-content: center;
 }
@@ -1215,40 +1364,101 @@ nav .nav-ul {
   display: flex;
 }
 
-#profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
+#profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1::before {
   content: "▶";
   color: rgb(255, 0, 0);
+  -webkit-animation: blink-radio 2s ease infinite;
+          animation: blink-radio 2s ease infinite;
+}
+@-webkit-keyframes blink-radio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink-radio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#profile-radio-1:checked ~ .radio-profile .label-profile-1 {
+#profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 {
   background-color: silver;
-  border: 2px double red;
-  color: rgb(255, 0, 0);
+  box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+          animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
+@-webkit-keyframes sulit-border {
+  50% {
+    color: red;
+  }
+}
+@keyframes sulit-border {
+  50% {
+    color: red;
+  }
 }
 
-#profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
+#profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2::before {
   content: "▶";
   color: rgb(255, 0, 0);
+  -webkit-animation: blink-radio 2s ease infinite;
+          animation: blink-radio 2s ease infinite;
+}
+@keyframes blink-radio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#profile-radio-2:checked ~ .radio-profile .label-profile-2 {
+#profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 {
   background-color: silver;
-  border: 2px double red;
-  color: rgb(255, 0, 0);
+  box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+          animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
+@keyframes sulit-border {
+  50% {
+    color: red;
+  }
 }
 
-#profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
+#profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3::before {
   content: "▶";
   color: rgb(255, 0, 0);
+  -webkit-animation: blink-radio 2s ease infinite;
+          animation: blink-radio 2s ease infinite;
+}
+@keyframes blink-radio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#profile-radio-3:checked ~ .radio-profile .label-profile-3 {
+#profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 {
   background-color: silver;
-  border: 2px double red;
-  color: rgb(255, 0, 0);
+  box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+          animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
+@keyframes sulit-border {
+  50% {
+    color: red;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1363,42 +1573,6 @@ nav .nav-ul {
     width: 555px;
     justify-content: center;
     text-align: left;
-  }
-  #profile-radio-1:checked ~ .radio-profile .label-profile-1::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-  }
-  #profile-radio-1:checked ~ .radio-profile .label-profile-1 {
-    background-color: silver;
-    border: 2px double red;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    color: rgb(255, 0, 0);
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-  }
-  #profile-radio-2:checked ~ .radio-profile .label-profile-2::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-  }
-  #profile-radio-2:checked ~ .radio-profile .label-profile-2 {
-    background-color: silver;
-    border: 2px double red;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    color: rgb(255, 0, 0);
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-  }
-  #profile-radio-3:checked ~ .radio-profile .label-profile-3::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-  }
-  #profile-radio-3:checked ~ .radio-profile .label-profile-3 {
-    background-color: silver;
-    border: 2px double red;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    color: rgb(255, 0, 0);
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   }
 }
 .nutup-aib {
