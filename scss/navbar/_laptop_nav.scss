@@ -117,9 +117,10 @@ nav .nav-ul {
     width: max-content;
     flex-direction: column;
     display: none;
-    background-color: white;
+    background-color:darkblue;
+    line-height: 3rem;
     font-family: 'Secular One', sans-serif;
-    color: black;
+    color: white;
     font-size: 1.7rem;
 }
 
@@ -139,7 +140,7 @@ nav .nav-ul {
 }
 
 .link-contact span div {
-    color:blue; 
+    color:red; 
     display:inline-block;
 }
 /* ISI CONATACT AWAL MUNCULL DI LAPTOP */
@@ -270,13 +271,22 @@ nav .nav-ul {
         content: "◉";
         margin-right: 7px;
     } 
-
-    label:hover::before {
-        color: red;
-        transform: scale(1.5);
-    }
 }
 
+#normal-mode:checked~nav .change-mode .form-radio .normal-dark::before {
+        color: red;
+        transform: scale(1.5);
+}
+
+#dark-mode:checked~nav .change-mode .form-radio .dark-dark::before {
+        color: red;
+        transform: scale(1.5);
+}
+
+#light-mode:checked~nav .change-mode .form-radio .light-dark::before {
+        color: red;
+        transform: scale(1.5);
+}
 
 .hide-subs {
     display: flex;

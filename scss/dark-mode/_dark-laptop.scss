@@ -16,6 +16,9 @@
     z-index: -1000;
 }
 
+$dark-mode  : black;
+$light-mode : white;
+
 
 // pergantian dark-mode,ligth-mode,normal-mode 📌👿📌👿
 #dark-mode,#light-mode,#normal-mode {
@@ -23,156 +26,231 @@
     top: -100px;
 }
 
-// dark-mode black 📌
-
-#dark-mode:checked~.dark-aktive{
-    background-color: black;
-    color: white;
-    border-color: black;
+// dark-mode black 📌 
+#dark-mode:checked~.dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* .dark-aktive{
-    background-color: black;
-    color: white;
-    border-color: black;
+#dark-mode:checked~* .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* * .dark-aktive{
-    background-color: black;
-    color: white;
-    border-color: black;
+#dark-mode:checked~* * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* * * .dark-aktive{
-    background-color: black;
-    color: white;
-    border-color: black;
+#dark-mode:checked~* * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-
-#dark-mode:checked~* * * * .dark-aktive{
-    background-color: black;
-    color: white;
-    border-color: black;
+#dark-mode:checked~* * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~.border-aktive{
-    border-color: black;
+#dark-mode:checked~* * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* .border-aktive{
-    border-color: black;
+#dark-mode:checked~* * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* * .border-aktive{
-    border-color: black;
+#dark-mode:checked~ * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* * * .border-aktive{
-    border-color: black;
+#dark-mode:checked~* * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#dark-mode:checked~* * * * .border-aktive{
-    border-color: black;
+#dark-mode:checked~* * * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-// dark-mode 🤣 📌
-
-// light-mode 😍e 📌
-#light-mode:checked~.dark-aktive{
-    background-color: white;
-    color: black;
-    border-color: white;
+#dark-mode:checked~ * * * * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#light-mode:checked~* .dark-aktive{
-    background-color: white;
-    color: black;
-    border-color: white;
+#dark-mode:checked~* * * * * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
 }
 
-#light-mode:checked~* *.dark-aktive{
-    background-color: white;
-    color: black;
-    border-color: white;
+#dark-mode:checked~* * * * * * * * * * * * .dark-bg-aktive{
+    background-color: $dark-mode;
+}
+// ✅✅✅✅✅✅✅✅✅ akhir dark bg
+
+// dark-color ✅✅✅✅✅✅
+#dark-mode:checked~.dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~* * * .dark-aktive{
-    background-color: white;
-    color: black;
-    border-color: white;
+#dark-mode:checked~* .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~* * * *.dark-aktive{
-    background-color: white;
-    color: black;
-    border-color: white;
+#dark-mode:checked~* * .dark-font{
+    color: $light-mode;
 }
 
-// light aktive 📌
-#light-mode:checked.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
-    text-shadow: black;
+#dark-mode:checked~* * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~* * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ * *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~* * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ * *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~* * * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ * * *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~ * * * * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ * * * *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~* * * * * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~ * * * * *.light-aktive{
-    background-color: black;
-    color: white;
-    border-color: white;
+#dark-mode:checked~* * * * * * * * * .dark-font{
+    color: $light-mode;
 }
 
-
-#light-mode:checked~.border-aktive{
-    border-color: white;
+#dark-mode:checked~ * * * * * * * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~* .border-aktive{
-    border-color: white;
+#dark-mode:checked~* * * * * * * * * * * .dark-font{
+    color: $light-mode;
 }
 
-#light-mode:checked~* * .border-aktive{
-    border-color: white;
+#dark-mode:checked~* * * * * * * * * * * * .dark-font{
+    color: $light-mode;
+}
+// akhir dari dark-color✅✅✅✅✅✅✅
+
+
+// dark border  ✅✅✅✅✅✅✅
+#dark-mode:checked~.dark-border{
+    border-color: $dark-mode;
 }
 
-#light-mode:checked~* * * .border-aktive{
-    border-color: white;
+#dark-mode:checked~* .dark-border{
+    border-color: $dark-mode;
 }
 
-#light-mode:checked~* * * * .border-aktive{
-    border-color: white;
+#dark-mode:checked~* * .dark-border{
+    border-color: $dark-mode;
 }
+
+#dark-mode:checked~* * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * * .dark-border{
+    border-color: $dark-mode;
+}
+// dark-border ✅✅✅✅✅✅✅
+
+// dark text-shadow ✅✅✅✅✅✅
+#dark-mode:checked~.dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * .dark-text-shadow{
+    text-shadow:$dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * * .dark-text-shadow { 
+    text-shadow:$dark-mode;
+}
+// dark text-shadow ✅✅✅✅✅✅
+
+
+
+
+
+
+
+
+
 
 // tambaham dark-mode untuk hanphone
  @media (min-width: 320px) and (max-width: 767px) { 
@@ -193,3 +271,409 @@
 
 // dark-mode white 📌
 // pergantian dark-mode,ligth-mode,normal-mode 📌👿👿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// dark-mode white 📌 
+#light-mode:checked~.dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .dark-bg-aktive{
+    background-color: $light-mode;
+}
+// ✅✅✅✅✅✅✅✅✅ akhir dark bg
+
+// dark-color ✅✅✅✅✅✅
+#light-mode:checked~.dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~ * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .dark-font{
+    color: $dark-mode;
+}
+// akhir dari dark-color✅✅✅✅✅✅✅
+
+
+// dark border  ✅✅✅✅✅✅✅
+#light-mode:checked~.dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .dark-border{
+    border-color: $light-mode;
+}
+// dark-border ✅✅✅✅✅✅✅
+
+// dark text-shadow ✅✅✅✅✅✅
+#light-mode:checked~.dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~ * * * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .dark-text-shadow{
+    text-shadow:$light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .dark-text-shadow { 
+    text-shadow:$light-mode;
+}
+// dark text-shadow ✅✅✅✅✅✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 📌 light-bg-aktive
+
+// dark-mode white 📌 
+#light-mode:checked~.light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~ * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .light-bg-aktive{
+    background-color: $dark-mode;
+}
+
+
+// light-font white
+#light-mode:checked~.light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~ * * * * * * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * .light-font{
+    color: $light-mode;
+}
+
+#light-mode:checked~* * * * * * * * * * * * .light-font{
+    color: $light-mode;
+}
+// ✅✅✅✅✅✅✅✅✅ akhir dark bg

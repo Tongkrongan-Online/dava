@@ -273,9 +273,10 @@ nav .nav-ul {
   width: max-content;
   flex-direction: column;
   display: none;
-  background-color: white;
+  background-color: darkblue;
+  line-height: 3rem;
   font-family: "Secular One", sans-serif;
-  color: black;
+  color: white;
   font-size: 1.7rem;
 }
 
@@ -295,7 +296,7 @@ nav .nav-ul {
 }
 
 .link-contact span div {
-  color: blue;
+  color: red;
   display: inline-block;
 }
 
@@ -422,7 +423,18 @@ nav .nav-ul {
   content: "◉";
   margin-right: 7px;
 }
-.form-radio label:hover::before {
+
+#normal-mode:checked ~ nav .change-mode .form-radio .normal-dark::before {
+  color: red;
+  transform: scale(1.5);
+}
+
+#dark-mode:checked ~ nav .change-mode .form-radio .dark-dark::before {
+  color: red;
+  transform: scale(1.5);
+}
+
+#light-mode:checked ~ nav .change-mode .form-radio .light-dark::before {
   color: red;
   transform: scale(1.5);
 }
@@ -744,15 +756,13 @@ nav .nav-ul {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
-    padding: 0;
   }
   .nav-medsos-toogle span {
     display: flex;
     background-color: rgb(255, 255, 255);
     color: black;
     margin: 10px auto;
-    width: 95%;
+    width: 90%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -796,11 +806,9 @@ nav .nav-ul {
     justify-content: end;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 0px;
     width: calc(100% - 260px - 25px);
     order: 2;
-    box-sizing: border-box;
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .change-mode .hide-subs {
     margin-right: 10px;
@@ -1166,18 +1174,31 @@ nav .nav-ul {
 .header-content {
   width: 100%;
   height: 500px;
-  background-image: url(https://source.unsplash.com/1000x1000/?darknature);
+  background-image: url(https://source.unsplash.com/1500x1500/?books);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  transform: translateY(-50px);
   justify-content: center;
-  line-height: 250px;
   color: white;
   font-size: 2rem;
   text-transform: capitalize;
   font-family: "Secular One", sans-serif;
-  text-shadow: 1px 6px 0 black;
+}
+.header-content .card-profile {
+  color: black;
+  font-family: "Secular One", sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  line-height: 2rem;
+}
+.header-content .card-profile p {
+  margin-bottom: 20px;
 }
 
 .header-profile {
@@ -1188,13 +1209,14 @@ nav .nav-ul {
   width: 100%;
   position: absolute;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: row;
   color: white;
   font-size: 1.4rem;
   font-family: "Secular One", sans-serif;
   text-shadow: 1px 1px 0 black;
   box-sizing: border-box;
+  overflow: hidden;
   box-shadow: 5px 5px 10px 0 black;
 }
 .header-profile .textdanimage {
@@ -1208,16 +1230,49 @@ nav .nav-ul {
   font-family: "Permanent Marker", cursive;
   text-shadow: 1px 1px 0 black;
 }
-.header-profile .textdanimage img {
+.header-profile .textdanimage .textdanimage-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkblue;
+  position: relative;
+  justify-content: center;
+  padding: 20px;
+}
+.header-profile .textdanimage .textdanimage-2 img {
   display: inline-block;
   border-radius: 20%;
   margin-bottom: 20px;
+  width: 200px;
   box-shadow: 0 0 5px 2px black;
 }
-.header-profile .textdanimage h3 {
+.header-profile .textdanimage .textdanimage-2 h3 {
   display: flex;
   letter-spacing: 5px;
   text-align: center;
+}
+.header-profile .textdanimage .textdanimage-2 .rumah-profile {
+  position: absolute;
+  z-index: -1;
+  top: -300px;
+  left: -135px;
+  font-size: 40rem;
+}
+.header-profile .textdanimage .textdanimage-2 .jendela-rumah {
+  position: absolute;
+  top: -100px;
+  font-size: 5rem;
+}
+.header-profile .textdanimage .textdanimage-2 .batang {
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.header-profile .textdanimage .textdanimage-2 .batang-2 {
+  left: 380px;
 }
 
 .radio-profile {
@@ -1339,17 +1394,17 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio {
   display: flex;
-  padding-left: 20px;
   background-color: white;
   color: black;
   flex-direction: column;
   justify-content: center;
 }
 .sosial-profile .sosial-radio li {
+  padding-left: 20px;
   display: flex;
 }
 .sosial-profile .sosial-radio li:hover {
-  background-color: rgb(241, 102, 102);
+  background-color: rgb(255, 0, 0);
 }
 .sosial-profile .sosial-radio li a {
   display: flex;
@@ -1358,6 +1413,9 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio li img {
   width: 80px;
+}
+.sosial-profile .sosial-radio .sosial-snack {
+  padding: 5px 0;
 }
 
 #profile-radio-3:checked ~ .sosial-profile {
@@ -1462,41 +1520,57 @@ nav .nav-ul {
 }
 
 @media (max-width: 767px) {
+  .content-utama {
+    position: absolute;
+    z-index: -150;
+    top: 80px;
+    width: 100%;
+  }
   .header-content {
     width: 100%;
     height: 500px;
-    background-image: url(https://source.unsplash.com/1000x1000/?darknature);
+    background-image: url(https://source.unsplash.com/1500x1500/?books);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    transform: translateY(-50px);
     justify-content: center;
-    line-height: 250px;
     color: white;
     font-size: 2rem;
     text-transform: capitalize;
     font-family: "Secular One", sans-serif;
-    text-shadow: 1px 6px 0 black;
+  }
+  .header-content .card-profile {
+    color: black;
+    font-family: "Secular One", sans-serif;
+    font-size: 1.3rem;
+    justify-content: center;
+    line-height: 2rem;
+  }
+  .header-content .card-profile p {
+    margin-bottom: 20px;
   }
   .header-profile {
     display: flex;
     transform: translateY(-100px);
     background-color: darkblue;
+    padding: 20px;
     width: 100%;
     position: absolute;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     color: white;
     font-size: 1.4rem;
     font-family: "Secular One", sans-serif;
     text-shadow: 1px 1px 0 black;
-    letter-spacing: 5px;
     box-sizing: border-box;
-    border: 1rem solid transparent;
-    border-right-color: darkblue;
-    border-left-color: darkblue;
-    overflow-x: hidden;
+    overflow: hidden;
     box-shadow: 5px 5px 10px 0 black;
   }
   .header-profile .textdanimage {
@@ -1507,37 +1581,157 @@ nav .nav-ul {
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
+    padding-top: 270px;
     font-family: "Permanent Marker", cursive;
     text-shadow: 1px 1px 0 black;
   }
-  .header-profile .textdanimage img {
+  .header-profile .textdanimage .textdanimage-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkblue;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+  }
+  .header-profile .textdanimage .textdanimage-2 img {
     display: inline-block;
     border-radius: 20%;
+    margin-bottom: 20px;
+    width: 200px;
     box-shadow: 0 0 5px 2px black;
   }
-  .header-profile .textdanimage h3 {
+  .header-profile .textdanimage .textdanimage-2 h3 {
     display: flex;
+    letter-spacing: 5px;
     text-align: center;
+  }
+  .header-profile .textdanimage .textdanimage-2 .rumah-profile {
+    position: absolute;
+    z-index: -1;
+    top: -300px;
+    left: -135px;
+    font-size: 40rem;
+  }
+  .header-profile .textdanimage .textdanimage-2 .jendela-rumah {
+    position: absolute;
+    top: -100px;
+    font-size: 5rem;
+  }
+  .header-profile .textdanimage .textdanimage-2 .batang {
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+  }
+  .header-profile .textdanimage .textdanimage-2 .batang-2 {
+    left: 380px;
   }
   .radio-profile {
     display: flex;
+    align-items: center;
     width: 100%;
-    flex-direction: column;
+    height: 100px;
     background-color: white;
+    position: relative;
+    flex-direction: column;
+    text-transform: capitalize;
     color: black;
     justify-content: space-evenly;
+    font-family: "Secular One", sans-serif;
     margin-top: 30px;
   }
   .radio-profile label {
-    padding: 0 0 0 20px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
-  .profile-ul table {
-    text-align: left;
+  .radio-profile .label-profile-1 {
+    order: 2;
+  }
+  .radio-profile .label-profile-2 {
+    order: 1;
+  }
+  .radio-profile .label-profile-3 {
+    order: 3;
+  }
+  .skill-saya {
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    color: black;
+    background-color: white;
+    text-transform: capitalize;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+  }
+  .skill-saya .skill-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .skill-saya .skill-ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .skill-saya .skill-ul li img {
+    width: 80px;
+  }
+  .skill-saya .skill-ul .framework {
+    display: inline;
+  }
+  .skill-saya .skill-ul li::before {
+    content: "⇒";
+  }
+  .skill-saya .framwork-css {
+    margin-left: 20px;
+  }
+  .skill-saya .framwork-css li::before {
+    content: "↪";
+  }
+  #profile-radio-1:checked ~ .skill-saya {
+    display: flex;
+  }
+  .profile-ul {
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    z-index: -1;
+    overflow: auto;
+  }
+  .profile-ul table tr td {
+    padding-left: 20px;
+  }
+  .profile-ul table tr td:nth-child(1) {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .profile-ul table tr td:nth-child(3) {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .profile-ul table tbody * {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+  }
+  #profile-radio-2:checked ~ .profile-ul {
+    display: flex;
+  }
+  #profile-radio-1, #profile-radio-2, #profile-radio-3 {
+    position: fixed;
+    top: -100px;
+    left: -100px;
   }
   .sosial-profile {
     display: none;
@@ -1548,18 +1742,17 @@ nav .nav-ul {
   }
   .sosial-profile .sosial-radio {
     display: flex;
+    background-color: white;
+    color: black;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
   }
   .sosial-profile .sosial-radio li {
+    padding: 0px 15px;
     display: flex;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   .sosial-profile .sosial-radio li:hover {
-    background-color: rgb(241, 102, 102);
+    background-color: rgb(255, 0, 0);
   }
   .sosial-profile .sosial-radio li a {
     display: flex;
@@ -1569,10 +1762,443 @@ nav .nav-ul {
   .sosial-profile .sosial-radio li img {
     width: 80px;
   }
-  .sosial-profile .sosial-radio li:nth-child(6) {
-    width: 555px;
+  .sosial-profile .sosial-radio .sosial-snack {
+    padding: 5px 0;
+  }
+  #profile-radio-3:checked ~ .sosial-profile {
+    display: flex;
+  }
+  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @-webkit-keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @-webkit-keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-utama {
+    position: absolute;
+    z-index: -150;
+    top: 80px;
+    width: 100%;
+  }
+  .header-content {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://source.unsplash.com/1500x1500/?books);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    transform: translateY(-50px);
     justify-content: center;
-    text-align: left;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: "Secular One", sans-serif;
+  }
+  .header-content .card-profile {
+    color: black;
+    font-family: "Secular One", sans-serif;
+    font-size: 1.3rem;
+    justify-content: center;
+    line-height: 2rem;
+  }
+  .header-content .card-profile p {
+    margin-bottom: 20px;
+  }
+  .header-profile {
+    display: flex;
+    transform: translateY(-100px);
+    background-color: darkblue;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Secular One", sans-serif;
+    text-shadow: 1px 1px 0 black;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 0 black;
+  }
+  .header-profile .textdanimage {
+    display: flex;
+    padding: 40px 0 0 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding-top: 270px;
+    font-family: "Permanent Marker", cursive;
+    text-shadow: 1px 1px 0 black;
+  }
+  .header-profile .textdanimage .textdanimage-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkblue;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+  }
+  .header-profile .textdanimage .textdanimage-2 img {
+    display: inline-block;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    width: 200px;
+    box-shadow: 0 0 5px 2px black;
+  }
+  .header-profile .textdanimage .textdanimage-2 h3 {
+    display: flex;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .header-profile .textdanimage .textdanimage-2 .rumah-profile {
+    position: absolute;
+    z-index: -1;
+    top: -300px;
+    left: -135px;
+    font-size: 40rem;
+  }
+  .header-profile .textdanimage .textdanimage-2 .jendela-rumah {
+    position: absolute;
+    top: -100px;
+    font-size: 5rem;
+  }
+  .header-profile .textdanimage .textdanimage-2 .batang {
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+  }
+  .header-profile .textdanimage .textdanimage-2 .batang-2 {
+    left: 380px;
+  }
+  .radio-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+    text-transform: capitalize;
+    color: black;
+    justify-content: space-evenly;
+    font-family: "Secular One", sans-serif;
+    margin-top: 30px;
+  }
+  .radio-profile label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .radio-profile .label-profile-1 {
+    order: 2;
+  }
+  .radio-profile .label-profile-2 {
+    order: 1;
+  }
+  .radio-profile .label-profile-3 {
+    order: 3;
+  }
+  .skill-saya {
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    color: black;
+    background-color: white;
+    text-transform: capitalize;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+  }
+  .skill-saya .skill-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .skill-saya .skill-ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .skill-saya .skill-ul li img {
+    width: 80px;
+  }
+  .skill-saya .skill-ul .framework {
+    display: inline;
+  }
+  .skill-saya .skill-ul li::before {
+    content: "⇒";
+  }
+  .skill-saya .framwork-css {
+    margin-left: 20px;
+  }
+  .skill-saya .framwork-css li::before {
+    content: "↪";
+  }
+  #profile-radio-1:checked ~ .skill-saya {
+    display: flex;
+  }
+  .profile-ul {
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    z-index: -1;
+    overflow: auto;
+  }
+  .profile-ul table tr td {
+    padding-left: 20px;
+  }
+  .profile-ul table tr td:nth-child(1) {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .profile-ul table tr td:nth-child(3) {
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .profile-ul table tbody * {
+    padding-bottom: 15px;
+  }
+  #profile-radio-2:checked ~ .profile-ul {
+    display: flex;
+  }
+  #profile-radio-1, #profile-radio-2, #profile-radio-3 {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+  }
+  .sosial-profile {
+    display: none;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+  }
+  .sosial-profile .sosial-radio {
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sosial-profile .sosial-radio li {
+    padding: 0px 15px;
+    display: flex;
+  }
+  .sosial-profile .sosial-radio li:hover {
+    background-color: rgb(255, 0, 0);
+  }
+  .sosial-profile .sosial-radio li a {
+    display: flex;
+    align-items: center;
+    font-family: "Secular One", sans-serif;
+  }
+  .sosial-profile .sosial-radio li img {
+    width: 80px;
+  }
+  .sosial-profile .sosial-radio .sosial-snack {
+    padding: 5px 0;
+  }
+  #profile-radio-3:checked ~ .sosial-profile {
+    display: flex;
+  }
+  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @-webkit-keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @-webkit-keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
+  }
+  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3::before {
+    content: "▶";
+    color: rgb(255, 0, 0);
+    -webkit-animation: blink-radio 2s ease infinite;
+            animation: blink-radio 2s ease infinite;
+  }
+  @keyframes blink-radio {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 {
+    background-color: silver;
+    box-sizing: border-box;
+    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  }
+  @keyframes sulit-border {
+    50% {
+      color: red;
+    }
   }
 }
 .nutup-aib {
@@ -1598,147 +2224,212 @@ nav .nav-ul {
   top: -100px;
 }
 
-#dark-mode:checked ~ .dark-aktive {
+#dark-mode:checked ~ .dark-bg-aktive {
   background-color: black;
-  color: white;
-  border-color: black;
 }
 
-#dark-mode:checked ~ * .dark-aktive {
+#dark-mode:checked ~ * .dark-bg-aktive {
   background-color: black;
-  color: white;
-  border-color: black;
 }
 
-#dark-mode:checked ~ * * .dark-aktive {
+#dark-mode:checked ~ * * .dark-bg-aktive {
   background-color: black;
-  color: white;
-  border-color: black;
 }
 
-#dark-mode:checked ~ * * * .dark-aktive {
+#dark-mode:checked ~ * * * .dark-bg-aktive {
   background-color: black;
-  color: white;
-  border-color: black;
 }
 
-#dark-mode:checked ~ * * * * .dark-aktive {
+#dark-mode:checked ~ * * * * .dark-bg-aktive {
   background-color: black;
-  color: white;
-  border-color: black;
 }
 
-#dark-mode:checked ~ .border-aktive {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * .border-aktive {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * .border-aktive {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * .border-aktive {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * .border-aktive {
-  border-color: black;
-}
-
-#light-mode:checked ~ .dark-aktive {
-  background-color: white;
-  color: black;
-  border-color: white;
-}
-
-#light-mode:checked ~ * .dark-aktive {
-  background-color: white;
-  color: black;
-  border-color: white;
-}
-
-#light-mode:checked ~ * *.dark-aktive {
-  background-color: white;
-  color: black;
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * .dark-aktive {
-  background-color: white;
-  color: black;
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * *.dark-aktive {
-  background-color: white;
-  color: black;
-  border-color: white;
-}
-
-#light-mode:checked.light-aktive {
+#dark-mode:checked ~ * * * * * .dark-bg-aktive {
   background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .dark-bg-aktive {
+  background-color: black;
+}
+
+#dark-mode:checked ~ .dark-font {
   color: white;
-  border-color: white;
+}
+
+#dark-mode:checked ~ * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .dark-font {
+  color: white;
+}
+
+#dark-mode:checked ~ .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .dark-border {
+  border-color: black;
+}
+
+#dark-mode:checked ~ .dark-text-shadow {
   text-shadow: black;
 }
 
-#light-mode:checked ~ *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * * *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * * * *.light-aktive {
-  background-color: black;
-  color: white;
-  border-color: white;
+#dark-mode:checked ~ * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ .border-aktive {
-  border-color: white;
+#dark-mode:checked ~ * * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * .border-aktive {
-  border-color: white;
+#dark-mode:checked ~ * * * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * .border-aktive {
-  border-color: white;
+#dark-mode:checked ~ * * * * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * * .border-aktive {
-  border-color: white;
+#dark-mode:checked ~ * * * * * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
-#light-mode:checked ~ * * * * .border-aktive {
-  border-color: white;
+#dark-mode:checked ~ * * * * * * * * * * * .dark-text-shadow {
+  text-shadow: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .dark-text-shadow {
+  text-shadow: black;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1752,4 +2443,315 @@ nav .nav-ul {
     color: rgb(255, 255, 255);
     background-color: black;
   }
+}
+#light-mode:checked ~ .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .dark-bg-aktive {
+  background-color: white;
+}
+
+#light-mode:checked ~ .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .dark-font {
+  color: black;
+}
+
+#light-mode:checked ~ .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .dark-border {
+  border-color: white;
+}
+
+#light-mode:checked ~ .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .dark-text-shadow {
+  text-shadow: white;
+}
+
+#light-mode:checked ~ .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .light-bg-aktive {
+  background-color: black;
+}
+
+#light-mode:checked ~ .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * .light-font {
+  color: white;
+}
+
+#light-mode:checked ~ * * * * * * * * * * * * .light-font {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

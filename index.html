@@ -25,6 +25,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- google font akhir -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!-- link boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,11 +42,11 @@
 <body>
     <input type="radio" name="dark-mode" id="dark-mode">
     <input type="radio" name="dark-mode" id="light-mode">
-    <input type="radio" name="dark-mode" id="normal-mode">
-    <div class="dark-aktive nutup-aib"></div>
-    <div class="light-aktive nutup-aib-2"></div>
+    <input type="radio" name="dark-mode" id="normal-mode" checked="checked">
+    <div class="nutup-aib"></div>
+    <div class=" nutup-aib-2"></div>
     <nav>
-        <ul class="nav-ul dark-aktive">
+        <ul class="nav-ul dark-bg-aktive dark-font">
             <li class="teks-logo">
                 <img src="img/favicon.ico" alt="Tongkrongan-Online">
                 <a href="https://youtube.com/channel/UCNncSeKtVODKeIVOUmlH6nw">
@@ -59,7 +61,7 @@
                     </span>
                 </label>
                 <label for="check-toogle" class="x-toogle label-toogle">❌</label>
-                <ul class="toogle-menu-ul dark-aktive">
+                <ul class="toogle-menu-ul">
                     <li class="nav-teks-toogle">
                         <span>
                             <a href="https://dava-rho.vercel.app/">Home</a>
@@ -70,7 +72,7 @@
                         <span class="contact-nav">
                             <input type="checkbox" id="contact-navbar">
                             <label for="contact-navbar" class="button-contact">contact</label>
-                            <div class="link-contact dark-aktive">
+                            <div class="link-contact dark-bg-aktive dark-font">
                                 <label for="contact-navbar" class="button-contact-2"></label>
                                 <span>
                                     <a href="#" class="a-link-contact">
@@ -84,14 +86,14 @@
                                     </a>
                                 </span>
                                 <span>
-                                    <a href="#" class="a-link-contact">
-                                        whatsapp : <div>082246859943</div>
+                                    <a href="https://wa.me/message/QBAZAOCR267RK1" class="a-link-contact">
+                                        whatsapp : <div>083893625295</div>
                                     </a>
                                 </span>
                             </div>
                         </span>
                     </li>
-                    <li class="nav-medsos-toogle dark-aktive">
+                    <li class="nav-medsos-toogle">
                         <span>
                             <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y=" class="instagram">
                                 <img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png"
@@ -122,7 +124,7 @@
             </li>
             <input type="checkbox" id="hp-view">
 
-            <li class="change-mode dark-aktive">
+            <li class="change-mode">
                 <div class="dark-mode">
                     <h5>
                         Choice Mode
@@ -130,14 +132,15 @@
                             change_circle
                         </span>
                     </h5>
-                    <div class="form-radio dark-aktive">
-                        <label for="dark-mode">Dark mode <span class="material-symbols-outlined">
+                    <div class="form-radio dark-bg-aktive dark-font">
+                        <label for="dark-mode" class="dark-dark">Dark mode <span class="material-symbols-outlined">
                                 dark_mode
                             </span> </label>
-                        <label for="light-mode">Light mode <span class="material-symbols-outlined">
+                        <label for="light-mode" class="light-dark">Light mode <span class="material-symbols-outlined">
                                 light_mode
                             </span></label>
-                        <label for="normal-mode">Normal mode <span class="material-symbols-outlined">
+                        <label for="normal-mode" class="normal-dark">Normal mode <span
+                                class="material-symbols-outlined">
                                 format_color_reset
                             </span></label>
                     </div>
@@ -156,14 +159,14 @@
     </nav>
 
     <input type="checkbox" id="hide-subs">
-    <section class="sub-content-bab light-aktive border-aktive">
-        <ul class="ul-sub-bab light-aktive border-aktive">
-            <li class="li-sub-bab light-aktive border-aktive">
+    <section class="sub-content-bab">
+        <ul class="ul-sub-bab">
+            <li class="li-sub-bab">
                 <input type="checkbox" id="sub-checkbox">
-                <label for="sub-checkbox" class="open-sub tombol-sub-content dark-aktive">🔽open</label>
-                <label for="sub-checkbox" class="close-sub tombol-sub-content dark-aktive">🔼close</label>
-                <div class="parent-ol-sub-content border-aktive">
-                    <ol class="ol-sub-content light-aktive border-aktive">
+                <label for="sub-checkbox" class="open-sub tombol-sub-content dark-font">🔽open</label>
+                <label for="sub-checkbox" class="close-sub tombol-sub-content dark-font">🔼close</label>
+                <div class="parent-ol-sub-content dark-border">
+                    <ol class="ol-sub-content light-bg-aktive light-font">
                         <li><a href="#">category-1</a></li>
                         <li><a href="#">category-2</a></li>
                         <li><a href="#">category-3</a></li>
@@ -217,7 +220,7 @@
                     </ol>
                 </div>
             </li>
-            <li class="toogle-sub-bab dark-aktive border-aktive">
+            <li class="toogle-sub-bab dark-bg-aktive dark-border">
                 <input type="search" id="search-sub" placeholder="search"
                     onclick="alert('mohon maaf tombol search belum berfungsi ya🙏, saya belum bisa buat database nya untuk keluar masuk nya data,terimakasih')"
                     onchange="alert('mau cari apa sih🤦‍♂️,kan udah dibilang gak bisa loh,apa kalian mau bantuin saya buat database nya gitu?')">
@@ -232,28 +235,53 @@
 
     <section class="content-utama">
         <div class="header-content">
-            <marquee behavior="scroll" direction="right" scrollamount="5">
-                <h1>
-                    selamat datang di website home tongkrongan online <br>
-                </h1>
-            </marquee>
+            <div class="row card-header card-profile">
+                <div class="col-lg-8 ">
+                    <div class="card light-bg-aktive light-font">
+                        <div class="card-body">
+                            <h5 class="card-title">welcome to my website !!!</h5>
+                            <p class="card-text">hallo semua,website ini sebagai website utama atau home
+                                website nantinya,saya saya menjadikan webiste ini menjadi sarana latihan dari semua
+                                yang sudah saya pelajari,jika berkenan saya mengharapkan saran
+                                dan masukan dari kalian dalam mengembangkan website!! <br>
+                                terimakasih atas waktu nya 👌
+                            </p>
+                            <a href="#" class="btn btn-primary dark-bg-aktive dark-font"
+                                onclick="prompt('apa yang ingin anda sampaikan keapda saya ?'), alert('Terimakasih sudah meluangkan waktumu,saran dan masukan kamu akan saya cermati🙏') ">beri
+                                saya saran</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-profile dark-aktive">
-            <input type="radio" id="profile-radio-1" name="profile-radio">
+        <div class="header-profile dark-bg-aktive">
+            <input type="radio" id="profile-radio-1" name="profile-radio" checked="checked">
             <input type="radio" id="profile-radio-2" name="profile-radio">
-            <input type="radio" id="profile-radio-3" name="profile-radio" checked="checked">
+            <input type="radio" id="profile-radio-3" name="profile-radio">
+
             <div class="textdanimage">
-                <img src="img/image-header.png" alt="profile-tongkrongan-online">
-                <h3>
-                    Tongkrongan Online
-                </h3>
-                <div class="radio-profile light-aktive">
+                <div class="textdanimage-2 dark-bg-aktive dark-font">
+                    <div class="batang-1 batang light-bg-aktive"></div>
+                    <div class="batang-2 batang light-bg-aktive"></div>
+                    <span class="material-symbols-outlined rumah-profile">
+                        roofing
+                    </span>
+                    <span class="material-symbols-outlined jendela-rumah">
+                        window
+                    </span>
+                    <img src="img/image-header.png" alt="profile-tongkrongan-online" class="dark-bg-aktive">
+                    <h3>
+                        Tongkrongan Online
+                    </h3>
+                </div>
+                <div class="radio-profile light-bg-aktive light-font">
                     <label for="profile-radio-1" class="label-profile-1">my Skills</label>
                     <label for="profile-radio-2" class="label-profile-2">profile</label>
                     <label for="profile-radio-3" class="label-profile-3">social media</label>
                 </div>
             </div>
-            <div class="skill-saya light-aktive">
+
+            <div class="skill-saya light-bg-aktive light-font">
                 <ul class="skill-ul">
                     <li>
                         <img src="https://img.icons8.com/color/2x/html-5.png" alt="html">
@@ -282,7 +310,11 @@
                     </li>
                     <li>
                         <img src="https://img.icons8.com/color/2x/git.png" alt="git">
-                        git and github
+                        git
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/3d-fluency/2x/github.png" alt="github">
+                        github
                     </li>
                     <li>
                         <img src="https://img.icons8.com/color/2x/javascript--v2.png" alt="javascript">
@@ -295,7 +327,8 @@
                     <li>coming soon</li>
                 </ul>
             </div>
-            <div class="profile-ul light-aktive">
+
+            <div class="profile-ul light-bg-aktive light-font">
                 <table>
                     <tbody>
                         <tr>
@@ -406,8 +439,8 @@
                 </table>
             </div>
 
-            <div class="sosial-profile light-aktive">
-                <ul class="sosial-radio light-aktive">
+            <div class="sosial-profile">
+                <ul class="sosial-radio light-bg-aktive light-font">
                     <li>
                         <a href="https://instagram.com/muhammaddavafahreza?igshid=YmMyMTA2M2Y=">
                             <img src="https://img.icons8.com/bubbles/2x/instagram-new--v2.png" alt="instagram">
@@ -439,7 +472,27 @@
                         </a>
                     </li>
                     <li>
-                        <a>di atas adalah semua media sosial yang aktive saya kelola, jika ada yang
+                        <a href="https://wa.me/message/QBAZAOCR267RK1">
+                            <img src="https://img.icons8.com/bubbles/2x/whatsapp.png" alt="whatsapp">
+                            083893625295
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sck.io/u/@tongkronganonline/ZaHmdpvJ" class="sosial-snack">
+                            <img src="https://1.bp.blogspot.com/-PuWtJg49s_0/YCPIGwfvu6I/AAAAAAAAD40/qSgEwMEWRB0u8yxozbojxWGChflTDrX8ACLcBGAsYHQ/s1600/Logo%2BSnack%2BVideo.png"
+                                alt="snack video">
+                            Tongkrongan Online
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="https://img.icons8.com/bubbles/2x/gmail.png" alt="email">
+                            @muhammaddavafahreza05@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a>di atas adalah semua media sosial saya,walaupun tidak semua yang aktive saya kelola setiap
+                            hari, jika ada yang
                             mengatasnamakan saya selain dari akun yang saya sebutkan diatas adalah penipuan ❗
                             <br> TERIMA KASIH 🖐</a>
                     </li>
