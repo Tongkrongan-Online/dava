@@ -1204,14 +1204,14 @@ nav .nav-ul {
 .header-profile {
   display: flex;
   transform: translateY(-100px);
-  background-color: darkblue;
+  background-color: white;
   padding: 20px;
   width: 100%;
   position: absolute;
   justify-content: center;
   align-items: flex-end;
   flex-direction: row;
-  color: white;
+  color: black;
   font-size: 1.4rem;
   font-family: "Secular One", sans-serif;
   text-shadow: 1px 1px 0 black;
@@ -1234,7 +1234,7 @@ nav .nav-ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkblue;
+  background-color: white;
   position: relative;
   justify-content: center;
   padding: 20px;
@@ -1264,7 +1264,7 @@ nav .nav-ul {
   font-size: 5rem;
 }
 .header-profile .textdanimage .textdanimage-2 .batang {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   width: 40px;
   height: 330px;
   position: absolute;
@@ -1280,11 +1280,11 @@ nav .nav-ul {
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: white;
+  background-color: black;
   position: relative;
   flex-direction: column;
   text-transform: capitalize;
-  color: black;
+  color: white;
   justify-content: space-evenly;
   font-family: "Secular One", sans-serif;
   margin-top: 30px;
@@ -1308,8 +1308,8 @@ nav .nav-ul {
   display: none;
   width: 100%;
   padding: 20px 0;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
@@ -1347,10 +1347,10 @@ nav .nav-ul {
 
 .profile-ul {
   display: none;
-  background-color: white;
+  background-color: black;
   width: calc(100% - 5px);
   padding: 20px;
-  color: black;
+  color: white;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
@@ -1394,8 +1394,8 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio {
   display: flex;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   flex-direction: column;
   justify-content: center;
 }
@@ -2274,6 +2274,110 @@ nav .nav-ul {
 
 #dark-mode:checked ~ * * * * * * * * * * * * .dark-bg-aktive {
   background-color: black;
+}
+
+#dark-mode:checked ~ .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .light-bg-aktive {
+  background-color: white;
+}
+
+#dark-mode:checked ~ .dark-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * .light-font {
+  color: black;
+}
+
+#dark-mode:checked ~ * * * * * * * * * * * * .light-font {
+  color: black;
 }
 
 #dark-mode:checked ~ .dark-font {

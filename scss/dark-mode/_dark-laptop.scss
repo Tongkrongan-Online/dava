@@ -80,6 +80,124 @@ $light-mode : white;
 }
 // ✅✅✅✅✅✅✅✅✅ akhir dark bg
 
+
+
+// dark-mode black light white 📌 
+#dark-mode:checked~.light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~ * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~ * * * * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * * .light-bg-aktive{
+    background-color: $light-mode;
+}
+// ✅✅✅✅✅✅✅✅✅ akhir darklight white bg
+
+
+
+
+// dark-color ✅✅✅✅✅✅ font white light
+#dark-mode:checked~.dark-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~ * * * * * * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * .light-font{
+    color: $dark-mode;
+}
+
+#dark-mode:checked~* * * * * * * * * * * * .light-font{
+    color: $dark-mode;
+}
+// akhir dari dark-color✅✅✅✅✅✅✅ font-light white
+
+
+
+
+
+
 // dark-color ✅✅✅✅✅✅
 #dark-mode:checked~.dark-font{
     color: $light-mode;
