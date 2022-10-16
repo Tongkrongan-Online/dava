@@ -16,8 +16,9 @@ a:hover {
 
 body {
   background-color: white;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+  background-image: url(https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
 /*css reset komplek*/
@@ -1169,16 +1170,16 @@ nav .nav-ul {
   z-index: -150;
   top: 80px;
   width: 100%;
+  background-image: url(https://media.istockphoto.com/photos/man-and-black-hardcover-book-picture-id873334016?k=20&m=873334016&s=612x612&w=0&h=VYBbREcJltCFYcxErsDFmEvfJNc9aMbqek_ztQomEIk=);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .header-content {
   width: 100%;
   height: 500px;
-  background-image: url(https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=600);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1204,11 +1205,10 @@ nav .nav-ul {
 .header-profile {
   display: flex;
   transform: translateY(-100px);
-  background-color: white;
-  background-image: url(https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=600);
   padding: 20px;
   width: 100%;
   position: absolute;
+  background-image: transparent;
   justify-content: center;
   align-items: flex-end;
   flex-direction: row;
@@ -1253,42 +1253,17 @@ nav .nav-ul {
   letter-spacing: 5px;
   text-align: center;
 }
-.header-profile .textdanimage .textdanimage-2 .rumah-profile {
-  position: absolute;
-  z-index: -1;
-  top: -300px;
-  left: -135px;
-  font-size: 40rem;
-  color: black;
-}
-.header-profile .textdanimage .textdanimage-2 .jendela-rumah {
-  position: absolute;
-  top: -100px;
-  font-size: 5rem;
-  color: black;
-}
-.header-profile .textdanimage .textdanimage-2 .batang {
-  background-color: rgb(0, 0, 0);
-  width: 40px;
-  height: 330px;
-  position: absolute;
-  top: 0;
-  left: -50px;
-}
-.header-profile .textdanimage .textdanimage-2 .batang-2 {
-  left: 380px;
-}
 
 .radio-profile {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: white;
   position: relative;
   flex-direction: column;
   text-transform: capitalize;
-  color: white;
+  color: black;
   justify-content: space-evenly;
   font-family: "Secular One", sans-serif;
   margin-top: 30px;
@@ -1312,8 +1287,8 @@ nav .nav-ul {
   display: none;
   width: 100%;
   padding: 20px 0;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
@@ -1351,10 +1326,10 @@ nav .nav-ul {
 
 .profile-ul {
   display: none;
-  background-color: black;
+  background-color: white;
   width: calc(100% - 5px);
   padding: 20px;
-  color: white;
+  color: black;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
@@ -1398,8 +1373,8 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   flex-direction: column;
   justify-content: center;
 }
@@ -1533,12 +1508,6 @@ nav .nav-ul {
   .header-content {
     width: 100%;
     height: 500px;
-    background-image: url(https://source.unsplash.com/1500x1500/?books);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -1562,7 +1531,6 @@ nav .nav-ul {
   .header-profile {
     display: flex;
     transform: translateY(-100px);
-    background-color: darkblue;
     padding: 20px;
     width: 100%;
     position: absolute;
@@ -1593,7 +1561,6 @@ nav .nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkblue;
     position: relative;
     justify-content: center;
     padding: 20px;
@@ -1874,17 +1841,11 @@ nav .nav-ul {
   .header-content {
     width: 100%;
     height: 500px;
-    background-image: url(https://source.unsplash.com/1500x1500/?books);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    transform: translateY(-50px);
     justify-content: center;
+    transform: translateY(-50px);
     color: white;
     font-size: 2rem;
     text-transform: capitalize;
@@ -1903,7 +1864,6 @@ nav .nav-ul {
   .header-profile {
     display: flex;
     transform: translateY(-100px);
-    background-color: darkblue;
     padding: 20px;
     width: 100%;
     position: absolute;
@@ -1934,7 +1894,6 @@ nav .nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkblue;
     position: relative;
     justify-content: center;
     padding: 20px;
@@ -2005,6 +1964,7 @@ nav .nav-ul {
   .skill-saya {
     display: none;
     width: 100%;
+    box-sizing: border-box;
     padding: 20px 0;
     color: black;
     background-color: white;
@@ -2046,6 +2006,7 @@ nav .nav-ul {
     background-color: white;
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -2082,6 +2043,7 @@ nav .nav-ul {
     display: none;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
     justify-content: flex-start;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
