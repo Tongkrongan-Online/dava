@@ -40,10 +40,22 @@
 </head>
 
 <body>
-    <input type="radio" name="dark-mode" id="dark-mode">
+    <input type="radio" name="dark-mode" id="dark-mode" checked="checked">
     <input type="radio" name="dark-mode" id="light-mode">
-    <input type="radio" name="dark-mode" id="normal-mode" checked="checked">
-    <div class="nutup-aib"></div>
+    <input type="radio" name="dark-mode" id="normal-mode">
+
+    <style>
+        .nutup-aib video {
+            position: fixed;
+        }
+    </style>
+    <div class="nutup-aib">
+        <video width="100%" loop="true" autoplay="autoplay" muted auto>
+            <source
+                src="https://player.vimeo.com/external/368782010.sd.mp4?s=a1478e7348ee04a92761efb2a0420e5750604c38&profile_id=164&oauth2_token_id=57447761"
+                type="video/mp4">
+        </video>
+    </div>
     <!-- <div class=" nutup-aib-2"></div> -->
     <nav>
         <ul class="nav-ul dark-bg-aktive dark-font">
