@@ -11,7 +11,8 @@
 
 /* home about contact handphone 😍awal */
 .nav-toogle {
-    width: 25px;
+    width: 40px;
+    box-sizing: border-box;
     order: 4;
     justify-content: flex-end;
     padding-right: 10px;
@@ -345,7 +346,7 @@
 
 .seting-view-dark {
     display: flex;
-    width: calc(100% - 255px - 25px);
+    width: calc(100% - 255px - 40px);
     justify-content: flex-end;
     order: 3;
 }

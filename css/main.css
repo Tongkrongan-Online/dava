@@ -14,11 +14,6 @@ a:hover {
   color: inherit;
 }
 
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 /*css reset komplek*/
 html,
 body,
@@ -831,7 +826,8 @@ nav .nav-ul {
   /* branding handphone 😍akhir */
   /* home about contact handphone 😍awal */
   .nav-toogle {
-    width: 25px;
+    width: 40px;
+    box-sizing: border-box;
     order: 4;
     justify-content: flex-end;
     padding-right: 10px;
@@ -1129,7 +1125,7 @@ nav .nav-ul {
   }
   .seting-view-dark {
     display: flex;
-    width: calc(100% - 255px - 25px);
+    width: calc(100% - 255px - 40px);
     justify-content: flex-end;
     order: 3;
   }
@@ -1172,10 +1168,10 @@ nav .nav-ul {
 
 .header-content {
   width: 100%;
-  height: 500px;
+  height: 700px;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  align-items: center;
   position: relative;
   transform: translateY(-50px);
   justify-content: center;
@@ -1186,6 +1182,7 @@ nav .nav-ul {
 }
 .header-content .card-profile {
   color: black;
+  transform: translateY(100px);
   font-family: "Secular One", sans-serif;
   font-size: 1.5rem;
   justify-content: center;
@@ -1197,20 +1194,19 @@ nav .nav-ul {
 
 .header-profile {
   display: flex;
-  transform: translateY(-100px);
+  transform: translateY(50px);
   padding: 20px;
   width: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
   position: absolute;
-  background-image: transparent;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: row;
   color: black;
   font-size: 1.4rem;
   font-family: "Secular One", sans-serif;
   text-shadow: 1px 1px 0 black;
   box-sizing: border-box;
-  overflow: hidden;
   box-shadow: 5px 5px 10px 0 black;
 }
 .header-profile .textdanimage {
@@ -1222,17 +1218,23 @@ nav .nav-ul {
   align-items: center;
   flex-direction: column;
   font-size: 1.4rem;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   color: white;
   text-shadow: 1px 1px 0 black;
+  transform: translateY(-50px);
 }
 .header-profile .textdanimage .textdanimage-2 {
   display: flex;
   flex-direction: column;
+  transform: translateX(140%);
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: -250px;
+  left: 0;
   justify-content: center;
   padding: 20px;
+  height: 250px;
+  margin-bottom: 10px;
 }
 .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
   display: inline-block;
@@ -1243,6 +1245,11 @@ nav .nav-ul {
 }
 .header-profile .textdanimage .textdanimage-2 h3 {
   display: flex;
+  font-weight: bold;
+  font-style: italic;
+  background-color: darkblue;
+  padding: 5px 10px;
+  border-radius: 20px;
   letter-spacing: 5px;
   text-align: center;
 }
@@ -1252,7 +1259,6 @@ nav .nav-ul {
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: white;
   position: relative;
   flex-direction: column;
   text-transform: capitalize;
@@ -1263,6 +1269,9 @@ nav .nav-ul {
 }
 .radio-profile label {
   display: flex;
+  background-color: white;
+  padding: 10px 0px;
+  margin-bottom: 10px;
   justify-content: center;
   width: 100%;
 }
@@ -1279,9 +1288,8 @@ nav .nav-ul {
 .skill-saya {
   display: none;
   width: 100%;
-  padding: 20px 0;
   color: black;
-  background-color: white;
+  overflow: auto;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
@@ -1290,24 +1298,47 @@ nav .nav-ul {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  width: 100%;
   padding: 0 20px;
 }
 .skill-saya .skill-ul li {
   display: flex;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow: auto;
   margin-bottom: 10px;
+  border-radius: 20px;
   align-items: center;
 }
+.skill-saya .skill-ul li .opsi-skill {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  height: 100%;
+}
 .skill-saya .skill-ul li img {
-  width: 80px;
+  width: 70px;
+}
+.skill-saya .skill-ul li:nth-child(4) .opsi-skill {
+  flex-direction: column;
 }
 .skill-saya .skill-ul .framework {
   display: inline;
+  text-indent: 10px;
 }
-.skill-saya .skill-ul li::before {
-  content: "⇒";
+.skill-saya .skill-ul li:nth-child(9) {
+  background-color: darkblue;
+  color: white;
 }
 .skill-saya .framwork-css {
   margin-left: 20px;
+}
+.skill-saya .framwork-css li {
+  padding: 0;
 }
 .skill-saya .framwork-css li::before {
   content: "↪";
@@ -1319,32 +1350,62 @@ nav .nav-ul {
 
 .profile-ul {
   display: none;
-  background-color: white;
-  width: calc(100% - 5px);
-  padding: 20px;
+  width: 100%;
   color: black;
   text-transform: capitalize;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   z-index: -1;
   overflow: auto;
 }
-.profile-ul table tr td {
-  padding-left: 20px;
+.profile-ul ul {
+  width: 100%;
+  padding: 0 20px;
 }
-.profile-ul table tr td:nth-child(1) {
+.profile-ul ul li {
+  width: 100%;
   display: flex;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.profile-ul ul li:nth-child(15) {
+  background-color: darkblue;
+}
+.profile-ul ul li:nth-child(15) li {
+  background-color: darkblue;
+  color: white;
+}
+.profile-ul ul ul {
+  display: flex;
+  padding: 10px 20px;
+}
+.profile-ul ul ul li:nth-child(1) {
+  width: 160px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.profile-ul ul ul li:nth-child(2) {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-.profile-ul table tr td:nth-child(3) {
   display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  height: 100%;
+  align-items: center;
 }
-.profile-ul table tbody * {
-  padding-bottom: 15px;
+.profile-ul ul li ul li:nth-child(3) {
+  width: 300px;
+  text-indent: 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  background-color: darkblue;
+  margin-left: 10px;
+  color: white;
+}
+.profile-ul ul li:nth-child(even) ul li:nth-child(3) {
+  background-color: gray;
 }
 
 #profile-radio-2:checked ~ .profile-ul {
@@ -1366,20 +1427,33 @@ nav .nav-ul {
 }
 .sosial-profile .sosial-radio {
   display: flex;
-  background-color: white;
   color: black;
+  padding: 0 20px;
   flex-direction: column;
   justify-content: center;
 }
+.sosial-profile .sosial-radio li:nth-child(9) {
+  background-color: darkblue;
+  color: white;
+  box-sizing: border-box;
+  line-height: 30px;
+  padding: 20px;
+}
 .sosial-profile .sosial-radio li {
-  padding-left: 20px;
   display: flex;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  align-items: center;
 }
 .sosial-profile .sosial-radio li:hover {
   background-color: rgb(255, 0, 0);
 }
 .sosial-profile .sosial-radio li a {
   display: flex;
+  width: 530px;
   align-items: center;
   font-family: "Secular One", sans-serif;
 }
@@ -1500,115 +1574,111 @@ nav .nav-ul {
   }
   .header-content {
     width: 100%;
-    height: 500px;
+    height: 700px;
+    position: absolute;
+    display: flex;
     flex-direction: row;
-    align-items: center;
     position: relative;
     transform: translateY(-50px);
     justify-content: center;
     color: white;
-    font-size: 2rem;
     text-transform: capitalize;
     font-family: "Secular One", sans-serif;
   }
   .header-content .card-profile {
     color: black;
+    transform: translateY(60px);
     font-family: "Secular One", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     justify-content: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   .header-content .card-profile p {
     margin-bottom: 20px;
   }
   .header-profile {
     display: flex;
-    transform: translateY(-100px);
-    padding: 20px;
+    padding: 0px;
+    transform: translateY(50px);
     width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
     position: absolute;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
-    color: white;
+    color: black;
     font-size: 1.4rem;
     font-family: "Secular One", sans-serif;
     text-shadow: 1px 1px 0 black;
     box-sizing: border-box;
-    overflow: hidden;
     box-shadow: 5px 5px 10px 0 black;
   }
   .header-profile .textdanimage {
     display: flex;
     padding: 40px 0 0 0;
+    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
-    padding-top: 270px;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: white;
     text-shadow: 1px 1px 0 black;
+    transform: translateY(-50px);
   }
   .header-profile .textdanimage .textdanimage-2 {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    transform: translateX(0px);
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: -250px;
+    left: 0;
     justify-content: center;
     padding: 20px;
+    height: 250px;
+    margin-bottom: 10px;
   }
-  .header-profile .textdanimage .textdanimage-2 img {
+  .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
     display: inline-block;
     border-radius: 20%;
     margin-bottom: 20px;
     width: 200px;
-    box-shadow: 0 0 5px 2px black;
+    box-shadow: 5px 8px 11px 2px black;
   }
   .header-profile .textdanimage .textdanimage-2 h3 {
     display: flex;
+    font-weight: bold;
+    font-style: italic;
+    background-color: darkblue;
+    padding: 5px 10px;
+    border-radius: 20px;
     letter-spacing: 5px;
     text-align: center;
-  }
-  .header-profile .textdanimage .textdanimage-2 .rumah-profile {
-    position: absolute;
-    z-index: -1;
-    top: -300px;
-    left: -135px;
-    font-size: 40rem;
-  }
-  .header-profile .textdanimage .textdanimage-2 .jendela-rumah {
-    position: absolute;
-    top: -100px;
-    font-size: 5rem;
-  }
-  .header-profile .textdanimage .textdanimage-2 .batang {
-    background-color: rgb(255, 255, 255);
-    width: 40px;
-    height: 330px;
-    position: absolute;
-    top: 0;
-    left: -50px;
-  }
-  .header-profile .textdanimage .textdanimage-2 .batang-2 {
-    left: 380px;
   }
   .radio-profile {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100px;
-    background-color: white;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
     color: black;
     justify-content: space-evenly;
+    overflow: auto;
     font-family: "Secular One", sans-serif;
     margin-top: 30px;
   }
   .radio-profile label {
     display: flex;
+    background-color: white;
+    padding: 10px 0px;
+    margin-bottom: 10px;
     justify-content: center;
     width: 100%;
   }
@@ -1624,9 +1694,9 @@ nav .nav-ul {
   .skill-saya {
     display: none;
     width: 100%;
-    padding: 20px 0;
+    overflow: auto;
+    transform: translateY(-10px);
     color: black;
-    background-color: white;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
@@ -1635,24 +1705,37 @@ nav .nav-ul {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding: 0 20px;
+    width: 100%;
+    overflow: auto;
+    padding: 0 10px;
   }
   .skill-saya .skill-ul li {
     display: flex;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 5px;
     margin-bottom: 10px;
+    border-radius: 20px;
     align-items: center;
   }
   .skill-saya .skill-ul li img {
-    width: 80px;
+    width: 70px;
   }
   .skill-saya .skill-ul .framework {
     display: inline;
+    text-indent: 10px;
   }
-  .skill-saya .skill-ul li::before {
-    content: "⇒";
+  .skill-saya .skill-ul li:nth-child(9) {
+    background-color: darkblue;
+    color: white;
   }
   .skill-saya .framwork-css {
     margin-left: 20px;
+  }
+  .skill-saya .framwork-css li {
+    padding: 0;
   }
   .skill-saya .framwork-css li::before {
     content: "↪";
@@ -1662,32 +1745,66 @@ nav .nav-ul {
   }
   .profile-ul {
     display: none;
-    background-color: white;
     width: 100%;
-    padding: 20px;
+    transform: translateY(-10px);
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
     z-index: -1;
     overflow: auto;
   }
-  .profile-ul table tr td {
-    padding-left: 20px;
+  .profile-ul ul {
+    width: 100%;
+    padding: 0 0px;
+    overflow: auto;
   }
-  .profile-ul table tr td:nth-child(1) {
-    display: flex;
+  .profile-ul ul li {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-  }
-  .profile-ul table tr td:nth-child(3) {
     display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .profile-ul ul li:nth-child(15) {
+    background-color: darkblue;
+  }
+  .profile-ul ul li:nth-child(15) li {
+    background-color: darkblue;
+    color: white;
+  }
+  .profile-ul ul ul {
+    display: flex;
+    padding: 10px 20px;
+  }
+  .profile-ul ul ul li:nth-child(1) {
+    width: 160px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .profile-ul ul ul li:nth-child(2) {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
-  .profile-ul table tbody * {
-    padding-bottom: 15px;
+  .profile-ul ul li ul li:nth-child(3) {
+    width: 300px;
+    text-indent: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    background-color: darkblue;
+    margin-left: 10px;
+    color: white;
+  }
+  .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
+    background-color: gray;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
@@ -1700,26 +1817,44 @@ nav .nav-ul {
   .sosial-profile {
     display: none;
     align-items: center;
+    transform: translateY(-10px);
     width: 100%;
     justify-content: flex-start;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
   .sosial-profile .sosial-radio {
     display: flex;
-    background-color: white;
     color: black;
+    padding: 0 0px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
+    overflow: auto;
+  }
+  .sosial-profile .sosial-radio li:nth-child(9) {
+    background-color: darkblue;
+    color: white;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding: 20px;
   }
   .sosial-profile .sosial-radio li {
-    padding: 0px 15px;
     display: flex;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    align-items: center;
   }
   .sosial-profile .sosial-radio li:hover {
     background-color: rgb(255, 0, 0);
   }
   .sosial-profile .sosial-radio li a {
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     align-items: center;
     font-family: "Secular One", sans-serif;
   }
@@ -1833,12 +1968,13 @@ nav .nav-ul {
   }
   .header-content {
     width: 100%;
-    height: 500px;
+    height: 700px;
+    position: absolute;
+    display: flex;
     flex-direction: row;
-    align-items: center;
     position: relative;
-    justify-content: center;
     transform: translateY(-50px);
+    justify-content: center;
     color: white;
     font-size: 2rem;
     text-transform: capitalize;
@@ -1846,8 +1982,9 @@ nav .nav-ul {
   }
   .header-content .card-profile {
     color: black;
+    transform: translateY(70px);
     font-family: "Secular One", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     justify-content: center;
     line-height: 2rem;
   }
@@ -1856,82 +1993,71 @@ nav .nav-ul {
   }
   .header-profile {
     display: flex;
-    transform: translateY(-100px);
+    transform: translateY(50px);
     padding: 20px;
     width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
     position: absolute;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
-    color: white;
+    color: black;
     font-size: 1.4rem;
     font-family: "Secular One", sans-serif;
     text-shadow: 1px 1px 0 black;
     box-sizing: border-box;
-    overflow: hidden;
     box-shadow: 5px 5px 10px 0 black;
   }
   .header-profile .textdanimage {
     display: flex;
     padding: 40px 0 0 0;
+    position: relative;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
-    padding-top: 270px;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: white;
     text-shadow: 1px 1px 0 black;
+    transform: translateY(-50px);
   }
   .header-profile .textdanimage .textdanimage-2 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    transform: translateX(0vw);
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: -250px;
+    left: 0;
     justify-content: center;
     padding: 20px;
+    height: 250px;
+    margin-bottom: 10px;
   }
-  .header-profile .textdanimage .textdanimage-2 img {
+  .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
     display: inline-block;
     border-radius: 20%;
     margin-bottom: 20px;
     width: 200px;
-    box-shadow: 0 0 5px 2px black;
+    box-shadow: 5px 8px 11px 2px black;
   }
   .header-profile .textdanimage .textdanimage-2 h3 {
     display: flex;
+    font-weight: bold;
+    font-style: italic;
+    background-color: darkblue;
+    padding: 5px 10px;
+    border-radius: 20px;
     letter-spacing: 5px;
     text-align: center;
-  }
-  .header-profile .textdanimage .textdanimage-2 .rumah-profile {
-    position: absolute;
-    z-index: -1;
-    top: -300px;
-    left: -135px;
-    font-size: 40rem;
-  }
-  .header-profile .textdanimage .textdanimage-2 .jendela-rumah {
-    position: absolute;
-    top: -100px;
-    font-size: 5rem;
-  }
-  .header-profile .textdanimage .textdanimage-2 .batang {
-    background-color: rgb(255, 255, 255);
-    width: 40px;
-    height: 330px;
-    position: absolute;
-    top: 0;
-    left: -50px;
-  }
-  .header-profile .textdanimage .textdanimage-2 .batang-2 {
-    left: 380px;
   }
   .radio-profile {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: white;
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
@@ -1942,6 +2068,9 @@ nav .nav-ul {
   }
   .radio-profile label {
     display: flex;
+    background-color: white;
+    padding: 10px 0px;
+    margin-bottom: 10px;
     justify-content: center;
     width: 100%;
   }
@@ -1957,10 +2086,8 @@ nav .nav-ul {
   .skill-saya {
     display: none;
     width: 100%;
-    box-sizing: border-box;
-    padding: 20px 0;
+    transform: translateY(-10px);
     color: black;
-    background-color: white;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
@@ -1969,24 +2096,35 @@ nav .nav-ul {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    width: 100%;
     padding: 0 20px;
   }
   .skill-saya .skill-ul li {
     display: flex;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
     margin-bottom: 10px;
+    border-radius: 20px;
     align-items: center;
   }
   .skill-saya .skill-ul li img {
-    width: 80px;
+    width: 70px;
   }
   .skill-saya .skill-ul .framework {
     display: inline;
+    text-indent: 10px;
   }
-  .skill-saya .skill-ul li::before {
-    content: "⇒";
+  .skill-saya .skill-ul li:nth-child(9) {
+    background-color: darkblue;
+    color: white;
   }
   .skill-saya .framwork-css {
     margin-left: 20px;
+  }
+  .skill-saya .framwork-css li {
+    padding: 0;
   }
   .skill-saya .framwork-css li::before {
     content: "↪";
@@ -1996,33 +2134,63 @@ nav .nav-ul {
   }
   .profile-ul {
     display: none;
-    background-color: white;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    transform: translateY(-10px);
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
     z-index: -1;
     overflow: auto;
   }
-  .profile-ul table tr td {
-    padding-left: 20px;
+  .profile-ul ul {
+    width: 100%;
+    padding: 0 20px;
   }
-  .profile-ul table tr td:nth-child(1) {
+  .profile-ul ul li {
+    width: 100%;
     display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .profile-ul ul li:nth-child(15) {
+    background-color: darkblue;
+  }
+  .profile-ul ul li:nth-child(15) li {
+    background-color: darkblue;
+    color: white;
+  }
+  .profile-ul ul ul {
+    display: flex;
+    padding: 10px 20px;
+  }
+  .profile-ul ul ul li:nth-child(1) {
+    width: 160px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .profile-ul ul ul li:nth-child(2) {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-  }
-  .profile-ul table tr td:nth-child(3) {
     display: flex;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    height: 100%;
+    align-items: center;
   }
-  .profile-ul table tbody * {
-    padding-bottom: 15px;
+  .profile-ul ul li ul li:nth-child(3) {
+    width: 300px;
+    text-indent: 20px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    background-color: darkblue;
+    margin-left: 10px;
+    color: white;
+  }
+  .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
+    background-color: gray;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
@@ -2035,21 +2203,33 @@ nav .nav-ul {
   .sosial-profile {
     display: none;
     align-items: center;
+    transform: translateY(-10px);
     width: 100%;
-    box-sizing: border-box;
     justify-content: flex-start;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
   .sosial-profile .sosial-radio {
     display: flex;
-    background-color: white;
     color: black;
+    padding: 0 20px;
     flex-direction: column;
     justify-content: center;
   }
+  .sosial-profile .sosial-radio li:nth-child(9) {
+    background-color: darkblue;
+    color: white;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding: 20px;
+  }
   .sosial-profile .sosial-radio li {
-    padding: 0px 15px;
     display: flex;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    align-items: center;
   }
   .sosial-profile .sosial-radio li:hover {
     background-color: rgb(255, 0, 0);
@@ -2160,22 +2340,35 @@ nav .nav-ul {
     }
   }
 }
-.nutup-aib {
-  background-color: darkblue;
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  top: 40px;
-  z-index: -200;
+#light-mode:checked ~ .utama-pembungkus {
+  background-image: url(https://images.unsplash.com/photo-1515021593269-80bab6254eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZWV0JTIwc25vd3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
-.nutup-aib-2 {
+#dark-mode:checked ~ .utama-pembungkus {
+  background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0cmVldCUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+}
+
+#light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+  background-image: none;
+  background-color: black;
+}
+
+#dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+  background-image: none;
   background-color: white;
+}
+
+.utama-pembungkus {
   width: 100%;
-  height: 1100px;
-  position: absolute;
-  top: 580px;
-  z-index: -1000;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  background-image: url(https://images.pexels.com/photos/1782407/pexels-photo-1782407.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #dark-mode, #light-mode, #normal-mode {

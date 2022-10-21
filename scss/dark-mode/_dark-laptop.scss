@@ -1,20 +1,45 @@
-.nutup-aib {
-    background-color: darkblue;
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    top: 40px;
-    z-index: -200;
+
+// tambahan pergian dark mode
+#light-mode:checked~.utama-pembungkus {
+    background-image: url(https://images.unsplash.com/photo-1515021593269-80bab6254eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZWV0JTIwc25vd3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
-.nutup-aib-2 {
-    background-color: white;
-    width: 100%;
-    height: 1100px;
-    position: absolute;
-    top: 580px;
-    z-index: -1000;
+#dark-mode:checked~.utama-pembungkus {
+    background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0cmVldCUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
+// header content
+
+// image-header
+#light-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: black;
+}
+
+#dark-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: white;
+}
+
+// image-header
+// https://media.istockphoto.com/vectors/crowd-of-people-vector-seamless-pattern-monochrome-background-with-vector-id1278584455?b=1&k=20&m=1278584455&s=170667a&w=0&h=715iK2dKz4ezqoYxLL3b7MH4Ed7xl2ts5Ajmdv8xZHw=
+.utama-pembungkus {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    background-image: url(https://images.pexels.com/photos/1782407/pexels-photo-1782407.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+// tambahan untuk pergantian dark mode
+
+
 
 $dark-mode  : black;
 $light-mode : white;
