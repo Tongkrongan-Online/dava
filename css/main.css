@@ -418,17 +418,17 @@ nav .nav-ul {
   margin-right: 7px;
 }
 
-#normal-mode:checked ~ nav .change-mode .form-radio .normal-dark::before {
+#normal-mode:checked ~ .utama-pembungkus nav .change-mode .form-radio .normal-dark::before {
   color: red;
   transform: scale(1.5);
 }
 
-#dark-mode:checked ~ nav .change-mode .form-radio .dark-dark::before {
+#dark-mode:checked ~ .utama-pembungkus nav .change-mode .form-radio .dark-dark::before {
   color: red;
   transform: scale(1.5);
 }
 
-#light-mode:checked ~ nav .change-mode .form-radio .light-dark::before {
+#light-mode:checked ~ .utama-pembungkus nav .change-mode .form-radio .light-dark::before {
   color: red;
   transform: scale(1.5);
 }
@@ -1144,7 +1144,7 @@ nav .nav-ul {
     height: -moz-max-content;
     height: max-content;
     background-color: darkblue;
-    right: -15px;
+    right: -20px;
     top: 40px;
     color: white;
     padding: 10px;
@@ -1153,7 +1153,7 @@ nav .nav-ul {
     margin-bottom: 15px;
   }
   .form-radio {
-    transform: translateY(-80px) translateX(-196.2px);
+    transform: translateY(20px) translateX(-30px);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -1226,14 +1226,15 @@ nav .nav-ul {
 .header-profile .textdanimage .textdanimage-2 {
   display: flex;
   flex-direction: column;
-  transform: translateX(140%);
+  justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 250px;
   position: absolute;
   top: -250px;
-  left: 0;
-  justify-content: center;
+  left: -20px;
   padding: 20px;
-  height: 250px;
+  margin: 0;
   margin-bottom: 10px;
 }
 .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
@@ -1305,7 +1306,6 @@ nav .nav-ul {
   display: flex;
   background-color: white;
   width: 100%;
-  box-sizing: border-box;
   padding: 5px;
   overflow: auto;
   margin-bottom: 10px;
@@ -1695,7 +1695,7 @@ nav .nav-ul {
     display: none;
     width: 100%;
     overflow: auto;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -1707,7 +1707,7 @@ nav .nav-ul {
     margin: 0;
     width: 100%;
     overflow: auto;
-    padding: 0 10px;
+    padding: 0 0px;
   }
   .skill-saya .skill-ul li {
     display: flex;
@@ -1746,7 +1746,7 @@ nav .nav-ul {
   .profile-ul {
     display: none;
     width: 100%;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -1817,7 +1817,7 @@ nav .nav-ul {
   .sosial-profile {
     display: none;
     align-items: center;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     width: 100%;
     justify-content: flex-start;
     font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -2341,7 +2341,7 @@ nav .nav-ul {
   }
 }
 #light-mode:checked ~ .utama-pembungkus {
-  background-image: url(https://images.unsplash.com/photo-1515021593269-80bab6254eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZWV0JTIwc25vd3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.pexels.com/photos/139303/pexels-photo-139303.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
 #dark-mode:checked ~ .utama-pembungkus {

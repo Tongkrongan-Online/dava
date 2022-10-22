@@ -74,14 +74,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             .textdanimage-2  {
                 display: flex;
                 flex-direction: column;
-                transform: translateX(140%);
+                justify-content: center;
                 align-items: center;
+                width: 100vw;
+                height: 250px;
                 position: absolute;
                 top: -250px;
-                left: 0;
-                justify-content: center;
+                left: -20px;
                 padding: 20px;
-                height: 250px;
+                margin: 0;
                 margin-bottom: 10px;
 
                     .img-saya-profile {
@@ -167,7 +168,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             display: flex;
             background-color: white;
             width: 100%;
-            box-sizing: border-box;
             padding: 5px;
             overflow: auto;
             margin-bottom: 10px;

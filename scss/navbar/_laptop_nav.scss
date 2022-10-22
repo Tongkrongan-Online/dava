@@ -273,17 +273,17 @@ nav .nav-ul {
     } 
 }
 
-#normal-mode:checked~nav .change-mode .form-radio .normal-dark::before {
+#normal-mode:checked~.utama-pembungkus nav .change-mode .form-radio .normal-dark::before {
         color: red;
         transform: scale(1.5);
 }
 
-#dark-mode:checked~nav .change-mode .form-radio .dark-dark::before {
+#dark-mode:checked~.utama-pembungkus nav .change-mode .form-radio .dark-dark::before {
         color: red;
         transform: scale(1.5);
 }
 
-#light-mode:checked~nav .change-mode .form-radio .light-dark::before {
+#light-mode:checked~.utama-pembungkus nav .change-mode .form-radio .light-dark::before {
         color: red;
         transform: scale(1.5);
 }

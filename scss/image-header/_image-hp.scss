@@ -151,7 +151,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     display: none;
     width: 100% ;
     overflow: auto;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     color: black;
     text-transform: capitalize;
     font-family: $font-4;
@@ -164,7 +164,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         margin: 0;
         width: 100%;
         overflow: auto;
-        padding: 0 10px;
+        padding: 0 0px;
        
         li {
             display: flex;
@@ -213,7 +213,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 .profile-ul {
     display: none;
     width: calc(100%);
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     color: black;
     text-transform: capitalize;
     font-family: $font-4;
@@ -294,7 +294,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 .sosial-profile {
     display: none;
     align-items: center;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     width: 100%;
     justify-content: flex-start;
     font-family: $font-4;
