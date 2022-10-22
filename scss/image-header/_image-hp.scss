@@ -4,6 +4,8 @@ $font-2:'Secular One', sans-serif;
 $font-3: 'Oleo Script', cursive;
 $font-4:'Fira Sans Extra Condensed', sans-serif;
 
+
+
 @media (max-width: 767px) {
 .content-utama {
     position: absolute;
@@ -210,6 +212,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 
+
 .profile-ul {
     display: none;
     width: calc(100%);
@@ -218,18 +221,17 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     text-transform: capitalize;
     font-family: $font-4;
     z-index: -1;
-    overflow: auto;
+    // overflow: auto;
 
     ul {
         width: 100%;
         padding: 0 0px;
-        overflow: auto;
+        overflow: hidden;
     }
 
     ul li {
-        width: max-content;
         display: flex;
-        background-color: white;
+        width: 110vw;
         margin-bottom: 10px;
         border-radius: 20px;
     }
@@ -297,6 +299,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     transform: translateY(-50px);
     width: 100%;
     justify-content: flex-start;
+    overflow: auto;
     font-family: $font-4;
 
 
@@ -307,7 +310,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        overflow: auto;
 
         li:nth-child(9) {
             background-color: darkblue;
@@ -346,6 +348,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             padding: 5px 0;
         }
   }
+
 }
 
 #profile-radio-3:checked~.sosial-profile {
@@ -391,4 +394,42 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     }
 
 
+}
+
+@media (max-width: 490px) {
+    .profile-ul {
+        overflow: auto;
+        ul {
+            overflow: auto;
+
+            li {
+                width: max-content;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .sosial-profile {
+        .sosial-radio {
+            display: flex;
+            width: 100%;
+            overflow: auto;
+
+            li {
+                width: 525px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                border-radius: 20px;
+                align-items: center;
+            
+            a {
+                display: flex;
+                align-items: center;
+                font-family: $font-2;
+            }
+
+     }
+   }
+ }
 }

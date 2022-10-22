@@ -1751,19 +1751,15 @@ nav .nav-ul {
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
     z-index: -1;
-    overflow: auto;
   }
   .profile-ul ul {
     width: 100%;
     padding: 0 0px;
-    overflow: auto;
+    overflow: hidden;
   }
   .profile-ul ul li {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     display: flex;
-    background-color: white;
+    width: 110vw;
     margin-bottom: 10px;
     border-radius: 20px;
   }
@@ -1820,6 +1816,7 @@ nav .nav-ul {
     transform: translateY(-50px);
     width: 100%;
     justify-content: flex-start;
+    overflow: auto;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
   .sosial-profile .sosial-radio {
@@ -1829,7 +1826,6 @@ nav .nav-ul {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    overflow: auto;
   }
   .sosial-profile .sosial-radio li:nth-child(9) {
     background-color: darkblue;
@@ -1957,6 +1953,38 @@ nav .nav-ul {
     50% {
       color: red;
     }
+  }
+}
+@media (max-width: 490px) {
+  .profile-ul {
+    overflow: auto;
+  }
+  .profile-ul ul {
+    overflow: auto;
+  }
+  .profile-ul ul li {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media (max-width: 520px) {
+  .sosial-profile .sosial-radio {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+  }
+  .sosial-profile .sosial-radio li {
+    width: 525px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .sosial-profile .sosial-radio li a {
+    display: flex;
+    align-items: center;
+    font-family: "Secular One", sans-serif;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
