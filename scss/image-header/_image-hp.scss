@@ -398,9 +398,9 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 @media (max-width: 490px) {
     .profile-ul {
-        overflow: auto;
+        overflow-x: auto;
         ul {
-            overflow: auto;
+            overflow-x: auto;
 
             li {
                 width: max-content;

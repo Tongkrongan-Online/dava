@@ -1957,10 +1957,10 @@ nav .nav-ul {
 }
 @media (max-width: 490px) {
   .profile-ul {
-    overflow: auto;
+    overflow-x: auto;
   }
   .profile-ul ul {
-    overflow: auto;
+    overflow-x: auto;
   }
   .profile-ul ul li {
     width: -webkit-max-content;
