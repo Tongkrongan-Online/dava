@@ -1171,7 +1171,7 @@ nav .nav-ul {
   height: 700px;
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   transform: translateY(-50px);
   justify-content: center;
@@ -1201,7 +1201,7 @@ nav .nav-ul {
   position: absolute;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   color: black;
   font-size: 1.4rem;
   font-family: "Secular One", sans-serif;
@@ -1509,6 +1509,10 @@ nav .nav-ul {
   }
 }
 
+.projeck-dava {
+  background-color: red;
+}
+
 #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2::before {
   content: "▶";
   color: rgb(255, 0, 0);
@@ -1537,6 +1541,10 @@ nav .nav-ul {
   }
 }
 
+.projeck-dava {
+  background-color: red;
+}
+
 #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3::before {
   content: "▶";
   color: rgb(255, 0, 0);
@@ -1563,6 +1571,10 @@ nav .nav-ul {
   50% {
     color: red;
   }
+}
+
+.projeck-dava {
+  background-color: red;
 }
 
 @media (max-width: 767px) {
