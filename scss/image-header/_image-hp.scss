@@ -126,7 +126,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
      
     label {
         display: flex;
-        background-color: white;
+        background-color: #0d6efd;
         padding: 10px 0px;
         margin-bottom: 10px;
         justify-content: center;
@@ -334,7 +334,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             
             a {
                 display: flex;
-                width: max-content;
+                width: 530px;
                 align-items: center;
                 font-family: $font-2;
             }

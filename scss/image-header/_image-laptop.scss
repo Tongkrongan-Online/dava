@@ -20,7 +20,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     flex-direction: column;
     position: relative;
     transform: translateY(-50px);
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
     font-size: 2rem;
     text-transform: capitalize;
@@ -28,7 +29,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     .card-profile {
         color: black;
-        transform: translateY(100px);
+        transform: translateY(150px);
         font-family:$font-2 ;
         font-size: 1.5rem;
         justify-content: center;
@@ -41,15 +42,19 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 }
 
 .header-profile {
-        display: flex;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-areas: 'area-1 area-2'
+                              'area-3 area-3'
+                              'area-4 area-4'
+                              'area-5 area-5';
+        grid-template-columns: 500px calc(100% - 500px);
         transform: translateY(50px);
         padding: 20px;
         width: 100%;
         background-image:url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
         position: absolute;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
         color: black;
         font-size: 1.4rem;
         font-family: $font-2;
@@ -59,6 +64,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
         .textdanimage {
         display: flex;
+        grid-area: area-1;
         padding:40px 0 0 0;
         position: relative;
         width: 100%;
@@ -116,7 +122,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
-    color: black;
+    color: white;
     justify-content: space-evenly;
     // padding: 0 10px;
     font-family: $font-2;
@@ -124,7 +130,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
      
     label {
         display: flex;
-        background-color: white;
+        background-color: #0d6efd;
         padding: 10px 0px;
         margin-bottom: 10px;
         justify-content: center;
@@ -148,6 +154,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 
 .skill-saya {
+    grid-area: area-2;
     display: none;
     width: 100% ;
     color: black;
@@ -220,6 +227,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .profile-ul {
     display: none;
+    grid-area: area-2;
     width: calc(100%);
     color: black;
     text-transform: capitalize;
@@ -299,6 +307,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .sosial-profile {
     display: none;
+    grid-area: area-2;
     align-items: center;
     width: 100%;
     justify-content: flex-start;
@@ -315,9 +324,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         li:nth-child(9) {
             background-color: darkblue;
             color: white;
+
+             a {
             box-sizing: border-box;
             line-height: 30px;
             padding: 20px;
+             }
         }
 
         li {
@@ -329,15 +341,16 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             border-radius: 20px;
             align-items: center;
 
-            &:hover {
-                background-color: rgb(255, 0, 0);
-            }
             
             a {
                 display: flex;
-                width: 530px;
+                width: 100%;
                 align-items: center;
                 font-family: $font-2;
+
+            &:hover  {
+            background-color: rgb(255, 0, 0);
+                }
             }
 
             img {
@@ -392,15 +405,5 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         }
     }
 }
-
-
-
-.projeck-dava {
-    // position: absolute;
-    background-color: red;
-    // bottom: 0;
-}
-
-
 
 }
