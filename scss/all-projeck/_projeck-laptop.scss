@@ -7,7 +7,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 .projeck-dava {
     grid-area: area-3;
     margin-top: 10px;
-    padding: 0 0 40px 0;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
 
     h1 {
@@ -16,6 +16,16 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     }
 
     .card {
+        margin:0 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: 3px solid gray;
+            height: 100%;
+            width: 100%;
+        }
 
         .card-title {
             text-transform: capitalize;
@@ -28,12 +38,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         }
         
         .card-footer {
-            background-color: silver;
+            background-color: gray;
             text-transform: capitalize;
         }
     }
 
     img {
-        height: 300px;
+        height: 200px;
     }
 }

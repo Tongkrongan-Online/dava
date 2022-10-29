@@ -1250,12 +1250,44 @@ nav .nav-ul {
 .header-profile .textdanimage .textdanimage-2 h3 {
   display: flex;
   font-weight: bold;
+  position: relative;
   font-style: italic;
   background-color: darkblue;
   padding: 5px 10px;
   border-radius: 20px;
   letter-spacing: 5px;
   text-align: center;
+  -webkit-animation: bayangan 3s ease-in-out alternate infinite;
+          animation: bayangan 3s ease-in-out alternate infinite;
+}
+.header-profile .textdanimage .textdanimage-2 h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 3%;
+  mix-blend-mode: difference;
+  left: 0;
+  background-color: white;
+  -webkit-animation: saya-label 10s ease-in-out alternate infinite;
+          animation: saya-label 10s ease-in-out alternate infinite;
+  border-radius: 20px;
+}
+@-webkit-keyframes saya-label {
+  0% {
+    width: 3%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+@keyframes saya-label {
+  0% {
+    width: 3%;
+  }
+  50% {
+    width: 100%;
+  }
 }
 
 .radio-profile {
@@ -2377,12 +2409,23 @@ nav .nav-ul {
 .projeck-dava {
   grid-area: area-3;
   margin-top: 10px;
-  padding: 0 0 40px 0;
+  padding-bottom: 20px;
   background-color: rgb(255, 255, 255);
 }
 .projeck-dava h1 {
   padding: 20px;
   text-transform: capitalize;
+}
+.projeck-dava .card {
+  margin: 0 20px;
+  position: relative;
+}
+.projeck-dava .card::before {
+  content: "";
+  position: absolute;
+  border: 3px solid gray;
+  height: 100%;
+  width: 100%;
 }
 .projeck-dava .card .card-title {
   text-transform: capitalize;
@@ -2392,15 +2435,15 @@ nav .nav-ul {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 .projeck-dava .card .card-footer {
-  background-color: silver;
+  background-color: gray;
   text-transform: capitalize;
 }
 .projeck-dava img {
-  height: 300px;
+  height: 200px;
 }
 
 #light-mode:checked ~ .utama-pembungkus {
-  background-image: url(https://images.pexels.com/photos/139303/pexels-photo-139303.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-image: url(https://images.pexels.com/photos/1816823/pexels-photo-1816823.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
 #dark-mode:checked ~ .utama-pembungkus {
