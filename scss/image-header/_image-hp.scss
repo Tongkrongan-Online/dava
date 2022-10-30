@@ -22,7 +22,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     flex-direction: row;
     position: relative;
     transform: translateY(-50px);
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: white;
     text-transform: capitalize;
     font-family: $font-2;
@@ -186,7 +187,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         
         .framework {
             display: inline;
-            text-indent: 10px;
+            margin: 0;
+            padding: 10px 0 0;
         }
 
         li:nth-child(9){

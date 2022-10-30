@@ -1364,7 +1364,8 @@ nav .nav-ul {
 }
 .skill-saya .skill-ul .framework {
   display: inline;
-  text-indent: 10px;
+  margin: 0;
+  padding: 10px 0 0 0;
 }
 .skill-saya .skill-ul li:nth-child(9) {
   background-color: darkblue;
@@ -1620,7 +1621,8 @@ nav .nav-ul {
     flex-direction: row;
     position: relative;
     transform: translateY(-50px);
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: white;
     text-transform: capitalize;
     font-family: "Secular One", sans-serif;
@@ -1765,7 +1767,8 @@ nav .nav-ul {
   }
   .skill-saya .skill-ul .framework {
     display: inline;
-    text-indent: 10px;
+    margin: 0;
+    padding: 10px 0 0;
   }
   .skill-saya .skill-ul li:nth-child(9) {
     background-color: darkblue;
@@ -2409,21 +2412,24 @@ nav .nav-ul {
 .projeck-dava {
   grid-area: area-3;
   margin-top: 10px;
-  padding-bottom: 20px;
-  background-color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+  background-color: white;
 }
 .projeck-dava h1 {
-  padding: 20px;
+  padding: 10px;
   text-transform: capitalize;
+  color: black;
+  background-color: white;
 }
 .projeck-dava .card {
-  margin: 0 20px;
+  margin: 10px 10px 10px;
   position: relative;
 }
 .projeck-dava .card::before {
   content: "";
   position: absolute;
-  border: 3px solid gray;
+  z-index: 1;
+  border: 4px solid silver;
   height: 100%;
   width: 100%;
 }
@@ -2435,7 +2441,8 @@ nav .nav-ul {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 .projeck-dava .card .card-footer {
-  background-color: gray;
+  background-color: silver;
+  z-index: 2;
   text-transform: capitalize;
 }
 .projeck-dava img {
