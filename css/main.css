@@ -659,8 +659,6 @@ nav .nav-ul {
   #check-toogle, .button-toogle {
     display: flex;
     position: relative;
-    border: 2px solid silver;
-    box-sizing: border-box;
   }
   #check-toogle:checked ~ .x-toogle {
     display: flex;
@@ -839,7 +837,6 @@ nav .nav-ul {
   #check-toogle, .button-toogle {
     display: flex;
     position: relative;
-    border: 2px solid silver;
     box-sizing: border-box;
   }
   #check-toogle:checked ~ .x-toogle {
@@ -2044,6 +2041,7 @@ nav .nav-ul {
     position: relative;
     transform: translateY(-50px);
     justify-content: center;
+    align-items: flex-start;
     color: white;
     font-size: 2rem;
     text-transform: capitalize;

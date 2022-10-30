@@ -24,8 +24,6 @@
 #check-toogle,.button-toogle{
     display: flex;
     position: relative;
-    border: 2px solid silver;
-    box-sizing: border-box;
 } 
 
 #check-toogle:checked~.x-toogle {
