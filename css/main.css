@@ -1199,7 +1199,6 @@ nav .nav-ul {
   transform: translateY(50px);
   padding: 20px;
   width: 100%;
-  background-image: url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
   position: absolute;
   color: black;
   font-size: 1.4rem;
@@ -2447,6 +2446,12 @@ nav .nav-ul {
   height: 200px;
 }
 
+.video-background video {
+  position: fixed;
+  z-index: 0;
+  width: 100vmax;
+}
+
 #light-mode:checked ~ .utama-pembungkus {
   background-image: url(https://images.pexels.com/photos/1816823/pexels-photo-1816823.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
@@ -2472,7 +2477,6 @@ nav .nav-ul {
   overflow-x: hidden;
   position: fixed;
   top: 0;
-  background-image: url(https://images.pexels.com/photos/1782407/pexels-photo-1782407.jpeg?auto=compress&cs=tinysrgb&w=600);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

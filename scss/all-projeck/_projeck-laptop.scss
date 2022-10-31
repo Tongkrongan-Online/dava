@@ -51,3 +51,11 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         height: 200px;
     }
 }
+
+.video-background {
+    video {
+    position: fixed;
+    z-index: 0;
+    width: 100vmax;
+    }
+}
