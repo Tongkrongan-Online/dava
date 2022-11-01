@@ -118,7 +118,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
-    color: black;
+    color: white;
     justify-content: space-evenly;
     // padding: 0 10px;
     overflow: auto;
@@ -131,7 +131,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         padding: 10px 0px;
         margin-bottom: 10px;
         justify-content: center;
-        width: 100%;
+        border-radius: 8px;
+        width: 90%;
     }
 
     .label-profile-1 {
