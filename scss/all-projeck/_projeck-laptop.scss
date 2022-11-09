@@ -6,17 +6,25 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .projeck-dava {
     grid-area: area-3;
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'area1'
+                         'area2';
     margin-top: 10px;
     padding-bottom: 10px;
-    background-color: white;
 
     h1 {
         padding: 10px;
+        grid-area: area1;
+        position: relative;
         text-transform: capitalize;
-        color: black;
-        background-color: white;
-    }
+        color: white;
+        background-color: darkblue ;
 
+        .card-group {
+        grid-area: area2;
+        }
+    }
     .card {
         margin:10px 10px 10px;
         position: relative;
@@ -51,3 +59,4 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         height: 200px;
     }
 }
+

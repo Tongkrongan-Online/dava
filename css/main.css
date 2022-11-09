@@ -1199,7 +1199,6 @@ nav .nav-ul {
   transform: translateY(50px);
   padding: 20px;
   width: 100%;
-  background-image: url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
   position: absolute;
   color: black;
   font-size: 1.4rem;
@@ -1304,6 +1303,7 @@ nav .nav-ul {
   display: flex;
   background-color: #0d6efd;
   padding: 10px 0px;
+  border-radius: 8px;
   margin-bottom: 10px;
   justify-content: center;
   width: 100%;
@@ -1342,7 +1342,7 @@ nav .nav-ul {
   padding: 5px;
   overflow: auto;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   align-items: center;
 }
 .skill-saya .skill-ul li .opsi-skill {
@@ -1706,7 +1706,7 @@ nav .nav-ul {
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
-    color: black;
+    color: white;
     justify-content: space-evenly;
     overflow: auto;
     font-family: "Secular One", sans-serif;
@@ -1718,7 +1718,8 @@ nav .nav-ul {
     padding: 10px 0px;
     margin-bottom: 10px;
     justify-content: center;
-    width: 100%;
+    border-radius: 8px;
+    width: 90%;
   }
   .radio-profile .label-profile-1 {
     order: 2;
@@ -1763,7 +1764,6 @@ nav .nav-ul {
   }
   .skill-saya .skill-ul .framework {
     display: inline;
-    margin: 0;
     padding: 10px 0 0;
   }
   .skill-saya .skill-ul li:nth-child(9) {
@@ -2127,7 +2127,7 @@ nav .nav-ul {
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
-    color: black;
+    color: white;
     justify-content: space-evenly;
     font-family: "Secular One", sans-serif;
     margin-top: 30px;
@@ -2408,15 +2408,22 @@ nav .nav-ul {
 }
 .projeck-dava {
   grid-area: area-3;
+  display: grid;
+  width: 100%;
+  grid-template-areas: "area1" "area2";
   margin-top: 10px;
   padding-bottom: 10px;
-  background-color: white;
 }
 .projeck-dava h1 {
   padding: 10px;
+  grid-area: area1;
+  position: relative;
   text-transform: capitalize;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: darkblue;
+}
+.projeck-dava h1 .card-group {
+  grid-area: area2;
 }
 .projeck-dava .card {
   margin: 10px 10px 10px;
@@ -2452,16 +2459,6 @@ nav .nav-ul {
 
 #dark-mode:checked ~ .utama-pembungkus {
   background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0cmVldCUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-}
-
-#light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
-  background-image: none;
-  background-color: black;
-}
-
-#dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
-  background-image: none;
-  background-color: white;
 }
 
 .utama-pembungkus {
@@ -3116,4 +3113,60 @@ nav .nav-ul {
 
 #light-mode:checked ~ * * * * * * * * * * * * .light-font {
   color: white;
+}
+
+.video-background video {
+  display: none;
+  position: fixed;
+  width: 100vmax;
+  z-index: -200;
+}
+
+#normal-mode:checked ~ .utama-pembungkus .video-background .normal-video {
+  display: flex;
+}
+
+#dark-mode:checked ~ .utama-pembungkus .video-background .dark-video {
+  display: flex;
+}
+
+#light-mode:checked ~ .utama-pembungkus .video-background .light-video {
+  display: flex;
+}
+
+#light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+  background-image: none;
+  background-color: transparent;
+}
+
+#dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+  background-image: none;
+  background-color: transparent;
+}
+
+@media (max-width: 1026px) {
+  .video-background {
+    display: none;
+  }
+  #light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: black;
+  }
+  #dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: white;
+  }
+}
+@media (max-height: 570px) {
+  .video-background {
+    display: none;
+  }
+  #light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: black;
+  }
+  #dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: white;
+  }
 }/*# sourceMappingURL=main.css.map */

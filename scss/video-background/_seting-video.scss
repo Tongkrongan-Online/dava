@@ -1,0 +1,68 @@
+.video-background {
+    video {
+    display: none;
+    position: fixed;
+    width: 100vmax;
+    z-index: -200;
+    }
+}
+
+#normal-mode:checked~.utama-pembungkus .video-background .normal-video {
+    display: flex;
+}
+
+#dark-mode:checked~.utama-pembungkus .video-background .dark-video {
+    display: flex;
+}
+
+#light-mode:checked~.utama-pembungkus .video-background .light-video {
+    display: flex;
+}
+
+
+
+
+// image-header
+#light-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: transparent;
+}
+
+#dark-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: transparent;
+}
+
+
+
+
+@media (max-width:1026px) {
+    .video-background {
+        display: none;
+    }
+
+#light-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: black;
+}
+
+#dark-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: white;
+    }
+}
+
+@media (max-height:570px) {
+    .video-background {
+        display: none;
+    }
+#light-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: black;
+}
+
+#dark-mode:checked~.utama-pembungkus .content-utama .header-profile {
+    background-image: none;
+    background-color: white;
+    }
+}
