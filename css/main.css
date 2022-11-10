@@ -1738,13 +1738,14 @@ nav .nav-ul {
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
+    align-items: center;
+    justify-content: center;
   }
   .skill-saya .skill-ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0;
-    width: 100%;
+    width: 95%;
     overflow: auto;
     padding: 0 0px;
   }
@@ -1754,7 +1755,7 @@ nav .nav-ul {
     background-color: white;
     overflow: auto;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 0px 5px 0px 5px;
     margin-bottom: 10px;
     border-radius: 20px;
     align-items: center;
@@ -1768,6 +1769,10 @@ nav .nav-ul {
   }
   .skill-saya .skill-ul li:nth-child(9) {
     background-color: darkblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     color: white;
   }
   .skill-saya .framwork-css {
@@ -1784,6 +1789,8 @@ nav .nav-ul {
   }
   .profile-ul {
     display: none;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     transform: translateY(-50px);
     color: black;
@@ -1792,18 +1799,26 @@ nav .nav-ul {
     z-index: -1;
   }
   .profile-ul ul {
-    width: 100%;
+    width: 95%;
     padding: 0 0px;
     overflow: hidden;
   }
   .profile-ul ul li {
     display: flex;
-    width: 110vw;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
   }
   .profile-ul ul li:nth-child(15) {
     background-color: darkblue;
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-ul ul li:nth-child(15) ul {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .profile-ul ul li:nth-child(15) li {
     background-color: darkblue;
@@ -1811,6 +1826,7 @@ nav .nav-ul {
   }
   .profile-ul ul ul {
     display: flex;
+    width: 100%;
     padding: 10px 20px;
   }
   .profile-ul ul ul li:nth-child(1) {
@@ -1830,16 +1846,17 @@ nav .nav-ul {
   .profile-ul ul li ul li:nth-child(3) {
     width: 300px;
     text-indent: 20px;
+    text-align: center;
     display: flex;
     height: 100%;
     align-items: center;
-    position: relative;
-    background-color: darkblue;
+    position: static;
+    background-color: transparent;
     margin-left: 10px;
-    color: white;
+    color: black;
   }
   .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
-    background-color: gray;
+    background-color: transparent;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
@@ -1854,7 +1871,7 @@ nav .nav-ul {
     align-items: center;
     transform: translateY(-50px);
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: auto;
     font-family: "Fira Sans Extra Condensed", sans-serif;
   }
@@ -1864,19 +1881,14 @@ nav .nav-ul {
     padding: 0 0px;
     width: 100%;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-  }
-  .sosial-profile .sosial-radio li:nth-child(9) {
-    background-color: darkblue;
-    color: white;
-    box-sizing: border-box;
-    line-height: 30px;
-    padding: 20px;
   }
   .sosial-profile .sosial-radio li {
     display: flex;
     background-color: white;
-    width: 100%;
+    overflow: auto;
+    width: 95%;
     box-sizing: border-box;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -1893,6 +1905,18 @@ nav .nav-ul {
   }
   .sosial-profile .sosial-radio li img {
     width: 80px;
+  }
+  .sosial-profile .sosial-radio li:last-child {
+    background-color: darkblue;
+    color: white;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding: 0px;
+  }
+  .sosial-profile .sosial-radio li:last-child a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .sosial-profile .sosial-radio .sosial-snack {
     padding: 5px 0;
@@ -1992,19 +2016,6 @@ nav .nav-ul {
     }
   }
 }
-@media (max-width: 490px) {
-  .profile-ul {
-    overflow-x: auto;
-  }
-  .profile-ul ul {
-    overflow-x: auto;
-  }
-  .profile-ul ul li {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-}
 @media (max-width: 520px) {
   .sosial-profile .sosial-radio {
     display: flex;
@@ -2012,7 +2023,7 @@ nav .nav-ul {
     overflow: auto;
   }
   .sosial-profile .sosial-radio li {
-    width: 525px;
+    width: 95%;
     box-sizing: border-box;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -2021,6 +2032,7 @@ nav .nav-ul {
   .sosial-profile .sosial-radio li a {
     display: flex;
     align-items: center;
+    padding-right: 20px;
     font-family: "Secular One", sans-serif;
   }
 }
@@ -2413,16 +2425,19 @@ nav .nav-ul {
   grid-template-areas: "area1" "area2";
   margin-top: 10px;
   padding-bottom: 10px;
+  place-items: center;
 }
 .projeck-dava h1 {
   padding: 10px;
   grid-area: area1;
+  width: 99%;
+  border-radius: 5px;
   position: relative;
   text-transform: capitalize;
   color: white;
   background-color: darkblue;
 }
-.projeck-dava h1 .card-group {
+.projeck-dava .card-group {
   grid-area: area2;
 }
 .projeck-dava .card {
@@ -2453,6 +2468,11 @@ nav .nav-ul {
   height: 200px;
 }
 
+@media (max-width: 1025px) {
+  .projeck-dava h1 {
+    width: 95%;
+  }
+}
 #light-mode:checked ~ .utama-pembungkus {
   background-image: url(https://images.pexels.com/photos/1816823/pexels-photo-1816823.jpeg?auto=compress&cs=tinysrgb&w=600);
 }

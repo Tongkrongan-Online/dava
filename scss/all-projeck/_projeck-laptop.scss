@@ -12,19 +12,24 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                          'area2';
     margin-top: 10px;
     padding-bottom: 10px;
+    place-items: center;
 
     h1 {
         padding: 10px;
         grid-area: area1;
+        width: 99%;
+        border-radius:5px ;
         position: relative;
         text-transform: capitalize;
         color: white;
         background-color: darkblue ;
 
-        .card-group {
-        grid-area: area2;
-        }
     }
+
+    .card-group {
+    grid-area: area2;
+    }
+
     .card {
         margin:10px 10px 10px;
         position: relative;

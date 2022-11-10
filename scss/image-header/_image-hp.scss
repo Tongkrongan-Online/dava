@@ -159,14 +159,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     color: black;
     text-transform: capitalize;
     font-family: $font-4;
+    align-items: center;
+    justify-content: center;
 
 
     .skill-ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: 0;
-        width: 100%;
+        width: 95%;
         overflow: auto;
         padding: 0 0px;
        
@@ -176,7 +177,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             background-color: white;
             overflow: auto;
             box-sizing: border-box;
-            padding: 5px;
+            padding: 0px 5px 0px 5px;
             margin-bottom: 10px;
             border-radius: 20px;
             align-items: center;
@@ -193,6 +194,10 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
         li:nth-child(9){
             background-color: darkblue;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
             color: white;
         }
     }
@@ -217,6 +222,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .profile-ul {
     display: none;
+    align-items: center;
+    justify-content: center;
     width: calc(100%);
     transform: translateY(-50px);
     color: black;
@@ -226,20 +233,28 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     // overflow: auto;
 
     ul {
-        width: 100%;
+        width: 95%;
         padding: 0 0px;
         overflow: hidden;
     }
 
     ul li {
         display: flex;
-        width: 110vw;
+        width: 100%;
         margin-bottom: 10px;
         border-radius: 20px;
     }
 
     ul li:nth-child(15) {
         background-color: darkblue;
+        width: 100%;
+        justify-content: center;
+        ul {
+            padding:0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
         li {
             background-color: darkblue;
@@ -249,6 +264,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     ul ul {
         display: flex;
+        width: 100%;
         padding: 10px 20px;
     }
 
@@ -269,18 +285,20 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     ul li ul li:nth-child(3){
         width: 300px;
         text-indent: 20px;
+        text-align: center;
         display: flex;
         height: 100%;
         align-items: center;
-        position: relative;
-        background-color: darkblue;
+        position: static;
+        background-color: transparent;
         margin-left: 10px;
-        color: white;
+        color: black;
     }
 
     ul li:nth-child(even) ul li:nth-child(3) {
-        background-color: gray;
+        background-color: transparent;
     }
+
 
 }
 
@@ -300,7 +318,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     align-items: center;
     transform: translateY(-50px);
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: auto;
     font-family: $font-4;
 
@@ -311,20 +329,14 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         padding: 0 0px;
         width: 100%;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-
-        li:nth-child(9) {
-            background-color: darkblue;
-            color: white;
-            box-sizing: border-box;
-            line-height: 30px;
-            padding: 20px;
-        }
 
         li {
             display: flex;
             background-color: white;
-            width: 100%;
+            overflow: auto;
+            width: 95%;
             box-sizing: border-box;
             margin-bottom: 10px;
             border-radius: 20px;
@@ -346,9 +358,22 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             }
     }
 
+    li:last-child {
+            background-color: darkblue;
+            color: white;
+            box-sizing: border-box;
+            line-height: 30px;
+            padding: 0px;
+
+             a {
+                width: max-content;
+             }
+        }
+
         .sosial-snack {
             padding: 5px 0;
         }
+        
   }
 
 }
@@ -398,19 +423,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 }
 
-@media (max-width: 490px) {
-    .profile-ul {
-        overflow-x: auto;
-        ul {
-            overflow-x: auto;
-
-            li {
-                width: max-content;
-            }
-        }
-    }
-}
-
 @media (max-width: 520px) {
     .sosial-profile {
         .sosial-radio {
@@ -419,7 +431,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             overflow: auto;
 
             li {
-                width: 525px;
+                width: 95%;
                 box-sizing: border-box;
                 margin-bottom: 10px;
                 border-radius: 20px;
@@ -428,10 +440,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             a {
                 display: flex;
                 align-items: center;
+                padding-right: 20px;
                 font-family: $font-2;
             }
 
      }
+
    }
  }
 }
