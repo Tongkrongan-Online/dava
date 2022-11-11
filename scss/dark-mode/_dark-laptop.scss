@@ -13,11 +13,11 @@
 // image-header
 // https://media.istockphoto.com/vectors/crowd-of-people-vector-seamless-pattern-monochrome-background-with-vector-id1278584455?b=1&k=20&m=1278584455&s=170667a&w=0&h=715iK2dKz4ezqoYxLL3b7MH4Ed7xl2ts5Ajmdv8xZHw=
 .utama-pembungkus {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     overflow: auto;
-    overflow-x: hidden;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     top: 0;
     background-image: url(https://images.pexels.com/photos/1782407/pexels-photo-1782407.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-position: center;
