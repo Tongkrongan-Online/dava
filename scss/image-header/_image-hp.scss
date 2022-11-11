@@ -235,7 +235,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     ul {
         width: 95%;
         padding: 0 0px;
-        overflow: hidden;
     }
 
     ul li {
@@ -243,6 +242,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         width: 100%;
         margin-bottom: 10px;
         border-radius: 20px;
+        overflow: auto;
     }
 
     ul li:nth-child(15) {
@@ -264,7 +264,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     ul ul {
         display: flex;
-        width: 100%;
+        width: max-content;
         padding: 10px 20px;
     }
 
@@ -292,12 +292,17 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         position: static;
         background-color: transparent;
         margin-left: 10px;
-        color: black;
+        color: white;
+        background-color: darkblue;
+        overflow: auto;
     }
 
     ul li:nth-child(even) ul li:nth-child(3) {
         background-color: transparent;
-    }
+        color: black;
+    } 
+
+    
 
 
 }

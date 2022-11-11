@@ -1801,13 +1801,13 @@ nav .nav-ul {
   .profile-ul ul {
     width: 95%;
     padding: 0 0px;
-    overflow: hidden;
   }
   .profile-ul ul li {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
+    overflow: auto;
   }
   .profile-ul ul li:nth-child(15) {
     background-color: darkblue;
@@ -1826,7 +1826,9 @@ nav .nav-ul {
   }
   .profile-ul ul ul {
     display: flex;
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     padding: 10px 20px;
   }
   .profile-ul ul ul li:nth-child(1) {
@@ -1853,10 +1855,13 @@ nav .nav-ul {
     position: static;
     background-color: transparent;
     margin-left: 10px;
-    color: black;
+    color: white;
+    background-color: darkblue;
+    overflow: auto;
   }
   .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
     background-color: transparent;
+    color: black;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
@@ -2484,7 +2489,7 @@ nav .nav-ul {
 .utama-pembungkus {
   width: 100vw;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
   position: absolute;
   z-index: 1;
   top: 0;
