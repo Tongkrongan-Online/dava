@@ -1157,10 +1157,13 @@ nav .nav-ul {
   }
 }
 .content-utama {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
   position: absolute;
+  top: 40px;
   z-index: -150;
-  top: 80px;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 .header-content {
@@ -1195,10 +1198,9 @@ nav .nav-ul {
   justify-content: center;
   align-items: flex-start;
   grid-template-areas: "area-1 area-2" "area-3 area-3" "area-4 area-4" "area-5 area-5";
-  grid-template-columns: 500px calc(100% - 500px);
+  grid-template-columns: 500px calc(100vw - 500px);
   transform: translateY(50px);
-  padding: 20px;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   color: black;
   font-size: 1.4rem;
@@ -1210,7 +1212,7 @@ nav .nav-ul {
 .header-profile .textdanimage {
   display: flex;
   grid-area: area-1;
-  padding: 40px 0 0 0;
+  padding: 40px 20px 0 20px;
   position: relative;
   width: 100%;
   justify-content: center;
@@ -2434,16 +2436,20 @@ nav .nav-ul {
 }
 .projeck-dava h1 {
   padding: 10px;
-  grid-area: area1;
   width: 99%;
+  grid-area: area1;
   border-radius: 5px;
   position: relative;
   text-transform: capitalize;
   color: white;
   background-color: darkblue;
 }
-.projeck-dava .card-group {
+.projeck-dava .card-saya-pro {
   grid-area: area2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .projeck-dava .card {
   margin: 10px 10px 10px;
@@ -2478,6 +2484,26 @@ nav .nav-ul {
     width: 95%;
   }
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkblue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 #light-mode:checked ~ .utama-pembungkus {
   background-image: url(https://images.pexels.com/photos/1816823/pexels-photo-1816823.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
@@ -2490,9 +2516,9 @@ nav .nav-ul {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
   top: 0;
+  left: 0;
   background-image: url(https://images.pexels.com/photos/1782407/pexels-photo-1782407.jpeg?auto=compress&cs=tinysrgb&w=600);
   background-position: center;
   background-attachment: fixed;
@@ -3194,4 +3220,18 @@ nav .nav-ul {
     background-image: none;
     background-color: white;
   }
+}
+footer {
+  grid-area: area-4;
+  width: 100%;
+  min-height: 500px;
+  background-color: darkblue;
+}
+footer .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

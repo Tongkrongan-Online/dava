@@ -16,8 +16,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     h1 {
         padding: 10px;
-        grid-area: area1;
         width: 99%;
+        grid-area: area1;
         border-radius:5px ;
         position: relative;
         text-transform: capitalize;
@@ -26,8 +26,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     }
 
-    .card-group {
+    .card-saya-pro {
     grid-area: area2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
     .card {

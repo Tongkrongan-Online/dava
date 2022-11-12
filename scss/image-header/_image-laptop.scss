@@ -6,10 +6,13 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 
 .content-utama {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
     position: absolute;
+    top: 40px;
     z-index: -150;
-    top: 80px;
-    width: 100%;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -49,10 +52,9 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                               'area-3 area-3'
                               'area-4 area-4'
                               'area-5 area-5';
-        grid-template-columns: 500px calc(100% - 500px);
+        grid-template-columns: 500px calc(100vw - 500px);
         transform: translateY(50px);
-        padding: 20px;
-        width: 100%;
+        width: 100vw;
         // background-image:url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
         position: absolute;
         color: black;
@@ -65,7 +67,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         .textdanimage {
         display: flex;
         grid-area: area-1;
-        padding:40px 0 0 0;
+        padding:40px 20px 0 20px;
         position: relative;
         width: 100%;
         justify-content: center;
