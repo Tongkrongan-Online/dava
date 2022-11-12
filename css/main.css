@@ -1168,7 +1168,7 @@ nav .nav-ul {
 
 .header-content {
   width: 100%;
-  height: 700px;
+  height: 100vh;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -3234,5 +3234,5 @@ footer .footer {
   bottom: 0;
   width: 100%;
   height: 500px;
-  background-color: red;
+  background-color: darkblue;
 }/*# sourceMappingURL=main.css.map */
