@@ -3248,4 +3248,7 @@ footer .footer {
   width: 100%;
   height: 500px;
   background-color: darkblue;
+}
+footer .footer h1 {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
