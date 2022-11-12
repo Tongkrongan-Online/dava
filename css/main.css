@@ -1241,7 +1241,7 @@ nav .nav-ul {
 }
 .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 20%;
   margin-bottom: 20px;
   width: 200px;
   box-shadow: 5px 8px 11px 2px black;
