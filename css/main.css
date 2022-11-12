@@ -1208,6 +1208,7 @@ nav .nav-ul {
   text-shadow: 1px 1px 0 black;
   box-sizing: border-box;
   box-shadow: 5px 5px 10px 0 black;
+  margin-top: 100px;
 }
 .header-profile .textdanimage {
   display: flex;
@@ -2503,6 +2504,18 @@ nav .nav-ul {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+#light-mode:checked ~ * ::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+#dark-mode:checked ~ * ::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+#light-mode:checked ~ * ::-webkit-scrollbar-track {
+  background-color: black;
 }
 
 #light-mode:checked ~ .utama-pembungkus {

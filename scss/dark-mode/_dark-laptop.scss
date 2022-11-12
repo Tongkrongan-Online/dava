@@ -21,6 +21,20 @@
 }
 // scroll setting
 
+// scroll setting
+#light-mode:checked~ * ::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+#dark-mode:checked~ * ::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+#light-mode:checked~ * ::-webkit-scrollbar-track {
+  background-color: black;
+}
+// scroll change
+
 
 
 // tambahan pergian dark mode
