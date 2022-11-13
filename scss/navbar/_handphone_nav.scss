@@ -230,11 +230,12 @@
 .ol-sub-content li a {
     display: flex;
     width: max-content;
+    height: 100%;
     margin-right:20px;
 }
 
 .ol-sub-content li a:hover {
-    background-color: skyblue;
+    background-color: silver;
 }
 
 .parent-ol-sub-content {

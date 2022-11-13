@@ -524,11 +524,12 @@ nav .nav-ul {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  height: 100%;
   margin-right: 20px;
 }
 
 .ol-sub-content li a:hover {
-  background-color: skyblue;
+  background-color: silver;
 }
 
 .parent-ol-sub-content {
@@ -1022,10 +1023,11 @@ nav .nav-ul {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    height: 100%;
     margin-right: 20px;
   }
   .ol-sub-content li a:hover {
-    background-color: skyblue;
+    background-color: silver;
   }
   .parent-ol-sub-content {
     transition: all 1s ease-in-out;
@@ -2493,7 +2495,7 @@ nav .nav-ul {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: white;
 }
 
 /* Handle */
@@ -2503,7 +2505,7 @@ nav .nav-ul {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: red;
 }
 
 #light-mode:checked ~ * ::-webkit-scrollbar-thumb {
@@ -2516,6 +2518,14 @@ nav .nav-ul {
 
 #light-mode:checked ~ * ::-webkit-scrollbar-track {
   background-color: black;
+}
+
+#light-mode:checked ~ * ::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+#dark-mode:checked ~ * ::-webkit-scrollbar-thumb:hover {
+  background: red;
 }
 
 #light-mode:checked ~ .utama-pembungkus {
