@@ -1612,12 +1612,13 @@ nav .nav-ul {
   .content-utama {
     position: absolute;
     z-index: -150;
-    top: 80px;
+    top: 40px;
+    padding-top: 40px;
     width: 100%;
   }
   .header-content {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -1687,7 +1688,6 @@ nav .nav-ul {
   }
   .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
     display: inline-block;
-    border-radius: 50%;
     margin-bottom: 20px;
     width: 200px;
     box-shadow: 5px 8px 11px 2px black;
@@ -2051,12 +2051,13 @@ nav .nav-ul {
   .content-utama {
     position: absolute;
     z-index: -150;
-    top: 80px;
+    top: 40px;
+    padding-top: 40px;
     width: 100%;
   }
   .header-content {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -2127,7 +2128,6 @@ nav .nav-ul {
   }
   .header-profile .textdanimage .textdanimage-2 .img-saya-profile {
     display: inline-block;
-    border-radius: 50%;
     margin-bottom: 20px;
     width: 200px;
     box-shadow: 5px 8px 11px 2px black;
@@ -3193,7 +3193,7 @@ nav .nav-ul {
 .video-background video {
   display: none;
   position: fixed;
-  width: 100vmax;
+  width: 100vw;
   z-index: -2000;
 }
 
@@ -3220,29 +3220,29 @@ nav .nav-ul {
 }
 
 @media (max-width: 1026px) {
-  .video-background {
+  #normal-mode:checked ~ .utama-pembungkus .video-background .normal-video {
     display: none;
+  }
+  #dark-mode:checked ~ .utama-pembungkus .video-background .dark-video {
+    display: none;
+  }
+  #light-mode:checked ~ .utama-pembungkus .video-background .light-video {
+    display: none;
+  }
+  #normal-mode:checked ~ .utama-pembungkus .video-background .normal-video-hp {
+    display: flex;
+  }
+  #light-mode:checked ~ .utama-pembungkus .video-background .light-video-hp {
+    display: flex;
+  }
+  #dark-mode:checked ~ .utama-pembungkus .video-background .dark-video-hp {
+    display: flex;
   }
   #light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
     background-image: none;
-    background-color: black;
   }
   #dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
     background-image: none;
-    background-color: white;
-  }
-}
-@media (max-height: 570px) {
-  .video-background {
-    display: none;
-  }
-  #light-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
-    background-image: none;
-    background-color: black;
-  }
-  #dark-mode:checked ~ .utama-pembungkus .content-utama .header-profile {
-    background-image: none;
-    background-color: white;
   }
 }
 footer {
