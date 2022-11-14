@@ -8,19 +8,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 .content-utama {
     position: absolute;
     z-index: -150;
-    top: 40px;
-    padding-top: 40px;
     width: 100%;
+    height: 100vh;
 }
 
 .header-content {
     width: 100%;
-    height: 100vh;  
-    position: absolute;
     display: flex;
     flex-direction: row;
     position: relative;
-    transform: translateY(-50px);
     justify-content: center;
     align-items: flex-start;
     color: white;
@@ -30,7 +26,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     .card-profile {
         color: black;
-        transform: translateY(70px);
         font-family:$font-2 ;
         font-size: 1.5rem;
         justify-content: center;
@@ -44,10 +39,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .header-profile {
         display: flex;
-        transform: translateY(50px);
-        padding: 20px;
+        padding: 80px 20px 20px 20px;
         width: 100%;
-        background-image:url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
         position: absolute;
         justify-content: center;
         align-items: flex-start;
@@ -57,7 +50,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         font-family: $font-2;
         text-shadow: 1px 1px 0 black;
         box-sizing: border-box;
-        box-shadow: 5px 5px 10px 0 black;
 
         .textdanimage {
         display: flex;

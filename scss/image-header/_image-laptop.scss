@@ -11,74 +11,42 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     width: 100vw;
     position: absolute;
     top: 40px;
-    z-index: -150;
+    z-index: -500;
     overflow-x: hidden;
-}
-
-.header-content {
-    width: 100%;
-    height: 100vh;   
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transform: translateY(-50px);
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    text-transform: capitalize;
-    font-family: $font-2;
-
-    .card-profile {
-        color: black;
-        transform: translateY(150px);
-        font-family:$font-2 ;
-        font-size: 1.5rem;
-        justify-content: center;
-        line-height: 2rem;
-
-        p {
-            margin-bottom: 20px;
-        }
-    }
 }
 
 .header-profile {
         display: grid;
         justify-content: center;
         align-items: flex-start;
-        grid-template-areas: 'area-1 area-2'
+        grid-template-areas:  'area-0 area-0'
+                              'area-1 area-2'
                               'area-3 area-3'
                               'area-4 area-4'
                               'area-5 area-5';
         grid-template-columns: 500px calc(100vw - 500px);
-        transform: translateY(50px);
         width: 100vw;
-        // background-image:url(https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731__340.png);
-        position: absolute;
         color: black;
         font-size: 1.4rem;
         font-family: $font-2;
         text-shadow: 1px 1px 0 black;
         box-sizing: border-box;
         box-shadow: 5px 5px 10px 0 black;
-        margin-top: 100px;
+        padding-top: 80px;
 
         .textdanimage {
         display: flex;
         grid-area: area-1;
         padding:40px 20px 0 20px;
-        position: relative;
         width: 100%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
         font-size: 1.4rem;
         font-family: $font-4;
         color: white;
         text-shadow: 1px 1px 0 black;
-        transform: translateY(-50px);
 
             .textdanimage-2  {
                 display: flex;
@@ -88,7 +56,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                 width: 100vw;
                 height: 250px;
                 position: absolute;
-                top: -250px;
+                top: -300px;
                 left: -20px;
                 padding: 20px;
                 margin: 0;
@@ -144,6 +112,36 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 }
 
+
+.header-content {
+    grid-area: area-0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 450px;
+    text-transform: capitalize;
+    font-family: $font-2;
+
+    .card-profile {
+        color: black;
+        font-family:$font-2 ;
+        font-size: 1.5rem;
+        justify-content: center;
+        line-height: 2rem;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
 .radio-profile {
     display: flex;
     align-items: center;
@@ -154,9 +152,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     text-transform: capitalize;
     color: white;
     justify-content: space-evenly;
-    // padding: 0 10px;
     font-family: $font-2;
-    margin-top: 30px;
      
     label {
         display: flex;
@@ -264,7 +260,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     color: black;
     text-transform: capitalize;
     font-family: $font-4;
-    z-index: -1;
     overflow: auto;
 
     ul {
@@ -325,7 +320,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     }
 
 }
-
 
 #profile-radio-2:checked~.profile-ul {
     display: flex;

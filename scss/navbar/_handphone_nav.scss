@@ -313,8 +313,11 @@
 .tombol-sub-content{
     color: rgb(255, 255, 255);
     position: absolute;
+    top: 0;
     right: 0;
-    transform: translate(-5px,5px);
+    display: flex;
+    align-items: center;
+    transform: translate(-5px,0px);
     z-index: 99;
     font-size: 1.3rem;
 } 

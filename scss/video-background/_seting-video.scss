@@ -64,24 +64,7 @@
     display: flex;
 }
 
-
-// background gambar
-#light-mode:checked~.utama-pembungkus .content-utama .header-profile {
-    background-image: none;
-    // background-color: black;
 }
-
-#dark-mode:checked~.utama-pembungkus .content-utama .header-profile {
-    background-image: none;
-    // background-color: white;
-    }
-}
-
-
-
-
-
-
 // 📌 tinggi
 // @media (max-height:570px) {
 //     .video-background {
