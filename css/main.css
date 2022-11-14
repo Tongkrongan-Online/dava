@@ -1122,8 +1122,13 @@ nav .nav-ul {
   }
   /*✅ ul-sub-bab utama akhir handphone  */
   .label-check-nav-view {
-    display: inherit;
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-right: 10px;
+  }
+  .label-check-nav-view .silang-mode {
+    display: none;
   }
   .seting-view-dark {
     display: flex;
@@ -1133,6 +1138,12 @@ nav .nav-ul {
   }
   #hp-view:checked ~ .change-mode {
     display: flex;
+  }
+  #hp-view:checked ~ .seting-view-dark .silang-mode {
+    display: flex;
+  }
+  #hp-view:checked ~ .seting-view-dark .logo-hp-mode {
+    display: none;
   }
   .change-mode {
     display: none;
@@ -1789,7 +1800,6 @@ nav .nav-ul {
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
-    z-index: -1;
   }
   .profile-ul ul {
     width: 95%;

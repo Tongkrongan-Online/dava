@@ -343,8 +343,14 @@
 
 // hide subs dan hide dark mode setings➡➡⏩🟡
 .label-check-nav-view {
-    display: inherit;
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-right:10px;
+
+    .silang-mode {
+        display: none;
+    }
 }
 
 .seting-view-dark {
@@ -356,6 +362,14 @@
 
 #hp-view:checked~.change-mode {
     display: flex;
+}
+
+#hp-view:checked~.seting-view-dark .silang-mode {
+    display: flex;
+}
+
+#hp-view:checked~.seting-view-dark .logo-hp-mode {
+    display: none;
 }
 
 .change-mode {
