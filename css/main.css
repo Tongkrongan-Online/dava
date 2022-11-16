@@ -824,6 +824,40 @@ nav .nav-ul {
   }
   /* branding handphone 😍akhir */
   /* home about contact handphone 😍awal */
+  /* toogle button untuk handphone 😍awal */
+  /* home about contact awal handphone 😍*/
+  /* isi contact muncul di handphone 😍awal */
+  /* ISI CONATACT AWAL MUNCULL DI laptop */
+  /* gambar youtube ig dan fb handphone 😍*/
+  /* gambar youtube ig dan fb awal handphone 😍*/
+  /* nav akhir handphone 😍 */
+  /* sub- content-navigasi📌 */
+  /* LI TOOGLE SUB-CONTENT handphone 📌 */
+  /* ol-content-sub handphone ⏩*/
+  /* ol-content-sub hanphone ⏩ */
+  /* LI TOOGLE SUB-CONTENT 📌 */
+  /* SEARCH SUB-AWAL handphone 🔍*/
+  /* SEARCH SUB-AKHIR handphone 🔍 */
+  /* toogle-sub-bab awal 🔼🔽 handphone*/
+  /*✅ ul-sub-bab utama akhir handphone  */
+}
+@media (max-width: 767px) and (max-width: 300px) {
+  .teks-logo {
+    width: 255px;
+    order: 1;
+    font-size: 0.9rem;
+    padding: 0px 0px 0px 5px;
+    margin: 0;
+  }
+  .seting-view-dark {
+    display: flex;
+    width: calc(100% - 255px - 40px);
+    justify-content: flex-end;
+    background-color: red;
+    order: 3;
+  }
+}
+@media (max-width: 767px) {
   .nav-toogle {
     width: 40px;
     box-sizing: border-box;
@@ -831,24 +865,33 @@ nav .nav-ul {
     justify-content: flex-end;
     padding-right: 10px;
   }
-  /* toogle button untuk handphone 😍awal */
+}
+@media (max-width: 767px) {
   #check-toogle:checked ~ .button-toogle {
     display: none;
   }
+}
+@media (max-width: 767px) {
   #check-toogle, .button-toogle {
     display: flex;
     position: relative;
     box-sizing: border-box;
   }
+}
+@media (max-width: 767px) {
   #check-toogle:checked ~ .x-toogle {
     display: flex;
     position: relative;
     z-index: 100;
   }
+}
+@media (max-width: 767px) {
   #check-toogle:checked ~ .toogle-menu-ul {
     opacity: 1;
     transform: translate(0, 0);
   }
+}
+@media (max-width: 767px) {
   .toogle-menu-ul {
     opacity: 0;
     transform: translate(70vw, 0vh);
@@ -865,6 +908,8 @@ nav .nav-ul {
     font-family: "Permanent Marker", cursive;
     background-color: black;
   }
+}
+@media (max-width: 767px) {
   .nav-teks-toogle {
     margin-top: 100px;
     width: 100%;
@@ -874,6 +919,8 @@ nav .nav-ul {
     justify-content: space-between;
     display: flex;
   }
+}
+@media (max-width: 767px) {
   .nav-teks-toogle span {
     display: flex;
     height: -webkit-max-content;
@@ -881,12 +928,14 @@ nav .nav-ul {
     height: max-content;
     align-items: center;
   }
-  /* home about contact awal handphone 😍*/
-  /* isi contact muncul di handphone 😍awal */
+}
+@media (max-width: 767px) {
   #contact-navbar {
     position: fixed;
     opacity: 0;
   }
+}
+@media (max-width: 767px) {
   #contact-navbar:checked ~ .link-contact .button-contact-2::after {
     content: "close";
     color: white;
@@ -902,12 +951,18 @@ nav .nav-ul {
     transform: translate(-1.5vw, 6vw);
     width: 100%;
   }
+}
+@media (max-width: 767px) {
   #contact-navbar:checked ~ .link-contact {
     display: flex;
   }
+}
+@media (max-width: 767px) {
   .contact-nav:hover .link-contact {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .link-contact {
     position: absolute;
     top: 90px;
@@ -922,14 +977,16 @@ nav .nav-ul {
     color: black;
     font-size: 5vw;
   }
+}
+@media (max-width: 767px) {
   #contact-navbar:checked ~ .link-contact span::before,
 .link-contact span:hover::before {
     content: "👉";
     position: absolute;
     transform: translate(-8vw, 0);
   }
-  /* ISI CONATACT AWAL MUNCULL DI laptop */
-  /* gambar youtube ig dan fb handphone 😍*/
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle {
     width: 100%;
     height: 200px;
@@ -938,6 +995,8 @@ nav .nav-ul {
     justify-content: space-around;
     align-items: center;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span {
     display: flex;
     background-color: white;
@@ -947,41 +1006,52 @@ nav .nav-ul {
     height: 100%;
     align-items: center;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span a {
     display: flex;
     height: 100%;
     width: 100%;
     align-items: center;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span .instagram::after {
     font-family: "Secular One", sans-serif;
     content: "@muhammaddavafahreza";
     margin-left: 2px;
     font-size: 4vw;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span .facebook::after {
     font-family: "Secular One", sans-serif;
     content: "Mhd Dava Fahreza";
     margin-left: 2px;
     font-size: 4vw;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span .youtube::after {
     font-family: "Secular One", sans-serif;
     content: "Tongkrongan Online";
     margin-left: 2px;
     font-size: 4vw;
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span:hover {
     background-color: rgba(255, 255, 255, 0.372);
   }
+}
+@media (max-width: 767px) {
   .nav-medsos-toogle span:hover ::before {
     content: "👉";
     position: absolute;
     transform: translate(-30px, 0);
   }
-  /* gambar youtube ig dan fb awal handphone 😍*/
-  /* nav akhir handphone 😍 */
-  /* sub- content-navigasi📌 */
+}
+@media (max-width: 767px) {
   .ul-sub-bab {
     display: flex;
     position: fixed;
@@ -993,6 +1063,8 @@ nav .nav-ul {
     z-index: -1;
     font-family: "IBM Plex Serif", serif;
   }
+}
+@media (max-width: 767px) {
   .li-sub-bab {
     width: calc(100% - 85px);
     height: 39.5px;
@@ -1001,8 +1073,8 @@ nav .nav-ul {
     border-bottom: 2.5px solid darkblue;
     box-sizing: border-box;
   }
-  /* LI TOOGLE SUB-CONTENT handphone 📌 */
-  /* ol-content-sub handphone ⏩*/
+}
+@media (max-width: 767px) {
   .ol-sub-content {
     width: calc(100vw - 85px);
     height: 100%;
@@ -1018,6 +1090,8 @@ nav .nav-ul {
     transform: translate(0, 0);
     transition: transform 1s ease-in-out, font-size 1s 2s ease-in-out, width 1s 1s ease-in-out;
   }
+}
+@media (max-width: 767px) {
   .ol-sub-content li a {
     display: flex;
     width: -webkit-max-content;
@@ -1026,9 +1100,13 @@ nav .nav-ul {
     height: 100%;
     margin-right: 20px;
   }
+}
+@media (max-width: 767px) {
   .ol-sub-content li a:hover {
     background-color: silver;
   }
+}
+@media (max-width: 767px) {
   .parent-ol-sub-content {
     transition: all 1s ease-in-out;
     z-index: 100;
@@ -1037,6 +1115,8 @@ nav .nav-ul {
     border-right: 3px solid darkblue;
     border-bottom: 3px solid darkblue;
   }
+}
+@media (max-width: 767px) {
   #sub-checkbox:checked ~ .parent-ol-sub-content {
     height: 40vh;
     width: 100vw;
@@ -1045,6 +1125,8 @@ nav .nav-ul {
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
   }
+}
+@media (max-width: 767px) {
   #sub-checkbox:checked ~ .parent-ol-sub-content .ol-sub-content {
     display: flex;
     transform: translate(0, 0px);
@@ -1058,8 +1140,8 @@ nav .nav-ul {
     align-items: center;
     justify-content: center;
   }
-  /* ol-content-sub hanphone ⏩ */
-  /* LI TOOGLE SUB-CONTENT 📌 */
+}
+@media (max-width: 767px) {
   .toogle-sub-bab {
     display: flex;
     width: 85px;
@@ -1071,11 +1153,14 @@ nav .nav-ul {
     box-sizing: border-box;
     font-size: 1.3rem;
   }
-  /* SEARCH SUB-AWAL handphone 🔍*/
+}
+@media (max-width: 767px) {
   .label-search-sub {
     transform: translate(-35px, 0px);
     z-index: 1;
   }
+}
+@media (max-width: 767px) {
   #search-sub {
     height: 70%;
     width: 152px;
@@ -1087,14 +1172,18 @@ nav .nav-ul {
     background-color: white;
     right: 0;
   }
+}
+@media (max-width: 767px) {
   #search-sub:focus ~ .label-search-sub {
     z-index: -1;
   }
+}
+@media (max-width: 767px) {
   #search-sub:focus {
     box-shadow: 0px 0px 6px 3px skyblue;
   }
-  /* SEARCH SUB-AKHIR handphone 🔍 */
-  /* toogle-sub-bab awal 🔼🔽 handphone*/
+}
+@media (max-width: 767px) {
   .tombol-sub-content {
     color: rgb(255, 255, 255);
     position: absolute;
@@ -1106,21 +1195,30 @@ nav .nav-ul {
     z-index: 99;
     font-size: 1.3rem;
   }
+}
+@media (max-width: 767px) {
   .close-sub {
     display: none;
   }
+}
+@media (max-width: 767px) {
   #sub-checkbox {
     position: absolute;
     top: -1000px;
   }
+}
+@media (max-width: 767px) {
   #sub-checkbox:checked ~ .open-sub {
     display: none;
   }
+}
+@media (max-width: 767px) {
   #sub-checkbox:checked ~ .close-sub {
     display: flex;
     z-index: 10;
   }
-  /*✅ ul-sub-bab utama akhir handphone  */
+}
+@media (max-width: 767px) {
   .label-check-nav-view {
     display: flex;
     height: 100%;
@@ -1130,21 +1228,31 @@ nav .nav-ul {
   .label-check-nav-view .silang-mode {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .seting-view-dark {
     display: flex;
     width: calc(100% - 255px - 40px);
     justify-content: flex-end;
     order: 3;
   }
+}
+@media (max-width: 767px) {
   #hp-view:checked ~ .change-mode {
     display: flex;
   }
+}
+@media (max-width: 767px) {
   #hp-view:checked ~ .seting-view-dark .silang-mode {
     display: flex;
   }
+}
+@media (max-width: 767px) {
   #hp-view:checked ~ .seting-view-dark .logo-hp-mode {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .change-mode {
     display: none;
     position: fixed;
@@ -1165,6 +1273,8 @@ nav .nav-ul {
   .change-mode .hide-subs {
     margin-bottom: 15px;
   }
+}
+@media (max-width: 767px) {
   .form-radio {
     transform: translateY(20px) translateX(-30px);
     width: -webkit-max-content;
@@ -3214,6 +3324,20 @@ nav .nav-ul {
   }
   #dark-mode:checked ~ .utama-pembungkus .video-background .dark-video-hp {
     display: flex;
+  }
+}
+@media (max-width: 450px) and (min-height: 700px) {
+  .video-background .normal-video-hp,
+.video-background .light-video-hp,
+.video-background .dark-video-hp {
+    width: 100vmax;
+  }
+}
+@media (max-width: 300px) and (min-height: 550px) {
+  .video-background .normal-video-hp,
+.video-background .light-video-hp,
+.video-background .dark-video-hp {
+    width: 100vmax;
   }
 }
 footer {

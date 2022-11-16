@@ -7,6 +7,25 @@
     width: 255px;
     order: 1;
 }
+ 
+@media (max-width : 300px) {
+    .teks-logo {
+    width: 255px;
+    order: 1;
+    font-size: .9rem;
+    padding: 0px 0px 0px 5px;
+    margin: 0;
+}
+
+.seting-view-dark {
+    display: flex;
+    width: calc(100% - 255px - 40px);
+    justify-content: flex-end;
+    background-color:red;
+    order: 3;
+}
+}
+
 /* branding handphone 😍akhir */
 
 /* home about contact handphone 😍awal */
