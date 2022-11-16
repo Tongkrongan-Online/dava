@@ -85,3 +85,13 @@
         }
     }
 }
+
+@media (min-width : 1020px) and (min-height:800px) {
+        .video-background {
+        .normal-video,
+        .light-video, 
+        .dark-video {
+            width: 120vmax;
+        }
+    }
+}

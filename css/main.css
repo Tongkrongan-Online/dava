@@ -2649,50 +2649,6 @@ nav .nav-ul {
   background-color: black;
 }
 
-#dark-mode:checked ~ * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .dark-bg-aktive {
-  background-color: black;
-}
-
 #dark-mode:checked ~ .light-bg-aktive {
   background-color: white;
 }
@@ -2701,99 +2657,11 @@ nav .nav-ul {
   background-color: white;
 }
 
-#dark-mode:checked ~ * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .light-bg-aktive {
-  background-color: white;
-}
-
-#dark-mode:checked ~ .dark-font {
+#dark-mode:checked ~ .light-font {
   color: black;
 }
 
 #dark-mode:checked ~ * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .light-font {
-  color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .light-font {
   color: black;
 }
 
@@ -2805,50 +2673,6 @@ nav .nav-ul {
   color: white;
 }
 
-#dark-mode:checked ~ * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .dark-font {
-  color: white;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .dark-font {
-  color: white;
-}
-
 #dark-mode:checked ~ .dark-border {
   border-color: black;
 }
@@ -2857,99 +2681,11 @@ nav .nav-ul {
   border-color: black;
 }
 
-#dark-mode:checked ~ * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .dark-border {
-  border-color: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .dark-border {
-  border-color: black;
-}
-
 #dark-mode:checked ~ .dark-text-shadow {
   text-shadow: black;
 }
 
 #dark-mode:checked ~ * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * .dark-text-shadow {
-  text-shadow: black;
-}
-
-#dark-mode:checked ~ * * * * * * * * * * * * .dark-text-shadow {
   text-shadow: black;
 }
 
@@ -2973,99 +2709,11 @@ nav .nav-ul {
   background-color: white;
 }
 
-#light-mode:checked ~ * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .dark-bg-aktive {
-  background-color: white;
-}
-
 #light-mode:checked ~ .dark-font {
   color: black;
 }
 
 #light-mode:checked ~ * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .dark-font {
-  color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .dark-font {
   color: black;
 }
 
@@ -3077,99 +2725,11 @@ nav .nav-ul {
   border-color: white;
 }
 
-#light-mode:checked ~ * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .dark-border {
-  border-color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .dark-border {
-  border-color: white;
-}
-
 #light-mode:checked ~ .dark-text-shadow {
   text-shadow: white;
 }
 
 #light-mode:checked ~ * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .dark-text-shadow {
-  text-shadow: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .dark-text-shadow {
   text-shadow: white;
 }
 
@@ -3181,99 +2741,11 @@ nav .nav-ul {
   background-color: black;
 }
 
-#light-mode:checked ~ * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .light-bg-aktive {
-  background-color: black;
-}
-
 #light-mode:checked ~ .light-font {
   color: white;
 }
 
 #light-mode:checked ~ * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * .light-font {
-  color: white;
-}
-
-#light-mode:checked ~ * * * * * * * * * * * * .light-font {
   color: white;
 }
 
@@ -3338,6 +2810,13 @@ nav .nav-ul {
 .video-background .light-video-hp,
 .video-background .dark-video-hp {
     width: 100vmax;
+  }
+}
+@media (min-width: 1020px) and (min-height: 800px) {
+  .video-background .normal-video,
+.video-background .light-video,
+.video-background .dark-video {
+    width: 120vmax;
   }
 }
 footer {
