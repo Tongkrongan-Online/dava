@@ -2594,7 +2594,6 @@ nav .nav-ul {
   content: "";
   position: absolute;
   z-index: 1;
-  border: 4px solid grey;
   height: 100%;
   width: 100%;
 }
@@ -2606,7 +2605,6 @@ nav .nav-ul {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 .projeck-dava .card .card-footer {
-  background-color: grey;
   z-index: 2;
   text-transform: capitalize;
 }
