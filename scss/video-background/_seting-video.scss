@@ -86,12 +86,51 @@
     }
 }
 
-@media (min-width : 1020px) and (min-height:800px) {
-        .video-background {
-        .normal-video,
-        .light-video, 
-        .dark-video {
-            width: 120vmax;
+@media  (min-width :300px) and (min-height: 550px) {
+    .video-background {
+        .normal-video-hp,
+        .light-video-hp, 
+        .dark-video-hp {
+            width: 100vmax;
         }
     }
 }
+
+// @media (min-width : 1020px) and (min-height:600px) {
+// .video-background {
+//     video {
+//     display: none;
+//     position: fixed;
+//     width: 125vmax;
+//     z-index: -2000;
+//     }
+// }
+// }
+
+@media (min-width: 1020px) and (min-height: 800px) {
+// background-video
+#normal-mode:checked~.utama-pembungkus .video-background .normal-video {
+    display: none;
+}
+
+#dark-mode:checked~.utama-pembungkus .video-background .dark-video {
+    display: none;
+}
+
+#light-mode:checked~.utama-pembungkus .video-background .light-video {
+    display: none;
+}
+
+// video tablet dan hp
+#normal-mode:checked~.utama-pembungkus .video-background .normal-video-hp {
+    display: flex;
+}
+
+#light-mode:checked~.utama-pembungkus .video-background .light-video-hp {
+    display: flex;
+}
+
+#dark-mode:checked~.utama-pembungkus .video-background .dark-video-hp {
+    display: flex;
+}
+} 
