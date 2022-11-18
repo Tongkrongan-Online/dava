@@ -170,26 +170,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                 width: 70px;
             }
         }
-        .framework {
-            display: inline;
-            text-indent: 10px;
-        }
 
-        li:nth-child(9){
+        li:last-child{
             background-color: darkblue;
             color: white;
+            justify-content: center ;
         }
     }
 
-    .framwork-css {
-        margin-left: 20px;
-        li {
-        padding: 0;
-        }
-        li::before {
-            content: '↪';
-        } 
-    }
+  
 }
 
 #profile-radio-1:checked~.skill-saya {
@@ -204,7 +193,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     color: black;
     text-transform: capitalize;
     font-family: $font-4;
-    z-index: -1;
     overflow: auto;
 
     ul {
@@ -220,11 +208,16 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         border-radius: 20px;
     }
 
-    ul li:nth-child(15) {
+    ul li:last-child {
         background-color: darkblue;
+        align-items: center;
+
+        ul {
+        height: 100%;
+        justify-content: center;
+        }
 
         li {
-            background-color: darkblue;
             color: white;
         }
     }
@@ -258,10 +251,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         background-color: darkblue;
         margin-left: 10px;
         color: white;
-    }
-
-    ul li:nth-child(even) ul li:nth-child(3) {
-        background-color: gray;
     }
 
 }
@@ -310,10 +299,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             border-radius: 20px;
             align-items: center;
 
-            &:hover {
-                background-color: rgb(255, 0, 0);
-            }
-            
             a {
                 display: flex;
                 align-items: center;

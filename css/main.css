@@ -318,6 +318,9 @@ nav .nav-ul {
   width: 100%;
   align-items: center;
 }
+.nav-medsos-toogle span a img {
+  width: 40px;
+}
 
 .nav-medsos-toogle span:hover {
   background-color: silver;
@@ -1441,6 +1444,23 @@ nav .nav-ul {
   order: 3;
 }
 
+@-webkit-keyframes saya-profile {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes saya-profile {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .skill-saya {
   grid-area: area-2;
   display: none;
@@ -1467,6 +1487,23 @@ nav .nav-ul {
   margin-bottom: 10px;
   border-radius: 15px;
   align-items: center;
+  position: relative;
+  color: black;
+}
+.skill-saya .skill-ul li::after {
+  content: "";
+  mix-blend-mode: difference;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.skill-saya .skill-ul li:hover::after {
+  -webkit-animation: saya-profile 1s ease-in-out;
+          animation: saya-profile 1s ease-in-out;
+  background-color: rgb(251, 255, 0);
+  color: black;
 }
 .skill-saya .skill-ul li .opsi-skill {
   display: flex;
@@ -1478,26 +1515,11 @@ nav .nav-ul {
 }
 .skill-saya .skill-ul li img {
   width: 70px;
+  z-index: 1000;
 }
-.skill-saya .skill-ul li:nth-child(4) .opsi-skill {
-  flex-direction: column;
-}
-.skill-saya .skill-ul .framework {
-  display: inline;
-  padding: 10px 0 0 0;
-}
-.skill-saya .skill-ul li:nth-child(9) {
+.skill-saya .skill-ul li:last-child {
   background-color: darkblue;
   color: white;
-}
-.skill-saya .framwork-css {
-  margin-left: 20px;
-}
-.skill-saya .framwork-css li {
-  padding: 0;
-}
-.skill-saya .framwork-css li::before {
-  content: "↪";
 }
 
 #profile-radio-1:checked ~ .skill-saya {
@@ -1517,19 +1539,40 @@ nav .nav-ul {
   width: 100%;
   padding: 0 20px;
 }
-.profile-ul ul li {
+.profile-ul ul li.li-1-pr {
   width: 100%;
   display: flex;
   background-color: white;
   margin-bottom: 10px;
   border-radius: 20px;
+  position: relative;
 }
-.profile-ul ul li:nth-child(15) {
-  background-color: darkblue;
+.profile-ul ul li.li-1-pr li {
+  border-radius: 20px;
+  padding: 5px;
 }
-.profile-ul ul li:nth-child(15) li {
+.profile-ul ul li.li-1-pr::after {
+  content: "";
+  border-radius: 20px;
+  mix-blend-mode: difference;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.profile-ul ul li.li-1-pr:hover::after {
+  -webkit-animation: saya-profile 1s ease-in-out;
+          animation: saya-profile 1s ease-in-out;
+  background-color: rgb(251, 255, 0);
+  color: black;
+}
+.profile-ul ul li.li-1-pr:last-child {
   background-color: darkblue;
   color: white;
+}
+.profile-ul ul li.li-1-pr:last-child li {
+  padding: 0;
 }
 .profile-ul ul ul {
   display: flex;
@@ -1560,9 +1603,6 @@ nav .nav-ul {
   margin-left: 10px;
   color: white;
 }
-.profile-ul ul li:nth-child(even) ul li:nth-child(3) {
-  background-color: gray;
-}
 
 #profile-radio-2:checked ~ .profile-ul {
   display: flex;
@@ -1589,11 +1629,15 @@ nav .nav-ul {
   flex-direction: column;
   justify-content: center;
 }
-.sosial-profile .sosial-radio li:nth-child(9) {
+.sosial-profile .sosial-radio li:last-child {
   background-color: darkblue;
   color: white;
 }
-.sosial-profile .sosial-radio li:nth-child(9) a {
+.sosial-profile .sosial-radio li:last-child:hover a {
+  color: black;
+  transition: color 1s 1s ease-in-out;
+}
+.sosial-profile .sosial-radio li:last-child a {
   box-sizing: border-box;
   line-height: 30px;
   padding: 20px;
@@ -1606,18 +1650,38 @@ nav .nav-ul {
   margin-bottom: 10px;
   border-radius: 20px;
   align-items: center;
+  position: relative;
+}
+.sosial-profile .sosial-radio li::after {
+  content: "";
+  border-radius: 20px;
+  mix-blend-mode: difference;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.sosial-profile .sosial-radio li:hover::after {
+  -webkit-animation: saya-profile 1s ease-in-out;
+          animation: saya-profile 1s ease-in-out;
+  background-color: rgb(251, 255, 0);
+  color: black;
+}
+.sosial-profile .sosial-radio li:hover a {
+  color: white;
+  transition: color 1s 1s ease-in-out;
 }
 .sosial-profile .sosial-radio li a {
   display: flex;
   width: 100%;
+  z-index: 100;
   align-items: center;
   font-family: "Secular One", sans-serif;
 }
-.sosial-profile .sosial-radio li a:hover {
-  background-color: rgb(255, 0, 0);
-}
 .sosial-profile .sosial-radio li img {
   width: 80px;
+  z-index: 1000;
 }
 .sosial-profile .sosial-radio .sosial-snack {
   padding: 5px 0;
@@ -1877,26 +1941,13 @@ nav .nav-ul {
   .skill-saya .skill-ul li img {
     width: 70px;
   }
-  .skill-saya .skill-ul .framework {
-    display: inline;
-    padding: 10px 0 0;
-  }
-  .skill-saya .skill-ul li:nth-child(9) {
+  .skill-saya .skill-ul li:last-child {
     background-color: darkblue;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 5px;
     color: white;
-  }
-  .skill-saya .framwork-css {
-    margin-left: 20px;
-  }
-  .skill-saya .framwork-css li {
-    padding: 0;
-  }
-  .skill-saya .framwork-css li::before {
-    content: "↪";
   }
   #profile-radio-1:checked ~ .skill-saya {
     display: flex;
@@ -1972,10 +2023,6 @@ nav .nav-ul {
     background-color: darkblue;
     overflow: auto;
   }
-  .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
-    background-color: silver;
-    color: black;
-  }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
   }
@@ -2012,9 +2059,6 @@ nav .nav-ul {
     border-radius: 20px;
     align-items: center;
   }
-  .sosial-profile .sosial-radio li:hover {
-    background-color: rgb(255, 0, 0);
-  }
   .sosial-profile .sosial-radio li a {
     display: flex;
     width: 530px;
@@ -2038,6 +2082,9 @@ nav .nav-ul {
   }
   .sosial-profile .sosial-radio .sosial-snack {
     padding: 5px 0;
+  }
+  .sosial-profile .sosial-radio .sosial-snack img {
+    width: 70px;
   }
   #profile-radio-3:checked ~ .sosial-profile {
     display: flex;
@@ -2300,22 +2347,10 @@ nav .nav-ul {
   .skill-saya .skill-ul li img {
     width: 70px;
   }
-  .skill-saya .skill-ul .framework {
-    display: inline;
-    text-indent: 10px;
-  }
-  .skill-saya .skill-ul li:nth-child(9) {
+  .skill-saya .skill-ul li:last-child {
     background-color: darkblue;
     color: white;
-  }
-  .skill-saya .framwork-css {
-    margin-left: 20px;
-  }
-  .skill-saya .framwork-css li {
-    padding: 0;
-  }
-  .skill-saya .framwork-css li::before {
-    content: "↪";
+    justify-content: center;
   }
   #profile-radio-1:checked ~ .skill-saya {
     display: flex;
@@ -2327,7 +2362,6 @@ nav .nav-ul {
     color: black;
     text-transform: capitalize;
     font-family: "Fira Sans Extra Condensed", sans-serif;
-    z-index: -1;
     overflow: auto;
   }
   .profile-ul ul {
@@ -2341,11 +2375,15 @@ nav .nav-ul {
     margin-bottom: 10px;
     border-radius: 20px;
   }
-  .profile-ul ul li:nth-child(15) {
+  .profile-ul ul li:last-child {
     background-color: darkblue;
+    align-items: center;
   }
-  .profile-ul ul li:nth-child(15) li {
-    background-color: darkblue;
+  .profile-ul ul li:last-child ul {
+    height: 100%;
+    justify-content: center;
+  }
+  .profile-ul ul li:last-child li {
     color: white;
   }
   .profile-ul ul ul {
@@ -2376,9 +2414,6 @@ nav .nav-ul {
     background-color: darkblue;
     margin-left: 10px;
     color: white;
-  }
-  .profile-ul ul li:nth-child(even) ul li:nth-child(3) {
-    background-color: gray;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
@@ -2418,9 +2453,6 @@ nav .nav-ul {
     margin-bottom: 10px;
     border-radius: 20px;
     align-items: center;
-  }
-  .sosial-profile .sosial-radio li:hover {
-    background-color: rgb(255, 0, 0);
   }
   .sosial-profile .sosial-radio li a {
     display: flex;
@@ -2562,7 +2594,7 @@ nav .nav-ul {
   content: "";
   position: absolute;
   z-index: 1;
-  border: 4px solid silver;
+  border: 4px solid grey;
   height: 100%;
   width: 100%;
 }
@@ -2574,7 +2606,7 @@ nav .nav-ul {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 .projeck-dava .card .card-footer {
-  background-color: silver;
+  background-color: grey;
   z-index: 2;
   text-transform: capitalize;
 }
@@ -2634,6 +2666,34 @@ nav .nav-ul {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#light-mode:checked ~ * .skill-saya .skill-ul li:hover::after {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * .skill-saya .skill-ul li:hover::after {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * .profile-ul ul li.li-1-pr:hover::after {
+  background-color: white;
+}
+
+#light-mode:checked ~ * .profile-ul ul li.li-1-pr:hover::after {
+  background-color: white;
+}
+
+#light-mode:checked ~ * .sosial-profile .sosial-radio li:hover::after {
+  background-color: white;
+}
+
+#dark-mode:checked ~ * .sosial-profile .sosial-radio li:hover::after {
+  background-color: white;
+}
+#dark-mode:checked ~ * .sosial-profile .sosial-radio li:hover a {
+  color: black;
+  transition: color 1s 1s ease-in-out;
 }
 
 #dark-mode, #light-mode, #normal-mode {

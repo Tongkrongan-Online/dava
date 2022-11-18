@@ -179,12 +179,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             }
         }
         
-        .framework {
-            display: inline;
-            padding: 10px 0 0;
-        }
-
-        li:nth-child(9){
+        li:last-child{
             background-color: darkblue;
             width: 100%;
             display: flex;
@@ -192,17 +187,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             padding: 5px;
             color: white;
         }
-    }
-
-    .framwork-css {
-        margin-left: 20px;
-
-        li {
-        padding: 0;
-        }
-        li::before {
-            content: '↪';
-        } 
     }
 }
 
@@ -286,15 +270,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         background-color: darkblue;
         overflow: auto;
     }
-
-    ul li:nth-child(even) ul li:nth-child(3) {
-        background-color: silver;
-        color: black;
-    } 
-
-    
-
-
 }
 
 
@@ -337,10 +312,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             border-radius: 20px;
             align-items: center;
 
-            &:hover {
-                background-color: rgb(255, 0, 0);
-            }
-            
             a {
                 display: flex;
                 width: 530px;
@@ -367,6 +338,10 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
         .sosial-snack {
             padding: 5px 0;
+
+            img  {
+                width: 70px;
+            }
         }
         
   }

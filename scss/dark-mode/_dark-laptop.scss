@@ -55,6 +55,64 @@
     top: 0;
     left: 0;
 }
+
+#light-mode:checked~ * .skill-saya {
+    .skill-ul {
+        li {
+            &:hover::after {
+                background-color: white;
+            }
+        }
+    }
+}
+
+#dark-mode:checked~* .skill-saya {
+    .skill-ul {
+        li {
+            &:hover::after {
+                background-color: white;
+            }
+        }
+    }
+}
+
+#dark-mode:checked~* .profile-ul {
+    ul li.li-1-pr { 
+        &:hover::after {
+            background-color: white;
+        }
+    }
+} 
+
+#light-mode:checked~* .profile-ul {
+    ul li.li-1-pr { 
+        &:hover::after {
+            background-color: white;
+        }
+    }
+}
+
+#light-mode:checked~* .sosial-profile .sosial-radio {
+    li {
+        &:hover::after {
+            background-color: white;
+        }
+    }
+}
+
+#dark-mode:checked~* .sosial-profile .sosial-radio {
+    li {
+        &:hover::after {
+            background-color: white;
+        }
+
+        &:hover a {
+        color: black;
+        transition: color 1s 1s ease-in-out;
+        }
+    }
+}
+// #light-mode:checked,#light-mode:checked~{}
 // tambahan untuk pergantian dark mode
 
 
@@ -166,6 +224,7 @@ $light-mode : white;
     }
  }
 // dark-mode white 📌
+            
 
 
 
