@@ -2879,7 +2879,7 @@ nav .nav-ul {
     width: 100vmax;
   }
 }
-@media (min-width: 1020px) and (min-height: 790px) {
+@media (min-width: 1020px) and (min-height: 700px) {
   #normal-mode:checked ~ .utama-pembungkus .video-background .normal-video {
     display: none;
   }
