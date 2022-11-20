@@ -1502,7 +1502,7 @@ nav .nav-ul {
 .skill-saya .skill-ul li:hover::after {
   -webkit-animation: saya-profile 1s ease-in-out;
           animation: saya-profile 1s ease-in-out;
-  background-color: rgb(251, 255, 0);
+  background-color: rgb(255, 255, 111);
   color: black;
 }
 .skill-saya .skill-ul li .opsi-skill {
@@ -1564,7 +1564,7 @@ nav .nav-ul {
 .profile-ul ul li.li-1-pr:hover::after {
   -webkit-animation: saya-profile 1s ease-in-out;
           animation: saya-profile 1s ease-in-out;
-  background-color: rgb(251, 255, 0);
+  background-color: rgb(255, 255, 111);
   color: black;
 }
 .profile-ul ul li.li-1-pr:last-child {
@@ -1665,7 +1665,7 @@ nav .nav-ul {
 .sosial-profile .sosial-radio li:hover::after {
   -webkit-animation: saya-profile 1s ease-in-out;
           animation: saya-profile 1s ease-in-out;
-  background-color: rgb(251, 255, 0);
+  background-color: rgb(255, 255, 111);
   color: black;
 }
 .sosial-profile .sosial-radio li:hover a {
