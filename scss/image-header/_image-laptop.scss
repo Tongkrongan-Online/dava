@@ -15,9 +15,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     top: 40px;
     z-index: -500;
     overflow-x: hidden;
-    background-color: darkblue;
-    background-image: bck-svg.$bck-2;
 }
+
+#light-mode:checked~* .header-profile {
+    background-image: bck-svg.$bck-1;
+    }
+
 
 .header-profile {
         display: grid;
@@ -37,6 +40,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         box-sizing: border-box;
         box-shadow: 5px 5px 10px 0 black;
         padding-top: 80px;
+        background-color: darkblue;
+        background-image: bck-svg.$bck-2;
 
         .textdanimage {
         display: flex;
@@ -71,7 +76,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                         border-radius: 20%;
                         margin-bottom: 20px;
                         width: 200px;
-                        box-shadow: 5px 8px 11px 2px black;
                         background-color: white;
                         padding: 5px;
                     }
@@ -88,7 +92,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                         font-weight:bold ;
                         position: relative;
                         font-style: italic;
-                        background-color: darkblue;
+                        background-color: transparent;
                         padding: 5px 10px;
                         border-radius: 20px;
                         letter-spacing: 5px;
@@ -262,10 +266,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             }
         }
 
-        li:last-child{
-            background-color: darkblue;
-            color: white;
-        }
     }
 }
 
@@ -294,14 +294,25 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         background-color: white;
         margin-bottom: 10px;
         border-radius: 20px;
-        position: relative;
-
+        
         li {
             border-radius: 20px;
             padding: 5px;
         }
-                   
-        &::after {
+    }
+
+    ul li.li-1-pr:last-child {
+         li {
+            padding: 0;
+         }
+    }
+
+    ul ul {
+        display: flex;
+        padding: 10px 20px;
+        position: relative;
+
+         &::after {
                 content:"";
                 border-radius: 20px;
                 mix-blend-mode:difference;
@@ -317,19 +328,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                 background-color: rgb(362, 895, 111);
                 color: black;
             }
-    }
-
-    ul li.li-1-pr:last-child {
-        background-color: darkblue;
-        color: white;
-         li {
-            padding: 0;
-         }
-    }
-
-    ul ul {
-        display: flex;
-        padding: 10px 20px;
     }
 
     ul ul li:nth-child(1){
@@ -386,13 +384,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         justify-content: center;
 
         li:last-child {
-            background-color: darkblue;
-            color: white;
-
-            &:hover a {
-                color: black;
-                transition: color 1s 1s ease-in-out;
-            }
 
              a {
             box-sizing: border-box;

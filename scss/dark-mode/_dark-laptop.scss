@@ -81,16 +81,20 @@
 
 #dark-mode:checked~* .profile-ul {
     ul li.li-1-pr { 
+        li {
         &:hover::after {
-            background-color: white;
+        background-color: white;
+        }
         }
     }
 } 
 
 #light-mode:checked~* .profile-ul {
     ul li.li-1-pr { 
+        li {
         &:hover::after {
-            background-color: white;
+        background-color: white;
+        }
         }
     }
 }
