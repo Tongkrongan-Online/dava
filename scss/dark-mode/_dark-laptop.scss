@@ -80,8 +80,8 @@
 }
 
 #dark-mode:checked~* .profile-ul {
-    ul li.li-1-pr { 
-        li {
+    ul  { 
+        ul {
         &:hover::after {
         background-color: white;
         }
@@ -90,8 +90,8 @@
 } 
 
 #light-mode:checked~* .profile-ul {
-    ul li.li-1-pr { 
-        li {
+    ul { 
+        ul {
         &:hover::after {
         background-color: white;
         }

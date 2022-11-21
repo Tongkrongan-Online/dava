@@ -2669,11 +2669,11 @@ nav .nav-ul {
   background-color: white;
 }
 
-#dark-mode:checked ~ * .profile-ul ul li.li-1-pr li:hover::after {
+#dark-mode:checked ~ * .profile-ul ul ul:hover::after {
   background-color: white;
 }
 
-#light-mode:checked ~ * .profile-ul ul li.li-1-pr li:hover::after {
+#light-mode:checked ~ * .profile-ul ul ul:hover::after {
   background-color: white;
 }
 
