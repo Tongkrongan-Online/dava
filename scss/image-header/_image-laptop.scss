@@ -1,10 +1,10 @@
 
+@use '../background/background' as svg-1;
+
 $font-1:'Permanent Marker', cursive;
 $font-2:'Secular One', sans-serif;
 $font-3: 'Oleo Script', cursive;
 $font-4:'Fira Sans Extra Condensed', sans-serif;
-
-@use '../font/bck' as bck-svg;
 
 
 .content-utama {
@@ -16,6 +16,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     z-index: -500;
     overflow-x: hidden;
 }
+
 
 
 .header-profile {
@@ -36,6 +37,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         box-sizing: border-box;
         box-shadow: 5px 5px 10px 0 black;
         padding-top: 80px;
+        background-image: svg-1.$bck-1;
         background-color: darkblue;
 
         .textdanimage {
@@ -123,7 +125,9 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     }
 
 }
-
+#dark-mode:checked~ * .header-profile {
+    background-image: svg-1.$bck-2;
+}
 
 .header-content {
     grid-area: area-0;
@@ -227,7 +231,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             padding: 5px;
             overflow: auto;
             margin-bottom: 10px;
-            border-radius: 15px;
+            border-radius: 5px;
             align-items: center;
             position: relative;
             color: black;
@@ -288,7 +292,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         display: flex;
         background-color: white;
         margin-bottom: 10px;
-        border-radius: 20px;
+        border-radius: 5px;
         
         li {
             border-radius: 20px;
@@ -309,7 +313,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
          &::after {
                 content:"";
-                border-radius: 20px;
+                border-radius: 5px;
                 mix-blend-mode:difference;
                 position: absolute;
                 right: 0%;
@@ -393,13 +397,13 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 10px;
-            border-radius: 20px;
+            border-radius: 5px;
             align-items: center;
             position: relative;
 
                  &::after {
                 content:"";
-                border-radius: 20px;
+                border-radius: 5px;
                 mix-blend-mode:difference;
                 position: absolute;
                 right: 0%;
