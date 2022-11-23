@@ -1366,6 +1366,7 @@ nav .nav-ul {
   text-align: center;
   -webkit-animation: bayangan 3s ease-in-out alternate infinite;
           animation: bayangan 3s ease-in-out alternate infinite;
+  background-color: darkblue;
 }
 .header-profile .textdanimage .textdanimage-2 h3::before {
   content: "";
@@ -1864,6 +1865,7 @@ nav .nav-ul {
     font-weight: bold;
     font-style: italic;
     padding: 5px 10px;
+    background-color: transparent;
     border-radius: 20px;
     letter-spacing: 5px;
     line-height: 35px;

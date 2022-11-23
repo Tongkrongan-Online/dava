@@ -95,6 +95,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                         letter-spacing: 5px;
                         text-align: center;
                         animation: bayangan 3s ease-in-out alternate infinite;
+                        background-color: darkblue;
 
                         &::before {
                             content: "";
