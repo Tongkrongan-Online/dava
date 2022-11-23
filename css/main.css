@@ -1858,7 +1858,6 @@ nav .nav-ul {
     display: inline-block;
     margin-bottom: 20px;
     width: 200px;
-    box-shadow: 5px 8px 11px 2px black;
   }
   .header-profile .textdanimage .textdanimage-2 h3 {
     display: flex;
@@ -2269,7 +2268,6 @@ nav .nav-ul {
     display: inline-block;
     margin-bottom: 20px;
     width: 200px;
-    box-shadow: 5px 8px 11px 2px black;
   }
   .header-profile .textdanimage .textdanimage-2 h3 {
     display: flex;
