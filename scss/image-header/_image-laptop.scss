@@ -105,7 +105,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                             width: 3%;
                             mix-blend-mode:difference;
                             left: 0;
-                            background-color:white;
+                            background-color:yellow;
                             animation: saya-label 10s ease-in-out alternate infinite;
                             border-radius: 20px;
                         }
@@ -127,7 +127,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 }
 #dark-mode:checked~ * .header-profile {
-    background-image: svg-1.$bck-2;
+    background-image: svg-1.$bck-2; 
 }
 
 .header-content {
@@ -149,6 +149,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         font-size: 1.5rem;
         justify-content: center;
         line-height: 2rem;
+        position: relative;
+        z-index: 10;
 
         p {
             margin-bottom: 20px;
@@ -215,8 +217,8 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     overflow: auto;
     text-transform: capitalize;
     font-family: $font-4;
-
-
+    
+    
     .skill-ul {
         display: flex;
         flex-direction: column;
@@ -224,6 +226,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         margin: 0;
         width: 100%;
         padding: 0 20px;
+        overflow: hidden;
        
         li {
             display: flex;
@@ -236,23 +239,17 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             align-items: center;
             position: relative;
             color: black;
-            
-            &::after {
-                content:"";
-                mix-blend-mode:difference;
-                position: absolute;
-                right: 0%;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-            
-            &:hover::after {
-                animation: saya-profile 1s ease-in-out;
-                background-color: rgb(362, 895, 111);
-                color: black;
-            }
 
+            &:hover {
+                background-color: gray;
+                font-weight: bold;
+                font-style: oblique;
+                transition: all 1s ease-in-out;
+                transform: scale(1.1);
+                padding-left: 30px;
+                box-sizing: border-box;
+            }
+            
             .opsi-skill {
                 display: flex;
                 width: max-content;
@@ -286,6 +283,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     ul {
         width: 100%;
         padding: 0 20px;
+        overflow: hidden;
     }
 
     ul li.li-1-pr {
@@ -294,6 +292,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         background-color: white;
         margin-bottom: 10px;
         border-radius: 5px;
+
+        &:hover {
+            background-color: grey;
+            transform: scale(1.1);
+            transition: all 1s ease;
+            font-style: italic;
+            font-weight: bold;
+            font-variant-caps: titling-caps;
+            }
         
         li {
             border-radius: 20px;
@@ -302,7 +309,9 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     }
 
     ul li.li-1-pr:last-child {
+
          li {
+            width: max-content;
             padding: 0;
          }
     }
@@ -311,23 +320,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         display: flex;
         padding: 10px 20px;
         position: relative;
-
-         &::after {
-                content:"";
-                border-radius: 5px;
-                mix-blend-mode:difference;
-                position: absolute;
-                right: 0%;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-            
-            &:hover::after {
-                animation: saya-profile 1s ease-in-out;
-                background-color: rgb(362, 895, 111);
-                color: black;
-            }
     }
 
     ul ul li:nth-child(1){
@@ -355,6 +347,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         margin-left: 10px;
         color: white;
     }
+
+    ul li.li-1-pr:nth-child(1):hover ul li:nth-child(3){ 
+            width: max-content;
+        }
+
+    ul li.li-1-pr:hover ul li:nth-child(3){ 
+            background-color: red;
+        }
+
 }
 
 #profile-radio-2:checked~.profile-ul {
@@ -402,26 +403,12 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             align-items: center;
             position: relative;
 
-                 &::after {
-                content:"";
-                border-radius: 5px;
-                mix-blend-mode:difference;
-                position: absolute;
-                right: 0%;
-                top: 0;
-                width: 100%;
-                height: 100%;
-            }
-            
-            &:hover::after {
-                animation: saya-profile 1s ease-in-out;
-                background-color: rgb(362, 895, 111);
-                color: black;
-            }
-
-            &:hover a {
-                color: white;
-                transition: color 1s 1s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                transition: all 1s ease-in-out;
+                background-color: grey;
+                box-sizing: border-box;
+                font-weight: bold;
             }
             
             a {
