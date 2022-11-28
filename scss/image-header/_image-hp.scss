@@ -222,10 +222,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             justify-content: center;
         }
 
-        li {
-            background-color: darkblue;
-            color: white;
-        }
     }
 
     ul ul {
@@ -250,17 +246,15 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
     ul li ul li:nth-child(3){
         width: 300px;
-        text-indent: 20px;
+        // text-indent: 20px;
         text-align: center;
         display: flex;
         height: 100%;
         align-items: center;
-        position: static;
         background-color: transparent;
         margin-left: 10px;
         color: white;
         background-color: darkblue;
-        overflow: auto;
     }
 }
 

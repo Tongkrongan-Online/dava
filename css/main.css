@@ -1447,13 +1447,12 @@ nav .nav-ul {
   justify-content: center;
   width: 100%;
   height: 60px;
-  padding: 3px;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 2px solid #0d6efd;
 }
 .radio-profile label span {
   background-color: #0d6efd;
+  border: 5px solid transparent;
   display: flex;
   align-items: center;
   position: relative;
@@ -1597,11 +1596,6 @@ nav .nav-ul {
   margin-left: 10px;
   color: white;
 }
-.profile-ul ul li.li-1-pr:nth-child(1):hover ul li:nth-child(3) {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
 .profile-ul ul li.li-1-pr:hover ul li:nth-child(3) {
   background-color: red;
 }
@@ -1676,11 +1670,9 @@ nav .nav-ul {
   display: flex;
 }
 
-#profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 {
-  border-color: red;
-}
 #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 span {
-  background-color: silver;
+  background-color: white;
+  border-color: #0d6efd;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
@@ -1693,11 +1685,9 @@ nav .nav-ul {
           animation: blink-radio 2s ease infinite;
 }
 
-#profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 {
-  border-color: red;
-}
 #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 span {
-  background-color: silver;
+  background-color: white;
+  border-color: #0d6efd;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
@@ -1710,11 +1700,9 @@ nav .nav-ul {
           animation: blink-radio 2s ease infinite;
 }
 
-#profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 {
-  border-color: red;
-}
 #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 span {
-  background-color: silver;
+  background-color: white;
+  border-color: #0d6efd;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
@@ -1943,10 +1931,6 @@ nav .nav-ul {
     display: flex;
     justify-content: center;
   }
-  .profile-ul ul li:nth-child(15) li {
-    background-color: darkblue;
-    color: white;
-  }
   .profile-ul ul ul {
     display: flex;
     width: -webkit-max-content;
@@ -1970,17 +1954,14 @@ nav .nav-ul {
   }
   .profile-ul ul li ul li:nth-child(3) {
     width: 300px;
-    text-indent: 20px;
     text-align: center;
     display: flex;
     height: 100%;
     align-items: center;
-    position: static;
     background-color: transparent;
     margin-left: 10px;
     color: white;
     background-color: darkblue;
-    overflow: auto;
   }
   #profile-radio-2:checked ~ .profile-ul {
     display: flex;
