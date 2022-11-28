@@ -185,7 +185,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         
         span {
             background-color: #0d6efd;
-            border: 5px solid transparent;
             display: flex;
             align-items: center;
             position: relative;
@@ -438,8 +437,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
     #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i}  {
 
     span {
-        background-color: white;
-        border-color: #0d6efd;
+        border: 3px solid red;
         box-sizing: border-box;
         transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
         animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;

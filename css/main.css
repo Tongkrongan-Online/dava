@@ -1452,7 +1452,6 @@ nav .nav-ul {
 }
 .radio-profile label span {
   background-color: #0d6efd;
-  border: 5px solid transparent;
   display: flex;
   align-items: center;
   position: relative;
@@ -1671,8 +1670,7 @@ nav .nav-ul {
 }
 
 #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 span {
-  background-color: white;
-  border-color: #0d6efd;
+  border: 3px solid red;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
@@ -1686,8 +1684,7 @@ nav .nav-ul {
 }
 
 #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 span {
-  background-color: white;
-  border-color: #0d6efd;
+  border: 3px solid red;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
@@ -1701,8 +1698,7 @@ nav .nav-ul {
 }
 
 #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 span {
-  background-color: white;
-  border-color: #0d6efd;
+  border: 3px solid red;
   box-sizing: border-box;
   transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
