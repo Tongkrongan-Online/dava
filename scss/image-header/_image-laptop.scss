@@ -33,7 +33,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         color: black;
         font-size: 1.4rem;
         font-family: $font-2;
-        text-shadow: 1px 1px 0 black;
         box-sizing: border-box;
         box-shadow: 5px 5px 10px 0 black;
         padding-top: 80px;
@@ -52,7 +51,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         font-size: 1.4rem;
         font-family: $font-4;
         color: white;
-        text-shadow: 1px 1px 0 black;
 
             .textdanimage-2  {
                 display: flex;
@@ -96,6 +94,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                         text-align: center;
                         animation: bayangan 3s ease-in-out alternate infinite;
                         background-color: darkblue;
+                        color: white;
 
                         &::before {
                             content: "";
@@ -105,7 +104,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
                             width: 3%;
                             mix-blend-mode:difference;
                             left: 0;
-                            background-color:yellow;
+                            background-color:white;
                             animation: saya-label 10s ease-in-out alternate infinite;
                             border-radius: 20px;
                         }
@@ -163,24 +162,39 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .radio-profile {
     display: flex;
-    align-items: center;
     width: 100%;
-    height: 100px;
+    height: 400px;
     position: relative;
     flex-direction: column;
     text-transform: capitalize;
     color: white;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-family: $font-2;
+    transform: translateY(-50px);
      
     label {
         display: flex;
-        background-color: #0d6efd;
-        padding: 10px 0px;
-        border-radius: 8px;
+        background-color: transparent;
         margin-bottom: 10px;
         justify-content: center;
         width: 100%;
+        height: 60px;
+        padding: 3px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 2px solid #0d6efd;
+
+        span {
+            background-color: #0d6efd;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
     }
 
     .label-profile-1 {
@@ -239,16 +253,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             align-items: center;
             position: relative;
             color: black;
-
-            &:hover {
-                background-color: gray;
-                font-weight: bold;
-                font-style: oblique;
-                transition: all 1s ease-in-out;
-                transform: scale(1.1);
-                padding-left: 30px;
-                box-sizing: border-box;
-            }
             
             .opsi-skill {
                 display: flex;
@@ -293,15 +297,6 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         margin-bottom: 10px;
         border-radius: 5px;
 
-        &:hover {
-            background-color: grey;
-            transform: scale(1.1);
-            transition: all 1s ease;
-            font-style: italic;
-            font-weight: bold;
-            font-variant-caps: titling-caps;
-            }
-        
         li {
             border-radius: 20px;
             padding: 5px;
@@ -403,13 +398,19 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
             align-items: center;
             position: relative;
 
-            &:hover {
-                transform: scale(1.05);
-                transition: all 1s ease-in-out;
-                background-color: grey;
-                box-sizing: border-box;
-                font-weight: bold;
+            &::before {
+                content: '👉';
+                font-size: 3rem;
+                display: none;
+                position: absolute;
+                top: calc(50% - 30px);
+                left: -50px;
             }
+
+            &:hover::before {
+                display: flex;
+            }
+
             
             a {
                 display: flex;
@@ -439,37 +440,43 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 
 @for $i from 1 to 4 {
-    #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i}::before {
-        content: "▶";
+    #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i} {
+        & {
+            border-color: red;
+        }
+
+    span {
+        background-color: silver;
+        box-sizing: border-box;
+        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+        }
+
+       span::before {
+         content: "▶";
         color: rgb(255, 0, 0);
         animation: blink-radio 2s ease infinite;
 
-        @keyframes blink-radio {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
         }
     }
 
-     #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i} {
-        background-color: silver;
-        box-sizing: border-box;
-        // box-shadow: 0px 0px 10px 2.5px black;
-        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-        animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
 
-    @keyframes sulit-border {
-        0% {
-        }
 
-        50% {
+@keyframes blink-radio {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes sulit-border {
+    0% {}
+
+    50% {
             color: red;
         }
     }
-}
-
-}

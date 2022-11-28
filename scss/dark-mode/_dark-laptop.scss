@@ -120,7 +120,6 @@
     }
 }
 // #light-mode:checked,#light-mode:checked~{}
-// tambahan untuk pergantian dark mode
 
 
 // variabel
@@ -142,7 +141,7 @@ $light-mode : white;
 #dark-mode:checked~* .dark-bg-aktive{
     background-color: $dark-mode;
 }
-// ✅✅✅✅✅✅✅✅✅ akhir dark bg
+// akhir dark bg
 
 
 
@@ -195,16 +194,8 @@ $light-mode : white;
 }
 // dark-border ✅✅✅✅✅✅✅
 
-// dark text-shadow ✅✅✅✅✅✅
-#dark-mode:checked~.dark-text-shadow{
-    text-shadow:$dark-mode;
-}
 
-#dark-mode:checked~* .dark-text-shadow{
-    text-shadow:$dark-mode;
-}
 
-// dark text-shadow ✅✅✅✅✅✅
 
 
 
