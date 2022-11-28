@@ -1840,19 +1840,20 @@ nav .nav-ul {
   }
   .radio-profile {
     display: flex;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    position: relative;
-    flex-direction: column;
-    text-transform: capitalize;
+    align-items: center;
+    width: 100%;
     color: white;
-    justify-content: space-evenly;
-    overflow: auto;
     font-family: "Secular One", sans-serif;
+    text-transform: capitalize;
     margin-top: 30px;
+    transform: translateY(0px);
+    overflow: auto;
+    position: relative;
   }
   .radio-profile label {
     display: flex;
@@ -2289,6 +2290,7 @@ nav .nav-ul {
     margin: 0;
     width: 100%;
     padding: 0 20px;
+    transform: translateY(0px);
   }
   .skill-saya .skill-ul li {
     display: flex;
@@ -2423,97 +2425,6 @@ nav .nav-ul {
   }
   #profile-radio-3:checked ~ .sosial-profile {
     display: flex;
-  }
-  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-    -webkit-animation: blink-radio 2s ease infinite;
-            animation: blink-radio 2s ease infinite;
-  }
-  @-webkit-keyframes blink-radio {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes blink-radio {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  #profile-radio-1:checked ~ .textdanimage .radio-profile .label-profile-1 {
-    background-color: silver;
-    box-sizing: border-box;
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-  }
-  @-webkit-keyframes sulit-border {
-    50% {
-      color: red;
-    }
-  }
-  @keyframes sulit-border {
-    50% {
-      color: red;
-    }
-  }
-  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-    -webkit-animation: blink-radio 2s ease infinite;
-            animation: blink-radio 2s ease infinite;
-  }
-  @keyframes blink-radio {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  #profile-radio-2:checked ~ .textdanimage .radio-profile .label-profile-2 {
-    background-color: silver;
-    box-sizing: border-box;
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-  }
-  @keyframes sulit-border {
-    50% {
-      color: red;
-    }
-  }
-  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3::before {
-    content: "▶";
-    color: rgb(255, 0, 0);
-    -webkit-animation: blink-radio 2s ease infinite;
-            animation: blink-radio 2s ease infinite;
-  }
-  @keyframes blink-radio {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  #profile-radio-3:checked ~ .textdanimage .radio-profile .label-profile-3 {
-    background-color: silver;
-    box-sizing: border-box;
-    transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-    -webkit-animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-            animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-  }
-  @keyframes sulit-border {
-    50% {
-      color: red;
-    }
   }
 }
 .projeck-dava {

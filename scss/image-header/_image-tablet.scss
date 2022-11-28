@@ -152,6 +152,7 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
         margin: 0;
         width: 100%;
         padding: 0 20px;
+        transform: translateY(0px);
        
         li {
             display: flex;
@@ -315,44 +316,5 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 #profile-radio-3:checked~.sosial-profile {
     display: flex;
 }
-
-
-
-@for $i from 1 to 4 {
-    #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i}::before {
-        content: "▶";
-        color: rgb(255, 0, 0);
-        animation: blink-radio 2s ease infinite;
-
-        @keyframes blink-radio {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-    }
-
-     #profile-radio-#{$i}:checked~.textdanimage .radio-profile .label-profile-#{$i} {
-        background-color: silver;
-        box-sizing: border-box;
-        // box-shadow: 0px 0px 10px 2.5px black;
-        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
-        animation: sulit-border 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
-
-    @keyframes sulit-border {
-        0% {
-        }
-
-        50% {
-            color: red;
-        }
-    }
-}
-
-    }
-
 
 }

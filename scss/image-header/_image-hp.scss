@@ -102,18 +102,18 @@ $font-4:'Fira Sans Extra Condensed', sans-serif;
 
 .radio-profile {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
     align-items: center;
     width: 100%;
-    height: max-content;
-    position: relative;
-    flex-direction: column;
-    text-transform: capitalize;
     color: white;
-    justify-content: space-evenly;
-    // padding: 0 10px;
-    overflow: auto;
     font-family: $font-2;
+    text-transform: capitalize;
     margin-top: 30px;
+    transform: translateY(0px);
+    overflow: auto;
+    position: relative;
      
     label {
         display: flex;
