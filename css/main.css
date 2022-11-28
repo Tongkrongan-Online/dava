@@ -1857,11 +1857,7 @@ nav .nav-ul {
   }
   .radio-profile label {
     display: flex;
-    background-color: #0d6efd;
-    padding: 10px 0px;
-    margin-bottom: 10px;
     justify-content: center;
-    border-radius: 8px;
     width: 90%;
   }
   .radio-profile .label-profile-1 {
@@ -2164,14 +2160,12 @@ nav .nav-ul {
     text-transform: capitalize;
     color: white;
     justify-content: space-evenly;
+    transform: translateY(0px);
     font-family: "Secular One", sans-serif;
     margin-top: 30px;
   }
   .radio-profile label {
     display: flex;
-    background-color: #0d6efd;
-    padding: 10px 0px;
-    margin-bottom: 10px;
     justify-content: center;
     width: 100%;
   }
@@ -2199,7 +2193,6 @@ nav .nav-ul {
     margin: 0;
     width: 100%;
     padding: 0 20px;
-    transform: translateY(0px);
   }
   .skill-saya .skill-ul li {
     display: flex;
@@ -2215,8 +2208,6 @@ nav .nav-ul {
     width: 70px;
   }
   .skill-saya .skill-ul li:last-child {
-    background-color: darkblue;
-    color: white;
     justify-content: center;
   }
   #profile-radio-1:checked ~ .skill-saya {
@@ -2243,7 +2234,6 @@ nav .nav-ul {
     border-radius: 20px;
   }
   .profile-ul ul li:last-child {
-    background-color: darkblue;
     align-items: center;
   }
   .profile-ul ul li:last-child ul {
@@ -2306,8 +2296,6 @@ nav .nav-ul {
     justify-content: center;
   }
   .sosial-profile .sosial-radio li:nth-child(9) {
-    background-color: darkblue;
-    color: white;
     box-sizing: border-box;
     line-height: 30px;
     padding: 20px;
